@@ -1,0 +1,16 @@
+Route53
+
+
+Routing Policies:
+    -Simple
+    -Weighted
+        -directs amount of traffic
+    -Latency
+        -directs based on lowest latency 
+    -Failover
+        -directs based on health of endpoint
+    -Geolocation
+        -directs based on geographical location
+
+-Route53 allows up to 50 domain names
+    -this is a soft limit which can be raised by contacting AWS support

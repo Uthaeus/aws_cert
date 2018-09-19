@@ -1,0 +1,19 @@
+Data Warehousing
+
+
+-Used for business intelligence
+    -Tools like:
+        -Cognos
+        -JasperSoft
+        -SQL Server
+        -Reporting Services
+        -Oracle Hyperion
+        -SAP NetWeaver
+-Used to pull in very large and complex data sets
+-Usually used by management to do queries on data 
+    -such as current performance vs targets, etc.
+
+OLTP vs OLAP
+-Online Transaction Processing differs from Online Analytics Processing in terms of the types of queries you will run
+
+-Data Warehousing databases use different type of architecture both from a database perspective and infrastructure layer 

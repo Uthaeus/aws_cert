@@ -1,0 +1,26 @@
+Relational Databases
+
+
+-Relational databases are what most of us are used to 
+    -think of a traditional spreadsheet
+        -Database 
+        -Tables
+        -Rows
+        -Fields (columns)
+
+Relational Database Types:
+    -SQL Server
+    -Oracle
+    -MySQL Server
+    -PostgreSQL
+    -Aurora
+    -MariaDB
+
+Non-Relational Database:
+    -DynamoDB 
+        -JSON style
+    
+    -Database 
+    -Collection
+    -Document
+    -Key-Value Pairs
