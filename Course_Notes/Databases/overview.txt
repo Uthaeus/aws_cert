@@ -1,0 +1,16 @@
+AWS Database Types
+
+
+RDS -> OLTP
+    -MySQL
+    -SQL 
+    -PostgreSQL
+    -Oracle
+    -Aurora
+    -MariaDB
+NoSQL 
+    -DynamoDB
+Redshift -> OLAP
+Elasticache 
+    -in memory caching
+

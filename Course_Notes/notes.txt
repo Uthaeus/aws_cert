@@ -7,6 +7,7 @@ EBS - Elastic Block Storage
 EC2 - Elastic Compute Cloud
 EFS - Elastic File System
 SOA - Start of Authority
+KMS - Key Management Service 
 
 
 MX Records
