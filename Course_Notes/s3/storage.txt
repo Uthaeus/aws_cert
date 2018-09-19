@@ -1,0 +1,34 @@
+S3 Storage 
+
+
+-S3 is object based
+    -ie: allows you to upload files 
+-Files can be 0 bytes to 5TB in size
+-There is unlimited storage 
+-Files are stored in buckets 
+-S3 is a universal namespace 
+    -name must be unique globally 
+-*Remember naming structure 
+-Read after write consistency for PUTS of new objects 
+-Eventual consistency for overwrite PUTS and DELETES 
+    -can take some time to propagate
+
+s3 Standard:
+    -designed to sustain the loss of 2 facilities concurrently
+    -stored redundantly across multiple devices in multiple facilities
+    -11 9's durability
+s3 IA:
+    -for data that is accessed less frequently, but requires rapid access when needed
+    -lower fee than s3, but has a retrieval fee 
+s3 One Zone IA(RRS):
+    -A lower cost option for infrequently accessed data
+    -does not require multiple availability zone data resilience
+Glacier:
+    -Typically used for archival purposes
+    -cheapest option
+    -Expedited, Standard, or Bulk 
+    -Standard retrieval time is 3-5 hours
+
+RRS availability: 99.99%
+RRS durability: 99.99%
+Standard durability: 99.9999999%

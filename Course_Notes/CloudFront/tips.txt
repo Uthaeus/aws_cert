@@ -1,0 +1,20 @@
+CloudFront
+
+Edge Locations
+    -The location where content will be cached
+    -This is separate to an AWS region or availability zone
+Origin
+    -The origin of all the files that the CDN will distribute
+    -This can either be an s3 bucket, EC2 instance, Elastic Load Balancer, or Route53
+Distribution
+    -The name given the CDN which consists of a collection of Edge Locations 
+        -Web Distribution
+            -typically used for websites
+        -RTMP
+            -used for media streaming
+
+-Edge Locations are not just READ only, you can write to them too 
+    -ie: put an object in them 
+-Objects are cached for the life of the TTL (time to live)
+-You can clear cached objects, but you will be charged 
+    

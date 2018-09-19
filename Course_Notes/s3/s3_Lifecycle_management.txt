@@ -1,0 +1,10 @@
+S3 Lifecycle Management
+
+-Can be used in conjunction with versioning
+-Can be applied to current versions and previous versions
+-Following actions can now be done:
+    -Transition to Standard-Infrequent Access Storage
+        -minimum 30 days after creation
+    -Archive to Glacier Storage 
+        -30 days after IA if relevent
+    -Permanantly delete 

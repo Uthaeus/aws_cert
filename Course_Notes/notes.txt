@@ -1,0 +1,3 @@
+RRS - Reduced Redundancy Storage
+S3 - Simple Storage Service
+CDN - Content Delivery Network
