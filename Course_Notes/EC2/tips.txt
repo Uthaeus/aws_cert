@@ -36,3 +36,34 @@ Magnetic
     -Magnetic 
         -previous generation
         -can be a boot volume 
+
+F1 - Field Programmable Gate Array
+    - Big Data
+I3 - High Speed Storage
+    - NoSQL databases
+    - Data warehousing
+G3 - Graphics Intensive 
+    - Video encoding
+    - 3D application streaming
+H1 - High Disk Throughput 
+    - Map Reduce-based workloads 
+    - distributed file systems 
+T2 - General Purpose 
+    - lowest cost
+    - web servers 
+    - small DB's 
+D2 - Dense Storage 
+    - File servers 
+    - Data warehousing 
+    - Hadoop
+R4 - Memory Optimized 
+    - Memory intensive apps/DB's 
+M5 - General Purpose 
+    - Application servers 
+C5 - Compute Optimized 
+    - CPU intensive apps/DB's
+P3 - Graphics/General Purpose GPU
+    - Machine Learning
+    - Bitcoin Mining
+X1 - Memory Optimized
+    - SAP HANA/Apache Spark, etc

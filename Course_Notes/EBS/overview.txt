@@ -1,0 +1,53 @@
+Elactic Block Storage
+
+
+EBS consists of: 
+    -SSD General Purpose  GP2
+        -up to 10,000 IOPS
+        -can be boot
+    -SSD Provisioned IOPS  IO1
+        -more than 10,000 IOPS 
+        -can be boot 
+    -HDD Throughput Optimized  ST1
+        -frequently accessed workloads
+        -can not be boot 
+    -HDD Cold  SC1
+        -less frequently accessed data
+        -can not be boot 
+    -HDD Magnetic  Standard
+        -cheap
+        -infrequently accessed storage 
+        -can be boot 
+
+-You cannot mount 1 EBS volume to multiple EC2 instances
+    -instead use EFS
+
+-Termination protection is turned off by default
+    -you must turn it on 
+-On an EBS backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated
+-EBS-backed root volumes can now be encrypted using AWS API or console, or you can use a third party tool
+-Additional volumes can be encrypted 
+
+-Volumes exist on EBS -> Virtual Hard Disk
+-Snapshots exist on s3
+-You can take snapshots of a volume
+    -this will store that volume on s3 
+-Snapshots are point in time copied of volumes 
+-Snapshots are incremental
+    -this means that only the blocks that have changed are moved to s3 
+-Your first snapshot may take some time to create
+-Snapshots of encrypted volumes are encrypted automatically
+-Volumes restored from encrypted snapshots are encrypted automatically
+-You can share snapshots, but only if they are unencrypted
+    -these snapshots can be shared with other AWS accounts or made public
+-To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot 
+-Instance Store Volumes are sometimes called Ephemeral Storage
+-Instance Store Volumes cannot be stopped 
+    -if the underlying host fails, you will lose your data 
+-EBS-backed instances can be stopped 
+    -you will not lose your data 
+-You can reboot both and not lose your data 
+-By default, both Root volumes will be deleted on termination 
+    -However, with EBS volumes, you can tell AWS to keep the root device volume 
+
+
