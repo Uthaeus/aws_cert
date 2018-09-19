@@ -2,3 +2,6 @@ RRS - Reduced Redundancy Storage
 S3 - Simple Storage Service
 CDN - Content Delivery Network
 ACL - Access Control List
+AMI - Amazon Machine Image 
+EBS - Elastic Block Storage 
+EC2 - Elastic Compute Cloud

@@ -1,0 +1,17 @@
+Security Group 
+
+
+-Any rule you make with your Security Group is implemented immediately
+-Security Groups are stateful
+    -if you create an inbound rule allowing traffic in, that traffic is automatically allowed back out 
+    -whatever you allow in will be allowed out 
+
+-All inbound traffic is blocked by default
+-All outbound traffic is allowed 
+-Changes to a Security Group take effect immediately 
+-You can have any number of EC2 instances within a Security Group 
+-You can have multiple Security Groups attached to an EC2 instance 
+-You cannot block specific IP addresses using Security Groups 
+    -instead use Network Access Control Lists 
+-You can specify allow rules, but not deny rules 
+
