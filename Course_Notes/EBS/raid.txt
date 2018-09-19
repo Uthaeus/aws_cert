@@ -1,0 +1,41 @@
+RAID, Volumes, and Snapshots
+
+
+RAID 0
+    -Striped
+    -No Redundancy
+    -Good Performance
+RAID 1
+    -Mirrored
+    -Redundancy
+RAID 5
+    -Good for READS
+    -Bad for WRITES
+    -AWS does not recommend ever putting RAID 5's on EBS
+RAID 10
+    -Combination of RAID 0 and RAID 1
+    -Striped and Mirrored 
+    -Good redundancy 
+    -Good Performance
+
+
+Question:
+    -How can I take a snapshot of a RAID array?
+        -Stop the application from writing to disk
+        -Flush all caches of the disk 
+
+    -How to do this?
+        -Freeze the file system
+        -Unmount the RAID array 
+        -Shutting down the associated EC2 instance
+
+Snapshot of Root device volume:
+    -To create a snapshot for EBS Volumes that serve as root devices, you should stop the instance before taking the snapshot 
+
+Volumes vs Snapshots - Security 
+    -Snapshots of encrypted volumes are encrypted automatically
+    -Volumes restored from encrypted snapshots are encrypted automatically
+    -You can share these images, but only if they are unencrypted
+        -These snapshots can be shared with other AWS accounts or made public
+
+        

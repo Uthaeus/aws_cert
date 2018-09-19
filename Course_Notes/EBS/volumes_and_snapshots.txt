@@ -1,0 +1,27 @@
+EBS volumes and snapshots
+
+
+
+-EC2 instances and volumes need to be in the same zone 
+
+-Volumes exist on EBS 
+    -Virtual Hard Disk
+-Snapshots exist on s3 
+-Snapshots are a point in time copies of volumes 
+-Snapshots are incremental
+    -this means that only the blocks that have changed since your last snapshot are moved to s3 
+-If this is your first snapshot, it may take some time to create 
+-To create a snapshot for EBS volumes that serve as root devices:
+    -you should stop the instance before taking the snapshot 
+-However, you can take a snapshot while the instance is running
+-You can create AMI's from EBS-backed instances and snapshots 
+-You can change EBS volume sizes on the fly
+    -including changing the size and storage type
+-Volumes will always be in the same availability zone as the EC2 instance 
+-To move an EC2 volume from one AZ/Region to another:
+    -take a snapshot or an image of, then copy it to the new AZ/Region 
+
+-Snapshots of encrypted volumes are encrypted automatically
+-Volumes restored from encrypted snapshots are encrypted automatically
+-You can share snapshots, but only if they are unencrypted
+    -these snapshots can be shared with other AWS accounts or made public
