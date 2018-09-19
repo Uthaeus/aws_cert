@@ -1,0 +1,38 @@
+EC2
+
+
+On Demand
+    -Allows you to pay a fixed rate by the hour (or by the second) with no commitment
+Reserved 
+    -Provides you with a capacity reservation
+    -Offers a significant discount on the hourly charge for an instance
+    -1yr or 3yr
+Spot 
+    -Enables you to bid whatever price you want for instance capacity 
+    -Provides for even greater savings if your applications have flexible start and end times
+Dedicated Hosts
+    -Physical EC2 server dedicated for your use 
+    -Can help reduce cost by allowing you to use your existing server-bound software license
+-If a spot instance is terminated by Amazon, you will not be charged for a partial hour of usage
+-However, if you terminate the instance yourself, you will be charged for the complete hour in which the instance ran
+
+FIGHT DR MCPX 
+
+SSD 
+    -General purpose SSD 
+        -balances price and performance 
+        -for a wide variety of workloads
+    -Provisioned IOPS SSD 
+        -highest performance SSD volume
+        -for mission-critical low-latency or high-throughput workloads 
+
+Magnetic
+    -Throughput Optimized HDD
+        -Low cost HDD volume 
+        -designed for frequently accessed, throughput-intensive workloads
+    -Cold HDD 
+        -lowest cost HDD volume 
+        -designed for less-frequently accessed wordloads
+    -Magnetic 
+        -previous generation
+        -can be a boot volume 
