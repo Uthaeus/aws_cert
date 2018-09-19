@@ -1,0 +1,15 @@
+Lambda Pricing
+
+
+How is Lambda priced?
+
+-Numbers of requests
+    -first million requests are free
+    -$0.20 per million requests 
+-Duration
+    -Duration is calculated from the time your code begins executing until it returns or otherwise terminates
+        -rounded up to the nearest 100ms
+    -The price depends on the amount of memory you allocate to your function 
+        -$0.00001667 for every Gb-second used
+    -Maximum threshold of 5 minutes
+
