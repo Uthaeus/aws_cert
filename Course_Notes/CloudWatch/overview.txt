@@ -1,0 +1,25 @@
+CloudWatch
+
+
+-Standard monitoring = 5 mins
+-Detailed monitoring = 1 min 
+
+What can I do with CloudWatch?
+    -Dashboard
+        -create dashboards to see what is happening with your AWS environment
+    -Alarms
+        -allows you to set alarms that notify you when particular thresholds are hit
+    -Events
+        -helps you to respond to state changes in your AWS resources
+    -Logs
+        -helps you to aggragate, monitor, and store logs 
+
+** CloudWatch is for monitoring and logging
+** CloudTrail is for auditing 
+
+*Bash script example:
+#!/bin/bash 
+yum update -y 
+yum install httpd -y 
+service httpd start 
+chkconfig httpd on 

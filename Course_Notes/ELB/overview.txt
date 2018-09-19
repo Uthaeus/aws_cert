@@ -1,0 +1,26 @@
+Elastic Load Balancers
+
+
+-Application load balancers 
+    -typically apply to Layer 7
+-Network load balancers 
+    -typically apply to Layer 4 
+-Classic load balancers
+    -sometimes referred to as ELB's 
+    -mostly work on Layer 4
+    -some on Layer 7 
+
+-504 Error means the Gateway has timed out
+    -this means that the application is not responding within the idle timeout period
+    -troubleshoot the application 
+        -is it the web server or database server?
+-If you need the IPv4 address of our end user:
+    -Look for the X-Forwarded-For header
+
+-Instances monitored by ELB are reported as:
+    -InService
+    -OutofService
+-Health Checks check the instance health by talking to it 
+
+-Elastic Load Balancers have their own DNS name
+    -You are never given an IP address 
