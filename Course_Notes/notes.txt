@@ -5,6 +5,7 @@ ACL - Access Control List
 AMI - Amazon Machine Image 
 EBS - Elastic Block Storage 
 EC2 - Elastic Compute Cloud
+EFS - Elastic File System
 
 
 
