@@ -13,6 +13,7 @@ S3 Storage
 -Eventual consistency for overwrite PUTS and DELETES 
     -can take some time to propagate
 
+
 s3 Standard:
     -designed to sustain the loss of 2 facilities concurrently
     -stored redundantly across multiple devices in multiple facilities

@@ -1,0 +1,15 @@
+Snowball
+
+
+Options:
+-Snowball 
+    -Import to s3
+    -Export from s3 
+-Snowball Edge
+-Snowmobile
+
+
+Transfer Accelleration
+    -You can speed up transfers to s3 
+    -costs extra
+    -has greatest impact on people farther away

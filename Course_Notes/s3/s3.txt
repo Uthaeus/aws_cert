@@ -29,6 +29,7 @@ Exam Tips:
     -once a new file is uploaded, it will almost immediately be available
 -Eventual consistency for overwrite PUTS and DELETE 
     -updates can take some time to propagate
+-You can load files to s3 much faster by enabling multipart upload 
 
 S3 storage classes/tiers:
     -s3 

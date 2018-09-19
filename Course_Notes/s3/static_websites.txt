@@ -1,0 +1,8 @@
+Static Websites 
+
+
+-You can use s3 to host static websites 
+-Serverless 
+-Very cheap
+-Scales automatically
+*Static only, cannot host dynamic sites
