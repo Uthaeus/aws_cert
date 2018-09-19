@@ -14,3 +14,28 @@ Redshift -> OLAP
 Elasticache 
     -in memory caching
 
+DynamoDB:
+    -Stored on SSD storage
+    -Spread across 3 geographically distinct data centers
+    -Eventual Consistent Reads (default)
+    -Strongly Consistent Reads 
+
+-Eventual Consistent Reads 
+    -Consistency across all copies of data is usually reached within a second
+    -Repeating a read after a short time should return the updated data (best read performance)
+-Strongly Consistent Reads 
+    -Returns a result that reflects all writes that received a successful response prior to the read 
+
+-Scalability 
+    -Push-button scaling 
+    -no down-time when scaling 
+
+Redshift 
+-Configuration:
+    -Single Node (160Gb)
+    -Multi-Node 
+        -Leader Node 
+            -manages client connections and receives queries
+        -Compute Node 
+            -store data and perform queries and computations 
+            -up to 128 compute nodes 
