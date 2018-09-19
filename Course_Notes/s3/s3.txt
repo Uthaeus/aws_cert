@@ -1,0 +1,46 @@
+S3 - Simple Storage Service
+
+S3 is Object-based Storage
+    Objects consist of:
+        -Key
+        -Value
+        -Version ID
+        -MetaData
+        -Subresources:
+            -Access Control Lists
+            -Torrent
+
+Data Consistency:
+    - Read after write consistency for PUTS of new Objects
+    - Eventual consistency for overwrite PUTS and DELETE
+        (*can take some time to propagate)
+
+
+Exam Tips:
+-S3 is object based 
+    -allows you to upload files
+-Files can be from 0 bytes to 5TB
+-There is unlimited storage 
+-Files are stored in buckets
+-S3 is a universal namespace 
+    -names must be unique globally
+    -ex: https://s3-eu-west-1.amazonaws.com/bucketname
+-Read after write consistency for PUTS of new objects 
+    -once a new file is uploaded, it will almost immediately be available
+-Eventual consistency for overwrite PUTS and DELETE 
+    -updates can take some time to propagate
+
+S3 storage classes/tiers:
+    -s3 
+    -s3-1A 
+    -s3 One Zone-IA 
+    -Glacier
+Core fundamentals of an s3 Object:
+    -Key 
+    -Value 
+    -Version ID 
+    -MetaData
+    -Subresources:
+        -ACL
+        -Torrent 
+-successful uploads generate an HTTP200 status code 
