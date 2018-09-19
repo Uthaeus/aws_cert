@@ -1,6 +1,11 @@
 Elastic Load Balancers
 
 
+-ELB's do not have predefined IPv4 addresses
+    -You resolve to them using a DNS name 
+*Understand the difference between an Alias Record and a CNAME
+    -Given the choice, always choose an Alias Record over a CNAME 
+
 -Application load balancers 
     -typically apply to Layer 7
 -Network load balancers 

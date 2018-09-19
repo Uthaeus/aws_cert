@@ -6,8 +6,20 @@ AMI - Amazon Machine Image
 EBS - Elastic Block Storage 
 EC2 - Elastic Compute Cloud
 EFS - Elastic File System
+SOA - Start of Authority
+
+
+MX Records
+SPF Record 
 
 
 
 Instance Metadata:
     - http://169.254.169.254/latest/meta-data/
+
+AMI's are regional
+    -You can only launch an AMI from the region in which it is stored
+    -However, you can copy AMI's to other regions using:
+        -console
+        -command line
+        -Amazon EC2 API

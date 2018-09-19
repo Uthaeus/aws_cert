@@ -1,0 +1,6 @@
+Quiz Questions
+
+
+Can I delete a snapshot of an EBS volume that is used as the root device of a registered AMI?
+    -No, you must deregister the AMI before being able to delete the root device 
+    
