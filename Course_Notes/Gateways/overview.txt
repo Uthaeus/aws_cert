@@ -1,0 +1,19 @@
+Gateways
+
+
+File Gateway 
+    -For flat files
+    -Stored directly on s3
+Volume Gateway 
+    -Stored Volumes
+        -Entire dataset is stored on site 
+        -asynchronously backed up to s3 
+    -Cached Volumes 
+        -Entire dataset is stored on s3 
+        -most frequently accessed data is cached on site 
+    -Gateway Virtual Tape Library (VTL)
+        -Used for backup
+        -Uses popular backup applications
+            -NetBackup, BackupExec, etc
+    -AWS Storage Gateway 
+        -On-premise virtual appliance that can be used to cache s3 locally at a customer's site 
