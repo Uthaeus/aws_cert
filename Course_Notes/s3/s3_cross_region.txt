@@ -1,0 +1,10 @@
+S3 Cross Region Replication
+
+-Versioning must be enabled on both the source and destination buckets
+-Regions must be unique
+-Files in an existing bucket are not replicated automatically
+    -all subsequent updated files will be replicated automatically 
+-You cannot replicate to multiple buckets or use daisy-chaining
+-Delete markers are replicated 
+-Deleting individual versions or delete markers will not be replicated 
+-*Understand what Cross Region Replication is at a high level 
