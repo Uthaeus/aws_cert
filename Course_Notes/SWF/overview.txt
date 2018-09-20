@@ -1,0 +1,22 @@
+SWF - Simple Work Flow Service 
+
+
+-Workers
+    -Programs that interact with Amazon SWF to get tesks, process received tasks, and return the results
+-Decider
+    -Program that controls the coordination of tasks 
+
+
+-A task is assigned once and is never duplicated 
+-Max Workflow can be 1 year
+    -The value is always measured in seconds
+
+
+SWF vs SQS
+    -SWF presents a task-oriented API
+    -SQS offers a message-oriented API 
+    -SWF ensures that a task is assigned only once and is never duplicated 
+    -With SQS, you need to handle duplicated messages and may also need to ensure that a message is processed only once 
+    -SWF keeps track of all tasks and events in an application 
+    -With SQS, you need to implement your own application-level tracking 
+        -especially if your application uses multiple queues 
