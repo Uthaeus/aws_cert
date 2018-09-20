@@ -1,0 +1,57 @@
+DynamoDb
+
+
+-Stored on SSD storage
+-Spread across 3 geographically distinct data centers 
+-Choice of 2 consistency models:
+    -Eventually Consistent Reads (default)
+    -Strongly Consistent Reads 
+-A low latency NoSQL database 
+-Consists of tables, items, and attributes 
+-Supports both document and key-value data models 
+-Supported document formats
+    -JSON
+    -HTML 
+    -XML 
+-Access is controlled using IAM policies 
+
+Made up of: 
+    -Tables
+    -Items (think of rows)
+    -Attributes (think of columns)
+    -Supports key-value and document data structures
+        -Key = the name of the data 
+        -Value = the data itself
+        -Documents can be written in JSON, HTML, or XML
+
+-Stores and retrieves data based on a Primary Key 
+    -2 types of Primary Key 
+        -Partition Key:
+            -unique attribute (ex: User Id)
+            -value of the partition key is input to an internal hash function which determines the partition or physical location on which the data is stored 
+            -if you are using the partition key as your Primary Key, then no two items can have the same Partition Key 
+        -Composite Key:
+            -Partition Key + Sort Key in combination
+            -ex: same user posting multiple times to the same forum
+
+In DynamoDb 2 types of index are supported 
+    -Local Secondary Index 
+    -Global Secondary Index 
+
+-Local Secondary Index: 
+    -Can only be created when you are creating a table 
+    -You cannot add, remove, or modity it later 
+    -Has the same Partition Key as your original table 
+        -but a different Sort Key 
+    -Gives you a different view of your data 
+        -organized according to an alternative Sort Key 
+    -Any queries based on this Sort Key are much faster using the index than the main table 
+
+-Global Secondary Index:
+    -You can create when you create your table, or add it later 
+    -Different Partition Key as well as Sort Key 
+    -Speeds up any queries relating to this alternative Partition and Sort Key 
+
+-Indexes enable fast queries on specific data columns 
+-Give you a different view of your data based on alternative Partition/Sort Key 
+-Important to understand the differences 
