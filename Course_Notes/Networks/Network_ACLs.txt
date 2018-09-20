@@ -1,0 +1,19 @@
+Network ACL's
+
+
+-Your VPC automatically comes with a default network ACL 
+    -By default it allows all outbound and inbound traffic 
+-You can create custom network ACL's
+    -By default, each custom network ACL denies all inbound and outbound traffic until you add rules 
+-Each subnet in your VPC must be associated with a netword ACL 
+    -If you don't explicitly associate a subnet with an NACL, the subnet is automatically associated with the default NACL 
+-You can associate a netword ACL with multiple subnets
+    -However, a subnet can only be associated with one network ACL at a time
+    -When you associate a network ACL with a subnet, the previous association is removed
+-Network ACL's contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule 
+-Network ACL's have separate inbound and outbound rules 
+    -Each rule can either allow or deny traffic 
+-Network ACL's are stateless
+    -Responses to allowed inbound traffic are subject to the rules for outbound traffic (and vice-versa)
+*Remember to set Ephemeral ports for outbound rules only 
+    -Block IP addresses using network ACL's, not Security Groups
