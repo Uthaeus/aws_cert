@@ -1,0 +1,13 @@
+NAT Gateways
+
+
+-Preferred by the Enterprise 
+-Scale automatically up to 10Gbps
+-No need to patch 
+-Not associated with Security Groups
+-Automatically assigned a public IP address
+-Remember to update your route tables
+-No need to disable Source/Destination Checks
+-Remember having one NAT Gateway in one AZ is not good enough
+    -You want them in multiple AZ's 
+-More secure than an NAT Instance 

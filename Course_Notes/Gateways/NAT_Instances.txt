@@ -1,0 +1,15 @@
+NAT Instances 
+
+
+-When creating an NAT Instance:
+    -Disable Source/Destination Check on the instance 
+-NAT Instances must be in a public subnet
+-There must be a route out of the private subnet to the NAT Instance in order for this to work
+-The amount of traffic that NAT Instances can support depends on the instance size
+    -If you are bottlenecking, increase the instance size 
+-You can create high availability using: 
+    -Autoscaling Groups
+    -Multiple Subnets in different AZ's
+    -and a script to automate failover
+-Behind a Security Group 
+
