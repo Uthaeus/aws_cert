@@ -156,3 +156,116 @@ What is the maximum response time for a Business level Premium support case?
 
 Auditing user access/API calls, etc across the entire AWS estate can beachieved by using: 
     -CloudTrail
+
+You have created 5 users for your system administrators. What further steps do you need to take to enable your system administrators to get access to the AWS console?
+    -Generate a password for each user created and give these passwords to your system administrators 
+
+What function of an AWS VPC is stateless?
+    -Network Access Control Lists 
+
+Which of the following services allows you root access? (ie: you can login using SSH)
+    -Elastic Map Reduce 
+
+When trying to grant an amazon account access to s3 using access control lists, what method of identification should you use to identify that account with?
+    -The email address of the account or the canonical user id 
+
+Which of the following is not supported by AWS import/export?
+    -Export to Amazon Glacier
+
+Which of the following is not a service of the security category of the AWS trusted advisor service?
+    -Vulnerability scans on existing VPC's 
+
+What are the different types of virtualization available on EC2?
+    -Para-Virtual(PV) and Hardware Virtual Machine(HVM)
+
+Which of the following is not a valid configuration type for AWS Storage Gateway?
+    -Gateway-accessed volumes 
+        *Valid configurations:
+            -Gateway-cached volumes 
+            -Gateway-stored volumes 
+            -Gateway-Virtual Tape Library
+
+*AWS Import/Export allows for the importation of large data sets using external hard disks which are sent directly to Amazon, therefore bypassing the internet 
+
+You have a high performance compute application and you need to minimize network latency between EC2 instances as much as possible. What can you do to achieve this?
+    -Create a placement group within an AZ and place the EC2 instances within that placement group 
+
+Placement Groups can be created across 2 or more Availability Zones.
+    -False 
+
+You can add multiple volumes to an EC2 instance then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes 
+    -True 
+
+You are creating your own relational database on an EC2 instance and you need to maximize IOPS performance. What can you do to achieve this goal?
+    -Add multiple additions volumes with Provisioned IOPS and then create a RAID 0 stripe across those volumes 
+
+Which of the services below do you get root access to?
+    -EC2 and Elastic Map Reduce 
+
+Using SAML, you can give your federated users single sign on (SSO) access to the AWS Management Console 
+    -True 
+
+You can have 1 subnet stretched across multiple Availability Zones 
+    -False 
+
+When you create new subnets within a custom VPC, by default they can communicate with each other across availability zones 
+    -True 
+
+It is possible to transfer a reserved instance from on AZ to another 
+    -True 
+
+You have an EC2 instance which needs to find out its private IP address and its public IP address. To do this you need to:
+    -Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/
+
+In order to enable encryption at rest using EC2 and Elastic Block Store you need to:
+    -Configure encryption when creating the EBS volume 
+
+You can select a specific AZ in which to place your DynamoDB table 
+    -False 
+
+When creating an RDS instance, you can select which AZ in which to deploy your instance 
+    -True 
+
+Amazon's Redshift uses which block size for its columnar storage?
+    -1024kb/1Mb
+
+You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large amount of IOPS and you need to increase the IOPS available to it What should you do?
+    -Add 4 additional EBS SSD volumes and create a RAID 10 using these volumes 
+
+Which of these is not a reponsibility of Amazon under the shared responsibility model?
+    -OS level patching for EC2 
+
+In regards to EC2, which of the following is not a customer's responsibiblity under the shared responsibility model?
+    -Decommissioning and destruction of storage media
+
+Which of the following services do you get OS level access to?
+    -EC2 and Elastic Map Reduce 
+
+You need to maximize performance so that your end users can download frequently accessed images as fast as possible. What AWS technology should you implement? 
+    -CloudFront 
+
+Under the shared responsibility model for DynamoDB, which of the following is NOT a responsibility of Amazon?
+    -
+
+AWS help provide protection against some forms of traditional network attacks. Which of the following is not protected against by AWS?
+    -Social Engineering 
+
+Auto scaling is a tool used to create fault-tolerant and cost-effective architectures
+    -True 
+
+A client who is using EC2 believes that someone is trying to gain access to her Linux web app instances and she asks what sort of network access logging can be added to the system. Which of the following might you recommend?
+    -Make use of an OS level logging tool, such as iptables, and log events to CloudWatch or s3 
+
+Your company likes the idea of storing files on AWS. However, low latency service of the last few days of files is important to customer service. Which storage Gateway configuration would you use to achieve both of these ends?
+    -Gateway-cached 
+
+*With NAT instances, the most common oversight is forgetting to disable Source/Destination checks
+
+Amazon SQS keeps track of all tasks and events in an application 
+    -False 
+
+*Once a VPC is set to Dedicated Hosting, it is not possible to change the VPC or the instances to Default Hosting
+    -You must re-create the VPC 
+
+How is the Public IP address managed in an instance session via the instance GUI/RDP or terminal/SSH session?
+    -The Public IP address is not managed on the instance. It is, instead, an alias applied as a network address translation of the Private IP address 
