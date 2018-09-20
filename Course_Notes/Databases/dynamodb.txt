@@ -55,3 +55,22 @@ In DynamoDb 2 types of index are supported
 -Indexes enable fast queries on specific data columns 
 -Give you a different view of your data based on alternative Partition/Sort Key 
 -Important to understand the differences 
+
+Provisioned Throughput:
+    -Measured in Capacity Units
+    -Upon table creation, specify your requirements in terms of:
+        -Read Capacity Units
+        -Write Capacity Units 
+    -1x Write Capacity Unit = 1 x 1kb Write per second 
+    -1x Read Capacity Unit = 
+        1 x Strongly Consistent Read of 4kb per second 
+        2 x Eventually Consistent Read of 4kb per second (default) 
+
+DynamoDb Accellerator (DAX)
+    -A fully managed, clustered, in-memory cache
+    -Provides in-memory caching for DynamoDb tables 
+    -improves response times for Eventually Consistent reads only 
+    -You point your API calls to the DAX cluster instead of your table 
+    -If the item you are querying is in the cache, DAX will return it 
+    -Otherwise, it will perform an Eventually Consistent GetItem operation to your DynamoDb table 
+    -Not suitable for write-intensive applications or applications that require Strongly Consistent reads 

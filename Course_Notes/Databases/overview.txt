@@ -39,3 +39,26 @@ Redshift
         -Compute Node 
             -store data and perform queries and computations 
             -up to 128 compute nodes 
+
+Scan vs Query 
+    -Query: 
+        -An operation that finds items in a table based on the Primary Key Attribute and a distinct value to search for 
+    -Scan: 
+        -An operation that examines every item in the table
+        -By default returns all data attributes 
+            -Use the ProjectionExpression parameter to refine the scan 
+-A Query operation finds items in a table using only the Primary Key attribute 
+    -You provide the Primary Key name and a disting value to search for 
+-A Scan operation examines every item in a table 
+    -by default returns all data attributes 
+-Use the ProjectionExpression parameter to refine 
+-Query results are always sorted by the Sort Key if there is one 
+-Sorted in ascending order 
+-Set ScanIndexForward parameter to false to reverse the order 
+    -Queries only 
+-Queries are generally more efficient than Scans 
+-Reduce the impact of a query or scan by setting a smaller page size, using fewer read operations 
+-Isolate scan operations to specific tables and segregate them from your mission-critical traffic 
+-Try Parallel Scans rather than the default sequential 
+-Avoid using scan operations if you can 
+    -design tables in a way that you can use the Query, Get, BatchGetItem API's 
