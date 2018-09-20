@@ -24,3 +24,27 @@ Non-Relational Database:
     -Collection
     -Document
     -Key-Value Pairs
+
+DynamoDB vs RDS 
+    -DynamoDB offers 'push button' scaling 
+        -meaning you can scale your database on the fly without any downtime
+    -RDS is not so easy
+        -and you usually have to use a bigger instance size or add a read replica 
+        
+
+Aurora 
+ -Provides up to 5x better performance than MySQL at a price-point 1/10 that of a commercial database while delivering similar performance and availability
+ -Scaling 
+    -Starts with 10Gb
+    -Scales in 10Gb increments 
+    -Up to 64 Tb (storage autoscaling)
+-Compute Resources can scale up to 32vCPU and 244Gb memory
+-2 copies of your data is contained in each AZ with minimum of 3 AZ's = 6 copies of your data 
+-Designed to transparently handle the loss of up to two copies of data without affecting read availability 
+-Storage is self-healing
+    -Data blocks and disks are continuously scanned for errors and repaired automatically 
+-2 types of Replicas available
+    -Aurora Replicas 
+        -up to 15 
+    -MySQL Read Replicas 
+        -up to 5 
