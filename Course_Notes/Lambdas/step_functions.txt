@@ -1,0 +1,9 @@
+Step Functions 
+
+
+-Allow you to visualize and test your serverless applications 
+-Provide a graphical console to arrange and visualize the components of your application as a series of steps 
+-Great way to visualize your serverless application 
+-Step functions automatically triggers and tracks each step 
+-Step functions logs the state of each step so if somethere were to go wrong, you can track what went wrong and where 
+
