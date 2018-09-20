@@ -33,3 +33,27 @@ AMI's are regional
 
 Elastic Transcoder 
     -Media transcoder in the cloud 
+
+Business benefits of cloud:
+    -Almost zero up front infrastructure investment
+    -Just-in-time infrastructure 
+    -More efficient resource utilization
+    -Usage-based costing 
+    -Reduced time to market
+
+Technical benefits:
+    -Automation -> 'scriptable infrastructure'
+    -Auto-scaling
+    -Proactive scaling 
+    -More efficient development lifecycle
+    -Improved testability
+    -Disaster recovery and business continuity
+    -'Overflow' traffic to the cloud 
+
+Elasticity can be implemented in 3 ways:
+    -Proactive Cyclic Scaling 
+        -Periodic scaling that occurs at fixed intervals 
+    -Proactive Event-based Scaling 
+        -Scaling just when you are expecting a big surge of traffic requests due to a scheduled event 
+    -Auto Scaling based on Demand 
+        -By using a monitoring service, your system can send triggers to take appropriate actions so that it scales up or down based on metrics
