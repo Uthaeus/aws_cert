@@ -1,0 +1,38 @@
+Cost Optimization
+
+
+-Reduce your costs to a minimum and use those savings for other parts of your business 
+
+Design Principles:
+    -Transparently attribute expenditure
+    -Use managed services to reduce cost of ownership
+    -Trade capital expense for operating expense 
+    -Benefit from economies of scale
+    -Stop spending money on data center operations
+
+Definition:
+    -Cost Optimization in the cloud consists of 4 areas
+        -Matched Supply and Demand
+        -Cost effective Resources
+        -Expenditure Awareness
+        -Optimizing Over Time
+
+Matched Supply and Demand:
+    -How do you make sure your capacity matches, but does not substantially exceed, what you need?
+    -How are you optimizing your usage of AWS services? 
+
+Cost Effective Resources:
+    -Have you selected the appropriate resource type to meet your cost targets?
+    -Have you selected the appropriate pricing model to meet your cost targets?
+    -Are ther managed services that you can use to improve your ROI?
+
+Expenditure Awareness:
+    -What access controls and procedures do you have in place to govern AWS costs?
+    -How are you monitoring usage and spending?
+    -How do you decommisssion resources that you now longer need, or stop resources that are temporarily not needed?
+    -How do you consider data transfer charges when designing your architecture?
+
+Optimizing Over Time:
+    -How do you manage and/or consider the adoption of new services?
+
+    
