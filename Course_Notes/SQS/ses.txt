@@ -1,0 +1,26 @@
+SES - Simple Email Service 
+
+
+SES vs SNS 
+    -SES 
+        -email messaging service 
+        -Can trigger Lambda functions or SNS notifications
+        -Can be used for both incoming and outgoing email 
+        -An email address is all that is required to start sending messages to a user 
+    -SNS 
+        -Pub/sub messaging service 
+            -formats include:
+                -SMS
+                -HTTP
+                -SQS
+                -Email 
+        -Can be used to trigger Lambda functions 
+        -Can fan out messages to a large number of recipients 
+            -replicate and push messages to multiple endpoints and formats 
+        -Customers must subscribe to a topic to receive the notifications
+
+-Remember that SES is for mail only
+-It can be used for incoming and outgoing mail 
+-It is not subscription based 
+    -you only need to know the email address 
+

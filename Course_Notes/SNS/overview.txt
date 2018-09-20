@@ -21,3 +21,16 @@ SNS Subscribers:
     -SQS 
     -Application 
     -Lambda 
+
+-SNS supports multiple formats 
+    -SMS
+    -SQS 
+    -HTTP 
+    -Email 
+-Push notifications only 
+-Pub/Sub model 
+    -Consumers must subscribe to a topic
+-You can fan out messages to a large number of recipients 
+    -multiple clients, each with their own SQS queue
+
+    
