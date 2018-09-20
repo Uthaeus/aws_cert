@@ -3,4 +3,13 @@ Quiz Questions
 
 Can I delete a snapshot of an EBS volume that is used as the root device of a registered AMI?
     -No, you must deregister the AMI before being able to delete the root device 
+
+When replicating data from your primary RDS instance to your secondary RDS instance, what is the charge?
+    -Free
+
+When you add a rule to an RDS security group you do not need to specify a port number or protocol 
+    -False
+
+In RDS, when using multiple availability zones, can you use the secondary database as an independent read node?
+    -No 
     

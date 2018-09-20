@@ -16,4 +16,30 @@ Redis
     -Elasticache supports Master/Slave replication and Multi-AZ which can be used to achieve cross AZ redundancy
 
 -Elasticache is a good choice if your database is particularly read-heavy and not prone to frequent changing
--Redshift is a good answer if the reason your database is feeling stress is because management keep running OLAP transactions on it, etc.
+-Redshift is a good answer if the reason your database is feeling stress is because management keep running OLAP transactions on it, etc. (data warehousing)
+
+Memcached vs Redis 
+    -If you are concerned about redundancy use Redis 
+-Because of the replication and persistence features of Redis, Elasticache manages Redis more as a relational database 
+-Redis Elasticache clusters are managed as stateful entities that include failover
+    -similar to how Amazon RDS manages database failover
+-Memcached is designed as a pure caching solution with no persistence 
+-Elasticache manages Memcached nodes as a pool that can grow or shrink
+    -Similar to an Amazon EC2 auto scaling group
+    -Individual nodes are expendable and Elasticache provides additioinal capabilities here 
+        -such as automatic node replacement and Auto Discovery
+
+Memcached Use Cases:
+    -Is object caching your primary goal?
+        -for example, to offload your database 
+    -Are you interested in as simple caching model as possible?
+    -Are you planning on running large cache nodes and require multi-threaded performance with utilization of multiple cores? 
+    -Do you want the ability to scale your cache horizontally as you grow?
+
+Redis Use Cases: 
+    -Are you looking for more advanced data types?
+        -such as lists, hashes, and sets?
+    -Does sorting and ranking datasets in memory help you?
+        -such as with leaderboards
+    -Is persistence of your key store important?
+    -Do you want to run in multiple AZ's with failover?
