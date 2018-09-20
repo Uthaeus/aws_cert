@@ -13,3 +13,8 @@ NAT Instances
     -and a script to automate failover
 -Behind a Security Group 
 
+NAT vs Bastions 
+    -An NAT is used to provide internet traffic to EC2 instances in private subnets 
+    -A Bastion is used to securely administer EC2 instances in private subnets 
+        -Using SSH or RDP
+        

@@ -36,3 +36,9 @@ The default region for an SDK is 'us-east-1'?
 
 What is the largest file you can transfer to s3 using a PUT operation?
     -5Gb
+
+How many VPC's am I allowed in each AWS Redion by default?
+    -5
+
+You have a VPC with both public and private subnets. You have 3 EC2 instances that have been deployed into the public subnet and each has internet access. You deploy a 4th instance using the same AMI and this instance does not have internet access. What could be the cause of this? 
+    -The instance needs either an Elastic IP address or Public IP address assigned to it 

@@ -1,0 +1,12 @@
+VPC's 
+
+
+VPC Flow Logic:
+    -You cannot enable flow logs for VPC's that are peered with your VPC unless the peer VPC is in your account 
+    -You cannot tag a flow log 
+    -After you've created a flow log, you cannot change its configuration
+        -ex: You can't associate a different IAM role with the flow log 
+    *Not all IP traffic is monitored 
+
+Application Load Balancer:
+    -You will need at least 2 public subnets in order to deploy an application load balancer 
