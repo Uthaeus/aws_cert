@@ -8,6 +8,8 @@ EC2 - Elastic Compute Cloud
 EFS - Elastic File System
 SOA - Start of Authority
 KMS - Key Management Service 
+CORS - Cross Origin Resource Service 
+WAF - Web Application Firewall
 
 
 MX Records

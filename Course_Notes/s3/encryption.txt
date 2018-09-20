@@ -9,3 +9,15 @@ Encryption
         -AWS Key Management Service managed keys: SSE-KMS
         -Server side encryption with customer provided keys: SSE-C 
 -Client side encryption
+
+
+Enforcing Encryption on S3 Buckets
+    -If the file is to be encrypted at upload time, the x-amz-server-side-encryption parameter will be included in the request header
+
+    -There are two options currently available:
+        -x-amz-server-side-encryption:AES256
+            -SSE-S3 -> S3 managed keys 
+        -x-amz-server-side-encryption:ams:kms 
+            -SSE-KMS -> KMS managed keys 
+    -When this parameter is included in the header of the PUT request, it tells s3 to encrypt the object at the time of upload using the specified encryption method
+    -You can enforce the use of Server-Side Encryption by using a bucket policy which denies any s3 PUT request which doesn't include the x-amz-server-side-encryption parameter in the request header 
