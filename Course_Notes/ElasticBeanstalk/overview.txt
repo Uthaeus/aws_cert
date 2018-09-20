@@ -1,0 +1,54 @@
+Elastic Beanstalk
+
+-Fastest and simplest way to deplay your app in AWS 
+-Automatically scales your application up and down
+-You can select the EC2 instance type that is optimal 
+-You can retain full administrative control over the resources powering your app or have EB do it for you 
+-Managed Platform Update feature automatically applies updates to your operating system 
+-Monitor and manage application health via a dashboard 
+-Integrated with CloudWatch and X-Ray for performance data and metrics
+
+-Deploys and scales your web applications including the web application server platform 
+-Supports widely used programming technologies:
+    -Java
+    -PHP
+    -Python
+    -Ruby
+    -Go
+    -Docker
+    -.Net
+    -Node.js
+-And application server platforms 
+    -Tomcat
+    -Passenger
+    -Puma
+    -IIS
+-Provisions the underlying resources for you 
+-Can fully manage the EC2 instances for you or you can take full administrative control 
+-Updates, monitoring, metrics, and health checks are all included
+
+Elastic Beanstalk supports several options for processing deployments:
+    -All at once
+    -Rolling
+    -Rolling with additional batch
+    -Immutable
+
+All at once:
+    -Service interruption while you update the entire environment at once 
+    -To roll back, perform a further all at once upgrade 
+Rolling: 
+    -Reduced capacity during deployment 
+    -To roll back, perform a further rolling update 
+Rolling with Additional Batch:
+    -Maintains full capacity
+    -To roll back, perform a further folling update 
+Immutable:
+    -Preferred option for mission critical production systems 
+    -Maintains full capacity
+    -To roll back, just delete the new instances and autoscaling group
+
+Elastic Beanstalk configuration files:
+    -Written in YAML or JSON
+    -Must have a .config extension
+    -Must be saved in /ebextensions
+        -This must be included in the top-level directory of your app 
