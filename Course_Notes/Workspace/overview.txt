@@ -1,0 +1,9 @@
+Workspace 
+
+
+-A cloud based replacement for a traditional desktop
+-By default users can personalize their workspace 
+-By default you will be given admin access 
+-Workspaces are persistent 
+-All data on the D:\ drive is backed up every 12 hrs
+-You do not need an AWS account to login

@@ -1,0 +1,35 @@
+Elastic Container Service - ECS 
+
+
+-Containers are a method of operating system virtualization that allow you to run an application and its dependencies in resource-isolated environments
+-Containers have everything the software needs to run 
+    -Libraries, system tools, code, etc 
+-Containers are created from a read-only template called an Image
+
+ECS 
+    -Amazon's managed EC2 container service 
+    -Allows you to manage Docker containers on a cluster of EC2 instances 
+    -Containers are a method of operating system virtualization that allow you to run an application and its dependencies in resource-isolated processes 
+    -Containers are created from a read-only template called an image 
+    -An Image is a read-only template with instructions for creating a Docker container 
+    -Images are stored in a registry such as AWS ECR 
+    -Amazon EC2 Container Registry is a managed AWS Docker registry service 
+    -A task definition is required to run Docker containers in Amazon ECS 
+    -Task definitions are text files in JSON format that describe one or more containers that form your application 
+    -Think of a task definition as a cloud formation template, but for Docker 
+        -Configure things such as the amount of CPU, RAM, etc 
+
+-An Amazon ECS service allows you to run and maintain a specified number (or, the desired 'count') of instances of a task definition simultaneously in an ECS cluster 
+-Think of services like autoscaling groups for ECS 
+-An Amazon ECS cluster is a logical grouping of container services that you can place tasks on 
+-Clusters can contain multiple different container instance types 
+-Clusters are Region-specific
+-Container instances can only be part of one cluster at a time 
+-You can create IAM policies for your cluster to allow or restrict user's access to specific clusters 
+-You can schedule ECS in two ways:
+    -Service Scheduler
+    -Customer Scheduler 
+-ECS agent to connect EC2 instances to your ECS cluster 
+    -> Linux only 
+-IAM with ECS to restrict access 
+-Security groups operate at the instance level, not at the task or container level 

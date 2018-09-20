@@ -1,0 +1,26 @@
+Security Token Service - STS
+
+
+-Grants users limited and temporary access to AWS resources
+-Users can come from 3 sources:
+    -Federation (typically Active Directory)
+        -Uses Security Assertion Markup Language (SAML)
+        -Grants temporary access based off the user's Active Directory credentials 
+            -does not need to be a user in IAM
+        -Single signon allows users to log in to AWS Console without assigning IAM credentials 
+
+-Key Terms
+    -Federation 
+        -Combining or joining a list of users in one domain (such as IAM) with a list of users in another domain (such as Active Directory, Facebook, etc)
+    -Identity Broker
+        -A service that allows you to take an identity from point A and join it (federate it) to point B 
+    -Identity Store 
+        -Services like Active Directory, Facebook, Google, etc 
+    -Identities
+        -A user of a service like Facebook, etc 
+
+-Passes 4 data items
+    -Access Key 
+    -Secret Access Key 
+    -Token 
+    -Duration 
