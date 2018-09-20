@@ -1,6 +1,7 @@
 API Gateway 
 
 
+
 What can API Gateway do?
     -Expose HTTPS endpoints to define a RESTful API 
     -Serverlessly connect to services like Lambda and DynamoDB

@@ -1,0 +1,17 @@
+SNS - Simple Notification Service 
+
+
+Benefits:
+    -Instantaneous, push-based delivery (no polling)
+    -Simple API's and easy integration with applications
+    -Flexible message delivery over multiple transport protocols 
+    -Inexpensive, pay-as-you-go model with no up-front costs 
+    -Web-based AWS management console offers the simplicity of a point and click interface 
+
+SNS vs SQS 
+    -Both are messaging services in AWS 
+    -SNS is push based 
+    -SQS is poll (pull) based 
+
+SNS Pricing:
+    -
