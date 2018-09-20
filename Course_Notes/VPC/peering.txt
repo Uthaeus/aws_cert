@@ -8,3 +8,16 @@ VPC Peering
     -ie: 1 central VPC peers with 4 others 
     -No transitive peering 
 
+-You cannot create a VPC Peering connection between VPC's that have matching or overlapping CIDR blocks
+-You cannot create a VPC Peering connection between VPC's in different regions 
+-VPC Peering does not support transitive peering relationships 
+
+
+Direct Connect:
+    -Makes it easy to establish a dedicated network connection from your premises to AWS 
+    -Reduce costs when using large volumes of traffic 
+    -Increases reliability 
+    -Increases bandwidth
+    -Available in:
+        -10Gbps
+        -1Gbps 
