@@ -1,0 +1,15 @@
+Well Architected Framework
+
+5 Pillars of the well architected framework:
+    -Security
+    -Reliability
+    -Performance Efficiency
+    -Cost Optimization
+    -Operational Excellence
+
+Structure of each Pillar:
+    -Design Principles
+    -Definition
+    -Best Practices
+    -Key AWS Services
+    -Resources

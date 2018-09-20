@@ -1,0 +1,28 @@
+Security
+
+
+Security in the cloud consists of 4 areas:
+    -Data Protection
+    -Privilege Management
+    -Infrastructure Protection 
+    -Detective Controls
+
+Data Protection:
+    -How are you encrypting and protecting your data at rest?
+    -How are you encrypting and protecting your data in transit? (SSL)
+
+Privilege Management:
+    -How are you protecting access to and use of the AWS root account credentials? (MFA)
+    -How are you defining roles and responsibilities of system users to control human access to the AWS Management Console and API's? (Groups)
+    -How are you limiting automated access (such as from applications, scripts, or third-party tools or services) to AWS resources? (Roles)
+    -How are you managing keys and credentials? (KMS)
+
+Infrastructure Protection:
+    -How are you enforcing network and host-level boundary protection? 
+    -How are you enforcing AWS service level protection?
+    -How are you protecting the intregrity of the operating systems on your EC2 instances? 
+
+Detective Controls:
+    -How are you capturing and analyzing AWS logs?
+
+    
