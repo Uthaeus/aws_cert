@@ -9,3 +9,8 @@ EC2 Instances
     -you can use a third party tool to encrypt the root volume 
     -or this can be done when creating AMI's in the AWS console or using the API
 -Additional volumes can be encrypted 
+
+-400 series code relates to a client-side error
+-200 series code means the request was successful
+-300 series code means there has been a redirection
+-500 series code means there has been a server-side error 

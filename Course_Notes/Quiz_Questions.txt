@@ -12,4 +12,24 @@ When you add a rule to an RDS security group you do not need to specify a port n
 
 In RDS, when using multiple availability zones, can you use the secondary database as an independent read node?
     -No 
+
+To retrieve Metadata or Userdata, you will need to use which IP address?
+    -169.254.169.254
+
+Which AWS service is chargeable?
+    -Elastic Load Balancer 
+
+Which best describes Amazon ECS (Elastic Container Service)?
+    -The Elastic Container Service is software that you can run and manage to orchestrate many running Docker containers 
     
+In order to enable encryption at rest using EC2 and EBS you must: 
+    -Configure encryption when creating the EBS volume
+
+If you have an EC2 instance that needs to know both its private IP address and its public IP address, the application needs to:
+    -Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/
+
+Individual instances are provisioned:
+    -In Availability Zones 
+
+The default region for an SDK is 'us-east-1'?
+    -True
