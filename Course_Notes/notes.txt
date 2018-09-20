@@ -13,6 +13,7 @@ WAF - Web Application Firewall
 SWF - Simple Work Flow
 SES - Simple Email Service 
 ARN - Amazon Resource Name
+IGW - Internet GateWay
 
 
 MX Records

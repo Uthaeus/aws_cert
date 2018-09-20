@@ -6,6 +6,18 @@ VPC's
     -You have complete control over your virtual networking environment 
     -Including selection of your own IP address range, creation of subnets, and vongiguration of route tables and network gateways
 
+-Think of a VPC as a logical datacenter in AWS 
+-VPC's consist of: 
+    -IGW's (or Virtual Private Gateways)
+    -Route Tables 
+    -Network Access Control Lists 
+    -Subnets 
+    -Security Groups 
+-1 subnet = 1 availability zone 
+-Security Groups are stateful
+-Network Access Control Lists are stateless
+-No Transitive Peering
+
 VPC Flow Logic:
     -You cannot enable flow logs for VPC's that are peered with your VPC unless the peer VPC is in your account 
     -You cannot tag a flow log 
@@ -29,3 +41,4 @@ Default vs Custom
     -Default VPC is user-friendly, allowing you to immediately deploy instances 
     -All subnets in default VPC have a route out to the internet 
     -Each EC2 instance has both a public and private IP address
+
