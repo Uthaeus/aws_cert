@@ -1,0 +1,37 @@
+KMS - Key Management Service 
+
+
+-Encryption keys are regional
+
+Customer Master Key (CMK):
+    -Alias
+    -Creation date
+    -Description
+    -Key state
+    -Key material
+        -either customer provided or AWS provided 
+    -can never be exported 
+
+-Key Material Options: 
+    -Use KMS generated key material 
+    -Your own key material 
+
+KMS API calls:
+    -aws kms encrypt 
+    -aws kms decrypt
+    -aws kms re-encrypt 
+    -aws kms enable-key-rotation 
+
+KMS Envelope Encryption: 
+    Master Key --> Envelope Key(data key) --> Data 
+    -The Customer Master Key 
+        -used to decrypt the data key(envelope key)
+    -Envelope key is used to decrypt the data 
+
+Set up a Customer Master Key:
+    -Create an Alias and Description 
+    -Choose material option 
+    -Define Key Administrative Permissions 
+        -IAM users/roles that can administer(but not use) the key through the KMS API 
+    -Define Key Usage Permissions 
+        -IAM users/roles that can use the key to encrypt and decrypt data 
