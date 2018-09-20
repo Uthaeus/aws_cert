@@ -32,6 +32,12 @@ What is Lambda?
 -Lambda can do things globally
     -you can use it to backup s3 buckets to other s3 buckets, etc.
 
+Versioning:
+    -When you use versioning in AWS Lambda
+        -you can publish one or more versions of your Lambda function 
+        -As a result, you can work with different variations of your Lambda function in your development workflow 
+    -Each Lambda function has a unique Amazon Resource Name (ARN)
+
 
 Runtime Languages:
     - C#

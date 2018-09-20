@@ -11,6 +11,8 @@ KMS - Key Management Service
 CORS - Cross Origin Resource Service 
 WAF - Web Application Firewall
 SWF - Simple Work Flow
+SES - Simple Email Service 
+ARN - Amazon Resource Name
 
 
 MX Records

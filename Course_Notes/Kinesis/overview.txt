@@ -1,13 +1,23 @@
 Kinesis
 
 
+Elastic Transcoder:
+    -Media transcoder in the cloud 
+    -Used to convert media files from their original source format into different formats 
+    -Provides transcoding presets for popular output formats 
+        -which means that you don't need to guess about which setting work best on a particular device
+    -Pay based on the minutes that you transcode and the resolution
+
 Kinesis Streams 
     -Shards 
     -24 hrs to 7 days
+    Producers --> Streams --> Shards --> Consumers
 
 Kinesis Firehose
+    Producers --> Firehose --> S3
     
 Kinesis Analytics 
+    -Basically sits on top and allows you to analyze by running SQL queries 
 
 
 *Know the difference between Streams and Firehose 

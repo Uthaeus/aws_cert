@@ -1,0 +1,12 @@
+ARN 
+
+
+Qualified/Unqualified ARN 
+    -Can have multiple versions of Lambda functions 
+    -Latest version will use $latest
+    -Qualified version will use $latest 
+    -Unqualified will not have it 
+    -Versions are immutable
+    -Can split traffic using aliases to different versions 
+        -cannot split traffic with $latest 
+        -Instead create an alias to $latest 

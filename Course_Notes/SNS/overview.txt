@@ -13,5 +13,11 @@ SNS vs SQS
     -SNS is push based 
     -SQS is poll (pull) based 
 
-SNS Pricing:
-    -
+SNS Subscribers:
+    -HTTP
+    -HTTPS
+    -Email
+    -Email-JSON
+    -SQS 
+    -Application 
+    -Lambda 

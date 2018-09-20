@@ -42,3 +42,16 @@ How many VPC's am I allowed in each AWS Redion by default?
 
 You have a VPC with both public and private subnets. You have 3 EC2 instances that have been deployed into the public subnet and each has internet access. You deploy a 4th instance using the same AMI and this instance does not have internet access. What could be the cause of this? 
     -The instance needs either an Elastic IP address or Public IP address assigned to it 
+
+What happens when you create a topic on Amazon SNS?
+    -An Amazon Resource Name is created 
+
+What application service allows you to decouple your infrastructure using message-based queries? 
+    -SQS 
+
+What does 'domain' refer to in Amazon SWF?
+    -A collection of related workflows
+
+Amazon SWF restrict me to use specific programming languages
+    -False 
+
