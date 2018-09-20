@@ -1,0 +1,14 @@
+Kinesis
+
+
+Kinesis Streams 
+    -Shards 
+    -24 hrs to 7 days
+
+Kinesis Firehose
+    
+Kinesis Analytics 
+
+
+*Know the difference between Streams and Firehose 
+-Understand what Kinesis Analytics is 

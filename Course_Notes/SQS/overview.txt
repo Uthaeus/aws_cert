@@ -1,6 +1,8 @@
 SQS
 
 
+-A web service that gives you access to a message queue that can be used to store messages while saiting for a computer to process them 
+
 -SQS is pull based, not push based 
 -Messages are 256kb in size 
 -Messages can be kept in the queue from 1 min to 14 days
@@ -36,3 +38,15 @@ FIFO Queues (first in first out):
     -Message delivered once
         -no duplicates
     -ex: Good for banking transactions which need to happen in strict order 
+
+
+SWF vs SQS 
+    -SQS has a retention period of 14 days 
+    -SWF up to 1 yr for workflow executions 
+    -SWF presents a task-oriented API 
+    -SQS offers a message-oriented API 
+    -SWF ensures that a task is assigned only once and is never duplicated 
+    -With SQS you need to handle duplicated messages and may also need to ensure that a message is processed only once 
+    -SWF keeps track of all the tasks and events in an application 
+    -With SQS you need to implement your own application-level tracking 
+        -especially if your application uses multiple queues 

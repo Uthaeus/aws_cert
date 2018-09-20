@@ -1,10 +1,15 @@
 SWF - Simple Work Flow Service 
 
 
--Workers
-    -Programs that interact with Amazon SWF to get tesks, process received tasks, and return the results
+-Workflow starter
+    -An application that can initiate a workflow 
+    -ex: Could be your e-commerce website when placing an order or a mobile app searching for bus times 
 -Decider
     -Program that controls the coordination of tasks 
+    -Controls the flow of activity tasks in a workflow execution
+    -If something has finished in a workflow (or failed) a Decider decides what to do next 
+-Activity Workers
+    -Programs that interact with Amazon SWF to get tasks, process received tasks, and return the results
 
 
 -A task is assigned once and is never duplicated 
