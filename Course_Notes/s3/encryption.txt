@@ -9,6 +9,7 @@ Encryption
         -AWS Key Management Service managed keys: SSE-KMS
         -Server side encryption with customer provided keys: SSE-C 
 -Client side encryption
+*Remember that we can use a Bucket Policy to prevent unencrypted files from being uploaded by using/creating a plicy which only allows requests which include the x-amz-server-side-encryption parameter in the request header 
 
 
 Enforcing Encryption on S3 Buckets

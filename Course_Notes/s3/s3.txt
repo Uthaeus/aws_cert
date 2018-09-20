@@ -15,6 +15,22 @@ Data Consistency:
     - Eventual consistency for overwrite PUTS and DELETE
         (*can take some time to propagate)
 
+Performance Optimization
+    *Remember the two main approaches to Performance Optimization:
+        -GET Intensive Workloads
+            -Use CloudFront
+        -Mixed Workloads 
+            -Avoid sequential key names for your s3 objects 
+            -Instead, add a random prefix like a hex hash to the key name to prevent multiple objects from being stored on the same partition
+
+Cross Origin Resource Sharing (CORS)
+    -Used to enable cross-origin access for your AWS resources 
+        -ex: s3 hosted website accessing js or image files located in another s3 bucket 
+    -By default, resources in one bucket cannot access resources located in another 
+    -To allow this, we need to configure CORS on the bucket being accessed and enable access for the origin bucket attempting to access 
+    -Always use the s3 website URL, not the regular bucket URL 
+
+
 
 Exam Tips:
 -S3 is object based 
@@ -30,6 +46,15 @@ Exam Tips:
 -Eventual consistency for overwrite PUTS and DELETE 
     -updates can take some time to propagate
 -You can load files to s3 much faster by enabling multipart upload 
+-By default, all newly created buckets are private 
+-You can set up access control to your bucket using:
+    -Bucket Policies 
+        -applied at bucket level
+    -Access Control Lists 
+        -applied at object level 
+-S3 Buckets can be configured to create access logs which log all requests made to the bucket 
+    -These logs can be written to another bucket 
+    
 
 S3 storage classes/tiers:
     -s3 
@@ -41,7 +66,11 @@ Core fundamentals of an s3 Object:
     -Value 
     -Version ID 
     -MetaData
-    -Subresources:
+    -Subresources (used to manage bucket-specific configuration):
+        -Bucket Policies
+        -CORS
+        -Transfer Acceleration
         -ACL
         -Torrent 
 -successful uploads generate an HTTP200 status code 
+

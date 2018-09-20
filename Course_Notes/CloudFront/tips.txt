@@ -17,4 +17,15 @@ Distribution
     -ie: put an object in them 
 -Objects are cached for the life of the TTL (time to live)
 -You can clear cached objects, but you will be charged 
+
+GET intensive workloads
+    -Use CloudFront content delivery service to get best performance 
+    -CloudFront will cache your most frequently accessed objects and will reduce latency for your GET requests 
+
+Mixed Request Type workloads 
+    -The key names you use for your objects can impact performance 
+    -S3 uses the key name to determine which partition an object will be stored
+    -The use of sequential key names 
+    -For heavy workloads this can cause I/O issues and contention
+    -By using a random prefix to keynames, you can force s3 to distribute your keys across multiple partitions, distributing the I/O workload 
     
