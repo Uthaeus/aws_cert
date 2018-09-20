@@ -33,3 +33,6 @@ Individual instances are provisioned:
 
 The default region for an SDK is 'us-east-1'?
     -True
+
+What is the largest file you can transfer to s3 using a PUT operation?
+    -5Gb

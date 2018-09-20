@@ -17,6 +17,7 @@ Distribution
     -ie: put an object in them 
 -Objects are cached for the life of the TTL (time to live)
 -You can clear cached objects, but you will be charged 
+    -do this by using Invalidations 
 
 GET intensive workloads
     -Use CloudFront content delivery service to get best performance 
