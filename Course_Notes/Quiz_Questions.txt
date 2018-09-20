@@ -69,3 +69,90 @@ Using the AWS portal, you are trying to scale DynamoDB past its preconfigured ma
 
 Which of the following services provides in-memory write-through cache optimized for DynamoDB?
     -DAX 
+
+Automated backups are enabled by default for a new DB instance
+    -True 
+
+Amazon RDS does not currently support increasing storage on a _____ DB instance 
+    -SQL Server 
+
+Amazon's EBS volumes are 
+    -Block based storage 
+
+If I want to run a database on an EC2 instance, which is the most recommended Amazon storage option?
+    -EBS 
+
+Can you access Amazon EBS snapshots? 
+    -Yes, through the AWS API's/CLI & AWS console
+
+In a default VPC, all Amazon EC2 Instances are assigned 2 IP addresses at launch. What are these?
+    -Private IP address and Public IP address 
+
+If an Amazon EBS volume is the root device of an instance, can I detach it without stopping the instance?
+    -No 
+
+Can I move a reserved instance from one region to another?
+    -No 
+
+In RDS, changes to the backup window take effect 
+    -Immediately
+
+In RDS, what is the maximum size for a Microsoft SQL Server DB instance with SQL Server Express edition?
+    -10Gb
+
+You can conduct your own vulnerability scans within your own VPC without alerting AWS first
+    -False 
+
+Reserved instances are available for multi-AZ deployments
+    -True 
+
+MySQL installations default to port number:
+    -3306
+
+If an Amazon EBS volume is an additional partition, can I detach it without stopping the instance?
+    -Yes, although it may take some time 
+
+You can RDP or SSH into an RDS instance to see what is going on with the operating system
+    -False 
+
+When creating a new security group, all inbound traffic is allowed by default 
+    -False 
+
+What are the four levels of AWS premium support?
+    -Basic, Developer, Business, Enterprise
+
+As the AWS platform is PCI DSS 1.0 compliant, I can immediately deploy a website to it that can take and store credit card details. I do not need to get any kind of accredidation from a QSA.
+    -False 
+
+To help you manage your Amazon EC2 instances you can assign your own metadata in the form of:
+    -Tags
+
+Individual instances are provisioned in: 
+    -Availability Zones 
+
+When using a custom VPC and placing an EC2 instance into a public subnet, it will be automatically internet accessible
+    -False 
+
+What is the underlying Hypervisor for EC2?
+    -Xen
+
+The AWS platform is certified PCI DSS 1.0 compliant 
+    -True 
+
+The AWS platform consists of how many regions currently?
+    -14
+
+How many copies of my data does RDS Aurora store by default?
+    -6
+
+What is the difference between Elastic Beanstalk and CloudFormation?
+    -Elastic Beanstalk handles the deployment, from capacity provisioning, load balancing, auto-scaling, to application health monitoring based on the code you upload to it, whereas CloudFormation is an automated provisioning engine designed to deploy entire cloud environments via a JSON script
+
+In RDS, you are responsible for maintaining OS and application security patching, antivirus, etc. 
+    -False 
+
+What is the maximum response time for a Business level Premium support case?
+    -1 hr 
+
+Auditing user access/API calls, etc across the entire AWS estate can beachieved by using: 
+    -CloudTrail
