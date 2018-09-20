@@ -1,5 +1,12 @@
 Kinesis
 
+-Used to stream big data 
+-Stream large amounts of social media, news feeds, logs, etc into the cloud 
+
+For processing large amounts of data:
+    -Redshift for business intelligence
+    -Elastic Map Reduce for big data processing 
+
 
 Elastic Transcoder:
     -Media transcoder in the cloud 

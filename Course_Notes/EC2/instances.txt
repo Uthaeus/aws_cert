@@ -14,3 +14,21 @@ EC2 Instances
 -200 series code means the request was successful
 -300 series code means there has been a redirection
 -500 series code means there has been a server-side error 
+
+
+EBS backend vs Instance Store
+    -EBS backend volumes are persistent
+    -Instance store backend volumes are not persistent 
+        -Ephemeral
+    -EBS volumes can be detached and re-attached to other EC2 instances 
+    -Instance store volumes cannot be detached 
+        -they exist only for the life of that instance 
+    -EBS volumes can be stopped 
+        -their data will persist 
+    -Instance store volumes cannot be stopped 
+        -if you do this the data will be wiped 
+    
+-EBS backend 
+    -Store data long term 
+Instance Store 
+    -Should not be used for long term 
