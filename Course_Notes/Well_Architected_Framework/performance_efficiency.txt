@@ -1,0 +1,33 @@
+Performance Efficiency
+
+
+-Focuses on how to use computing resources efficiently to meet your requirements and how to maintain that efficiency as demand changes and tech evolves
+
+Performance Efficiency in the cloud consists of:
+    -Compute
+    -Storage
+    -Database
+    -Space-Time Tradeoff
+
+Compute: 
+    -How do you select the appropriate instance type for your system?
+    -How do you ensure that you continue to have the most appropriate instance type as new instance types and features are introduced?
+    -How do you monitor your instances post-launch to ensure they are performing as expected?
+
+Storage:
+    -How do you select the appropriate storage for your system? 
+    -How do you ensure that you continue to have the most appropriate storage solution as new storage solutions and features are launched?
+    -How do you monitor your storage solution to ensure it is performing as expected? 
+    -How do you ensure that the capacity and throughput of your storage solutions matches demand?
+
+Database: 
+    -How do you select the appropriate databse solution for your system?
+    -How do you ensure that you continue to have the most appropriate database solution and features as new database solutions and features are launched?
+    -How do you monitor your database to ensure performance is as expected?
+    -How do you ensure capacity and throughput of your database matches demand?
+
+Space-Time Tradeoff:
+    -How do you select the appropriate proximity and caching solutions for your system?
+    -How do you ensure that you continue to have the most appropriate proximity and caching solutions as new solutions are launched?
+    -How do you monitor your proximity and caching solutions to ensure performance is as expected?
+    -How do you ensure that the proximity and caching solutions you have matches damand?

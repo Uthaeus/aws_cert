@@ -1,0 +1,32 @@
+Reliability 
+
+
+-The Reliability pillar covers the ability of a system to recover from service or infrastructure outages/disruptions as well as the ability to dynamically acquire computing resources to meet demand
+
+Design Principles:
+    -Test recovery procedures
+    -Automatically recover from failure 
+    -Scale horizontally to increase aggragate system availability
+    -Stop guessing capacity 
+
+Definition:
+    -Reliability in the cloud consists of 3 areas
+        -Foundations
+        -Change Management
+        -Failure Management
+
+Foundation:
+    -How are you managing AWS service limits for your account?
+    -How are you planning your network topology on AWS?
+    -Do you have an excalation path to deal with technical issues?
+
+Change Management:
+    -How does your system adapt to changes in demand?
+    -How are you monitoring AWS resources?
+    -How are you executing change management? (autoscaling)
+
+Failure Management:
+    -How are you backing up your data?
+    -How does your system withstand component failures?
+    -How are you planning for recovery?
+    
