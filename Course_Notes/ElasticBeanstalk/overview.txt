@@ -52,3 +52,18 @@ Elastic Beanstalk configuration files:
     -Must have a .config extension
     -Must be saved in /ebextensions
         -This must be included in the top-level directory of your app 
+
+RDS & Elastic Beanstalk tips:
+    -Two different options for launching your RDS instance 
+        -Launch with Elastic Beanstalk
+            -When you terminate the Elastic Beanstalk environment, the database will also be terminated
+            -Quick and easy to add your database and get started
+            -Suitable for Test and Dev evironments only 
+        -Launch outside of Elastic Beanstalk
+            -Additional configuration steps required 
+                -Security Group and Connection information
+            -Suitable for production environments 
+                -More flexibility
+            -Allows connection from multiple environments 
+                -You can tear down the application stack without impacting the database 
+                
