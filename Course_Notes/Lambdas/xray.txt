@@ -6,7 +6,7 @@ X-Ray
 x-ray SDK --> x-ray Daemon --> x-ray API --> x-ray Console
 
 The X-Ray SDK provides: 
-    -Interceptors to add your code to trace incoming HTTP requests 
+    -Interceptors to add to your code to trace incoming HTTP requests 
     -Client handlers to instrument AWS SDK clients that your application uses to call other AWS services
     -An HTTP client to use to instrument calls to other internal and external HTTP web services 
 

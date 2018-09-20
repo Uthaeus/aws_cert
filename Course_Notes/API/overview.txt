@@ -1,0 +1,13 @@
+Amazon API 
+
+
+-Import an existing API model using Swagger
+
+API Throttling
+    -Default limits steady-state request rate to 10,000 requests per second 
+    -Maximum concurrent requests = 5,000 requests accross all API's within an AWS account
+    -If you go over 10,000rps or 5,000 concurrent requests, you will receive a 429 TooManyRequests error response 
+
+SOAP Webservice Passthrough
+    -You can configure API Gateway as a SOAP webservice passthrough 
+    

@@ -36,3 +36,8 @@ How do I configure API Gateway?
 -If you are using JavaScript/Ajax that uses multiple domains with API Gateway:
     -Ensure that you have enabled CORS on API Gateway
 -CORS is enforced by the client
+
+-Import API's using Swagger 2.0 definition files
+-API Gateway can be throttled 
+    -default limits are 10,000rps or 5,000 concurrent 
+-You can configure API Gateway as a SOAP Webservice Passthrough

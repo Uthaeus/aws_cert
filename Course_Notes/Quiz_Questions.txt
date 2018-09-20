@@ -55,3 +55,6 @@ What does 'domain' refer to in Amazon SWF?
 Amazon SWF restrict me to use specific programming languages
     -False 
 
+You have an internal API that you use for your corporate network. Your Company had decided to go all in on AWS. They will need to leverage their existing API within AWS. What is the most efficient way to do this?
+    -Use the Swagger importer tool to import your API into API Gateway 
+
