@@ -1,0 +1,29 @@
+Operational Excellence
+
+
+-Includes operational practices and procedures used to manage production workloads 
+
+Design Principles:
+    -Perform operations with code 
+    -Align operations processes to business objectives 
+    -Make regular, small, incremental changes 
+    -Test for responses to unexpected events 
+    -Learn from operational events and failures 
+    -Keep operations procedures current 
+
+Definition:
+    -Preparation
+    -Operation
+    -Response 
+
+Preparation:
+    -What best practices for cloud operations are you using?
+    -How are you doing configuration management for your workload?
+
+Operation:
+    -How are you evolving your workload while minimizing the impact of change?
+    -How do you monitor your workload to ensure it is operating as expected? (cloudwatch)
+
+Response:
+    -How do you respond to unplanned operational events? 
+    -How is escalation managed when responding to unplanned operational events?
