@@ -1,0 +1,37 @@
+AWS Organizations 
+
+
+-An account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage 
+-Control access to AWS services 
+-Automate AWS account creation and management 
+-Consolidate billing across multiple AWS accounts 
+
+-Available in two feature sets:
+    -Consolidated Billing
+    -All Features 
+
+Consolidated Billing:
+    -Paying account is independent and cannot access resources of the other accounts 
+    -All linked accounts are independent 
+    -Currently a limit of 20 linked accounts (default)
+    -Advantages:
+        -One bill per AWS account 
+        -Very easy to track charges and allocate costs 
+        -Volume pricing discount 
+    
+-Best Practices:
+    -Always enable Multi-Factor Authentication on root account 
+    -Always use a strong and complex password on root account 
+    -Paying account should be for billing purposes only 
+        -do not deploy resources into paying account 
+
+-CloudTrail:
+    -Per AWS account and is enabled per Region 
+    -Can consolidate logs using an s3 bucket 
+        1-turn on CloudTrail in the paying account 
+        2-Create a bucket policy that allows cross-account access 
+        3-Turn on CloudTrail in the other accounts and use the bucket in the paying account 
+
+-Consolidated billing allows you to get colume discounts on all your accounts 
+-Unused reserved instances for EC2 are applied across the group 
+-CloudTrail is on a per account and per region basis, but can be aggragated into a single bucket in the paying account

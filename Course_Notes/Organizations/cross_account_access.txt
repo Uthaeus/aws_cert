@@ -1,0 +1,18 @@
+Cross Account Access 
+
+
+-Makes it easier for you to work productively within a multi-account (or multi-role) AWS environment by making it easy for you to switch roles 
+
+->Steps:
+    -Identify account numbers 
+    -Create a group in IAM
+    -Create a user in IAM
+    -Log in to Production
+    -Create the bucket policy
+    -Create the Cross Account Role 
+    -Apply the newly created policy to the role 
+    -Log in to the new account 
+    -Create a new inline policy 
+    -Apply it to the new group 
+    -Log in as new user 
+    -Switch accounts 

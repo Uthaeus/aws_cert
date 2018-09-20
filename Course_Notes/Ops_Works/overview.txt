@@ -1,0 +1,8 @@
+Ops Works 
+
+
+-Orchestration service that uses Chef 
+-Chef consists of recipes to maintain a consistent state 
+-Look for the term 'chef' or 'recipes' or 'cookbooks' and think OpsWorks 
+
+
