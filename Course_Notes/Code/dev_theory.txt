@@ -1,0 +1,41 @@
+Dev Theory 
+
+
+Continuous Integration
+    -is about integrating or merging the code changes frequently
+        -at least once per day 
+    -enables multiple devs to work on the same app 
+
+Continuous Delivery 
+    -is all about automating the build, test, and deployment functions
+
+Continuous Deployment 
+    -fully automates the entire release process 
+        -code is deployed into production as soon as it has successfully passed through the release pipeline 
+
+CodeCommit 
+    -Source Control service 
+CodeBuild
+    -Compile source code 
+    -Run tests
+    -Package code 
+CodeDeploy
+    -Automated deployment to EC2, On Premises systems, and Lambda
+CodePipeline
+    -CI/CD workflow tool 
+    -Fully automates the entire release process 
+        (build, test, deployment)
+
+*Remember the different types of deployment approach
+    -In-Place or Rolling update
+        -You stop the application on each host and deploy the latest code 
+        -EC2 and On Premises systems only
+        -To roll back you must re-deploy the previous version of the application 
+
+    -Blue/Green
+        -New instances are provisioned and the new application is deployed to these new instances 
+        -Traffic is routed to the new instances according to your own schedule
+        -Supported for EC2, On Premises systems, and Lambda functions 
+        -Roll back is easy, just route the traffic back to the original instances 
+        -Blue is the active deployment 
+        -Green is the new release 

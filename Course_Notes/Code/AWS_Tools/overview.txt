@@ -4,7 +4,7 @@ AWS Tools
 CodeCommit
     -Source code service (git)
     -Based on Git 
-    -Centralized repository for all your code 
+    -Centralized repository for all your code, binaries, images, and libraries 
     -Tracks and manages code changes 
     -Maintains version history 
     -Manages updates from multiple sources and enables collaboration
@@ -14,6 +14,8 @@ CodeBuild
     -Run tests
     -Package code 
 CodeDeploy
+    -A fully managed automated deployment service 
+    -Can be used as part of a Continuous Delivery or Continuous Deployment process 
     -Automated deployment to EC2, On Premises systems, and Lambda
     -The AppSpec file defines all the parameters needed for the deployment 
         -ex: location of application files and pre/post deployment validation tests to run 
@@ -56,3 +58,15 @@ AppSpec File
     -ApplicationStart
     -ValidateService
     -BeforeAllowTraffic --> AllowTraffic --> AfterAllowTraffic
+
+
+Docker and CodeBuild 
+    -Docker commands to build, tag(apply an alias), and push your Docker Image to the ECR repository 
+        -docker build -t yourfilename .
+        -docker tag newaliasname originalfilename
+        -docker push containerfilename
+
+    -Use buildspec.yml to define the build commands and settings used by CodeBuild to run your build 
+    -You can override the settings in buildspec.yml by adding your own commands in the console when you launch the build 
+    -If your build fails, check the build logs in the CodeBuild console 
+        -You can also view the full CodeBuild log in CloudWatch 
