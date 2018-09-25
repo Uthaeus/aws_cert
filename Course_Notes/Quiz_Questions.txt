@@ -269,3 +269,19 @@ Amazon SQS keeps track of all tasks and events in an application
 
 How is the Public IP address managed in an instance session via the instance GUI/RDP or terminal/SSH session?
     -The Public IP address is not managed on the instance. It is, instead, an alias applied as a network address translation of the Private IP address 
+
+An SQS message can be delivered multiple times 
+    -True 
+
+Your EC2 instances download jobs from an SQS queue. However, they are taking too long to process the messages. What API call can you use to extend the length of time to process the jobs?
+    -ChangeMessageVisibility 
+
+What is the default visibility timeout for a message in an SQS queue?
+    -30 sec 
+
+What is the maximum retention period for an SQS message? 
+    -14 days 
+
+SQS was the first service on the AWS platform 
+    -True 
+
