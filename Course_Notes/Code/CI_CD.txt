@@ -1,0 +1,23 @@
+CI/CD
+
+CI - Continuous Integration
+CD - Continuous Delivery/Deployment
+
+CI & CD are best practices for software development and deployment 
+    -They enable frequent software changes to be applied while maintaining system and service stability 
+    -Companies like AWS, Netflix, Google, and Facebook have pioneered this approach to releasing code, successfully applying thousands of changes per day
+    Devs --> Code Repo --> Build Management --> Test Framework
+
+-Continuous Delivery 
+    -Is a development practice where merged changes are automatically built, tested, and prepared for release into staging and eventually production environments
+
+-Continuous Integration
+    -Is about integrating or merging the code changes frequently
+    -At least once per day 
+    -Enables multiple devs to work on the same application 
+
+-Continuous Delivery
+    -Is about automating the build, test, and deployment 
+-Continuous Deployment 
+    -Fully automates the entire release process
+    -Code is deployed into production as soon as it has successfully passed through the release pipeline
