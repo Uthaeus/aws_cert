@@ -314,3 +314,33 @@ Elastic Beanstalk is object-based storage
 
 Unlike CloudFormation, the use of Elastic Beanstalk is not free, and, in addition, you must pay for the resources it provisions
     -False 
+
+You are deploying an application to a number of EC2 instances using CodeDeploy. What is the name of the file used to specify source files and lifecycle hooks?
+    -appspec.yml
+
+Which of the following practices allows multiple developers working on the same application to merge code changes frequently without impacting each other and enables the identification of bugs early on in the release process?
+    -Continuous Integration 
+
+Which AWS service can be used to compile source code, run tests, and pachage code?
+    -CodeBuild
+
+Which AWS service can be used to automatically install your application code onto EC2, On Premises systems, and Lambda?
+    -CodeDeploy
+
+Which AWS service can be used to centrally store and version control your application source code, binaries, and libraries?
+    -CodeCommit
+
+You want to receive an email whenever a user pushed code to your CodeCommit repository, how can you configure this?
+    -Configure Notifications in the console, this will create a CloudWatch Events rule to send a notification to an SNS topic which will trigger an email to be sent to the user 
+
+When deploying application code to Lambda, the AppSpec file can be written in which language? 
+    -JSON 
+
+When deploying application code to EC2, the AppSpec file can be written in which language?
+    -YAML
+
+In the CodeDeploy AppSpec file, what are the hooks used for?
+    -To specify code, scripts, or functions that you want to run at set points in the deployment lifecycle
+
+Which AWS service can be used to fully automate your entire release process?
+    -CodePipeline
