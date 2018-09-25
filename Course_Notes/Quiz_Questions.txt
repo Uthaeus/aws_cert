@@ -285,3 +285,32 @@ What is the maximum retention period for an SQS message?
 SQS was the first service on the AWS platform 
     -True 
 
+How large can an SQS message be? 
+    -256kb 
+
+You have a fleet of EC2 instances that are constantly polling empty SQS queues, burning CPU cycles and costing your company money. What should you do? 
+    -Enable SQS Long Polling 
+
+What is the maximum long poll timeout?
+    -20 sec 
+
+You are designing a new application that processes payments and delivers promotional emails to customers. You need to ensure that the payment process takes priority over the creation and delivery of emails. How might you use SQS to achieve this? 
+    -Use 2 SQS queues for the platform. Have the EC2 fleet poll the payment SQS queue first. If this queue is empty, then poll the promotional emails queue.
+
+SNS messages cannot be customized by protocol type 
+    -False 
+
+You have a list of email messages to which you need to push emails on a periodic basis. What do you subscribe them to? 
+    -A topic 
+
+Which of these is a protocol NOT supported by SNS? 
+    -FTP 
+
+What languages and development stacks are NOT currently supported by AWS Elastic Beanstalk? 
+    -Jetty for jbos applications
+
+Elastic Beanstalk is object-based storage 
+    -False 
+
+Unlike CloudFormation, the use of Elastic Beanstalk is not free, and, in addition, you must pay for the resources it provisions
+    -False 
