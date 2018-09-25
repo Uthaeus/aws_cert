@@ -1,0 +1,151 @@
+You work in the security industry for a large consultancy. A new customer of yours runs a production envireonment in AWS and they require a log of all API calls made to their Elastic Load Balancer. How can you achieve this?
+    -
+
+True or False: Amazon will always have root level SSH access in to your EC2 instances
+    -
+
+You have a static HTML website that requires inexpensive, hightly available hosting solution that scales automatically to meet traffic demands. Which AWS service would best suit this requirement?
+    -
+
+True or False: You should expect the same latency and throughput performance as Amazon S3 Standard when using Standard - IA 
+    -
+
+You have a website that allows users in third world countries to store their important documents safely and securely onlibne. Internet connectivity in these countries is unreliable, so you implement multipart uploads to improve the success rate of uploading files. This works well, however you notice that when an object is not uploaded successfully, incomplete parts of that object are still being stored in S3 and you are still being charged for those objects. What s3 service can you implement to expire incomplete multipart uploads?
+    -
+
+What is the minimum interval granularity for the data that Amazon CloudWatch receives and aggregates?
+    -
+
+True or False: S3 does not support website redirects
+    -
+
+You need to automatically migrate objects from one S3 storage class to another based on the age of the data. What S3 service can you use to achieve this? 
+    -
+
+You work for an electric car company that has its front end website on EC2. Company policy dictates that you must retain a history of all EC2 API calls made on your account for security analysis and operational troubleshooting purposes. What AWS service can assist you with this? 
+    -
+
+True or False: An Amazon Cluster Placement Group can be stretched across multiple availability zones
+    -
+
+Your three AWS accounts (A, B, C) share data. In an attempt to maximize performance between the accounts, you place all the instances for these accounts in 'eu-west-1b'. During testing, you find almost no transfer latency between accounts A and B, but significant latency between accounts B and C, and accounts C and A. Which of the following possibilities is the most likely source of the problem? 
+    -
+
+True or False: You can use S3 Transfer Acceleration with multipart uploads.
+    -
+
+You have built an online dating application that allows users to send and receive photos as they court each other. You need to secure this data and you need to implement server-side encryption to protect this data. You decide that you want server-side encryption provided by Amazon. You will also need to have an audit trail so you can see who used your key to access which object and when, as well as view failed attempts to access data from users without permission to decrypt the data. What out of the box Amazon solution would enable you to achieve this?
+    -
+
+Which of the following is NOT a valid EC2 instance type?
+    -
+
+You work for a large insurance company that has issued 10,000 insurance policies. These policies are stored as PDFs. You need these policies to be highly available and company policy says that the data must be able to survive the simultaneous loss of two facilities. What storage solution should you use?
+    -
+
+You are a solutions architect working for a company that conducts surveys on specific industries. Each industry that you survey has its own EC2 fleet, separate from those of other industries. Company policy dictates that you should keep costs to a minimum, using only 1 load balancer, if possible. What type of load balancer should you use to suit this requirement?
+    -
+
+In the future, you will need to preserve, restore, and retrieve every version of every file that you have stored in AWS. Which service should you use?
+    -
+
+You need to restore an object from Glacier. What 2 ways can you accomplish this?
+    -
+
+What is the Uptime SLA for Amazon EC2 and EBS within a given region?
+    -
+
+What is the minimum size of an object in S3 - IA?
+    -
+
+You have designed an application that stores large videos in S3. These videos are usually larger than 100Mb in size. You need to maximize upload performance. Select two answers that will achieve this end.
+    -
+
+You have an application that uses S3 to store objects. Company policy dictates that certain objects (such as JPGs and PDF's) must be replicated to another region for redundancy. However, some objects (such as Word files) can stay in a single region. Company policy also dictates that you should use as few buckets as possible. How should you architect this solution?
+    -
+
+You back the files that exist on an in-house SAN to S3. You need to minimize cost, however company policy states that objects must be instantly accessible. What S3 storage class should you use?
+    -
+
+You need to implement a new web application which allows users to store family photos online in such a way that only invited guests will be able to view the images. Which type of S3 encryption should you choose to maintain full end-to-end control of the encryption/decryption of objects and assure that only encrypted objects are transmitted over the Internet to Amazon S3.
+    -
+
+True or False: Classic ELB's support IPv6 as well as IPv4.
+    -
+
+Your company has a legacy SAN that has 75 TB's of data. Your company has decided that they want to migrate this data to AWS S3 in the quickest way possible. You company has a single comms line with a maximum pipe line of 50Mbps Which service should you consider using?
+    -
+
+Which EC2 operating system is NOT supported by CloudWatch
+    -
+
+How can you securely upload or download your data to/from the S3 service?
+    -
+
+Which types of server side encryption are available for S3? (Choose all that apply.)
+    -
+
+Your legal company is moving its production estate to AWS. They currently have a private cloud platform with VMDK files as their virtual machines. You need to move these files to AWS and create EC2 instances using the VMDK files. Which AWS service would help you achieve this goal?
+    -
+
+You are running a Cassandra database that requires access to tens of thousands of low latency IOPS. What EC2 instance family would best suit your needs?
+    -
+
+You are creating an application that will leverage EC2 for its webservers. The application data will be stored on the root device volume attached to the EC2 instance. Data on this volume must persist independently of the life of this particular instance. What EC2 volume should you choose?
+    -
+
+You run a security company which stores highly sensitive PDF's on S3 with versioning enabled. To ensure MAXIMUM protection of your objects to protect against accidental deletion, what further security measure should you consider using?
+    -
+
+You work for a security company that stores highly sensitive documents on S3. One of your customers has had a security breach and, as a precaution, they have asked you to remove a sensitive PDF from their S3 bucket. You log in to the AWS console using your account and attempt to delete the object. You notice that versioning is turned on, and when you dig a little deeper you discover that you cannot delete the object. What may be the cause of this?
+    -
+
+True or False: You can use your existing Microsoft Windows Server licenses with an Amazon EC2 shared tenancy instance.
+    -
+
+By default, how many Elastic IP addresses are you limited to per region?
+    -
+
+True or False: EBS Snapshots are versioned and you can read an older snapshot to do a point-in-time recovery?
+    -
+
+You have an extremely high performance compute application that you need to deploy to AWS. You will need extremely low-latency network performance to allow node-to-node communication between your EC2 instances. You will also need a minimum network speed of 10 Gbps in order for your application to work. How should you deploy your instances?
+    -
+
+By default, how many S3 buckets can you have with a new AWS account?
+    -
+
+Which of the following operating systems is NOT supported by EC2
+    -
+
+You have developed a file-sharing website for a large corporate entity. They require that the site has regional redundancy. Which S3 service should you use to achieve this? 
+    -
+
+You have been load testing a customers new production environment. You create the environment using CloudFormation and you utilize CloudWatch to monitor the environment. After extensive load testing, you are ready to hand the cloudformation template over to your customer. You delete the environment and give your customer the CloudFormation template. However, they now want to see the results of the load test. How long does CloudWatch store the metrics for EC2 & ELB after deleting those resources?
+    -
+
+You’ve been tasked with implementing a globally accessible storage solution that will scale from a few terabytes (now) to an unknown, but significantly greater, volume of data in three years time. Which AWS service would best meet your current and projected storage needs?
+    -
+
+Your large scientific organization needs to use a fleet of EC2 instances to perform high performance, CPU intensive calculations. Your boss asks you to choose an instance type that would best suit the needs of your organization. Which of the following instance types should you recommend?
+    -
+
+You have an application that stores data in S3, and you need to design an integrated solution providing encryption at rest. You want Amazon to handle key management and protection using multiple layers of security. Which S3 encryption option should you use?
+    -
+
+You have an application that allows people in very remote locations to store their files safely and securely. You need to leverage Amazon CloudFront’s globally distributed AWS Edge Locations so that as data arrives at an AWS Edge Location the data is routed to your Amazon S3 bucket over an optimized network path. Which service should you use?
+    -
+
+You work for a genetics company that has extremely large datasets stored in S3. You need to minimize storage costs, while maintaining mandated restore times that depend on the age of the data. Data 30-59 days old must be available immediately, and data ≥ 60 days old must be available within 12 hours. Which two of the following options below should you consider?
+    -
+
+Your application stores your customers' sensitive passport information in S3. You are required by law to encrypt all data at rest. Company policy states that you must maintain control of your encryption keys. For ease of management however, you do not want to implement or maintain a client side encryption library. Which S3 encryption option should you use to secure your data at rest?
+    -
+
+You are a system administrator and you need to take a consistent snapshot of your EC2 instance. Your application holds large amounts of data in cache that is not written to disk automatically. What would be the best approach to taking an application consistent snapshot?
+    -
+
+Your application requires highly-available object storage, and must comply with EU privacy laws. As such, no data may be stored outside the EU. Which two of the following options should you consider?
+    -
+
+    
