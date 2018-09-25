@@ -3,6 +3,11 @@ AWS Tools
 
 CodeCommit
     -Source code service (git)
+    -Based on Git 
+    -Centralized repository for all your code 
+    -Tracks and manages code changes 
+    -Maintains version history 
+    -Manages updates from multiple sources and enables collaboration
 
 CodeBuild
     -Compile source code 
@@ -10,7 +15,44 @@ CodeBuild
     -Package code 
 CodeDeploy
     -Automated deployment to EC2, On Premises systems, and Lambda
+    -The AppSpec file defines all the parameters needed for the deployment 
+        -ex: location of application files and pre/post deployment validation tests to run 
+    -For EC2/On Premises systems, the appspec.yml file must be placed in the root directory of your revision
+        -written in YAML 
+    -Lambda supports YAML or JSON
+    
 CodePipeline
     -CI/CD workflow Tools
+    -Continuous Integration/Continuous Delivery service 
     -Fully automates the entire release process
-    (build, test, deployment)
+        (build, test, deployment)
+    -Automates your end-to-end software release process based on a user-defined workflow 
+        -can orchestrate the Build, Test, and even deployment of your application every time there is a change to your code 
+            -all based on a user defined software release process 
+    -Can be configured to automatically trigger your pipeline as soon as a change is detected
+    -Integrates with other services from AWS like CodeBuild and CodeDeploy as well as third-party and custom plug-ins 
+    Code Update --> Build --> Test --> Deploy 
+
+AppSpec File
+-The AppSpec file is used to define the parameters that will be used for a CodeDeploy deployment 
+    -The file structure depends on whether you are deploying to Lambda or EC2/OnPremises
+
+    -For Lambda deployments, the AppSpec file may be written in YAML or JSON and contains the following fields:
+        -Version 
+            -reserved for future use 
+            -currently the only allowed value is 0.0
+        -Resources
+            -the name and properties of the Lambda function to deploy 
+        -Hooks
+            -specifies Lambda functions to run at set points in the deployment lifecycle to validate the deployment 
+            -ex: validation tests to run before allowing traffic to be sent to your newly deployed instances
+
+-The Run Order of Hooks in a CodeDeploy deployment: 
+    -BeforeBlockTraffic --> BlockTraffic --> AfterBlockTraffic 
+    -ApplicationStop
+    -BeforeInstall
+    -Install 
+    -AfterInstall
+    -ApplicationStart
+    -ValidateService
+    -BeforeAllowTraffic --> AllowTraffic --> AfterAllowTraffic
