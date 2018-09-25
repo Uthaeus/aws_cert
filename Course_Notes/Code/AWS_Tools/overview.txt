@@ -10,9 +10,16 @@ CodeCommit
     -Manages updates from multiple sources and enables collaboration
 
 CodeBuild
+    -A fully managed build service 
+    -It can build source code, run tests, and produce software pachages based on commands that you define yourself
+    -By default, the buildspec.yml defines the build commands and settings used by CodeBuild to run your build 
+    -You can completely override the settings in buildspec.yml by adding your own commands in the console when you launch the build 
+    -If your build fails, check the build logs in the CodeBuild console 
+        -You can also view the full CodeBuild log in CloudWatch
     -Compile source code 
     -Run tests
     -Package code 
+    
 CodeDeploy
     -A fully managed automated deployment service 
     -Can be used as part of a Continuous Delivery or Continuous Deployment process 
@@ -70,3 +77,9 @@ Docker and CodeBuild
     -You can override the settings in buildspec.yml by adding your own commands in the console when you launch the build 
     -If your build fails, check the build logs in the CodeBuild console 
         -You can also view the full CodeBuild log in CloudWatch 
+
+Docker 
+    -Docker allows you to package up your software into containers which you can run in Elastic Container Service (ECS)
+    -A Docker Container includes everything the software needs to run including code, libraries, runtime, and environment variables, etc.
+    -We use a special file called a Dockerfile to specify the instructions needed to assemble your Docker Image 
+    -Once built, Docker Images can be stored in Elastic Container Registry (ECR) and ECS can then use the Image to launch Docker Containers 
