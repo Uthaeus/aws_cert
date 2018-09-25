@@ -1,0 +1,16 @@
+AWS Tools
+
+
+CodeCommit
+    -Source code service (git)
+
+CodeBuild
+    -Compile source code 
+    -Run tests
+    -Package code 
+CodeDeploy
+    -Automated deployment to EC2, On Premises systems, and Lambda
+CodePipeline
+    -CI/CD workflow Tools
+    -Fully automates the entire release process
+    (build, test, deployment)
