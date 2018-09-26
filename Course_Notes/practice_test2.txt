@@ -1,138 +1,218 @@
 You are attempting to move data from one EBS volume to a duplicate volume in a separate region. Which of the following methods will do this best?
-    -
+    -Take a snapshot of the EBS volume and copy it to the desired region - After you've created a snapshot and it has finished copying to S3, you can copy it from one AWS region to another, or within the same region 
 
 You have suggested moving your company's web servers to AWS, but your supervisor is concerned about cost. Which of the following deployments will give you the most scalable and cost-effective solution?
-    -
+    X-A hybrid solution that leverages on-premises resources
+    -An EC2 auto-scaling group that will expand and contract with demand - An Autoscaling group of EC2 instances will exactly match the demand placed on your servers, allowing you to pay only for the compute capacity you actually need 
 
 You have an IO intensive database in your production environment that requires regular backups. You need to configure them in such a way so that when an automated backup is taken, it does not impact your production environment. What RDS option should you choose to help you accomplish this?
-    -
+    X-Read Replicas 
+    -Multi-AZ - With Multi-AZ RDS instances and automated backups, I/O activity is no longer suspended on your primary during your preferred backup window, since backups are taken from the standby 
 
 Your company needs to run several monthly workloads that will each take several hours to complete. Although critical, these workloads can be stopped and restarted without adversely affecting the outcome of the job. Which pricing model would you use to deliver the most economical solution?
-    -
+    -Spot Instances 
 
 Your fleet of EC2 instances is running 100% of the time, and there is no reason to believe that the demand will decrease. What pricing model could you use to reduce costs?
-    -
+    -Reserved Instances 
 
 Your existing on-premise servers rely on Memcached to provide memory object caching. If you were to move to AWS, how might you preserve this functionality?
-    -
+    -ElastiCache
 
 True or False: there is a cost associated with transferring from Amazon S3 to an EC2 instance in the same Region.
-    -
+    -False 
 
 You have heavy load on your RDS database which is now the maximum available size possible. Which two of the following AWS technologies should you use to further ease the load?
-    -
+    -RDS Read Replica 
+    X-CloudFormation
+    -Elasticache 
 
 You have a small database workloads with infrequent I/O. Which storage medium would the most cost-effective way to meet these requirements?
-    -
+    X-Amazon RDS Cold Storage 
+    -Amazon RDS Magnetic Storage 
 
 You have a very heavily-trafficked Wordpress blog that has approximately 95% read traffic and 5% write traffic. You notice that the blog is getting slower and slower. You discover that the bottleneck is in your RDS instance. Which two of the following answers can improve your Wordpress blog's performance?
-    -
+    -Create a number of read replicas and update the connection string on your EC2 instances so that traffic is evenly shared amongst these new RDS instances 
+    -Use Elasticache to cache the most commonly read posts of your Wordpress blog 
+
+True or False: You should store your Access Keys in an AMI.
+    -False 
 
 You need to upgrade your RDS database to a larger instance class and you must minimize the amount of disruption to your business as much as possible. What should you do.
-    -
+    -Schedule the upgrade for a maintenance window during a time when you have the least customers possible. The production database should only be unavailable for a couple of minutes 
+
+Which of the following AWS services store data as key-value pairs?
+    -DynamoDB
+    -S3 
 
 You are running a production database using MySQL on RDS. From time to time, management asks you to run highly complex SQL queries with multiple table joins against the database. These queries often overwhelm your database, and the production environment is beginning to be affected. Which of the following would you recommend as a means of reducing the load on the database?
-    -
+    -Create a read replica of the databse and run your reports against the read replica, rather than the production database 
+
+Which of the following services allows you to have root level access to the underlying operating system
+    -EMR 
+    -EC2
 
 You've been tasked with the implementation of an offsite backup/DR solution. You'll only be responsible only for flat files and server backup. Which of the following would you include in your proposed solution (select all that apply.)?
-    -
+    -Storage Gateway
+    -S3 
+    +-Snowball 
 
 You've enabled website hosting on a bucket called "aspiring-guru" in the us-west-2 Region. Which of the following is the URL that will be assigned to your website?
     -
 
 You are auditing your RDS estate and you discover an RDS production database that is not encrypted at rest. This violates company policy and you need to rectify this immediately. What should you do to encrypt the database as quickly and as easy as possible.
-    -
+    X-Use the RDS Import/Export Wizard to migrate the unencrypted RDS instance across to a new encrypted database
+    -Create a new DB instance with encryption enabled and then manually migrate your data into it - At the present time, encrypting an existing DB instance is not supported. To use Amazon RDS encryption for an existing database, create a new DB instance with encryption enabled and migrate your data into it  
 
 You need to develop an infrastructure that can be replicated and deployed in another AWS Region in a matter of minutes. Which AWS service might you use to build a reproducible, version-controlled infrastructure?
-    -
+    X-EC2 AMI's with EBS snapshots 
+    -CloudFormation - AWS CloudFormation gives developers and systems administrators an easy way to create and manage a collection of related AWS resources, provisioning and updating them in an orderly and predictable fashion
 
 Your on-premise servers are running low on disk storage space, but your company is not yet ready for a complete move to the public cloud. You've been tasked with finding an interim storage solution that also offers backup and archiving capabilities. Which AWS service would you recommend to meet this immediate need?
-    -
+    X-Storage Gateway with Gateway-Stored Volumes 
+    -Storage Gateway with Gateway-Cached Volumes - would store your most frequently-accessed data on-premise and would write your other data to S3 
 
 Your AWS environment contains several reserved EC2 instances dedicated to a project that has just been cancelled. You need to recoup the cost of these reserved instances, and you need to preserve the data for future use. What can you do to minimize charges for these instances?
-    -
+    X-Contact AWS and ask them to release you from your Reserved Instance purchase 
+    -Sell the unused instances on the AWS Reserved Instance Marketplace
+    -Take snapshots of the EBS volumes and terminate the instances 
 
 You must to encrypt all incoming and outgoing traffic between your servers and your customers. Your fleet of EC2 instances lives inside a public subnet and behind an elastic load balancer. Your application is very CPU intensive, and you want to minimize the processing load these EC2 instances must bear. What should you do?
-    -
+    X-Use API Gateway to offload the SSL certificate, reducing the amount of load on both your ELB and EC2 instances 
+    -Install the SSL certificates on your ELB's so that there is less load on the EC2 instances - The best answer would be to offload your SSL decryption to an Elastic Load Balancer 
 
 The company you work for is considering a move to AWS, but they are concerned that their current, 50Mbps connection will not be able to handle the 100 TB of data that need to be migrated without causing unacceptable downtime. As their solutions architect, which AWS service would you recommend to move this data?
-    -
+    -Snowball
 
 One of your junior developers needs access to an Elastic Load Balancer in your custom VPC. This is the first and only time he will need access to AWS services. Which of the following choices is the most secure way to grant this access?
-    -
+    X-Add that developer to a Group with the requisite access
+    -Create a new IAM user with the required credentials - it's always best practice to grant users access via IAM roles and groups 
+
+Which of the following are true about Amazon S3-RRS?
+    -S3-RRS offers 99.99% durability 
+    -S3-RRS is most often used with reproducible objects
+    +- S3-RRS offers 99.99% availability 
 
 The customer service organization at your company just told you that a client’s purchase from your website was processed twice. Your order process involves EC2 instances processing messages from an SQS queue. What changes might you make to ensure this does not happen again?
-    -
+    -Rewrite the order-processing workflow to use SWF, rather than SQS 
 
 True or False: By default, Amazon RDS enables automated backups of your DB instance with a 1-day retention period.
-    -
+    X-False 
+    -True - By default, and at no additional charge, Amazon RDS enables automated backups of your DB instance with a 1 day retention period 
 
 True or False: Availability Zones in a given Region are connected by low-latency links, facilitating the development of fault-tolerant, high-availability applications.
-    -
+    X-False 
+    -True - Availability Zones offer you the ability to operate production applications and databases which are more highly available, fault tolerant, and scalable than would be possible from a single data center 
 
 You have a custom VPC for your organization. You discover that one of your developers has created an RDS instance in the default VPC and this is in violation of company policy. You need to create this RDS instance inside your custom VPC with as little effort as possible. What should you do?
-    -
+    X-Use the RDS Import/Export Wizard to Migrate the RDS instance across to the custom VPC 
+    -Take a snapshot of your DB instance in the default VPC and restore it to VPC by specifying the DB Subnet Group you want to use in your custom VPC 
 
 You are working for a real estate company and you need to be able to record configuration changes to Amazon RDS DB Instances, DB Subnet Groups, DB Snapshots, DB Security Groups, and Event Subscriptions. What AWS service should you use to achieve this?
-    -
+    X-CloudWatch 
+    -AWS Config - You can use AWS Config to continuously record configurations changes to Amazon RDS DB instances, DB Subnet Groups, DB snapshots, DB Security Groups, and Event Subscriptions and receive notifications of changes through Amazon Simple Notification Service 
 
 Which AWS service should you use to host MySQL, MariaDB, Oracle, SQL Server, or PostgreSQL database where you do not need to manage the underlying operating system?
-    -
+    -RDS 
 
 You have an RDS database that has moderate I/O requirements. Which storage medium would be best to accommodate these requirements?
-    -
+    -Amazon RDS General Purpose (SSD) Storage 
 
 The large manufacturing company you work for is interested in moving their production estate to AWS. They run a Joomla store which utilizes MySQL on the back end. Currently, they also use clustered MySQL databases in an active/passive configuration at a single site. By moving to AWS they want an active/passive configuration across 2 geographically distinct locations, with automatic failover between the two. As their solutions architect, which of the following RDS options should you recommend?
-    -
+    -Multi-AZ 
 
 You have a production application that is on the largest RDS instance possible, and you are still approaching CPU utilization bottlenecks. You have implemented read replicas, ElastiCache and even CloudFront and S3 to cache static assets, but you are still bottlenecking. What should be your next step?
-    -
+    X-You should provision a secondary RDS instance and then implement an ELB to spread the load between the two RDS instances
+    -You should implement database partitioning and spread your data across multiple DB instances  
 
 The insurance company you work for is implementing new IT security policies for all RDS instances. In the future, you will need to perform both security analyses and operational troubleshooting on your RDS estate. As such, you will need a history of all RDS API calls made on your account. What AWS service should you use to achieve this?
-    -
+    -CloudTrail
 
 What are the two different ways of automating your RDS backups?
-    -
+    -Automated Backups 
+    X-S3
+    -Automated Snapshots 
 
 What type of replication is supported by read replica instances?
-    -
+    X-synchronous replication 
+    -Asynchronous replication - Updates are applied to your Read Replicas after they occur on the source DB instance using 'asynchronous' replication 
+
+Which three of the following statements are not true?
+    -EBS volumes can be attached to multiple instances simultaneously
+    -EBS volumes are ephemeral
+    -EBS volumes can be attached to an EC2 instance in another AZ 
 
 You need to configure a new subnet in your VPC for a database cluster you are building. The subnet will never need more than six IP addresses. Which of the following is the best choice for this subnet?
-    -
+    X-A /16 public subnet 
+    -A /28 private subnet - Databases generally do not require public access from the internet, so a private subnet is the better choice from a security perspective. /28 is the smallest possible subnet in an AWS VPC 
+
+An Availability Zone comprises multiple Regions
+    -False 
+
+Which three of the following events would cause Amazon RDS to initiate a failover to the standby replica?
+    -Loss of availability in primary AZ 
+    -Loss of network connectivity to primary 
+    -Compute unit failure on primary 
 
 What is the minimum size of an SSD EBS Volume?
-    -
+    X-1 MB 
+    -1GiB - SSD volumes must be between 1GiB - 16TiB
 
 True or False: An application designed for fault tolerance and high availability should almost always be built across multiple Availability Zones
-    -
+    -True 
 
 You are auditing your company's RDS estate, and you discover a database that is in a single Availability Zone – a violation of company policy. You decide to convert this to a multi-AZ deployment. Which three of the following things will happen?
-    -
+    -A snapshot of your primary instance is taken 
+    -Synchronous replication is configured between primary and standby instances 
+    -A new standby instance is created in a different AZ, from the snapshot 
+
+True or False: In addition to hosting domains, Route 53 serves as a domain registrar.
+    -True 
 
 Your SQL server requires a specific type of collation and some unique third party tools installed on it. You will need access to the underlying operating system for management and monitoring of these third party tools. However, you'd like to keep the overall amount of management to a minimum. Which AWS service would best suit your needs?
-    -
+    X-RDS with SQL Server 
+    -SQL Server installed on EC2 and EBS - As you need access to the underlying host operating system, your best option would be to deploy SQL Server on EC2 backed by EBS 
 
 True or False: It's possible to have a Multi-AZ copy of your read replica?
-    -
+    X-True 
+    -False 
 
 Your data warehousing company has a number of different RDS instances. You have a medium size instance with automated backups switched on and a retention period of 1 week. One of your staff carelessly deletes this database. Which two of the following apply.
-    -
+    X-The automated backups will be retained for 2 weeks and then deleted after the 2 weeks has expired
+    -A final snapshot MAY have been created when the instance was deleted, depending on whether the 'SkipFinalSnapshot' parameter was set to false 
+    -The automatic backups are deleted when the instance is deleted - Under normal circumstances, all automatic backups of an RDS instance are deleted upon termination. However, it is possible to create a final DB Snapshot upon deletion. If you do, you can use this DB snapshot to restore the deleted DB instance at a later date. Amazon RDS retains this final user-created DB snapshot along with all other manually created DB snapshots after the DB instance is deleted 
+
+True or False: A Region is another name for an Edge Location.
+    -False 
 
 You've been tasked with replicating your production VPC in another region for disaster recovery purposes. Part of your environment relies on EC2 instances with preconfigured software. What steps would you take to configure the instances in another region?
-    -
+    -Create AMI's of the instances and copy them to the new Region for deployment 
+
+Amazon RDS supports which of the following databases:
+    -MariaDB 
+    -MySQL 
 
 Which database engines support read replicas?
-    -
+    X-SQL Server 
+    X-Oracle 
+    -MySQL
+    -PostgreSQL
 
 You've been tasked with setting up an S3 solution to store large amounts of critical data. With high availability and fault-tolerance in mind, what further safeguards should you implement to protect your data in the event that an entire AZ was lost to a natural (or similarly catastrophic) disaster?
-    -
+    X-None of the above
+    -Nothing; S3 is a global service and is not affected by the loss of an availability zone - its reliability and durability are not bound to any Region or AZ 
 
 What is the maximum retention period for RDS automated backups?
-    -
+    -35 days 
+
+Which two of the following characterize a scalable and reliable solution on AWS?
+    -A scalable application will be resilient and operationally efficient 
+    X-A scalable solution applies elasticity, but is cost-agnostic
+    -A scalable solution will decrease in cost at scale - The AWS Well-Architected framework has been developed to help cloud architects build the most secure, high-performing, resilient, and efficient infrastructure possible for their applications. This framework provides a consistent approach to application and solution architecture that will scale with your needs over time
 
 You have an RDS database that has high performance OLTP workloads. Which storage medium would be best to accommodate these requirements?
-    -
+    -Amazon RDS Provisioned IOPS (SSD) Storage 
 
 What type of replication is supported by Multi-AZ RDS instances?
-    -
+    X-asynchronous replication 
+    -synchronous replication - Multi-AZ deployments utilize synchronous replication, making database writes concurrently on both the primary and standby so that the standby will be up to date in the event a failover occurs
 
