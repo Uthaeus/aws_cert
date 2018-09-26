@@ -1,6 +1,7 @@
 Question 1:
 Your distributed, decoupled application needs to store messages in SQS. However, the messages your application generates exceed the maximum allowable size for an SQS message. How might you overcome this restriction?
-    -Configure your application to send an SQS message that refers to a message payload stored in DynamoDB
+    X-Configure your application to send an SQS message that refers to a message payload stored in DynamoDB
+    -Use the SQS Extended Client Library for Java to send a message in SQS that contains a reference to a message payload in Amazon S3
 
 Question 2:
 You're using CloudFormation templates to build out staging environments. Which section of the template would you edit in order to allow the user to specify the SSH key-name at start time?
@@ -24,7 +25,7 @@ The default visibility timeout for an item in an SQS queue is?
 
 Question 7:
 Which API call would you use to query an item by its primary key?
-    -GetItem
+    -GetItem - The GetItem operation returns a set of attributes for an item that matches the primary key. If there is no matching item, GetItem does not return any data 
 
 Question 8:
 Which of the following statements about SQS is true:
@@ -32,11 +33,13 @@ Which of the following statements about SQS is true:
 
 Question 9:
 Which S3 error code does not correspond to HTTP status code 404?
-    -NoSuchBucketPolicy
+    X-NoSuchBucketPolicy
+    -MissingSecurityHeader
 
 Question 10:
 One DynamoDB read capacity unit is equal to one strongly consistent read per second.
-    -False 
+    X-False 
+    -True - One strongly consistent read requires one read capcity unit 
 
 Question 11:
 You need to attach an EBS volume to an EC2 instance. Which API call should you use?
@@ -44,11 +47,12 @@ You need to attach an EBS volume to an EC2 instance. Which API call should you u
 
 Question 12:
 You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site. At some point, you find out that other sites have been linking to the photos on your site, causing financial loss to your business. What is an effective method to mitigate this?
-    -Remove public read access and use a signed URL with an expiry date
+    -Remove public read access and use a signed URL with an expiry date - As the owner of the object, you can use your security credentials to give others time-limited permission to download objects
 
 Question 13:
 Which of the following DynamoDB API calls does not consume capacity units?
-    -DeleteItem
+    X-DeleteItem
+    -UpdateTable - The UpdateTable API call does not use capacity. It is used to change provisioned throughput capacity
 
 Question 14:
 Your application needs 100 strongly consistent reads on items that are 9KB in size every second. How many units of read capacity units should you provision?
@@ -56,7 +60,7 @@ Your application needs 100 strongly consistent reads on items that are 9KB in si
 
 Question 15:
 S3 bucket names may only contain only lower case letters, periods, numbers, and dashes.
-    -True 
+    -True - S3 bucket names may only contain lower case letters, periods, numbers, and dashes. Bucket names must not be formatted as an IP address, and they may not begin with a period 
 
 Question 16:
 Which of the following is true about S3 server-side encryption?
@@ -68,19 +72,21 @@ True or false: when naming an S3 bucket, you my use capital letters:
 
 Question 18:
 Which of the following cannot be used inside a CloudFormation template:
-    -Regular Expressions
+    X-Regular Expressions
+    -Ruby statements - A template is a JSON-formatted text file that describes your ASW infrastructure
 
 Question 19:
 Which of the following statements about DynamoDB is true:
-    -DynamoDB used conditional writes for consistency
+    -DynamoDB used conditional writes for consistency - DynamoDB allows conditional writes to tables. Conditional writes are only performed if the current attributes of the item meet the specified conditions 
 
 Question 20:
 Your mobile application needs to read data from DynamoDB. What is the best way to give mobile devices permissions to read from DynamoDB?
-    -Create an IAM role that can be assumed by an app that allows federated users 
+    -Create an IAM role that can be assumed by an app that allows federated users - Web identity federation removes the need for creating individual IAM users. Instead, users can sign in to an identity provider and then obtain temporary security credentials from the AWS Security Token Service 
 
 Question 21:
 Which of the following statements about DynamoDB is true?
-    -DynamoDB is a service of AWS RDS 
+    X-DynamoDB is a service of AWS RDS 
+    -DynamoDB uses optimistic concurrency control - Conditional operations allow users to implement optimistic concurrency control systems on DynamoDB
 
 Question 22:
 How long can a message be retained in an SQS Queue?
@@ -92,23 +98,26 @@ True or False: In DynamoDB, a primary key can either be a single-attribute parti
 
 Question 24:
 True or False: A local secondary index is an index that has the same partition key as the table, but a different sort key.
-    -False 
+    X-False
+    -True - A local secondary index maintains an alternate sort key for a given partition key value  
 
 Question 25:
 You can stop and restart a multi-part upload.
-    -False 
+    X-False 
+    -True - It is possible to stop a multi-part upload. Once stopped, the upload may be aborted or resumed
 
 Question 26:
 True or false: A multi-part upload can be executed while the file is still being created.
-    -False 
+    X-False 
+    -True - The multi-part upload API will allow you to upload a file to S3. After all parts of the object have been uploaded to S3, use the Complete Multi Part Upload API call to re-assemble the object 
 
 Question 27:
 Eventual consistency applies to which of the following:
-    -Reads of a DynamoDB table, unless you specify otherwise
+    -Reads of a DynamoDB table, unless you specify otherwise - By default, reads from DynamoDB are eventually consistent. However, strongly consistent reads can be specified
 
 Question 28:
 An item stored in DynamoDB can have an unlimited number of _______
-    -Attributes
+    -Attributes - There is no limit to the number of attributes that an item can have. However, the total size of an item, including attribute name and attribute values, cannot exceed 400kb
 
 Question 29:
 True or False: A DynamoDB item is a collection of key-value attributes.
@@ -116,11 +125,12 @@ True or False: A DynamoDB item is a collection of key-value attributes.
 
 Question 30:
 You have invoked the CreateTable operation to create several DynamoDB tables for a new project. While doing so, you receive a LimitExceededException error. You have not exceeded your maximum number of tables per account, and the table state is "creating." What could account for this error?
-    -You attempted to create more than one table with a secondary index at the same time 
+    -You attempted to create more than one table with a secondary index at the same time - You can only create one secondary index at a time. Create the second table and its accompanying index after the first table has status = 'active'
 
 Question 31:
 Which of the following is not a common S3 API call?
-    -UploadPart 
+    X-UploadPart 
+    -ReadObject - This is not an API call
 
 Question 32:
 Which of the following platforms are not supported in ElasticBeanstalk (Choose 2)?
@@ -137,11 +147,12 @@ What is the main difference between an EBS-backed instance and an instance store
 
 Question 35:
 A composite key comprising hash and range keys is the same thing as a composite key comprising partition and sort keys?
-    -False 
+    X-False 
+    -True - A hash key and a partition key are the same thing, as are range and sort keys 
 
 Question 36:
 As you retrieve information from DynamoDB, you receive a ProvisionedThroughputExceededException error. Further investigation shows that you're not exceeding your table's read capacity throughput. What is causing this error?"
-    -You are exceeding an individual partition's throughput capacity, even if you're not exceeding the overall table throughput capacity 
+    -You are exceeding an individual partition's throughput capacity, even if you're not exceeding the overall table throughput capacity - DynamoDB distributes capacity evenly across all available partitions. If a given partition is consuming more than its share of throughput, this error will be raised
 
 Question 37:
 While working with the S3 API, you receive an error: 403 forbidden. Which of the following error codes corresponds with this error?
@@ -149,11 +160,12 @@ While working with the S3 API, you receive an error: 403 forbidden. Which of the
 
 Question 38:
 AWS recommends that you use Multipart Upload for files larger than _____.
-    -5GB
+    X-5GB
+    -100MB - Multipart Upload is recommended for files greater than 100MB, and is required for files larger than 5GB 
 
 Question 39:
 How do you increase the number of CloudFormation stacks you are allowed to have in a given region?
-    -Contact AWS and request an increase 
+    -Contact AWS and request an increase - By default, you may have 200 CloudFormation stacks per region per account. To increase this number, contact AWS. Note: there is no limit to the number of CloudFormation templates you may have 
 
 Question 40:
 What is the minimum size of an S3 object?
@@ -169,15 +181,18 @@ You have software on an EC2 instance that needs to access both the private and p
 
 Question 43:
 True or false: The parts of a multi-part upload will not be reassembled until the CompleteMultipartUpload operation is called.
-    -False 
+    X-False 
+    -True - This operation completes a multipart upload by assembling the previously uploaded parts, and does not begin until invoked. The processing of a CompleteMultipartUpload request can take several minutes to complete, and your applications should be prepared to retry any failed requests
 
 Question 44:
 Which section of a CloudFormation template allows you to set up differing instance types based on environment type (e.g. 'Production' or 'QA')?
-    -Mappings 
+    X-Mappings 
+    -Conditions - are created in their own property section and then referenced in the resource declaration, allowing for the conditional creation of resources
 
 Question 45:
 By default, what status message will you see if your CloudFormation stack encounters an error during creation?
-    -STACK_ERROR
+    X-STACK_ERROR
+    -ROLLBACK_IN_PROGRESS
 
 Question 46:
 Your supervisor asks you to find a solution for scheduling a sequence of tasks. The sequence may take several months to complete and it‰Ûªs very important that no tasks are processed more than once. Which AWS service would you recommend?
@@ -185,11 +200,11 @@ Your supervisor asks you to find a solution for scheduling a sequence of tasks. 
 
 Question 47:
 Which of the following will not result in a CloudFormation rollback?
-    -A template that contains invalid JSON syntax 
+    -A template that contains invalid JSON syntax - Invalid JSON will cause an error message during template validation. Since the stack will never start creating, there is nothing to roll back 
 
 Question 48:
 True or false: DynamoDB supports cross-table joins.
-    -False 
+    -False - DynamoDB does not support complex relational queries or complex transactions. If your workload requires this functionality, or you are looking for compatibility with an existing relational engine, you may wish to run a relational engine on Amazon RDS or Amazon EC2
 
 Question 49:
 You store a new object in the U.S. Standard region in Amazon S3 and receive a confirmation that it has been successfully stored. You then immediately make another API call attempting to read this object. Will you be able to read this object immediately?
@@ -197,19 +212,22 @@ You store a new object in the U.S. Standard region in Amazon S3 and receive a co
 
 Question 50:
 EC2 instances are launched from Amazon Machine Images (AMIs). A given public AMI:
-    -Can be used to launch EC2 instances in any AWS region 
+    X-Can be used to launch EC2 instances in any AWS region 
+    -Can only be used to launch EC2 instances in the same AWS region as the AMI is stored - An AMI cannot be launched into another region. To launch an AMI into a region other than the one in which it was created, the AMI must be copied to that other region first 
 
 Question 51:
 How many local secondary indexes may a DynamoDB table contain?
-    -10
+    X-10
+    -5 - A DynamoDB table may contain up to five local secondary indexes and up to five global secondary indexes 
 
 Question 52:
 True or false: A global secondary index is characterized by an index key value that differs from that of the table's primary key.
-    -True 
+    -True - A global secondary index contains a selection of attributes from the table, but they are organized by a primary key that is different from that of the table 
 
 Question 53:
 Which API call can tell you which Amazon Machine Images are available in your current region?
-    -ListImages 
+    X-ListImages 
+    -DescribeImages - will list the AMI's available in the current region 
 
 Question 54:
 Which of the following is a default limit in S3?
@@ -227,7 +245,8 @@ For which of the following does AWS not provide an SDK (select two answers)?
 
 Question 57:
 Your EC2 instance receives a message from SQS and the visibility timeout begins. Which API operation must be called to prevent the message from becoming visible again?
-    -RemoveMessage
+    X-RemoveMessage
+    -DeleteMessage - If the message is not deleted, it will become available to other EC2 worker instances at the end of the visibility timeout 
 
 Question 58:
 True or false: A unit of read capacity represents one strongly consistent read per second or two eventually consistent reads per second.
@@ -235,9 +254,9 @@ True or false: A unit of read capacity represents one strongly consistent read p
 
 Question 59:
 Setting the SQS visibility timeout to "0" will do which of the following:
-    -Invoke a call to reprocess the message
+    X-Invoke a call to reprocess the message
+    -Make messages immediately available for processing 
 
 Question 60:
 You've created an online forum to which your users post questions and comments. The thread table has many users, and each user has many posts, each marked by a timestamp. Which primary key configuration would be best suited to see all posts by a particular user in chronological order?
     -A composite key with UserID as the partition key and the timestamp as the sort key 
-    
