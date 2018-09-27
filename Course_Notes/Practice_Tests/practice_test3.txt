@@ -164,3 +164,43 @@ Question 40:
 If an instance belonging to an Elastic Load Balancer fails its health check, what will the ELB do?
     -The ELB will launch a new instance 
 
+Question 41:
+Elasticity is a fundamental property of the cloud. Which of the following best describes elasticity?
+    -The power to scale resources both up and down with changes in demand 
+
+Question 42:
+True or False: AutoScaling is a tool used to build elastic, self-healing applications.
+    -True 
+
+Question 43:
+What is the Well Architected Framework?
+    -A set of questions that you can use to evaluate how well your architecture is aligned to AWS practices
+
+Question 44:
+To protect S3 data from accidental overwrites and deletes, you should do which of the following?
+    -Enable versioning on the bucket 
+
+Question 45:
+You manage an application that uses EC2 instances and SQS to process requests from end users. There are no known issues with your application, but your supervisor is concerned about the cost of the AWS resources it uses. Which of the following would not help address that concern?
+    -Decrease the size of SQS messages to 50kb
+
+Question 46:
+You wonder why a SWF workflow you created has not made any progress in the last three weeks. What is the most likely explanation for the workflow’s behavior?
+    -SWF is awaiting human input from a task you assigned to a colleague
+
+Question 47:
+True or False: There is no cost associated with removing cached objects from a CDN Edge Location.
+    -False 
+
+Question 48:
+An EC2 instance retrieves a message from an SQS queue, begins processing the message, then crashes. What happens to the message?
+    -When the message visibility timeout expires, the message becomes available for processing by other EC2 instances 
+
+Question 49:
+True or False: You cannot attach more than one EC2 instance to an AWS Elastic Filesystem.
+    -False 
+
+Question 50:
+True or False: AutoScaling groups are not intended to handle sudden spikes in traffic. Rather, they are intended to allow your applications to grow elastically as load increases over a short period of time.
+    -False 
+
