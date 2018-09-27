@@ -1,14 +1,16 @@
 Question 1:
 You have an Amazon S3 bucket that you use to store objects. You'd like to encrypt some of the new objects you upload to this bucket. Which header do you need to use in order to request server-side encryption when using the REST API?
-    -x-amz-server-side-encryption 
+    -x-amz-server-side-encryption - used to initiate server-side encryption  
 
 Question 2:
 What is the primary advantage of a conditional write?
-    -A change to an attribute will occur only if no other users are accessing the table
+    X-A change to an attribute will occur only if no other users are accessing the table
+    -A change to a DynamoDB attribute will only be written if that attribute's value has not changed since it was last read - With a conditional write, an operation succeeds only if the item attributes meet one or more expected condition 
 
 Question 3:
 Which of the following best describes the messages SNS sends to endpoints:
-    -A JSON document with parameters like Source, Destination, Message, and Type
+    X-A JSON document with parameters like Source, Destination, Message, and Type
+    -A JSON document with parameters like Message, Signature, Subject, and Type - Amazon SNS messages do not publish the source and destination 
 
 Question 4:
 While working with the S3 API you receive an error: 404 Not Found. What is the most likely cause for this error?
@@ -24,7 +26,7 @@ What is the Uptime SLA for Amazon EC2 and EBS within a given region?
 
 Question 7:
 Your application instance takes 40 seconds to process instructions received in an SQS message. Assuming the SQS queue is configured with the default Visibility Timeout, what is the best way to configure your application to ensure that no other instances retrieve a message that has already been processed or is currently being processed?
-    -Use the ReceiveMessage API call to retrieve the message, the ChangeMessageVisibilty API call to increase the visibility timeout, and the DeleteMessage API call to delete the message 
+    -Use the ReceiveMessage API call to retrieve the message, the ChangeMessageVisibilty API call to increase the visibility timeout, and the DeleteMessage API call to delete the message - It's necessary to receive the message, extend the visibility timeout (so a single instance can take the time it needs to process the message), and delete the message upon the completion of processing
 
 Question 8:
 Your AWS environment contains several reserved EC2 instances dedicated to a project that has just been cancelled. You need to recoup the cost of these reserved instances, and you need to preserve the data for future use. What can you do to minimize charges for these instances?
@@ -41,11 +43,13 @@ Your EC2 instance has an IAM role that allows it to write to an SQS queue. The i
 
 Question 11:
 When using the Ref function in CloudFormation, what do we get back if we pass in the logical ID of an AWS::EC2::Instance object?
-    -All the attributes associated with the EC2 instance 
+    X-All the attributes associated with the EC2 instance
+    -The object's InstanceId 
 
 Question 12:
 Your "forums" table has a primary key of "id". Using DynamoDB, you're able to query the data based on the "id" primary key. You need to be able to query the forums table by userId. What would you add to the table during table creation time?
-    -Create a partition/sort primary key 
+    X-Create a partition/sort primary key 
+    -Create a secondary index - The creation of a secondary index will allow you to sort userId 
 
 Question 13:
 Your app requires 600 eventually consistent reads of 9KB per minute. How many read capacity units should you provision?
@@ -53,17 +57,19 @@ Your app requires 600 eventually consistent reads of 9KB per minute. How many re
 
 Question 14:
 Your application is trying to upload a 6TB file to S3 and you receive an error message telling you that your proposed upload exceeds the maximum allowed object size. What is the best way to accomplish this file upload?
-    -Contact AWS support to increase the maximum size of your S3 object 
+    X-Contact AWS support to increase the maximum size of your S3 object 
+    -You cannot fix this, as the maximum size of an S3 object is 5TB 
 
 Question 15:
 True or False: You can use your existing Microsoft Windows Server licenses with an Amazon EC2 shared tenancy instance
-    -False 
+    -False - A dedicated host is required if you want to use your existing Windows Server licenses with EC2
 
 Question 16:
 Your supervisor calls you wanting to know why she has not been receiving email notifications for AWS billing alerts. What do you suspect the problem might be? (Choose 3 answers.)
     -Your supervisor has not responded to the confirmation email sent from SNS when you added a subscription for her email address
     -Billing alerts are not configured 
     -The SNS subscription is not configured for email alerts 
+        -Billing alerts must be configured, the subscription must be configured with email endpoints, and the subscriber must confirm the subscription 
 
 Question 17:
 Which of the following services can be used to host a static web site?
@@ -71,7 +77,7 @@ Which of the following services can be used to host a static web site?
 
 Question 18:
 Which of these CloudFormation snippets of code will return an address that can be used to access our application from our browser if we're using a resource type of AWS::ElasticLoadBalancing::LoadBalancer with Logical ID "ElasticLoadBalancer"?
-    -
+    X-
 
 Question 19:
 You are a system administrator and you need to take a consistent snapshot of your EC2 instance. Your application holds large amounts of data in cache that is not written to disk automatically. What would be the best approach to taking an application consistent snapshot?
@@ -92,11 +98,15 @@ Your supervisor is upset about the fact that SNS topics that he subscribed to ar
 
 Question 23:
 By default, how many Elastic IP addresses are you limited to per region?
-    -15
+    X-15
+    -5 
+        -By default, all accounts are limited to 5 Elastic IP addresses per region 
 
 Question 24:
 You are working with the S3 API and receive an error: 409 Conflict. What is a possible cause of this error?
-    -Your request lacks the required metadata
+    X-Your request lacks the required metadata
+    -You're attempting to delete a bucket without first removing the contents of the bucket 
+        -A 409 HTTP Status Code can indicate a BucketNotEmpty error code. This error will arise if you try to delete a bucket that is not empty 
 
 Question 25:
 It is best practive to use Access Keys whenever possible, rather than IAM Roles.
@@ -112,7 +122,9 @@ True or False: You should store your Access Leys in an AMI.
 
 Question 28:
 If you have an item that is 4KB in size and you want to provision read capacity units for 100 requests per second, how many read capacity units do you need to provision?
-    -50
+    X-50
+    -100
+        -Unless Amazon explicity mention an eventually consistent read, they are referring to a strongly consistent read 
 
 Question 29:
 Each AWS account can own a maximum of how many buckets?
@@ -129,7 +141,8 @@ True or False: S3 does not support website redirects.
 Question 32:
 Which of the following can be increased by contacting AWS support:
     -S3 buckets per account 
-    -DynamoDB secondary indexes per table 
+    X-DynamoDB secondary indexes per table 
+    -DynamoDB tables per account 
 
 Question 33:
 Which HTTP response code indicates that an API call was successful?
@@ -143,6 +156,7 @@ Question 35:
 Which of the following statements are true?
     -S3 Standard provides 11-nines durability
     -S3 Standard provides 99.99% availability
+    +-S3-RRS provides 99.99% durability 
 
 Question 36:
 True or False: Classic ELB's support IPv6 as well as IPv4.
@@ -155,7 +169,9 @@ Which of the following bucket names are invalid (Choose 2.)
 
 Question 38:
 Which of the following statements about amazon SWF is not true?
-    -A server living outside AWS can perform a worker task 
+    X-A server living outside AWS can perform a worker task
+    -Humans can perform a decision task 
+        -Human can perform an activity task, but not a decision task  
 
 Question 39:
 True or False: A Region is another name for an Edge Location.
@@ -176,6 +192,7 @@ What is the size of one unit of read capacity?
 Question 43:
 You need to announce an emergency downtime for a production AWS web application. This downtime notification requires different sets of instructions for different devices. All of the application users signed up to receive SNS notifications from the äóědowntimeäóť topic when they began using the application and they are currently subscribed to this topic. What are appropriate ways for you to provide timely, device-specific instructions to end users when announcing this downtime?
     -Send a single message, but customize the text in the SNS message field so that each device gets only the information that is approprate for them 
+        -Using the SNS JSON message generator, you can choose the appropriate endpoint types and edit the generated code to send different text to the different endpoint types 
 
 Question 44:
 What is the availability of S3 - IA
@@ -191,7 +208,9 @@ Can you use IPv6 with Amazon S3?
 
 Question 47:
 True or False: A global secondary index is an index with a primary key that differers from that of the table.
-    -False 
+    X-False 
+    -True 
+        -A global secondary index is an index with a primary key that is different from the table's primary key. A global secondary index is considered global because queries on the index can span all of the data in a table, across all partitions
 
 Question 48:
 Amazon S3 bucket names are stored in alphabetical order, or lexicographically.
@@ -207,15 +226,18 @@ True or False: there is a cost associated with transfering from Amazon S3 to an 
 
 Question 51:
 Ajax, Inc. provides an online image recognition service and utilizes SQS to decouple system components. The SQS consumers poll the imaging queue as often as possible to keep end-to-end throughput as high as possible. However, Ajax, Inc. is realizing that polling in tight loops is burning CPU cycles and that empty responses are increasing costs. How can Ajax, Inc. reduce the number of empty responses?
-    -Set the imaging queue DelaySeconds attribute to 20 seconds 
+    X-Set the imaging queue DelaySeconds attribute to 20 seconds 
+    -Set the imaging queue ReceiveMessageWaitTimeSeconds attribute to 20 seconds 
+        -When ReceiveMessageWaitTimeSeconds is set to a value greater than zero, long polling is enabled. Long polling allows Amazon SQS to wait until a message is available in the queue before sending a response. Short polling continuously pools a queue and can have false positives. Enabling long polling reduces the number of poll requests, false positives, and empty responses 
 
 Question 52:
 True or Flase: The only SNS notification event supported by S3 is S3:ReducedRedundancyLostObject.
     -False 
+        -Notifications are also available for HTTP PUT and POST, S3 copy actions, and S3 CompleteMultipartUpload
 
 Question 53:
 Your new web app is deployed within an Amazon VPC, and is connected to your corporate data center via IPSec VPN. The application must authenticate against the on-premise LDAP server to give authenticated, logged-in users access to an S3 keyspace specific to the user. Which two of the following methods will give your users the access they need?
-    -
+    X-
 
 Question 54:
 True or False: S3 bucket names are transferrable.
@@ -223,7 +245,9 @@ True or False: S3 bucket names are transferrable.
 
 Question 55:
 A recent increase in the amount of users of an application hosted on an EC2 instance that you manage has caused the instanceäó»s OS to run out of CPU resources and crash. The crash caused several usersäó» unsaved data to be lost and your supervisor wants to know how this problem can be avoided in the future. Which of the following would you not recommend?
-    -Create an auto-scaling group to add more servers when demand is high 
+    X-Create an auto-scaling group to add more servers when demand is high 
+    -Take frequent snapshots of the EBS volume during business hours to ensure user's data is backed up 
+        -Frequent snapshots are not recommended as they can result in performance degradation. Additionally, these snapshots will not capture user's unsaved data that lives in the instance's memory
 
 Question 56:
 You have designed an application that stores large videos in S3. These videos are usually larger than 100Mb in size. You need to maximize upload performance. Select two answers that will achieve this end.
@@ -238,10 +262,12 @@ Which of the following methods will allow you to *securely* upload/download your
 Question 58:
 While working with the S3 API, you receive an error: 409 Conflict. What is the most likely cause?
     -BucketAlreadyExists
+        -S3 error codes are handled with HTTP error responses. A 409 conflict means there is a conflicting issue
 
 Question 59:
 You would like to set up a static website on S3 with the least possible effort. The URL of the website is unimportant to you. Which of the following steps are necessary?
     -
+        -Route53 is unnecessary for an S3 static website if the URL of the website is unimportant to you 
 
 Question 60:
 What is the maximum size of an S3 object?
