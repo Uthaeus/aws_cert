@@ -41,3 +41,53 @@ Question 10:
 True or False: Amazon SQS follows the Publish-Subscribe messaging paradigm.
     -False 
 
+Question 11:
+Which of the following DynamoDB write operations allow conditional writes?
+    -UpdateItem
+    -BatchWriteItem
+
+Question 12:
+Which of the following statements about amazon SWF is true?
+    -Decision tasks occur when the state of the workflow changes 
+    -A server living outside AWS can perform a worker task 
+    -Amazon EC2 instances can perform a worker task 
+
+Question 13:
+The minimum visibility timeout for an SQS message can be changed with which of the following actions?
+    -ChangeMessageVisibility
+
+Question 14:
+What is the maximum size of an S3 object?
+    -5TB
+
+Question 15:
+True or False: A local secondary index has the same sort key as the table, but a different partition key.
+    -False 
+
+Question 16:
+Your app requires 300 eventually consistent reads of 11KB per minute. How many read capacity units should you provision?
+    -8
+
+Question 17:
+While working with the S3 API, you receive an error: 409 Conflict. Which of the following error codes can explain this error?
+    -BucketAlreadyExists 
+
+Question 18:
+While working with the S3 API, you receive an error: 400 Bad Request. Which of the following error codes Can explain this error?
+    -InvalidObjectState
+    -InvalidBucketName
+
+Question 19:
+True or False: One DynamoDB read capacity unit is equal to one eventually consistent read per second.
+    -True 
+
+Question 20:
+S3 Multipart upload is required for files larger than ____?
+    -5GB 
+
+Question 21:
+True or False: an SQS request can contain up to 20 individual messages, as long as the total size of the request does not exceed 256KB.
+    -True 
+
+Question 22:
+True or False: A FIFO SQS queue will end with the .fifo suffix.
