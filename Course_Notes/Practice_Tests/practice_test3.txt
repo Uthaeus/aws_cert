@@ -102,3 +102,24 @@ Question 25:
 True or False: Amazon SQS guarantees that each message will be delivered at least once, but cannot guarantee that a message will not be delivered multiple times.
     -True 
 
+Question 26:
+When reviewing Auto Scaling events, it is noticed that an application is scaling up and down multiple times per hour. What design change could you make to optimize cost while preserving elasticity?
+    -Change the scale-down CloudWatch metric to a higher threshold
+
+Question 27:
+You've been tasked with architecting a highly available application. After building the initial environment, you've discovered that your current security group configuration does not include a port you need for certain traffic. After adding the port to the appropriate security group, how long will it take for your changes to take effect, allowing your application to function correctly?
+    -Changes to a security group take effect as soon as they are saved 
+
+Question 28:
+When selecting an EC2 instance type for your application, it's important to know which two of the following?
+    -The required number of I/O operations
+    -The memory requirements 
+
+Question 29:
+What is the maximum size of a general-purpose SSD EBS volume?
+    -16TiB
+
+Question 30:
+Your AWS environment contains several on-demand, EBS-backed EC2 instances dedicated to a project that has just been cancelled. Your supervisor does not want to incur charges for these on-demand instances, but also does not want to lose the data just yet because there is a chance the project may be revived in the next few days. What should you do to minimize charges for these instances in the meantime?
+    -Take snapshots of the EBS volumes and sell the instances on the In-Demand Instance Marketplace
+
