@@ -204,3 +204,44 @@ Question 50:
 True or False: AutoScaling groups are not intended to handle sudden spikes in traffic. Rather, they are intended to allow your applications to grow elastically as load increases over a short period of time.
     -False 
 
+Question 51:
+What is the "first-byte latency" when retrieving data from Glacier?
+    -3-5 hours 
+
+Question 52:
+Which of the following is not a pillar of the AWS Well Architected Framework?
+    -Availability 
+
+Question 53:
+You've been tasked with the creation of a highly-available, decoupled web application. Which of the following will not aid in that effort?
+    -An Elastic Load Balancer that sends seb traffic to instances with the least latency 
+
+Question 54:
+After migrating an application architecture from on-premise to AWS, you will not be responsible for the ongoing maintenance of which two of the following services.
+    -Elastic Beanstalk
+    -DynamoDB
+
+Question 55:
+Your company wants to begin automated backups of the EBS volumes that back their EC2 instances. The durability of the backed-up data is key. Which of the following solutions would you implement and why?
+    -Write a cron job that uses the AWS CLI to take a snapshot of production EBS volumes 
+
+Question 56:
+True or False: Data stored on EBS volumes is automatically and redundantly stored in multiple physical volumes in the same availability zone as part of the normal operations of the EBS service at no additional charge.
+    -True 
+
+Question 57:
+You have chosen to use S3-RRS with your cloud application. Which limitations have you considered in doing so?
+    -RRS offers only 99.99% durability so you have to design your application to re-create any objects that may be lost 
+
+Question 58:
+True or False: To prevent in-flight tampering, all requests sent with API keys over a REST or Query API should be sent via HTTPS.
+    -True 
+
+Question 59:
+Which of the following services allows you to access the service's underlying operating system?
+    -EMR 
+    -Elastic Beanstalk
+
+Question 60:
+Which of the following statements are true?
+    -
