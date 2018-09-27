@@ -175,4 +175,38 @@ What is the maximun life-span of an SWF workflow?
 
 Question 42:
 True or False: Both Amazon SQS and SNS now offer FIFO message processing.
+    -False 
+
+Question 43:
+Which of the following is not a valid S3 bucket name?
     -
+
+Question 44:
+Which of the following is not a common S3 response header?
+    -x-amz-delete-marker
+
+Question 45:
+While working with the DynamoDB API, you receive an HTTP Status Code 400. Which of the following errors can explain this result?
+    -InvalidClientToken
+    -InvalidParameterValue 
+
+Question 46:
+A delivery company uses a mobile GPS application to track the location of each of their 15 vehicles. The application records each vehicle's location to a DynamoDB table every 6 seconds. Each transmission is just under 1KB, and throughput is spread evenly across that minute. How many units of write capacity should you specify for this table?
+    -3
+
+Question 47:
+In DynamoDB, Control plane operations let you perform create, read, update, and delete (also called CRUD) actions on data in a table.
+    -True 
+
+Question 48:
+True or False: you can create multiple DynamoDB tables with secondary indexes in one go.
+    -False 
+
+Question 49:
+In DynamoDB, what is the maximum length of a partition key value?
+    -1024 bytes 
+
+Question 50:
+True or False: You cannot stop and restart a Multipart upload without data loss.
+    -False 
+
