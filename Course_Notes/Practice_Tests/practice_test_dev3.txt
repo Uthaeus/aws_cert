@@ -132,3 +132,47 @@ Question 31:
 True or False: Amazon S3 bucket names are listed lexicographically.
     -True 
 
+Question 32:
+Your applications needs to process large numbers of job requests, and you need to ensure that they are processed in order, and that each request is processed only once. How would you deploy SQS to achieve this end?
+    -Use an SQS FIFO queue to process the jobs 
+
+Question 33:
+If you have an item that is 4KB in size and you want to provision read capacity units for 75 requests per second, how many read capacity units do you need to provision?
+    -75
+
+Question 34:
+If your table item's size is 10KB and you want to have 300 eventually consistent reads per second, how many read capacity units will you need to provision on the table?
+    -450
+
+Question 35:
+True or False: While the UpdateTable operation is executing, the table status changes from ACTIVE to UPDATING, and you cannot issue another UpdateTable request until the table returns to the ACTIVE state.
+    -False 
+
+Question 36:
+Which of the following are DynamoDB read operations?
+    -BatchGetItem 
+    -GetItem 
+
+Question 37:
+To make an SQS message immediately available for processing, you should do which of the following?
+    -Set the SQS visibility timeout to 0
+
+Question 38:
+True or False: A message is considered to be in flight after it's received from a queue by a consumer, but not yet deleted from the queue.
+    -False 
+
+Question 39:
+In DynamoDB, what is the maximum length of a sort key value?
+    -512 bytes 
+
+Question 40:
+Which of the following operations will re-assemble the individual parts of a Multipart Upload?
+    -CompleteMultipartUpload
+
+Question 41:
+What is the maximun life-span of an SWF workflow?
+    -31,536,000 seconds 
+
+Question 42:
+True or False: Both Amazon SQS and SNS now offer FIFO message processing.
+    -
