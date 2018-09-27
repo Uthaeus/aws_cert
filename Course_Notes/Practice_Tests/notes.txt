@@ -15,3 +15,16 @@ For the RDS MySQL, MariaDB, PostgreSQL, and Oracle database engines, when you el
 At this time, you cannot have a multi-AZ copy of your read replica 
 
 Multi-AZ deployments utilize synchronous replication, making database writes concurrently on both the primary and standby so that the standby will be up to date in the event a failover occurs 
+
+error: 403 forbidden - Access Denied
+error: 409 conflict - BucketAlreadyExists
+
+Local Secondary Key - 
+
+Global Secondary Key - 
+
+S3 API calls - 
+
+Elastic IP addresses - A reserved public IP address that you can assign to any EC2 instance in a particular region, until you choose to release it
+
+CloudHSM - 

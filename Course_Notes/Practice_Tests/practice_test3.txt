@@ -1,0 +1,45 @@
+Question 1:
+Using the AWS Server Migration Service, what's the maximum number of VMWare VMs that can be migrated concurrently?
+    -25
+
+Question 2:
+True or False: S3 provides read-after-write consistency for overwrite PUTS and DELETES.
+    -False 
+
+Question 3:
+Which of the following is an invalid VPC pairing configuration?
+    -
+
+Question 4:
+Your application's usage peaks at 90% during the hours of 9 AM and 10 AM everyday. All other hours require only 10% of the peak resources. What is the best way to scale your application so you're only paying for max resources during peak hours?
+    -Proactive cyclic scaling 
+
+Question 5:
+Your image manipulation application allows users take a picture, upload it to your app, and request filters to be added to the image. You need to decouple the application so your users are not waiting for the image processing to take place. How would you go about doing this?
+    -Use Amazon SQS to store the requests using metadata and JSNO in the message, use S3 to store the image, and Auto Scaling to determine when to fire off more worker instances based on queue size
+
+Question 6:
+True or False: For a successful cross-region replication of your S3 bucket, versioning must be enabled on both the source and target buckets.
+    -True 
+
+Question 7:
+Contractual requirements mandate the use of AWS CloudHSM as an encryption solution. Application performance is a secondary, but important, concern. Where within your AWS infrastructure should you place the HSM appliances?
+    -To increase security, you should place the HSM appliances in their own, private subnet
+
+Question 8:
+An AWS VPC allows you to:
+    -Connect your cloud resources to your own IPSec VPN connections 
+
+Question 9:
+True or False: Multifactor Authentication is required to delete objects from an S3 bucket.
+    -False 
+
+Question 10:
+True or False: you can write objects directly to an edge location.
+    -True 
+
+Question 11:
+Which of the following statements about Amazon SQS is true?
+    -SQS will deliver your message at least once, but cannot guarantee that it will not create duplicates of that message 
+    -SQS will deliver your message at least once, but cannot grarantee the order in which the messages will be delivered
+
