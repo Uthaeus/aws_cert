@@ -1,0 +1,17 @@
+With Multi-AZ RDS instances and automated backups, I/O activity is o longer suspended on your primary during your preferred backup window, since backups are taken from the standby
+
+S3-RRS offers: 
+    -99.99% availability
+    -99.99% durability
+    -is most often used with reproducible objects
+
+Updates are applied to your Read Replicas ofter they occur on the source DB instance using asynchronous replication
+
+For the RDS MySQL, MariaDB, PostgreSQL, and Oracle database engines, when you elect to convert your RDS instance from Single-AZ to Multi-AZ, the following happens:
+    -A snapshot of your primary instance is taken 
+    -A new standby instance is created in a different AZ from the snapshot 
+    -Synchronous replication is configured between primary and standby instances 
+
+At this time, you cannot have a multi-AZ copy of your read replica 
+
+Multi-AZ deployments utilize synchronous replication, making database writes concurrently on both the primary and standby so that the standby will be up to date in the event a failover occurs 
