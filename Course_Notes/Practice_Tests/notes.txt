@@ -32,3 +32,10 @@ CloudHSM -
 BatchWriteItem - 
 
 S3 request headers - 
+
+HSM - 
+
+AMI Launch configuration - 
+
+cron job - 
+

@@ -1,6 +1,7 @@
 Question 1:
 Using the AWS Server Migration Service, what's the maximum number of VMWare VMs that can be migrated concurrently?
-    -25
+    X-25
+    -50
 
 Question 2:
 True or False: S3 provides read-after-write consistency for overwrite PUTS and DELETES.
@@ -8,35 +9,44 @@ True or False: S3 provides read-after-write consistency for overwrite PUTS and D
 
 Question 3:
 Which of the following is an invalid VPC pairing configuration?
-    -
+    -You have a VPC peering connection between VPC A and VPC B. VPC A also has a VPN connection to a corporate network. You use VPC A to extend the peering relationship to exist between VPC B and the corporate network so that traffic from the corporate network can directly access VPC B by using the VPN connection to VPC A 
+        -Edge-to-Edge routing is not allowed through a VPN connection 
 
 Question 4:
 Your application's usage peaks at 90% during the hours of 9 AM and 10 AM everyday. All other hours require only 10% of the peak resources. What is the best way to scale your application so you're only paying for max resources during peak hours?
     -Proactive cyclic scaling 
+        -Proactive cyclic scaling is scaling that occurs at a fixed interval
 
 Question 5:
 Your image manipulation application allows users take a picture, upload it to your app, and request filters to be added to the image. You need to decouple the application so your users are not waiting for the image processing to take place. How would you go about doing this?
     -Use Amazon SQS to store the requests using metadata and JSNO in the message, use S3 to store the image, and Auto Scaling to determine when to fire off more worker instances based on queue size
+        -SQS is the cornerstone of a decoupled application 
 
 Question 6:
 True or False: For a successful cross-region replication of your S3 bucket, versioning must be enabled on both the source and target buckets.
     -True 
+        -Versioning must be enabled on both the source and target buckets 
 
 Question 7:
 Contractual requirements mandate the use of AWS CloudHSM as an encryption solution. Application performance is a secondary, but important, concern. Where within your AWS infrastructure should you place the HSM appliances?
-    -To increase security, you should place the HSM appliances in their own, private subnet
+    X-To increase security, you should place the HSM appliances in their own, private subnet
+    -Locating HSM applicances near your EC2 instances decreases network latency which improves application performance 
+        -To decrease latency (and improve application performance) it's best to place your HSM's as close to your EC2 instances as possible 
 
 Question 8:
 An AWS VPC allows you to:
     -Connect your cloud resources to your own IPSec VPN connections 
+        -With a VPC, you can connect your cloud resources to your own IPSec VPN connections 
 
 Question 9:
 True or False: Multifactor Authentication is required to delete objects from an S3 bucket.
     -False 
+        -The option to require Multifactor Authentication to delete objects from an S3 bucket is available, but it is not required 
 
 Question 10:
 True or False: you can write objects directly to an edge location.
     -True 
+        -It is now possible to expedite uploads to S3 by writing directly to an Edge Location 
 
 Question 11:
 Which of the following statements about Amazon SQS is true?
@@ -49,41 +59,55 @@ True or False: You can attach more than one EC2 instance to an AWS Elastic Block
 
 Question 13:
 Which of the following statements is FALSE regarding the role of a bastion host?
-    -A bastion host sits outside a private subnet and is used as a secure gateway to that internal network
+    X-A bastion host sits outside a private subnet and is used as a secure gateway to that internal network
+    -A bastion host should be protected in a private subnet 
+        -A bastion host sits in a public subnet and serves as a secure gateway through which one SSHes into instances in a private subnet 
 
 Question 14:
 You've been tasked with the creation of a highly available website that serves static content from EC2 instances. Which of the following is not a requirement to accomplish this goal?
-    -A multi-AZ deployment
+    X-A multi-AZ deployment
+    -An SQS queue 
+        -While an SQS queue can be an important part of a decoupled web application, it is not required when hosting a highly available static website on EC2. An auto scaling group configured to deploy EC2 instances in multiple subnets located in multiple availability zones allows an application to remain online despite an instance or AZ failure
 
 Question 15:
 True or False: you can use IAM policies to deny the Root account access to EC2 instances.
     -False 
+        -The Root account has total access to all services 
 
 Question 16:
 After setting up a VPC peering connection between your VPC and that of your clients, the client requests to be able to send traffic between instances in the peered VPCs using private IP addresses. What must you do to make this possible?
     -Add a route to a Route Table that's associated with your VPC 
+        -If a route is added to your Route Table, your client will have access to your instance via private IP address 
 
 Question 17:
 You are trying to establish a VPC peering connection with another VPC, and you discover that there seem to be a lot of limitations and rules when it comes to VPC peering. Which of the following is not a VPC pairing limitation or rule?
-    -You cannot create a VPC pairing connection between VPC's with matching or overlapping CIDR blocks 
+    X-You cannot create a VPC pairing connection between VPC's with matching or overlapping CIDR blocks 
+    -A placement group cannot span peered VPC's 
+        -A placement group may not span paired VPC's or multiple Regions. Placement Groups are limited to a single AZ 
 
 Question 18:
 Your customer is a healthcare company with strict compliance and auditing requirements. As you use AWS to architect the application environment, which of the following services might you use to ensure compliance with their strict requirements?
     -CloudTrail 
+        -The AWS API call history produced by CloudTrail enables security analysis, resource change tracking, and compliance auditing 
 
 Question 19:
 What determines the cost of using CloudFormation templates?
-    -The resources the AWS infrastructure uses to build your environment 
+    X-The resources the AWS infrastructure uses to build your environment 
+    -There is no cost to using CloudFormation, but you are charged for the resources the template builds
+        -There is no additional charge for AWS CloudFormation. You pay for AWS resources (such as Amazon EC2 instances, Elastic Load Balancing load balancers, etc) created using AWS CloudFormation in the same manner as if you created them manually 
 
 Question 20:
 To maintain compliance with HIPPA, all healthcare-related data being stored on Amazon S3 needs to be encrypted at rest. Assuming S3 is being used for storing the data, which two of the following are the preferred methods of encryption?
     -Enable Server Side Encryption on your S3 bucket. S3 automatically applies AES-256 encryption 
     -Encrypt the data locally using your own encryption keys and then transfer the encrypted data to S3 
+        -You should encrypt locally or let S3-SSE handle encryption for you 
 
 Question 21:
 You create an SQS queue and test it by creating a simple application polls the queue for messages. After a message is retrieved, the application should delete it. You create three test messages in your SQS queue and discover that messages 1 and 3 are quickly deleted, but message 2 has remained in the queue. Which two of the following could account for your findings?
     -SQS cannot guarantee that messages are retrieved in first-in, first-out order 
-    -The permissions on message 2 were incorrectly written
+    X-The permissions on message 2 were incorrectly written
+    -Your application uses short polling 
+        -With short-polling, multiple polls of the queue may be necessary to process all messages in the queue. Additionally, SQS does NOT offer FIFO processing of messages from the queue 
 
 Question 22:
 Your company is moving their entire 20 TB data warehouse to the cloud. With your current bandwidth, it would take 2 months to transfer the data. Which service would you use to quickly get your data into AWS?
@@ -95,8 +119,10 @@ Your company provides an online image recognition service that uses SQS to decou
 
 Question 24:
 Which two of the following AWS Services were introduced at re:Invent 2016
-    -Dax 
+    X-Dax 
     -Polly 
+    -Lex 
+        -Amazon Lex is a service for building conversational interfaces using voice and text. Polly is a service that turns text into lifelike speech
 
 Question 25:
 True or False: Amazon SQS guarantees that each message will be delivered at least once, but cannot guarantee that a message will not be delivered multiple times.
@@ -105,6 +131,7 @@ True or False: Amazon SQS guarantees that each message will be delivered at leas
 Question 26:
 When reviewing Auto Scaling events, it is noticed that an application is scaling up and down multiple times per hour. What design change could you make to optimize cost while preserving elasticity?
     -Change the scale-down CloudWatch metric to a higher threshold
+        -Modifying your scaling threshold is preferable to altering your number of instances manually 
 
 Question 27:
 You've been tasked with architecting a highly available application. After building the initial environment, you've discovered that your current security group configuration does not include a port you need for certain traffic. After adding the port to the appropriate security group, how long will it take for your changes to take effect, allowing your application to function correctly?
@@ -114,6 +141,7 @@ Question 28:
 When selecting an EC2 instance type for your application, it's important to know which two of the following?
     -The required number of I/O operations
     -The memory requirements 
+        -The EC2 instance you choose will be determined by the number of I/O operations needed as well as the anticipated amount of memory required 
 
 Question 29:
 What is the maximum size of a general-purpose SSD EBS volume?
@@ -121,7 +149,9 @@ What is the maximum size of a general-purpose SSD EBS volume?
 
 Question 30:
 Your AWS environment contains several on-demand, EBS-backed EC2 instances dedicated to a project that has just been cancelled. Your supervisor does not want to incur charges for these on-demand instances, but also does not want to lose the data just yet because there is a chance the project may be revived in the next few days. What should you do to minimize charges for these instances in the meantime?
-    -Take snapshots of the EBS volumes and sell the instances on the In-Demand Instance Marketplace
+    X-Take snapshots of the EBS volumes and sell the instances on the In-Demand Instance Marketplace
+    -Stop the instances as soon as possible 
+        -Stopping an EBS-backed on-demand instance will stop the charges and preserve the data 
 
 Question 31:
 The AMI ID used in an AutoScaling policy is specified in the_____.
@@ -129,12 +159,14 @@ The AMI ID used in an AutoScaling policy is specified in the_____.
 
 Question 32:
 You are testing an application that uses EC2 instances to poll an SQS queue. At this stage of testing, you have verified that the EC2 instances can retrieve messages from the queue, but your coworkers are complaining about not being able to manually retrieve any messages from the queue from their on-premises workstations. What is the most likely source of this problem?
-    -Your coworkers do not have permission to access the SQS queue 
+    -Your coworkers do not have permission to access the SQS queue
+        -Short polling may fail to retrieve messages sometimes, but if no messages can be retireved after multiple attempts, permissions are the more likely cause  
 
 Question 33:
 You've been tasked with migrating an on-premise application architecture to AWS. During the design process, you give consideration to current on-premise security and identify the security attributes you are responsible for on AWS. Which of the following does AWS provide for you as part of the shared responsibility model?
     -Virtualization infrastructure
     -Physical network infrastructure
+        -While AWS manages security of the cloud, security in the cloud is the responsibility of the customer. Customers retain control of what security they choose to implement to protect their own content, platform, applications, systems, and networks no differently than they would for applications in an on-site datacenter
 
 Question 34:
 You need to find both the Public and Private IP addresses of an instance. Which of the following URLs should you query?
@@ -143,6 +175,8 @@ You need to find both the Public and Private IP addresses of an instance. Which 
 Question 35:
 Which of the following will transpire when an EC2 instance with an associated Elastic IP is stopped and started?
     -All data on instance-store devices will be lost 
+    +-The underlying host for the instance will be changed
+        -When such an instance is stopped and restarted, the instance will restart on a different physical host and all instance-store data will be lost 
 
 Question 36:
 What is the minimum size of an S3 object?
@@ -158,19 +192,24 @@ Your company requires that all the data on your EBS-backed EC2 volumes be encryp
 
 Question 39:
 As CloudWatch monitors RDS, it provides which of the following metrics by default?
-    -Database-visible metrics such as memory usage 
+    X-Database-visible metrics such as memory usage 
+    -The number of current connections to the database 
+        -By default, Database-visible metrics 
 
 Question 40:
 If an instance belonging to an Elastic Load Balancer fails its health check, what will the ELB do?
-    -The ELB will launch a new instance 
+    X-The ELB will launch a new instance 
+    -The ELB will de-register the instance and stop sending traffic to it 
 
 Question 41:
 Elasticity is a fundamental property of the cloud. Which of the following best describes elasticity?
     -The power to scale resources both up and down with changes in demand 
+        -In cloud computing, elasticity is defined as 'the degree to which a system is able to adapt to workload changes by provisioning and de-provisioning resources in an autonomic manner, such that at each point in time the available resources match the current demand as closely as possible'
 
 Question 42:
 True or False: AutoScaling is a tool used to build elastic, self-healing applications.
     -True 
+        -AutoScaling groups are the cornerstone of any self-healing application on AWS 
 
 Question 43:
 What is the Well Architected Framework?
@@ -182,7 +221,9 @@ To protect S3 data from accidental overwrites and deletes, you should do which o
 
 Question 45:
 You manage an application that uses EC2 instances and SQS to process requests from end users. There are no known issues with your application, but your supervisor is concerned about the cost of the AWS resources it uses. Which of the following would not help address that concern?
-    -Decrease the size of SQS messages to 50kb
+    X-Decrease the size of SQS messages to 50kb
+    -Increase the visibility timeout for messages in the SQS queue 
+        -Increasing the visibility timeout will not decrease cost over time 
 
 Question 46:
 You wonder why a SWF workflow you created has not made any progress in the last three weeks. What is the most likely explanation for the workflow’s behavior?
@@ -199,10 +240,13 @@ An EC2 instance retrieves a message from an SQS queue, begins processing the mes
 Question 49:
 True or False: You cannot attach more than one EC2 instance to an AWS Elastic Filesystem.
     -False 
+        -EFS provides multiple EC2 instances with low-latency, shared access to a fully managed file system and is designed to perform well for a wide variety of workloads with the ability to scale to thousands of concurrent connections 
 
 Question 50:
 True or False: AutoScaling groups are not intended to handle sudden spikes in traffic. Rather, they are intended to allow your applications to grow elastically as load increases over a short period of time.
-    -False 
+    X-False 
+    -True 
+        -AutoScaling is not really intended to respond to instantaneous spikes in traffic as it will take some time to spin-up the instances that will handle the additional traffic. For sudden traffic spikes, make sure your application issues a 503 - Service Unavailable message 
 
 Question 51:
 What is the "first-byte latency" when retrieving data from Glacier?
@@ -214,16 +258,20 @@ Which of the following is not a pillar of the AWS Well Architected Framework?
 
 Question 53:
 You've been tasked with the creation of a highly-available, decoupled web application. Which of the following will not aid in that effort?
-    -An Elastic Load Balancer that sends seb traffic to instances with the least latency 
+    X-An Elastic Load Balancer that sends seb traffic to instances with the least latency
+    -IAM credentials on the primary EC2 instance that allow it to modify the SQS queue  
 
 Question 54:
 After migrating an application architecture from on-premise to AWS, you will not be responsible for the ongoing maintenance of which two of the following services.
-    -Elastic Beanstalk
+    X-Elastic Beanstalk
     -DynamoDB
+    -RDS 
+        -DynamoDB and Amazon RDS are managed services. As such, AWS handles the ongoing maintenance
 
 Question 55:
 Your company wants to begin automated backups of the EBS volumes that back their EC2 instances. The durability of the backed-up data is key. Which of the following solutions would you implement and why?
-    -Write a cron job that uses the AWS CLI to take a snapshot of production EBS volumes 
+    -Write a cron job that uses the AWS CLI to take a snapshot of production EBS volumes
+        -The data from an EBS volume snapshot is durable because EBS snapshots are stored on the Amazon S3-Standard 
 
 Question 56:
 True or False: Data stored on EBS volumes is automatically and redundantly stored in multiple physical volumes in the same availability zone as part of the normal operations of the EBS service at no additional charge.
