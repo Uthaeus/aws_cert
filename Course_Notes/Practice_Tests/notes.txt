@@ -28,3 +28,6 @@ S3 API calls -
 Elastic IP addresses - A reserved public IP address that you can assign to any EC2 instance in a particular region, until you choose to release it
 
 CloudHSM - 
+
+BatchWriteItem - 
+
