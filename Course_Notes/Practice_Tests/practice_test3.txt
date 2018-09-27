@@ -123,3 +123,44 @@ Question 30:
 Your AWS environment contains several on-demand, EBS-backed EC2 instances dedicated to a project that has just been cancelled. Your supervisor does not want to incur charges for these on-demand instances, but also does not want to lose the data just yet because there is a chance the project may be revived in the next few days. What should you do to minimize charges for these instances in the meantime?
     -Take snapshots of the EBS volumes and sell the instances on the In-Demand Instance Marketplace
 
+Question 31:
+The AMI ID used in an AutoScaling policy is specified in the_____.
+    -Launch configuration 
+
+Question 32:
+You are testing an application that uses EC2 instances to poll an SQS queue. At this stage of testing, you have verified that the EC2 instances can retrieve messages from the queue, but your coworkers are complaining about not being able to manually retrieve any messages from the queue from their on-premises workstations. What is the most likely source of this problem?
+    -Your coworkers do not have permission to access the SQS queue 
+
+Question 33:
+You've been tasked with migrating an on-premise application architecture to AWS. During the design process, you give consideration to current on-premise security and identify the security attributes you are responsible for on AWS. Which of the following does AWS provide for you as part of the shared responsibility model?
+    -Virtualization infrastructure
+    -Physical network infrastructure
+
+Question 34:
+You need to find both the Public and Private IP addresses of an instance. Which of the following URLs should you query?
+    -
+
+Question 35:
+Which of the following will transpire when an EC2 instance with an associated Elastic IP is stopped and started?
+    -All data on instance-store devices will be lost 
+
+Question 36:
+What is the minimum size of an S3 object?
+    -0 bytes 
+
+Question 37:
+True or False: When a snapshot is being taken against an EBS volume, the volume becomes unavailable and the instance no longer has the ability to communicate with the EBS volume until the snapshot is complete.
+    -False 
+
+Question 38:
+Your company requires that all the data on your EBS-backed EC2 volumes be encrypted. How would you go about doing this?
+    -AWS allows you to encrypt an EBS volume at the time of creation 
+
+Question 39:
+As CloudWatch monitors RDS, it provides which of the following metrics by default?
+    -Database-visible metrics such as memory usage 
+
+Question 40:
+If an instance belonging to an Elastic Load Balancer fails its health check, what will the ELB do?
+    -The ELB will launch a new instance 
+
