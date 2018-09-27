@@ -210,3 +210,47 @@ Question 50:
 True or False: You cannot stop and restart a Multipart upload without data loss.
     -False 
 
+Question 51:
+True or False: A unit of read capacity represents one eventually consistent read per second or two strongly consistent reads per second.
+    -False 
+
+Question 52:
+True or False: The failure of an Availability Zone will result in the loss of an SNS message originating in that AZ.
+    -False 
+
+Question 53:
+True or False: in addition to XML, JSON, and unformatted text, an SQS message may contain certain Unicode characters.
+    -True 
+
+Question 54:
+Which of the following platforms are supported in ElasticBeanstalk
+    -Node.js 
+    -Go 
+    -Preconfigured Docker 
+
+Question 55:
+Which of the following is not a common S3 request header?
+    -Content-Length 
+
+Question 56:
+While working with the SQS API, your application returns HTTP status code 400. Which of the following errors might explain this result?
+    -Missing Parameter 
+    -InvalidClientTokenId
+
+Question 57:
+True or False: with a global secondary index, the partition and sort keys can both be different from those of the table
+    -True 
+
+Question 58:
+Your app requires 300 strongly consistent reads of 11KB per minute. How many read capacity units should you provision?
+    -15
+
+Question 59:
+Which of the following sections is required for a CloudFromation template to be valid?
+    -Parameters 
+
+Question 60:
+To get a list of all your DynamoDB tables, you should use which of the following operations?
+    -DescribeTables
+
+    
