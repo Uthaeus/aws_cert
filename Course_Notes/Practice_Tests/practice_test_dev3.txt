@@ -91,3 +91,44 @@ True or False: an SQS request can contain up to 20 individual messages, as long 
 
 Question 22:
 True or False: A FIFO SQS queue will end with the .fifo suffix.
+    -False 
+
+Question 23:
+True or False: In terms of performance, Querying a DynamoDB table is more efficient than scanning it.
+    -True 
+
+Question 24:
+In which of the following increments are SQS messages billed to your AWS account?
+    -256kb 
+
+Question 25:
+A single DynamoDB table partition can support a maximum of 5,000 read capacity units or 1,000 write capacity units.
+    -False 
+
+Question 26:
+Which of the following attributes are always supported by the GetQueueAttributes action?
+    -ReceiveMessageWaitTimeSeconds
+    -VisibilityTimeout 
+
+Question 27:
+AWS provides SDKs for which of the following
+    -Java
+    -Node.js
+    -.Net 
+
+Question 28:
+True or False: An account may have an absolute maximum of 100 S3 buckerts.
+    -False 
+
+Question 29:
+If your table item's size is 3KB and you want to have 30 eventually consistent reads per second, how many read capacity units will you need to provision on the table?
+    -15
+
+Question 30:
+True or False: A Hash/Range key combination is the same thing as a Partition/Sort key combination.
+    -True 
+
+Question 31:
+True or False: Amazon S3 bucket names are listed lexicographically.
+    -True 
+
