@@ -43,3 +43,62 @@ Which of the following statements about Amazon SQS is true?
     -SQS will deliver your message at least once, but cannot guarantee that it will not create duplicates of that message 
     -SQS will deliver your message at least once, but cannot grarantee the order in which the messages will be delivered
 
+Question 12:
+True or False: You can attach more than one EC2 instance to an AWS Elastic Block Store volume.
+    -False 
+
+Question 13:
+Which of the following statements is FALSE regarding the role of a bastion host?
+    -A bastion host sits outside a private subnet and is used as a secure gateway to that internal network
+
+Question 14:
+You've been tasked with the creation of a highly available website that serves static content from EC2 instances. Which of the following is not a requirement to accomplish this goal?
+    -A multi-AZ deployment
+
+Question 15:
+True or False: you can use IAM policies to deny the Root account access to EC2 instances.
+    -False 
+
+Question 16:
+After setting up a VPC peering connection between your VPC and that of your clients, the client requests to be able to send traffic between instances in the peered VPCs using private IP addresses. What must you do to make this possible?
+    -Add a route to a Route Table that's associated with your VPC 
+
+Question 17:
+You are trying to establish a VPC peering connection with another VPC, and you discover that there seem to be a lot of limitations and rules when it comes to VPC peering. Which of the following is not a VPC pairing limitation or rule?
+    -You cannot create a VPC pairing connection between VPC's with matching or overlapping CIDR blocks 
+
+Question 18:
+Your customer is a healthcare company with strict compliance and auditing requirements. As you use AWS to architect the application environment, which of the following services might you use to ensure compliance with their strict requirements?
+    -CloudTrail 
+
+Question 19:
+What determines the cost of using CloudFormation templates?
+    -The resources the AWS infrastructure uses to build your environment 
+
+Question 20:
+To maintain compliance with HIPPA, all healthcare-related data being stored on Amazon S3 needs to be encrypted at rest. Assuming S3 is being used for storing the data, which two of the following are the preferred methods of encryption?
+    -Enable Server Side Encryption on your S3 bucket. S3 automatically applies AES-256 encryption 
+    -Encrypt the data locally using your own encryption keys and then transfer the encrypted data to S3 
+
+Question 21:
+You create an SQS queue and test it by creating a simple application polls the queue for messages. After a message is retrieved, the application should delete it. You create three test messages in your SQS queue and discover that messages 1 and 3 are quickly deleted, but message 2 has remained in the queue. Which two of the following could account for your findings?
+    -SQS cannot guarantee that messages are retrieved in first-in, first-out order 
+    -The permissions on message 2 were incorrectly written
+
+Question 22:
+Your company is moving their entire 20 TB data warehouse to the cloud. With your current bandwidth, it would take 2 months to transfer the data. Which service would you use to quickly get your data into AWS?
+    -AWS Snowball
+
+Question 23:
+Your company provides an online image recognition service that uses SQS to decouple system components. Your application polls the image queue as often as possible to maximize end-to-end throughput. However, you notice that polling in tight loops is burning CPU cycles and increasing costs with empty responses. How can you reduce the number of empty responses?
+    -Enable long polling by setting the ReceiveMessageWaitTimeSeconds to a number > 0
+
+Question 24:
+Which two of the following AWS Services were introduced at re:Invent 2016
+    -Dax 
+    -Polly 
+
+Question 25:
+True or False: Amazon SQS guarantees that each message will be delivered at least once, but cannot guarantee that a message will not be delivered multiple times.
+    -True 
+
