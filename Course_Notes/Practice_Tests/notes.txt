@@ -209,3 +209,7 @@ SNS message format
 
 Authenticating using LDAP together with IAM 
     -You can organize users and groups under paths, similar to object paths in Amazon S3 
+
+GetQueueAttributes - 
+
+what is the maximum length of a sort key value in DynamoDB

@@ -1,19 +1,24 @@
 Question 1:
 In DynamoDB, Data plane operations let you perform create, read, update, and delete (also called CRUD) actions on data in a table.
     -True 
+        -Data plane operations let you perform create, read, update, and delete actions on data in a table. In contrast, Control plane operations let you create and manage DynamoDB tables. They also let you work with indexes, streams, and other objects that are dependent on tables 
 
 Question 2:
 Called in a loop, what does the BatchWriteItem operation do?
     -The BatchWriteItem operation updates multiple items in one or more tables
     -BatchWriteItem checks for unprocessed items and submits a new BatchWriteItem request with those unprocessed items until all items have been processed
+        -The BatchWriteItem operation puts or deletes multiple items in one or more tables. When called in a loop, it also checks for unprocessed items and submits a new BatchWriteItem request with those unprocessed items until all items have been processed 
 
 Question 3:
 Which of the following is an accurate description of the interaction between SQS and an EC2 instance?
-    -EC2 instances poll the SQS queue for messages 
+    -EC2 instances poll the SQS queue for messages
+        -Amazon EC2 instances poll the SQS message queue, process the job, and then post the results as messages to another Amazon SQS message queue (for example, for further processing by another application). Because Amazon EC2 allows applications to scale up and down dynamically, application developers can use Auto Scaling to vary the number of compute instances (based on the number of messages in the Smazon SQS queues) to ensure that jobs are executed in a timely manner 
 
 Question 4:
 To change the visibility timeout of an SQS message, you should use which of the following actions?
-    -ChangeVisibilityTimeout 
+    X-ChangeVisibilityTimeout
+    -ChangeMessageVisibility
+        -To change the visibility timeout of an SQS message, you should use the ChangeMessageVisibility action  
 
 Question 5:
 True or False: You can define a maximum of 5 local secondary indexes and 5 global secondary indexes per DynamoDB table.
@@ -21,7 +26,9 @@ True or False: You can define a maximum of 5 local secondary indexes and 5 globa
 
 Question 6:
 What is the maximum number of items you can retrieve with the BatchGetItem operation?
-    -64
+    X-64
+    -100
+        -A single BatchGetItem operation can retrieve a maximum of 100 items. The total size of all the items retrieved cannot exceed 16MB
 
 Question 7:
 True or False: Although GETS, UPDATES, and DELETES of items in Dynamo DB consume capacity units, updating the table via the UpdateTable API call consumes no capacity units.
@@ -29,13 +36,17 @@ True or False: Although GETS, UPDATES, and DELETES of items in Dynamo DB consume
 
 Question 8:
 True or False: All reads of a DynamoDB table are eventually consistent.
-    -True 
+    X-True 
+    -False 
+        -Although all reads from a DynamoDB table are eventually consistent by default, strongly consistent reads can be specified
 
 Question 9:
 Which of the following can be used when authoring a CloudFormation template?
     -Intrinsic functions
     -Regular Expressions
     -Parameters
+    +-YAML
+        -You can author AWS CloudFormation templates in JSON or YAML formats. When deciding which format to use, pick the format that you're most comfortable working in. Also consider that YAML inherently provides some features, such as commenting, that aren't available in JSON
 
 Question 10:
 True or False: Amazon SQS follows the Publish-Subscribe messaging paradigm.
@@ -44,7 +55,10 @@ True or False: Amazon SQS follows the Publish-Subscribe messaging paradigm.
 Question 11:
 Which of the following DynamoDB write operations allow conditional writes?
     -UpdateItem
-    -BatchWriteItem
+    X-BatchWriteItem
+    -PutItem
+    -DeleteItem
+        -PutItem, UpdateItem, and DeleteItem allow conditional writes, where you specify an expression that must evaluate to true in order for the operation to succeed
 
 Question 12:
 Which of the following statements about amazon SWF is true?
@@ -54,7 +68,9 @@ Which of the following statements about amazon SWF is true?
 
 Question 13:
 The minimum visibility timeout for an SQS message can be changed with which of the following actions?
-    -ChangeMessageVisibility
+    X-ChangeMessageVisibility
+    -None of the above
+        -The minimum visibility timeout for an SQS message is 0 seconds. There is no way to decrease that value 
 
 Question 14:
 What is the maximum size of an S3 object?
@@ -74,12 +90,17 @@ While working with the S3 API, you receive an error: 409 Conflict. Which of the 
 
 Question 18:
 While working with the S3 API, you receive an error: 400 Bad Request. Which of the following error codes Can explain this error?
-    -InvalidObjectState
+    X-InvalidObjectState
     -InvalidBucketName
+    -IncompleteBody
+    -InvalidDigest
+        -InvalidObjectState corresponds to HTTP Status Code 403, All others correspond to HTTP Status Code 400
 
 Question 19:
 True or False: One DynamoDB read capacity unit is equal to one eventually consistent read per second.
-    -True 
+    X-True 
+    -False 
+        -One DynamoDB read capacity unit is equal to one strongly consistent read per second 
 
 Question 20:
 S3 Multipart upload is required for files larger than ____?
@@ -87,11 +108,15 @@ S3 Multipart upload is required for files larger than ____?
 
 Question 21:
 True or False: an SQS request can contain up to 20 individual messages, as long as the total size of the request does not exceed 256KB.
-    -True 
+    X-True 
+    -False 
+        -An SQS request can contain up to 10 individual messages, as long as the total size of the request does not exceed 256kb 
 
 Question 22:
 True or False: A FIFO SQS queue will end with the .fifo suffix.
-    -False 
+    X-False 
+    -True 
+        -To determine whether a queue is FIFO, you can check whether QueueName ends with the .fifo suffix
 
 Question 23:
 True or False: In terms of performance, Querying a DynamoDB table is more efficient than scanning it.
@@ -99,22 +124,29 @@ True or False: In terms of performance, Querying a DynamoDB table is more effici
 
 Question 24:
 In which of the following increments are SQS messages billed to your AWS account?
-    -256kb 
+    X-256kb 
+    -64kb 
+        -An SQS message can be as large as 256kb, however, a 256kb message would be billed as four units of 64kb each
 
 Question 25:
 A single DynamoDB table partition can support a maximum of 5,000 read capacity units or 1,000 write capacity units.
     -False 
+        -A single DynamoDB table partition can support a maximum of 3,000 read capacity units or 1,000 write capacity units. 
 
 Question 26:
 Which of the following attributes are always supported by the GetQueueAttributes action?
     -ReceiveMessageWaitTimeSeconds
     -VisibilityTimeout 
+    +-DelaySeconds
+        -ContentBasedDeduplication is only supported for FIFO queues 
 
 Question 27:
 AWS provides SDKs for which of the following
     -Java
     -Node.js
     -.Net 
+    +-Go 
+        -AWS provides SDK's for C++, Java, Ruby, Python, Go, PHP, iOS, Node.js, .NET, and Android
 
 Question 28:
 True or False: An account may have an absolute maximum of 100 S3 buckerts.
@@ -135,6 +167,7 @@ True or False: Amazon S3 bucket names are listed lexicographically.
 Question 32:
 Your applications needs to process large numbers of job requests, and you need to ensure that they are processed in order, and that each request is processed only once. How would you deploy SQS to achieve this end?
     -Use an SQS FIFO queue to process the jobs 
+        -FIFO queues offer FIFO delivery and exactly-once processing: The order in which messages are sent and received is strictly preserved and a message is delivered once and remains available until a consumer processes and deletes it; duplicates are not introduced into the queue 
 
 Question 33:
 If you have an item that is 4KB in size and you want to provision read capacity units for 75 requests per second, how many read capacity units do you need to provision?
@@ -146,12 +179,16 @@ If your table item's size is 10KB and you want to have 300 eventually consistent
 
 Question 35:
 True or False: While the UpdateTable operation is executing, the table status changes from ACTIVE to UPDATING, and you cannot issue another UpdateTable request until the table returns to the ACTIVE state.
-    -False 
+    X-False 
+    -True 
+        -While the UpdateTable operation is executing, the table status changes from ACTIVE to UPDATING. While it is UPDATING, you cannot issue another UpdateTable request. When the table returns to the ACTIVE state, the UpdateTable operation is complete and another UpdateTable request may be issued
 
 Question 36:
 Which of the following are DynamoDB read operations?
     -BatchGetItem 
     -GetItem 
+    +-Scan 
+    +-Query 
 
 Question 37:
 To make an SQS message immediately available for processing, you should do which of the following?
@@ -159,15 +196,19 @@ To make an SQS message immediately available for processing, you should do which
 
 Question 38:
 True or False: A message is considered to be in flight after it's received from a queue by a consumer, but not yet deleted from the queue.
-    -False 
+    X-False 
+    -True 
 
 Question 39:
 In DynamoDB, what is the maximum length of a sort key value?
-    -512 bytes 
+    X-512 bytes 
+    -1024 bytes 
+        -The minimum length of a sort key is 1 byte, the maximum is 1024 bytes 
 
 Question 40:
 Which of the following operations will re-assemble the individual parts of a Multipart Upload?
     -CompleteMultipartUpload
+        -CompleteMultipartUpload completes the Multipart Upload process by re-assembling the parts of an upload 
 
 Question 41:
 What is the maximun life-span of an SWF workflow?
@@ -183,12 +224,14 @@ Which of the following is not a valid S3 bucket name?
 
 Question 44:
 Which of the following is not a common S3 response header?
-    -x-amz-delete-marker
+    -x-amz-set-delete-marker
 
 Question 45:
 While working with the DynamoDB API, you receive an HTTP Status Code 400. Which of the following errors can explain this result?
-    -InvalidClientToken
+    X-InvalidClientToken
     -InvalidParameterValue 
+    -IncompleteSignature
+        -IncompleteSignature and InvalidParameterValue will return an HTTP Status Code of 400.
 
 Question 46:
 A delivery company uses a mobile GPS application to track the location of each of their 15 vehicles. The application records each vehicle's location to a DynamoDB table every 6 seconds. Each transmission is just under 1KB, and throughput is spread evenly across that minute. How many units of write capacity should you specify for this table?
@@ -196,19 +239,25 @@ A delivery company uses a mobile GPS application to track the location of each o
 
 Question 47:
 In DynamoDB, Control plane operations let you perform create, read, update, and delete (also called CRUD) actions on data in a table.
-    -True 
+    X-True 
+    -False 
+        -Control plane operations let you create and manage DynamoDB tables. The also let you work with indexes, streams, and other objects that are dependent on tables
 
 Question 48:
 True or False: you can create multiple DynamoDB tables with secondary indexes in one go.
     -False 
+        -If you want to create more than one table with secondary indexes, you must do so sequentially. For example, you would create the first table and wait for it to become ACTIVE, create the next table and wait for it to become ACTIVE, and so on. If you attempt to concurrently create more than one table with a secondary index, DynamoDB will return a LimitExceededException 
 
 Question 49:
 In DynamoDB, what is the maximum length of a partition key value?
-    -1024 bytes 
+    X-1024 bytes 
+    -2048 bytes 
+        -The minimum length of a partition key value is 1 byte, the maximum is 2048 bytes 
 
 Question 50:
 True or False: You cannot stop and restart a Multipart upload without data loss.
     -False 
+        -By design, it is possible to stop a multipart upload. Once stopped, the upload may be aborted or resumed 
 
 Question 51:
 True or False: A unit of read capacity represents one eventually consistent read per second or two strongly consistent reads per second.
@@ -217,6 +266,7 @@ True or False: A unit of read capacity represents one eventually consistent read
 Question 52:
 True or False: The failure of an Availability Zone will result in the loss of an SNS message originating in that AZ.
     -False 
+        -All SNS messages are stored redundantly on multiple servers and in multiple data centers, which means that no single computer or network failure renders Amazon SNS inaccessible
 
 Question 53:
 True or False: in addition to XML, JSON, and unformatted text, an SQS message may contain certain Unicode characters.
@@ -227,6 +277,8 @@ Which of the following platforms are supported in ElasticBeanstalk
     -Node.js 
     -Go 
     -Preconfigured Docker 
+    -Single Container Docker 
+        -Elastic Beanstalk provides platforms for programming languages (Java, PHP, Python, Ruby, Go), web containers (Tomcat, Passenger, Puma) and Docker containers, with multiple configurations of each 
 
 Question 55:
 Which of the following is not a common S3 request header?
@@ -234,8 +286,9 @@ Which of the following is not a common S3 request header?
 
 Question 56:
 While working with the SQS API, your application returns HTTP status code 400. Which of the following errors might explain this result?
-    -Missing Parameter 
-    -InvalidClientTokenId
+    -MissingParameter 
+    X-InvalidClientTokenId
+    -MissingAction
 
 Question 57:
 True or False: with a global secondary index, the partition and sort keys can both be different from those of the table
@@ -247,10 +300,13 @@ Your app requires 300 strongly consistent reads of 11KB per minute. How many rea
 
 Question 59:
 Which of the following sections is required for a CloudFromation template to be valid?
-    -Parameters 
+    X-Parameters 
+    -Resources
+        -The Resources section is the only required section. It specifies the stack resources and their properties such as Amazon Elastic Compute Cloud Instance or an Amazon Simple Storage Service bucket 
 
 Question 60:
 To get a list of all your DynamoDB tables, you should use which of the following operations?
-    -DescribeTables
+    X-DescribeTables
+    -ListTables 
+        -To obtain a list of all your tables, use the ListTables operation. A single ListTables call can terturn a maximum of 100 table names; if you have more than 100 tables, you can request that ListTables return paginated results so that you can retrieve all of the table names 
 
-    
