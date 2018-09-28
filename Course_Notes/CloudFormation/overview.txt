@@ -1,0 +1,20 @@
+CloudFormation 
+
+
+-CloudFormation allows you to manage, configure, and provision AWS infrastructure as code 
+    -YAML/JSON
+
+-Remember the main sections in the CloudFormation Template:
+    -Parameters 
+        -input custom values 
+    -Conditions
+        -ex: provision resources based on environment
+    -Resources 
+        *mandatory
+        -the AWS resources to create
+    -Mappings
+        -create custom mappings like Region : AMI
+    -Transforms 
+        -reference code located in S3
+        -ex: Lambda code or reusable snippets of CloudFormation code 
+    
