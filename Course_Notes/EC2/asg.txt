@@ -1,0 +1,20 @@
+Auto Scaling Group 
+
+
+The goal of an Auto Scaling Group is to:
+    -Scale out (add EC2 instances) to match an increased load
+    -Scale in (remove EC2 instances) to match a decreased load 
+    -Ensure we have a minimum and a maximum number of machines running
+    -Automatically Register new instances to a load balancer 
+
+ASG's have the following attributes:
+    -Launch configuration
+        -AMI + Instance Type
+        -EC2 User Data
+        -EBS Volumes
+        -Security Groups
+        -SSH Key Pair
+    -Min Size/Max Size/ Initial Capacity
+    -Network + Subnets Information
+    -Load Balancer Information 
+    -Scaling Policies 
