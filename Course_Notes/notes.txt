@@ -59,3 +59,39 @@ Elasticity can be implemented in 3 ways:
         -Scaling just when you are expecting a big surge of traffic requests due to a scheduled event 
     -Auto Scaling based on Demand 
         -By using a monitoring service, your system can send triggers to take appropriate actions so that it scales up or down based on metrics
+
+
+BatchWriteItem - 
+BatchGetItem -
+    -can retrieve a maximum of 100 items. The total size of all the items retrieved cannot exceed 16MB
+
+DynamoDB write operations that allow conditional writes:
+    -PutItem
+    -UpdateItem
+    -DeleteItem
+One DynamoDB read capacity unit is equal to one strongly consistent read per second
+While the UpdateTable operation is executing, the table status changes from ACTIVE to UPDATING. While it is UPDATING, you cannot issue another UpdateTable request. When the table returns to the ACTIVE state, the UpdateTable operation is complete and another UpdateTable request may be issued
+
+409 Conflict - BucketAlreadyExists
+
+400 Bad Request:
+    -IncompleteBody
+    -InvalidBucketName
+    -InvalidDigest
+    -IncompleteSignature
+    -InvalidParameterValue
+    -MissingAction
+    -MissingParameter
+
+GetQueueAttributes actions include:
+    -ReceiveMessageWaitTimeSeconds
+    -DelaySeconds
+    -VisibilityTimeout
+
+ContentBasedDeduplication is only supported by FIFO queues 
+
+CompleteMultipartUpload completes the Multipart Upload process by re-assembling the parts of an upload
+
+Go is not supported by Elastic Beanstalk
+
+To get a list of all you DynamoDB tables, you should use the ListTables operation 
