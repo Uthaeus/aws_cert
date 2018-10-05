@@ -58,79 +58,92 @@ Which of the following are advantages when considering the costing aspects of wo
 
 Question 13:
 What is true when it comes to conducting Penetration testing on the AWS Cloud
-    -
+    -You need to get prior permission and authorization from AWS before conducting Penetration testing 
+        -AWS has very strict Security policies. Under no circumstance can a customer conduct a Penetration test on their underlying resources without prior permission and authorization
 
 Question 14:
 Your company is planning on initiating their move to the AWS Cloud. They already have resources on their on-premise network which they need to move to AWS. Which of the following is considered when moving infrastructure to AWS in terms of the cost. Choose 2 answers from the options given below
-    -
+    -The compute capacity of the database server 
+    -The number of servers 
 
 Question 15:
 You are planning to host a web application using Cloud Front and the AWS Application Load Balancer. You are worried about potential attacks from the Internet. Which of the following services can help assist with DDoS attacks from the Internet. Choose 2 answers from the options given below
-    -
+    -AWS WAF
+    -AWS Shield Advanced 
+        -The AWS Shield is a service that can help protect your web application against DDoS attacks. The WAF service is the Web Application Firewall service that can be used to also protect your web site against DDoS attacks 
 
 Question 16:
 You have an EC2 Instance that is going to host a database server which is going to experience a high number of Input/Output Operations. Which of the following would be an ideal storage solution for the EC2 Instance
-    -
+    -Use EBS Provisioned IOPS Volumes 
 
 Question 17:
 You have been instructed by your IT Supervisor to make use of serverless components on the AWS Cloud. Which of the following would you consider to be part of your decision on which component to use?
-    -
+    -AWS Lambda
+        -AWS Lambda is the serverless computational service that is provided by AWS. Amazon EC2 is a server based compute component. AWS RDS is not a fully serverless component. The Relational database is anyway created on the server. The same goes for AWS EMR, whish is the Elastic Map Reduce service.
 
 Question 18:
 Your development community continuously works on various applications and underlying technologies. They have always complained on the amount of time it takes to create a new development environment on the cloud. Which of the following service can be used to quickly spin up development environments on the AWS Cloud
-    -
+    -AWS Elastic Beanstalk
 
 Question 19:
 You want to quickly host a wordpress site on the AWS Cloud. Which of the following can assist in this requirement?
-    -
+    -Use the AWS Marketplace and use a relevent Wordpress AMI 
+        -The AWS Marketplace has custom built AMI's which can be used to spin up ready made solutions. This is the easiest way to create an environment from already available custom based solutions 
 
 Question 20:
 A company is storing their archival data in Amazon Glacier. They need some data from the vault in a time period of 10 minutes. Which of the following needs to be done to fulfill this requirement
-    -
+    -Expedited Retrieval
 
 Question 21:
 You want to build a fault tolerant solution for your web application which is hosted on EC2 Instances. Which of the below service can help fulfil this requirement
-    -
+    -Elastic Load Balancer
+        -The Elastic Load Balancer can be used to build fault tolerant solutions by diverging traffic to multiple EC2 instances. If one instance fails, and another one is in place, the Elastic Load Balancer will divert traffic to this EC2 instance 
 
 Question 22:
 Your storage team is looking for options to store objects using the Simple Storage service. The files that are going to be stored are very critical and it needs to be ensured that the most durable option is chosen. Which of the following storage classes would you use for this purpose
-    -
+    -Standard Storage 
 
 Question 23:
 Your current system consists of multiple distributed components. This system is currently hosted on your on-premise environment. The biggest challenge for this application is that whenever one component is changed , the entire system systems goes down with no way to keep the current inflight messages. You are planning on moving this system to the AWS Cloud. Which of the following service can be used to decouple components of an application
-    -
+    -AWS SQS 
 
 Question 24:
 Your company is planning to purchase a support plan from AWS. They need to have Operational reviews, recommendations, and reporting for the resources hosted in their account. Which cost efficient plan could they choose
-    -
+    -Enterprise
+        -Only the Enterprise support plan has the option for Operational reviews, recommendations, and reporting 
 
 Question 25:
 Your security team wants to have measures in place when resources start getting created in the AWS Cloud. They want to create privileged users who will certain levels of administrative access on the AWS Cloud. Which of the following can be used to define users and groups in your AWS account
-    -
+    -AWS IAM 
 
 Question 26:
 You need to use AWS services that can be used to store files?  Which of the following can be used to fulfill this requirement? Choose 2 answers from the options below.
-    -
+    -Amazon Simple Storage Service 
+    -Amazon Elastic Block Store 
 
 Question 27:
 Which of the following service make use of AWS edge locations?
-    -
+    -Amazon CloudFront 
 
 Question 28:
 Which of the following is a benefit of Amazon Elastic Compute Cloud (Amazon EC2) over physical servers
-    -
+    -Paying only for what you use 
+        -The biggest advantage is the ability to only pay for what you use. So for On-demand servers, you have an hourly billing concept that is based on the usage of the EC2 instance. Automated backup is not available in EC2. There are options for backup available, but you still need to choose them accordingly
 
 Question 29:
 Which AWS service provides infrastructure security optimization recommendations?
-    -
+    -AWS Trusted Advisor 
+        -The AWS Trusted Advisor gives you security recommendations and can help you improve the overall way you utilize resources in your AWS account 
 
 Question 30:
 You need to collect and track metrics for various AWS services. Which of the following AWS service can help fulfil this requirement.
-    -
+    -Amazon CloudWatch
+        -Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS. You can use Amazon CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resources 
 
 Question 31:
 A company needs to know which user was responsible for terminating several critical Amazon Elastic Compute Cloud (Amazon EC2) Instances. Where can the customer find this information
-    -
+    -AWS CloudTrail logs 
+        -The AWS CloudTrail service logs all API calls and can be used to track who terminated the instance. Every API call that gets triggered in AWS gets recorded in AWS CloudTrail
 
 Question 32:
 You want to register a new domain with AWS. Which of the below service would you use?
