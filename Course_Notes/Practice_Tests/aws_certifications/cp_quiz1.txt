@@ -277,20 +277,22 @@ Which of the following are cost benefits when it comes to On-demand EC2 Instance
 
 Question 61:
 When creating EC2 Instances , which of the following properties of EC2 instances contribute to the cost of the EC2 Instance. Choose 2 right options
-    -
+    -Instance Type 
+    -Type of operating system 
 
 Question 62:
 Which of the following services is a fully managed NoSQL database on the AWS Cloud.
-    -
+    -AWS DynamoDB
 
 Question 63:
 Senior Management needs to understand what is the cost benefit of moving assets from their on-premise environment to the AWS Cloud. Which of the following can help in this assessment
-    -
+    -TCO Calculator
+        -You can use the TCO Calculator to do the cost benefit analysis of hosting resources on the AWS Cloud 
 
 Question 64:
 Which of the following should be considered when you are planning on deploying an application to the AWS Cloud
-    -
+    -Putting resources in the region which is closest to the customer 
 
 Question 65:
 Which of the following storage devices is used to store data that is attached to EC2 Instance
-    -
+    -AWS Elastic Block Storage 
