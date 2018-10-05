@@ -4,7 +4,7 @@ VPC's
 -Think of it as a virtual data center in the cloud 
 -Amazon Virtual Private Cloud lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network you define 
     -You have complete control over your virtual networking environment 
-    -Including selection of your own IP address range, creation of subnets, and vongiguration of route tables and network gateways
+    -Including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways
 
 -Think of a VPC as a logical datacenter in AWS 
 -VPC's consist of: 
@@ -41,4 +41,13 @@ Default vs Custom
     -Default VPC is user-friendly, allowing you to immediately deploy instances 
     -All subnets in default VPC have a route out to the internet 
     -Each EC2 instance has both a public and private IP address
+
+Flow Log - capture information on IP traffic from network interfaces in a VPC 
+    When to use:
+        -If you want to check what traffic is allowed or rejected
+        -Can check to see if the Security or NACL's are too restrictive
+    When not to use:
+        -If you want detailed packet filtering
+            -Use Host Intrusion Detection or a firewall
+
 

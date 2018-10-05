@@ -69,10 +69,16 @@ DynamoDB write operations that allow conditional writes:
     -PutItem
     -UpdateItem
     -DeleteItem
+    -Conditional writes are only performed if the current attributes of the item meet the specified conditions
+        -Conditional operations allow users to implement optimistic control systems on DynamoDB
 One DynamoDB read capacity unit is equal to one strongly consistent read per second
 While the UpdateTable operation is executing, the table status changes from ACTIVE to UPDATING. While it is UPDATING, you cannot issue another UpdateTable request. When the table returns to the ACTIVE state, the UpdateTable operation is complete and another UpdateTable request may be issued
 
-409 Conflict - BucketAlreadyExists
+409 Conflict: 
+    -BucketAlreadyExists
+
+403 Forbidden:
+    -AccessDenied
 
 400 Bad Request:
     -IncompleteBody
@@ -82,6 +88,7 @@ While the UpdateTable operation is executing, the table status changes from ACTI
     -InvalidParameterValue
     -MissingAction
     -MissingParameter
+    -MissingSecurityHeader 
 
 GetQueueAttributes actions include:
     -ReceiveMessageWaitTimeSeconds
@@ -95,3 +102,18 @@ CompleteMultipartUpload completes the Multipart Upload process by re-assembling 
 Go is not supported by Elastic Beanstalk
 
 To get a list of all you DynamoDB tables, you should use the ListTables operation 
+
+The Amazon SQS Extended Client Library for Java allows applications to send an SQS message that contains a reference to a message payload in Amazon S3
+
+The GetItem operation returns a set of attributes for an item that matches the primary key. If there is no matching item, GetItem does not return any data 
+
+ReadObject is not an API call.
+
+Data at Rest:
+    -The encryption key is typically a random value which is generated
+    -The encryption key is used alongside a pre-defined encryption algorithm to change the plain text to an unreadable cipher text 
+    -The key normally has a size in terms of bits 
+    -It would be a complex and long value, which has a certain number of bits. 
+        -Most common is 128 or 256 bit encryption
+    
+
