@@ -147,39 +147,44 @@ A company needs to know which user was responsible for terminating several criti
 
 Question 32:
 You want to register a new domain with AWS. Which of the below service would you use?
-    -
+    -Amazon Route53
 
 Question 33:
 What is the value of having AWS Cloud services accessible through an Application Programming Interface (API)?
-    -
+    -Cloud resources can be managed programmatically
+        -With the advantage of having API access to resources, you can manage the AWS in a programmatic fashion. You don't need to log into the console to manage resources 
 
 Question 34:
 Which of the following examples supports the cloud design principle "design for failure and nothing will fail"
-    -
+    -Deploying an application in multiple Availability Zones 
+        -By deploying your solution to multiple AZ's, that means that you are deploying your solution to multiple data centers. And that means you are designing for failure in case any data center goes down
 
 Question 35:
 Which service allows an administrator to create and modify AWS user permissions?
-    -
+    -AWS Identity and Access Management 
 
 Question 36:
 Which of the below service can be used to build a fully managed petabyte-scale data warehouse on the AWS Cloud
-    -
+    -Amazon Redshift
+        -Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. You can start with just a few hundred GB's of data and scale to a petabyte or more 
 
 Question 37:
 Which of the following is the responsibility of the AWS customer according to the Shared Security Model
-    -
+    -Managing AWS Identity and Access Management
 
 Question 38:
 You want to get more information on the costs incurred for your running EC2 Instances. Where can you get the relevant information on this
-    -
+    -AWS Cost and Usage reports
+        -Cost Explorer is a free tool that you can use to view your costs. Here you can get the present view for the month on your spending. You can also get a forecast of your future possible spending and also see detailed breakdown of your current and past spending 
 
 Question 39:
 Which of the following entity has complete control over an AWS account?
-    -
+    -AWS Account Owner 
 
 Question 40:
 One main design concept of developing application architectures is decoupling. What is meant by this concept.
-    -
+    -Reduce inter-dependencies so failures do not impact other components 
+        -One of the most important design concepts for applications is to ensure that components of a system are lightly coupled which means they don't have too much of a dependency on each other. If you have a tightly coupled system, then failure in one component could cause a failure in other components 
 
 Question 41:
 Which of the following is a benefit of running an application across two Availability Zones?

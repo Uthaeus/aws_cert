@@ -118,3 +118,5 @@ Data at Rest:
     
 EBS Optimized - 
 
+service organization control standards (SOC) -
+
