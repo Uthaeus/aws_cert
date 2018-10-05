@@ -4,15 +4,20 @@ A company is planning on hosting their data store in AWS for their 3-tier applic
 ·       The database should be durable
 ·       Changes to the database should not result in downtime
 Which of the following would be the best data store option for the company
-    -AWS Aurora
+    X-AWS Aurora
+    -AWS DynamoDB
+        -Amazon DynamoDB is a schema-less database so you can work with the items in the table with each item pertinent to a different schema. AWS DynamoDB is a high scalable and durable database system. Each write is written to servers in multiple availability zones. So even if changes are made, there is no downtime 
 
 Question 2:
 A company currently uses a Redshift cluster that contains around 40TB of data. There is now a requirement from senior management to make the cluster highly available. The high availability procedure should also include the event that in case of a disaster, the Redshift cluster data needs to be available in a secondary region. How can you achieve this in the easiest possible way
     -Use Redshift snapshots. Ensure to enable the cross region replication of the snapshots
+        -The easiest way is to create snapshots for the Redshift cluster. There is an ability to enable cross region copies for the snapshots created. If there is a disaster in the primary region, you can then create a new Redshift cluster from the copied snapshot. Currently there is no feature for enabling cross region replication for Redshift clusters. If you use CloudFormation to spin up the cluster, you still cannot copy the data if the primary cluster is down 
 
 Question 3:
 Your company is currently planning to create a Redshift Cluster. As per the compliance objectives of the company, it needs to be ensured that all data is encrypted at REST. How can this be achieved? Choose 2 answers from the options given below  
-    -
+    -Use the keys generated from your HSM device
+    -Use AWS KMS Customer Default master key 
+        -The data in Redshift can be encrypted either by using AWS KMS or the Hardware Security Modules. One very important concept is that the cluster encryption setting should be enabled when the cluster is created 
 
 Question 4:
 There is a requirement for storing 300GB of data using block level storage. The additional requirement is that the data stored on this data store is completely encrypted. Which of the following data stores would you use   
@@ -21,13 +26,16 @@ There is a requirement for storing 300GB of data using block level storage. The 
 Question 5:
 You’ve recently started using the AWS Relational database service. A new feature request for an application is in place. There is an anticipation that the new feature request might warrant the need to scale up the server of the underlying database instance because of the increased Input/Output operations. You need to ensure the least amount of downtime during this scaling operation. Which of the following initial steps would you confirm on your current RDS instance to fulfil this requirement 
     -Ensure that Multi-AZ feature has been enabled for the underlying RDS instance 
+        -Inorder to ensure that there is leaset amount of downtime, enable the Multi-AZ feature for the database. The secondary database will be updated first and then the failover will occur to the newly resized database. This will decrease the amount of downtime 
 
 Question 6:
 A company is planning to migrate their existing on-premise application to the AWS Cloud. The application currently runs on .Net and uses Microsoft SQL Server as the backend database. They have the following limitations
 ·       They don’t have the development staff currently to make major changes to the code
 ·       They don’t have the IT admin staff currently to manage the infrastructure on AWS.
 Which of the following data service would you choose on AWS?
-    -AWS Aurora 
+    X-AWS Aurora 
+    -AWS RDS 
+        -One can use the AWS Relational Database Service and choose the Microsoft SQL Server Platform. Since the company does not have the development staff to make large code changes, they can just migrate the data and change the connection strings in the code. Also with less number of IT admin staff, the AWS RDS service takes care of the infrastructure
 
 Question 7:
 You have a legacy-based application that works mainly on a propriety file system powered by the Network File System protocol. You need to move the application and the file system to AWS. Which of the following data store would you use for the legacy-based application  
@@ -49,14 +57,18 @@ An application currently has the following architecture
 ·       A NAT Instance in the public subnet for allowing the database servers to download patch updates.
 After reviewing the Cloudwatch metrics, you notice a severe bottleneck with the NAT instance. Which of the following step can be taken to alleviate this issue
     -Use the NAT Gateway service instead of the NAT Instance 
+        -Since here the bandwidth is an issue, consider using the NAT gateway service. The NAT gateway service should be used in the public subnet. You should not change aspects such as placing the database servers in the public subnet. This would add a security risk to the entire architecture. The NAT instance also cannot be placed in the private subnet. It needs to be placed in the public subnet. 
 
 Question 11:
 An application is hosted on an EC2 Instance. The application needs access to a DynamoDB table. Which of the following is a secure way for the EC2 Instance to access the DynamoDB table? Choose 2 answers from the options given below 
-    -
+    -Create an IAM Role which has access to the DynamoDB table
+    -Attach the IAM Role to the EC2 instance 
 
 Question 12:
 A company had developed an API solution which has been operational since the last 3 years. They are planning to shift the entire solution to AWS. Which of the following is an ideal platform for hosting this solution in the MOST cost efficient and Reliable manner   
-    -Create EC2 instances. Install the API Gateway solution on these instances. Place the EC2 instances behind the API Gateway
+    X-Create EC2 instances. Install the API Gateway solution on these instances. Place the EC2 instances behind the API Gateway
+    -Use the API Gateway service. Use AWS Lambds functions to host the code for the API's 
+        -The most ideal solution is to take the existing code and place in AWS Lambda functions. Since the question has no mention on the language or that there is no restriction on the coding aspect, we can assume that the code can be ported to AWS Lambda. And then for a reliable and easy cost effective solution, use the API gateway to access the AWS Lambda functions. The other options, even though all feasible would add to the cost and maintenance for the entire solution 
 
 Question 13:
 Your company is developing an image processing application. The images will be stored in the Simple storage service. There is an anticipation of a high number of reads and writes on the images in S3. Which of the following can be done to optimize performance for the objects stored in S3 
@@ -91,7 +103,9 @@ Which of the following would you look to implement? The implementation should lo
 
 Question 19:
 You have a Redshift Cluster in your AWS Account. You need to ensure that you can load data from the Simple Storage service into the Redshift Cluster. But the data can only flow via a VPC for security reasons. Which of the following implementation steps would help achieve this? Choose 2 answers from the options given below
-    -
+    -Enable Redshift Enhanced VPC Routing
+    -Create a VPC Endpoint gateway 
+        -The Redshift Enhanced VPC Routing ensures that data flows via the VPC into the Redshift Cluster. In order to ensure that data can be sucurely transferred in a private subnet to the Simple Storage Service, you have to create a VPC Endpoint gateway. The gateway will allow access to S3 without the need for the traffic to go through the internet gateway 
 
 Question 20:
 As an architect you have asked to devise a Microservices based application which would be used for processing critical and non-critical data. You are planning on implementing EC2 Instances with Docker containers. Which of the following would you plan on implementing for the type of Instances to host the underlying Docker containers   
