@@ -1,0 +1,264 @@
+Question 1:
+A company is planning to store their archives in AWS. Which of the following storage mechanisms provided by AWS would provide an ideal and cost-efficient storage option for storing the Archive data
+    -Amazon Glacier
+
+Question 2:
+Your company is planning on hosting an application in AWS. This application will allow users to upload videos which will be processed at a later point in time. Which of the following would be the ideal place in AWS to store the videos uploaded by the users
+    -Amazon S3
+
+Question 3:
+Which of the following component of the Cloudfront service allows for content to be cached and then delivered to users across the globe
+    -AWS Edge Locations
+
+Question 4:
+Your company is planning to host their application on AWS. This application is mission critical and can only afford very little downtime. The application must be available , even in the case of a disaster. Which of the following parts of AWS should be used in the design of the application in AWS
+    -
+
+Question 5:
+Your company is planning on hosting their testing environment in AWS. Which of the following instance types would be perfect for hosting the EC2 Instances in the testing environment
+    -
+
+Question 6:
+Your company has a set of resources defined in AWS. They are looking at options on how to optimize their workloads on AWS. They are looking at the advantages of using the Trusted Advisor service. For which of the following does the trusted Advisor provide Insights into? Choose 3 answers from the options given below
+    -
+
+Question 7:
+You are planning on hosting EC2 Instances in AWS. You need to ensure secure access to these EC2 Instances for Administrators. Which of the following can be used to define rules for this sort of secure access
+    -
+
+Question 8:
+A company has defined a 3-tier application in AWS. The architecture consists of a web , application and database tier. Which of the following AWS Services can be used to monitor the metrics of this architecture. Also, there is a need to monitor all API activity related to this architecture. How can you achieve this? Choose 2 answers from the options given below
+    -
+
+Question 9:
+Your company is trying to establish a hybrid IT environment. Which of the following can provide a dedicated connection to AWS from your on-premise environment
+    -
+
+Question 10:
+Which of the following best describes the main feature of an Elastic Load balancer in AWS? Choose an answer from the options below
+    -
+
+Question 11:
+Your business continuity team is deciding on a disaster recovery scenario. Which of the following disaster recovery techniques has the highest amount of downtime
+    - 
+
+Question 12:
+Which of the following are advantages when considering the costing aspects of working with resources in AWS when compared to on-premise Infrastructure. Choose 2 answers from the options given below
+    -
+
+Question 13:
+What is true when it comes to conducting Penetration testing on the AWS Cloud
+    -
+
+Question 14:
+Your company is planning on initiating their move to the AWS Cloud. They already have resources on their on-premise network which they need to move to AWS. Which of the following is considered when moving infrastructure to AWS in terms of the cost. Choose 2 answers from the options given below
+    -
+
+Question 15:
+You are planning to host a web application using Cloud Front and the AWS Application Load Balancer. You are worried about potential attacks from the Internet. Which of the following services can help assist with DDoS attacks from the Internet. Choose 2 answers from the options given below
+    -
+
+Question 16:
+You have an EC2 Instance that is going to host a database server which is going to experience a high number of Input/Output Operations. Which of the following would be an ideal storage solution for the EC2 Instance
+    -
+
+Question 17:
+You have been instructed by your IT Supervisor to make use of serverless components on the AWS Cloud. Which of the following would you consider to be part of your decision on which component to use?
+    -
+
+Question 18:
+Your development community continuously works on various applications and underlying technologies. They have always complained on the amount of time it takes to create a new development environment on the cloud. Which of the following service can be used to quickly spin up development environments on the AWS Cloud
+    -
+
+Question 19:
+You want to quickly host a wordpress site on the AWS Cloud. Which of the following can assist in this requirement?
+    -
+
+Question 20:
+A company is storing their archival data in Amazon Glacier. They need some data from the vault in a time period of 10 minutes. Which of the following needs to be done to fulfill this requirement
+    -
+
+Question 21:
+You want to build a fault tolerant solution for your web application which is hosted on EC2 Instances. Which of the below service can help fulfil this requirement
+    -
+
+Question 22:
+Your storage team is looking for options to store objects using the Simple Storage service. The files that are going to be stored are very critical and it needs to be ensured that the most durable option is chosen. Which of the following storage classes would you use for this purpose
+    -
+
+Question 23:
+Your current system consists of multiple distributed components. This system is currently hosted on your on-premise environment. The biggest challenge for this application is that whenever one component is changed , the entire system systems goes down with no way to keep the current inflight messages. You are planning on moving this system to the AWS Cloud. Which of the following service can be used to decouple components of an application
+    -
+
+Question 24:
+Your company is planning to purchase a support plan from AWS. They need to have Operational reviews, recommendations, and reporting for the resources hosted in their account. Which cost efficient plan could they choose
+    -
+
+Question 25:
+Your security team wants to have measures in place when resources start getting created in the AWS Cloud. They want to create privileged users who will certain levels of administrative access on the AWS Cloud. Which of the following can be used to define users and groups in your AWS account
+    -
+
+Question 26:
+You need to use AWS services that can be used to store files?  Which of the following can be used to fulfill this requirement? Choose 2 answers from the options below.
+    -
+
+Question 27:
+Which of the following service make use of AWS edge locations?
+    -
+
+Question 28:
+Which of the following is a benefit of Amazon Elastic Compute Cloud (Amazon EC2) over physical servers
+    -
+
+Question 29:
+Which AWS service provides infrastructure security optimization recommendations?
+    -
+
+Question 30:
+You need to collect and track metrics for various AWS services. Which of the following AWS service can help fulfil this requirement.
+    -
+
+Question 31:
+A company needs to know which user was responsible for terminating several critical Amazon Elastic Compute Cloud (Amazon EC2) Instances. Where can the customer find this information
+    -
+
+Question 32:
+You want to register a new domain with AWS. Which of the below service would you use?
+    -
+
+Question 33:
+What is the value of having AWS Cloud services accessible through an Application Programming Interface (API)?
+    -
+
+Question 34:
+Which of the following examples supports the cloud design principle "design for failure and nothing will fail"
+    -
+
+Question 35:
+Which service allows an administrator to create and modify AWS user permissions?
+    -
+
+Question 36:
+Which of the below service can be used to build a fully managed petabyte-scale data warehouse on the AWS Cloud
+    -
+
+Question 37:
+Which of the following is the responsibility of the AWS customer according to the Shared Security Model
+    -
+
+Question 38:
+You want to get more information on the costs incurred for your running EC2 Instances. Where can you get the relevant information on this
+    -
+
+Question 39:
+Which of the following entity has complete control over an AWS account?
+    -
+
+Question 40:
+One main design concept of developing application architectures is decoupling. What is meant by this concept.
+    -
+
+Question 41:
+Which of the following is a benefit of running an application across two Availability Zones?
+    -
+
+Question 42:
+Which of the following security requirements are managed by AWS customers? Select 2 answers from the options given below
+    -
+
+Question 43:
+Which of the following is in line with the concept of Elasticity when it comes to the design of an application
+    -
+
+Question 44:
+Which of the following workloads are best suited for AWS Spot Instances?
+    -
+
+Question 45:
+Which AWS feature enables a user to manage services through a web-based user interface?
+    -
+
+Question 46:
+Which tool can display the distribution of AWS spending? You need to also see the forecast of your expenses
+    -
+
+Question 47:
+How can you add an extra layer of unauthorized access in the AWS Management Console for the current users who are defined in IAM 
+    -
+
+Question 48:
+You are planning for a disaster recovery procedure for your AWS infrastructure. When you look towards building a disaster recovery plan, which of the following should be used to spin up your backup resources
+    -
+
+Question 49:
+Which of the following is a factor when calculating Total Cost of Ownership (TCO) for the AWS Cloud
+    -
+
+Question 50:
+Which of the following is a fully managed NoSQL database on the AWS Cloud?
+    -
+
+Question 51:
+A company wants to start shifting their servers to the AWS Cloud. Which of the following is used to house servers in the AWS cloud
+    -
+
+Question 52:
+A company wants to start shifting their servers to the AWS Cloud. Due to strict compliance regulations , they need to have their own independent hardware on the AWS Cloud. They cannot share the hardware with anyone else. Which of the following types of servers on the AWS Cloud meets this demand
+    -
+
+Question 53:
+You want to migrate your existing MySQL database to the AWS Cloud. Which of the following is a MySQL compatible database on the AWS Cloud
+    -
+
+Question 54:
+An application needs to be migrated to the AWS Cloud. It needs to be ensure that this application is PCI compliant as per compliance needs. How can you accomplish this? Choose 2 answers from the options given below
+    -
+
+Question 55:
+Your company is planning on purchasing a support plan. As part of the requirements drafting , it is mentioned that a Support Concierge is required as part of the support plan. Which of the following support plans meets this demand
+    -
+
+Question 56:
+Which of the following service allows you to define Infrastructure as Code?
+    -
+
+Question 57:
+You are hosting AWS resources in the Cloud. You want to be notified in case of issues in the underlying hardware that hosts the AWS Resources. Which of the following service can help in this regard
+    -
+
+Question 57:
+You are hosting AWS resources in the Cloud. You want to be notified in case of issues in the underlying hardware that hosts the AWS Resources. Which of the following service can help in this regard
+    -
+
+Question 58:
+You are planning on hosting EC2 Instances on the AWS Cloud. You need to ensure scalability of the Instances based on demand. Which of the below services can help for such a requirement. Choose 2 answers from the options given below
+    -
+
+Question 59:
+Which of the following features of the AWS Relational database service provides the facility of High availability
+    -
+
+Question 60:
+Which of the following are cost benefits when it comes to On-demand EC2 Instances? Choose 2 answers from the options given below.
+    -
+
+Question 61:
+When creating EC2 Instances , which of the following properties of EC2 instances contribute to the cost of the EC2 Instance. Choose 2 right options
+    -
+
+Question 62:
+Which of the following services is a fully managed NoSQL database on the AWS Cloud.
+    -
+
+Question 63:
+Senior Management needs to understand what is the cost benefit of moving assets from their on-premise environment to the AWS Cloud. Which of the following can help in this assessment
+    -
+
+Question 64:
+Which of the following should be considered when you are planning on deploying an application to the AWS Cloud
+    -
+
+Question 65:
+Which of the following storage devices is used to store data that is attached to EC2 Instance
+    -
+    
