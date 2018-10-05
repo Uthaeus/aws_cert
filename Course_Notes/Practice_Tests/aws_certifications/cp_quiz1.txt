@@ -12,39 +12,49 @@ Which of the following component of the Cloudfront service allows for content to
 
 Question 4:
 Your company is planning to host their application on AWS. This application is mission critical and can only afford very little downtime. The application must be available , even in the case of a disaster. Which of the following parts of AWS should be used in the design of the application in AWS
-    -
+    -AWS Regions 
+        -When your application needs to be available even in the case of a disaster, then you need to ensure that your application is either built to be available across Regions or at least come up in another region if the primary region goes down. Always think of regions when it comes to disaster recovery. Availability Zones are good when you want to achieve high availability for your applications, but in case of a complete region going down in the case of a disaster, then you cannot recover by just deploying applications across availability zones. AWS CloudFront and Edge Locations are used to deliver content to users across the globe 
 
 Question 5:
 Your company is planning on hosting their testing environment in AWS. Which of the following instance types would be perfect for hosting the EC2 Instances in the testing environment
-    -
+    -On-Demand 
 
 Question 6:
 Your company has a set of resources defined in AWS. They are looking at options on how to optimize their workloads on AWS. They are looking at the advantages of using the Trusted Advisor service. For which of the following does the trusted Advisor provide Insights into? Choose 3 answers from the options given below
-    -
+    -Performance
+    -Cost Optimization 
+    -Security 
+        -The Trusted Advisor service can give you insights on how to improve the performance of your workloads. Also it can tell you if you are not using capacity that you have provisioned in AWS. This can help from a cost aspect and reduce the amount of spending. Then it can also tell you how to better secure your environment. For example, it can tell y ou which security groups are left too open 
 
 Question 7:
 You are planning on hosting EC2 Instances in AWS. You need to ensure secure access to these EC2 Instances for Administrators. Which of the following can be used to define rules for this sort of secure access
-    -
+    -Security Groups 
+        -Using Security Groups, you can define rules that define the traffic which can flow inside of the EC2 instance. So if you need to secure access for Administrators from only certain workstations, then you can use Security Groups to define those rules accordingly
 
 Question 8:
 A company has defined a 3-tier application in AWS. The architecture consists of a web , application and database tier. Which of the following AWS Services can be used to monitor the metrics of this architecture. Also, there is a need to monitor all API activity related to this architecture. How can you achieve this? Choose 2 answers from the options given below
-    -
+    -AWS CloudWatch
+    -AWS CloudTrail
 
 Question 9:
 Your company is trying to establish a hybrid IT environment. Which of the following can provide a dedicated connection to AWS from your on-premise environment
-    -
+    -AWS Direct Connect 
 
 Question 10:
 Which of the following best describes the main feature of an Elastic Load balancer in AWS? Choose an answer from the options below
-    -
+    -To evenly distribute traffic among multiple EC2 instances in separate Availability Zones 
+        -Remember that the Elastic Load Balancer can distribute traffic across separate availability zones in a region. It cannot distribute traffic across regions. If you want to distribute traffic across regions, then you can use Route53 for that purpose. Also the entire idea of the load balancer is to ensure that traffic gets directed to instances in multiple AZ's so even if one zone goes down for any reason, the Elastic Load Balancer could still distribute traffic to instances in the other AZ 
 
 Question 11:
 Your business continuity team is deciding on a disaster recovery scenario. Which of the following disaster recovery techniques has the highest amount of downtime
-    - 
+    -Backup-Restore 
+        -The Backup option takes time and then the restoration of the entire environment will just take the same amount of time as the backup. Hence you just have a lot of downtime for the application if this mechanism is employed for disaster recovery. From the above scenario which will take the least amount of time is the Multi-Site scenario where you already have another side ready and you just need to change the URL to point to the backup site 
 
 Question 12:
 Which of the following are advantages when considering the costing aspects of working with resources in AWS when compared to on-premise Infrastructure. Choose 2 answers from the options given below
-    -
+    -Lower Upfront costs 
+    -Lower Varying costs 
+        -In AWS, you have lower to almost no upfront costs for hosting resources. Also with on-premise you always have to consider maintenance, employee cost when considering the operating costing for resources. And this always starts varying with complexity in the costing model. But with AWS, the costing model is pretty consistent and only lowers over time 
 
 Question 13:
 What is true when it comes to conducting Penetration testing on the AWS Cloud
@@ -261,4 +271,3 @@ Which of the following should be considered when you are planning on deploying a
 Question 65:
 Which of the following storage devices is used to store data that is attached to EC2 Instance
     -
-    
