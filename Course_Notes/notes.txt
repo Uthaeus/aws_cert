@@ -116,4 +116,5 @@ Data at Rest:
     -It would be a complex and long value, which has a certain number of bits. 
         -Most common is 128 or 256 bit encryption
     
+EBS Optimized - 
 

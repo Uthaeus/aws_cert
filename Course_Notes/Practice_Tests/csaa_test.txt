@@ -1,0 +1,98 @@
+Question 1:
+A company is planning on hosting their data store in AWS for their 3-tier application. The following are the key requirements for the database
+·       Ability for multiple schema changes
+·       The database should be durable
+·       Changes to the database should not result in downtime
+Which of the following would be the best data store option for the company
+    -AWS Aurora
+
+Question 2:
+A company currently uses a Redshift cluster that contains around 40TB of data. There is now a requirement from senior management to make the cluster highly available. The high availability procedure should also include the event that in case of a disaster, the Redshift cluster data needs to be available in a secondary region. How can you achieve this in the easiest possible way
+    -Use Redshift snapshots. Ensure to enable the cross region replication of the snapshots
+
+Question 3:
+Your company is currently planning to create a Redshift Cluster. As per the compliance objectives of the company, it needs to be ensured that all data is encrypted at REST. How can this be achieved? Choose 2 answers from the options given below  
+    -
+
+Question 4:
+There is a requirement for storing 300GB of data using block level storage. The additional requirement is that the data stored on this data store is completely encrypted. Which of the following data stores would you use   
+    -Amazon Elastic Block Storage Volumes
+
+Question 5:
+You’ve recently started using the AWS Relational database service. A new feature request for an application is in place. There is an anticipation that the new feature request might warrant the need to scale up the server of the underlying database instance because of the increased Input/Output operations. You need to ensure the least amount of downtime during this scaling operation. Which of the following initial steps would you confirm on your current RDS instance to fulfil this requirement 
+    -Ensure that Multi-AZ feature has been enabled for the underlying RDS instance 
+
+Question 6:
+A company is planning to migrate their existing on-premise application to the AWS Cloud. The application currently runs on .Net and uses Microsoft SQL Server as the backend database. They have the following limitations
+·       They don’t have the development staff currently to make major changes to the code
+·       They don’t have the IT admin staff currently to manage the infrastructure on AWS.
+Which of the following data service would you choose on AWS?
+    -AWS Aurora 
+
+Question 7:
+You have a legacy-based application that works mainly on a propriety file system powered by the Network File System protocol. You need to move the application and the file system to AWS. Which of the following data store would you use for the legacy-based application  
+    -AWS Elastic File System 
+
+Question 8:
+You’re currently developing an application. The application is going to be hosted on an EC2 Instance. The application will be carrying out batch processing activities. The general amount of throughput data will be in the range of 400-500 MiB/s. Which of the following should be used as the storage type for the underlying EC2 Instance 
+    -EBS Throughput Optimized HDD 
+
+Question 9:
+Your application currently has the following architecture   
+It’s a set of EC2 Instances that is accessing a DynamoDB table. The number of reads and writes runs into millions. You want to decrease the latency for the read and write operations and achieve faster access to data. Which of the following can be added to the architecture to achieve this? Choose 2 answers from the options given below
+    -
+
+Question 10:
+An application currently has the following architecture
+·       A Set of EC2 Instances in a public subnet which act as the web layer
+·       A Set of EC2 Instances in a private subnet which act as the database layer
+·       A NAT Instance in the public subnet for allowing the database servers to download patch updates.
+After reviewing the Cloudwatch metrics, you notice a severe bottleneck with the NAT instance. Which of the following step can be taken to alleviate this issue
+    -Use the NAT Gateway service instead of the NAT Instance 
+
+Question 11:
+An application is hosted on an EC2 Instance. The application needs access to a DynamoDB table. Which of the following is a secure way for the EC2 Instance to access the DynamoDB table? Choose 2 answers from the options given below 
+    -
+
+Question 12:
+A company had developed an API solution which has been operational since the last 3 years. They are planning to shift the entire solution to AWS. Which of the following is an ideal platform for hosting this solution in the MOST cost efficient and Reliable manner   
+    -Create EC2 instances. Install the API Gateway solution on these instances. Place the EC2 instances behind the API Gateway
+
+Question 13:
+Your company is developing an image processing application. The images will be stored in the Simple storage service. There is an anticipation of a high number of reads and writes on the images in S3. Which of the following can be done to optimize performance for the objects stored in S3 
+    -Ensure that a prefix is attached to each object with a random string 
+
+Question 14:
+A company is storing their archival data in Amazon Glacier. They need some data from the vault in a time period of 10 minutes. Which of the following needs to be done to fulfill this requirement
+    -Expedited Retrieval
+
+Question 15:
+Your application consists of EC2 Instances distributed across the Ireland Region. The applications needs a minimum of 4 instances running at all times. Which of the following is the ideal distribution of Instances across the available zones? The solution should ensure that the minimum number of instances are available even if one availability zone goes down. Choose 2 answers from the options given below.
+    -
+
+Question 16:
+Your team is developing an AWS Lambda function. This function is used to insert data into a DynamoDB table. Which of the following must be attached to the Lambda function in order for it to access the DynamoDB tabl   
+    -An IAM Role must be attached to the Lambda function 
+
+Question 17:
+Your company currently has the following architecture for their ecommerce application
+·       EC2 Instances hosting the application
+·       An Autoscaling group for the EC2 Instances
+A promotional campaign is going to begin in a week’s time. It needs to be ensured that the infrastructure is already scaled to ensure to provide a seamless user experience. Which of the following must be done to ensure this
+    -Ensure that a scheduled scaling policy is added to the Autoscaling Group 
+
+Question 18:
+As an architect working for an application, you are placed with the following requirement
+·       Storage of files on a highly durable storage layer
+·       Ensuring that files can be retrieved immediately
+·       Deletion of the files after a duration of 2 months.
+Which of the following would you look to implement? The implementation should look into a minimum amount of effort.
+    -Store the files in the Simple Storage Service - Standard. Use Lifecycle policies to delete the files after 2 months 
+
+Question 19:
+You have a Redshift Cluster in your AWS Account. You need to ensure that you can load data from the Simple Storage service into the Redshift Cluster. But the data can only flow via a VPC for security reasons. Which of the following implementation steps would help achieve this? Choose 2 answers from the options given below
+    -
+
+Question 20:
+As an architect you have asked to devise a Microservices based application which would be used for processing critical and non-critical data. You are planning on implementing EC2 Instances with Docker containers. Which of the following would you plan on implementing for the type of Instances to host the underlying Docker containers   
+    -

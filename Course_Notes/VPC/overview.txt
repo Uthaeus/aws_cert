@@ -50,4 +50,7 @@ Flow Log - capture information on IP traffic from network interfaces in a VPC
         -If you want detailed packet filtering
             -Use Host Intrusion Detection or a firewall
 
+RedShift 
+    -If you want the LOAD or COPY  process to be private via a VPC, enable Redshift Enhanced VPC Routing
 
+Use a bastion host for adiministrators to administer instances in the private subnet 
