@@ -188,43 +188,45 @@ One main design concept of developing application architectures is decoupling. W
 
 Question 41:
 Which of the following is a benefit of running an application across two Availability Zones?
-    -
+    -It increases the availability of an application compared to running in a single AZ 
 
 Question 42:
 Which of the following security requirements are managed by AWS customers? Select 2 answers from the options given below
-    -
+    -Password Policies 
+    -User Permissions 
 
 Question 43:
 Which of the following is in line with the concept of Elasticity when it comes to the design of an application
-    -
+    -Create systems that scale to the required capacity based on changes in demand 
 
 Question 44:
 Which of the following workloads are best suited for AWS Spot Instances?
-    -
+    -Workloads that need to run for long periods of time and the workloads can be interrupted at any time 
 
 Question 45:
 Which AWS feature enables a user to manage services through a web-based user interface?
-    -
+    -AWS Management Console 
 
 Question 46:
 Which tool can display the distribution of AWS spending? You need to also see the forecast of your expenses
-    -
+    -AWS Cost Explorer 
 
 Question 47:
 How can you add an extra layer of unauthorized access in the AWS Management Console for the current users who are defined in IAM 
-    -
+    -Apply Multi-Factor Authentication
 
 Question 48:
 You are planning for a disaster recovery procedure for your AWS infrastructure. When you look towards building a disaster recovery plan, which of the following should be used to spin up your backup resources
-    -
+    -AWS Region 
+        -If you need to have a disaster recovery mechanism in place, then plan to place your resources in multiple Regions 
 
 Question 49:
 Which of the following is a factor when calculating Total Cost of Ownership (TCO) for the AWS Cloud
-    -
+    -The number of servers migrated to AWS 
 
 Question 50:
 Which of the following is a fully managed NoSQL database on the AWS Cloud?
-    -
+    -AWS DynamoDB
 
 Question 51:
 A company wants to start shifting their servers to the AWS Cloud. Which of the following is used to house servers in the AWS cloud
