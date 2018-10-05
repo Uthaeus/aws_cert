@@ -230,47 +230,50 @@ Which of the following is a fully managed NoSQL database on the AWS Cloud?
 
 Question 51:
 A company wants to start shifting their servers to the AWS Cloud. Which of the following is used to house servers in the AWS cloud
-    -
+    -AWS VPC
+        -The AWS VPC is the equivalent of a private data center. This is carving out a portion of the AWS Cloud. AWS EC2 is the equivalent of the virtual servers, but the underlying place where the EC2 servers are placed is in the AWS Virtual Private Cloud 
 
 Question 52:
 A company wants to start shifting their servers to the AWS Cloud. Due to strict compliance regulations , they need to have their own independent hardware on the AWS Cloud. They cannot share the hardware with anyone else. Which of the following types of servers on the AWS Cloud meets this demand
-    -
+    -Dedicated Hosts 
 
 Question 53:
 You want to migrate your existing MySQL database to the AWS Cloud. Which of the following is a MySQL compatible database on the AWS Cloud
-    -
+    -AWS Aurora
 
 Question 54:
 An application needs to be migrated to the AWS Cloud. It needs to be ensure that this application is PCI compliant as per compliance needs. How can you accomplish this? Choose 2 answers from the options given below
-    -
+    -Ensure to check which services from AWS are PCI-Compliant 
+    -Ensure your application has the necessary checks for PCI-Compliance 
+        -Alway check and ensure that the services which you are going to use in AWS is PCI Compliant. AWS has a comprehensive security program wherein they certify a lot of their services with many security and compliance programs, but you still need to confirm based on the service you are going to use. Also at the application level you need to guarantee that the necessary checks are in place to achieve PCI Compliance 
 
 Question 55:
 Your company is planning on purchasing a support plan. As part of the requirements drafting , it is mentioned that a Support Concierge is required as part of the support plan. Which of the following support plans meets this demand
-    -
+    -Enterprise 
 
 Question 56:
 Which of the following service allows you to define Infrastructure as Code?
-    -
+    -CloudFormation
+        -The AWS CloudFormation service is used to define templates which is equivalent to infrastructure as code. Using this you can make templates run which in turn would create resources in the AWS Cloud 
 
 Question 57:
 You are hosting AWS resources in the Cloud. You want to be notified in case of issues in the underlying hardware that hosts the AWS Resources. Which of the following service can help in this regard
-    -
-
-Question 57:
-You are hosting AWS resources in the Cloud. You want to be notified in case of issues in the underlying hardware that hosts the AWS Resources. Which of the following service can help in this regard
-    -
+    -AWS Personal Health Dashboard
+        -The AWS Personal Health Dashboard displays the health of the underlying hardware resources. They also can be used to give you alerts in case there are any issues in the underlying hardware 
 
 Question 58:
 You are planning on hosting EC2 Instances on the AWS Cloud. You need to ensure scalability of the Instances based on demand. Which of the below services can help for such a requirement. Choose 2 answers from the options given below
-    -
+    -AWS Elastic Load Balancer
+    -AWS Autoscaling
 
 Question 59:
 Which of the following features of the AWS Relational database service provides the facility of High availability
-    -
+    -Multi-AZ 
 
 Question 60:
 Which of the following are cost benefits when it comes to On-demand EC2 Instances? Choose 2 answers from the options given below.
-    -
+    -Pay per second for compute capacity 
+    -No up front costs 
 
 Question 61:
 When creating EC2 Instances , which of the following properties of EC2 instances contribute to the cost of the EC2 Instance. Choose 2 right options
