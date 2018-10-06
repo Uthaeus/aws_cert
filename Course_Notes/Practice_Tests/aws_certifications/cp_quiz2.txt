@@ -176,7 +176,7 @@ You need to get details of the expenditure of EC2 Instances which occurred 3 mon
 
 Question 40:
 Which AWS service provides a manged service for an analytical data warehousing system
-    -
+    -Amazon Redshift 
 
 Question 41:
 Which of the following is the benefit of running an application off 2 availability zones
