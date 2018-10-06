@@ -16,27 +16,31 @@ You want to get detailed reports as to which service is consuming a large part o
 
 Question 5:
 You are trying to understand the different advantages that could come from consolidated billing. Which of the following is an advantage of Consolidated billing
-    -
+    -Ability to pay the bills for multiple accounts under one account 
 
 Question 6:
 You are looking at hosting your database on the AWS Cloud. Which of the following are database services provided by AWS?  Choose 2 answers from the options given below
-    -
+    -AWS Aurora
+    -AWS Redshift 
 
 Question 7:
 Which of the following is used for comparison analysis when it comes to moving on-premise infrastructure to the AWS Cloud
-    -
+    -TCO Calculator
+        -You can use the TCO Calculator to do the cost benefit analysis of hosting resources on the AWS Cloud 
 
 Question 8:
 You are looking at the core benefits of moving to the AWS. Which of the following is an advantage when it comes to the AWS Cloud
-    -
+    -Lower upfront costs and lower variable costs 
 
 Question 9:
 Which of the following is the concept of agility of the AWS Cloud? Choose 2 answers from the options given below
-    -
+    -Pay as you go 
+    -Use resources based on demand 
+        -The biggest advantage of using the AWS Cloud is that you have the ability to create and terminate resources whenever required. You also have the ability to only pay for what you use 
 
 Question 10:
 Which of the following is an important design principle that should be consider? This design principle is important for business-critical applications
-    -
+    -Design with failure in mind
 
 Question 11:
 A company has an application that is made up of several components. Every time a change is made to one component , the entire application fails. What design change should be made to ensure such issues don’t occur for the application
