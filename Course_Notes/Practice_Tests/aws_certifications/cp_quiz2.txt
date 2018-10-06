@@ -228,57 +228,62 @@ A company wants to start using a data storage facility on AWS. The data is NoSQL
 
 Question 52:
 You need to provision development environments on AWS in the quickest way possible. Which of the following service can be used for quickly building development environments on the AWS Cloud
-    -
+    -Elastic Beanstalk
 
 Question 53:
 Your company has multiple AWS Accounts. They want to manage all of these accounts in the most secure way. Which of the following can be used to manage multiple AWS Accounts
-    -
+    -AWS Organizations
 
 Question 54:
 Your company currently has a Microsoft SQL Server database on their on-premise environment. There is a need to migrate this to AWS. Which of the following service can be used to host the migrated SQL Server database.
-    -
+    -AWS RDS 
 
 Question 55:
 Your company currently has a MySQL database hosted in the AWS RDS service. They want to add fault tolerance to the database. How could they achieve this in the easiest way possible
-    -
+    -Enable Multi-AZ for the database 
 
 Question 56:
 You are planning on creating an application that will be hosted on the AWS Cloud. You need to have durable storage in place which can be used to store video files. Which of the following data stores would you use for this purpose
-    -
+    -AWS S3 
 
 Question 57:
 Which of the following aspects when creating an EC2 Instance defines the underlying CPU and Memory allocated to the instance.
-    -
+    -Instance Type
 
 Question 58:
 Which of the following is required to securely log into a Linux based EC2 Instance?
-    -
+    -Private Key 
+        -The Private Key needs to be generated when you create any type of instance. The key is then used to log into the instance. For Windows based instances, the private key file can be used to generate a password 
 
 Question 59:
 Your system administrator wants to create scripts which can be used to carry out housekeeping jobs for AWS based resources. Which of the following utilities would the system administrator use
-    -
+    -AWS Command Line Interface
+        -The AWS Command Line Interface is a tool which can be used from the command line itself. Here you can create scripts which can be used to work with your AWS resources 
 
 Question 60:
 Your company needs to create one single dedicated connection from their on-premise network to AWS. The connection should have high bandwidth and low latency. Which of the following would you use for this purpose
-    -
+    -AWS Direct Connect 
 
 Question 61:
 Which of the following is a configuration management service on the AWS Platform? 
-    -
+    -AWS Opswork
+        -AWS OpsWorks is a configuration management service that uses Chef, an automation platform that treats server configurations as code 
 
 Question 62:
 Which of the following can help in the disaster recovery for the RDS service?
-    -
+    -RDS Cross Region Read Replicas
+        -You can create a Read Replica of the RDS database in another region so this can help in a disaster recovery in case the primary region fails for any reason 
 
 Question 63:
 Your IT Manager is creating a business case for moving resources from on-premise to the AWS Cloud. Which of the following should be considered in the TCO Analysis? Choose 2 answers from the options give below
-    -
+    -Software Licensing
+    -Database Instance size 
 
 Question 64:
 Which of the following allows for defining templates , parameters for automatic creation o resources on the AWS Cloud
-    -
+    -AWS CloudFormation
 
 Question 65:
 You need to check for whether you are following the most secure practises for your AWS Infrastructure before you move it to the cloud. Which of the following tools can help in this regard
-    -
+    -AWS Trusted 
 
