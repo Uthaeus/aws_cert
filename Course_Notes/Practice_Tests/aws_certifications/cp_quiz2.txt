@@ -44,59 +44,69 @@ Which of the following is an important design principle that should be consider?
 
 Question 11:
 A company has an application that is made up of several components. Every time a change is made to one component , the entire application fails. What design change should be made to ensure such issues don’t occur for the application
-    -
+    -You need to ensure that loose coupling is incorporated amongst the destributed components 
 
 Question 12:
 You need to check for the configuration of resources and also see the history of all configuration changes. Which AWS service would you use for this purpose
-    -
+    -AWS Config 
 
 Question 13:
 Which of the following can be used to ensure that secure API calls can be made from EC2 Instances
-    -
+    -AWS IAM Roles
+        -Roles can be assigned to EC2 instances. This would allow secure access from the EC2 instances to your resources. Instead of embedding IAM keys, you can use IAM Roles for your EC2 instances 
 
 Question 14:
 Which of the following can be enforced for IAM users for securing IAM credentials? Choose 2 answers from the options given below
-    -
+    -Enable MFA
+    -Use password expiry
 
 Question 15:
 Which of the following service can be used to create a self-hosted database?
-    -
+    -AWS EC2 Instance 
+        -If you want a self-hosted database that means you want to host and manage the database instance. In such a case you need to spin up an EC2 instance, install the database software, and then manage the database instance 
 
 Question 16:
 Which of the following service can be used to create a customer managed database?
-    -
+    -AWS EC2 Instance 
 
 Question 17:
 You are planning on developing an application that will make use of AWS services. You need to carry out optimization for your application and see ways for improvement. Which of the below service can help in this regard
-    -
+    -AWS X-Ray
+        -The AWS X-Ray service can be used to collect data about requests that your application serves and provides tools you can use to view, filter, and gain insights into that data to identify issues and opportunities for optimization 
 
 Question 18:
 Your IT Security team has notified of suspicious activity in the AWS account. You need to check and see what API calls were made in the last week. Which of the below service can help fulfil this requirement
-    -
+    -CloudTrail
 
 Question 19:
 Which of the following is an advantage of moving from on-premise to AWS when it comes to costing
-    -
+    -Lower capex costs + Variable opex costs 
+        -When it comes to moving to the AWS Cloud, you can take advantage of the lower initial capital investment. Also, you have the option of variable operational costs 
 
 Question 20:
 Which of the following is available across all AWS support plans? Choose 2 answers from the options given below
-    -
+    -AWS support forums
+    -Personal Health Dashboard
 
 Question 21:
 You have a Hybrid IT architecture. Which of the following can help create a secure connection between on-premise and AWS
-    -
+    -AWS Virtual Private Connection 
+        -The AWS Virtual Private Connection is used to establish a secure connection between AWS and your on-premise infrastructure. AWS Direct Connect can work, but provides low latency and not security 
 
 Question 22:
 You are planning on using the Autoscaling Service. What feature does Autoscaling provide to you to create a more scalable architecture
-    -
+    -Scale up resources based on the demand 
 
 Question 23:
 A company has many departments that use AWS resources. They need a way to segregate the costing aspect for each of these accounts. How can you accomplish this
-    -
+    -Create separate accounts for each department 
+        -Nowadays a lot of companies create multiple accounts. Each account can be used for separate departments. And if you need one department to be the master account, you can opt for Consolidated Billing 
 
 Question 24:
 Which of the following services makes use of edge locations? Choose 2 answers from the options given below
-    -
+    -AWS CloudFront
+    -AWS Shield
+        -AWS CloudFront consists of Edge Locations located across the world which are used to cache content and deliver content to users across the world. Content is sent from the Origin to the edge location that is closest to the user. AWS Regions is a geographical location that is used to host a resource. AWS Shield is also used at the edge locations as a security measure for the incoming traffic 
 
 Question 25:
 You want to have the ability to distribute content across the world with the least amount of latency. Which of the following services would you use
