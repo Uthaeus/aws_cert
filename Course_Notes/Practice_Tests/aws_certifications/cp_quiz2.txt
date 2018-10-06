@@ -180,47 +180,51 @@ Which AWS service provides a manged service for an analytical data warehousing s
 
 Question 41:
 Which of the following is the benefit of running an application off 2 availability zones
-    -
+    -It increases the availability of an application as opposed to it running off one availability zone 
 
 Question 42:
 Which of the following examples supports the cloud design principle of “design for failure and nothing will fail”
-    -
+    -Deploying an application across multiple availability zones 
 
 Question 43:
 Which of the following is one of the major benefits of using Elastic Cloud Compute over your traditional on-premise physical servers
-    -
+    -You only pay for what you use 
 
 Question 44:
 Which service allows an administrator to work with AWS user permissions.
-    -
+    -AWS IAM 
 
 Question 45:
 Which of the following is the responsibility of the AWS customer as per the Shared Responsibility Model
-    -
+    -Managing users via AWS IAM 
 
 Question 46:
 Which of the following is the responsibility of AWS? Choose 3 answers from the options given below
-    -
+    -Physical security 
+    -Disk Disposal 
+    -Hardware patching 
 
 Question 47:
 Your architect is advising that all components in an application being developed on AWS use serverless components. Which of the following can be part of the design? Choose 2 answers from the options given below
-    -
+    -AWS S3 
+    -AWS Lambda 
 
 Question 48:
 You need to design the architecture for an application on the AWS Cloud. The application needs to be fault tolerant. Which of the following would you include in your design? Choose 2 answers
-    -
+    -Multiple Availability Zones 
+    -Elastic Load Balancer
 
 Question 49:
 Your web application is currently hosted in the us-west region in AWS. You need to ensure users all across the world get a seamless user experience when accessing the application. Which of the following service can help achieve this
-    -
+    -AWS CloudFront 
 
 Question 50:
 Which of the following storage devices would you attach to an EC2 Instance to store data?
-    -
+    -AWS EBS 
 
 Question 51:
 A company wants to start using a data storage facility on AWS. The data is NoSQL based. They want to have the least amount of administrative burden when working with the data store. Which one of the following would be the ideal data store solution
-    -
+    -AWS DynamoDB
 
 Question 52:
 You need to provision development environments on AWS in the quickest way possible. Which of the following service can be used for quickly building development environments on the AWS Cloud
