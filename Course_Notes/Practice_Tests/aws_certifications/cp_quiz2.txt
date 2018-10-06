@@ -110,63 +110,69 @@ Which of the following services makes use of edge locations? Choose 2 answers fr
 
 Question 25:
 You want to have the ability to distribute content across the world with the least amount of latency. Which of the following services would you use
-    -
+    -AWS CloudFront 
 
 Question 26:
 You have an application hosted on EC2 Instances that is globally mission critical and users are located globally. You need to ensure the highest level of fault tolerance. How would you design the application
-    -
+    -EC2 instances in multiple Availability Zones in 2 regions 
 
 Question 27:
 You need to create a snapshot of an EBS volume in another geographic location. Where would you store the snapshot
-    -
+    -In another region 
 
 Question 28:
 You need to have a development and test environment for 3 months , which of the following Instance pricing would you choose
-    -
+    -On-Demand Instances 
 
 Question 29:
 You have an application that needs to be available 24 by 7 , 365 days in the year. Which of the following Instance pricing would you choose
-    -
+    -Reserved Instances 
 
 Question 30:
 Which of the following are examples of agility of the AWS Cloud? Choose 2 answers from the options given below
-    -
+    -Infrastructure scalability
+    -Less time to promote application 
 
 Question 31:
 Which of the following methods can be used to put objects into Glacier. Choose 2 answers from the options given below
-    -
+    -Glacier API 
+    -S3 Lifecycle Policies
 
 Question 32:
 You are responsible for creating IAM users and also providing the required access permissions. Which of the following is the principle that should be followed when providing the required access
-    -
+    -Least privilege access 
 
 Question 33:
 There is a requirement for storage of objects. The objects should be able to be downloaded via a URL. Which storage option would you choose
-    -
+    -Amazon S3 
+        -When you upload objects to S3, each and every object will get a URL which can be used to download the object 
 
 Question 34:
 You want to find custom solutions which can be deployed to the AWS Cloud. Which of the following places can be used to search for custom software’s which can be deployed to AWS
-    -
+    -AWS Marketplace 
 
 Question 35:
 Which of the following service can be used to create the equivalent of a data center in the cloud
-    -
+    -AWS VPC 
 
 Question 36:
 You want to migrate an existing database from your on-premise location to the AWS Cloud. Which of the following can assist in this requirement
-    -
+    -AWS Database Migration Service 
+        -AWS Database Migration Service helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. The AWS Database Migration Service can migrate your data to and from most widely used commercial and open-source databases 
 
 Question 37:
 Which of the following services can be used to configure alerts that can be sent based on Cloud watch alarms
-    -
+    -Amazon Simple Notification Service 
+        -The SNS can be used to send alerts. These alerts can be configured whenever an alarm is triggered in CloudWatch 
 
 Question 38:
 What is the main benefit of decoupling an application
-    -
+    -It helps in reducing inter-dependencies between components of the applications. This can lead to less application failures 
 
 Question 39:
 You need to get details of the expenditure of EC2 Instances which occurred 3 months ago. Which of the following can help you achieve this
-    -
+    -AWS Cost and Usage Reports 
+        -Using the AWS Cost and Usage Reports, you can see past data for your rersource usage. All resources and the details of their costing is given in these reports 
 
 Question 40:
 Which AWS service provides a manged service for an analytical data warehousing system
