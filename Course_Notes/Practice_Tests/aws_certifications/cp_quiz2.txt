@@ -1,0 +1,260 @@
+Question 1:
+You are going through the Shared Responsibility Model provided by AWS. Which of the following comes under the umbrella as the responsibility of the AWS Customer
+    -Data Encryption
+
+Question 2:
+Which of the following is the responsibility of the customer when it comes to safety of EBS volumes
+    -Creating Snapshots of EBS volumes to protect data 
+
+Question 3:
+Which of the following is an AWS managed compute service?
+    -AWS Lambda
+
+Question 4:
+You want to get detailed reports as to which service is consuming a large part of your AWS expenditure. In which of the following would you be able to get these detailed level reports.
+    -AWS Cost Explorer
+
+Question 5:
+You are trying to understand the different advantages that could come from consolidated billing. Which of the following is an advantage of Consolidated billing
+    -
+
+Question 6:
+You are looking at hosting your database on the AWS Cloud. Which of the following are database services provided by AWS?  Choose 2 answers from the options given below
+    -
+
+Question 7:
+Which of the following is used for comparison analysis when it comes to moving on-premise infrastructure to the AWS Cloud
+    -
+
+Question 8:
+You are looking at the core benefits of moving to the AWS. Which of the following is an advantage when it comes to the AWS Cloud
+    -
+
+Question 9:
+Which of the following is the concept of agility of the AWS Cloud? Choose 2 answers from the options given below
+    -
+
+Question 10:
+Which of the following is an important design principle that should be consider? This design principle is important for business-critical applications
+    -
+
+Question 11:
+A company has an application that is made up of several components. Every time a change is made to one component , the entire application fails. What design change should be made to ensure such issues don’t occur for the application
+    -
+
+Question 12:
+You need to check for the configuration of resources and also see the history of all configuration changes. Which AWS service would you use for this purpose
+    -
+
+Question 13:
+Which of the following can be used to ensure that secure API calls can be made from EC2 Instances
+    -
+
+Question 14:
+Which of the following can be enforced for IAM users for securing IAM credentials? Choose 2 answers from the options given below
+    -
+
+Question 15:
+Which of the following service can be used to create a self-hosted database?
+    -
+
+Question 16:
+Which of the following service can be used to create a customer managed database?
+    -
+
+Question 17:
+You are planning on developing an application that will make use of AWS services. You need to carry out optimization for your application and see ways for improvement. Which of the below service can help in this regard
+    -
+
+Question 18:
+Your IT Security team has notified of suspicious activity in the AWS account. You need to check and see what API calls were made in the last week. Which of the below service can help fulfil this requirement
+    -
+
+Question 19:
+Which of the following is an advantage of moving from on-premise to AWS when it comes to costing
+    -
+
+Question 20:
+Which of the following is available across all AWS support plans? Choose 2 answers from the options given below
+    -
+
+Question 21:
+You have a Hybrid IT architecture. Which of the following can help create a secure connection between on-premise and AWS
+    -
+
+Question 22:
+You are planning on using the Autoscaling Service. What feature does Autoscaling provide to you to create a more scalable architecture
+    -
+
+Question 23:
+A company has many departments that use AWS resources. They need a way to segregate the costing aspect for each of these accounts. How can you accomplish this
+    -
+
+Question 24:
+Which of the following services makes use of edge locations? Choose 2 answers from the options given below
+    -
+
+Question 25:
+You want to have the ability to distribute content across the world with the least amount of latency. Which of the following services would you use
+    -
+
+Question 26:
+You have an application hosted on EC2 Instances that is globally mission critical and users are located globally. You need to ensure the highest level of fault tolerance. How would you design the application
+    -
+
+Question 27:
+You need to create a snapshot of an EBS volume in another geographic location. Where would you store the snapshot
+    -
+
+Question 28:
+You need to have a development and test environment for 3 months , which of the following Instance pricing would you choose
+    -
+
+Question 29:
+You have an application that needs to be available 24 by 7 , 365 days in the year. Which of the following Instance pricing would you choose
+    -
+
+Question 30:
+Which of the following are examples of agility of the AWS Cloud? Choose 2 answers from the options given below
+    -
+
+Question 31:
+Which of the following methods can be used to put objects into Glacier. Choose 2 answers from the options given below
+    -
+
+Question 32:
+You are responsible for creating IAM users and also providing the required access permissions. Which of the following is the principle that should be followed when providing the required access
+    -
+
+Question 33:
+There is a requirement for storage of objects. The objects should be able to be downloaded via a URL. Which storage option would you choose
+    -
+
+Question 34:
+You want to find custom solutions which can be deployed to the AWS Cloud. Which of the following places can be used to search for custom software’s which can be deployed to AWS
+    -
+
+Question 35:
+Which of the following service can be used to create the equivalent of a data center in the cloud
+    -
+
+Question 36:
+You want to migrate an existing database from your on-premise location to the AWS Cloud. Which of the following can assist in this requirement
+    -
+
+Question 37:
+Which of the following services can be used to configure alerts that can be sent based on Cloud watch alarms
+    -
+
+Question 38:
+What is the main benefit of decoupling an application
+    -
+
+Question 39:
+You need to get details of the expenditure of EC2 Instances which occurred 3 months ago. Which of the following can help you achieve this
+    -
+
+Question 40:
+Which AWS service provides a manged service for an analytical data warehousing system
+    -
+
+Question 41:
+Which of the following is the benefit of running an application off 2 availability zones
+    -
+
+Question 42:
+Which of the following examples supports the cloud design principle of “design for failure and nothing will fail”
+    -
+
+Question 43:
+Which of the following is one of the major benefits of using Elastic Cloud Compute over your traditional on-premise physical servers
+    -
+
+Question 44:
+Which service allows an administrator to work with AWS user permissions.
+    -
+
+Question 45:
+Which of the following is the responsibility of the AWS customer as per the Shared Responsibility Model
+    -
+
+Question 46:
+Which of the following is the responsibility of AWS? Choose 3 answers from the options given below
+    -
+
+Question 47:
+Your architect is advising that all components in an application being developed on AWS use serverless components. Which of the following can be part of the design? Choose 2 answers from the options given below
+    -
+
+Question 48:
+You need to design the architecture for an application on the AWS Cloud. The application needs to be fault tolerant. Which of the following would you include in your design? Choose 2 answers
+    -
+
+Question 49:
+Your web application is currently hosted in the us-west region in AWS. You need to ensure users all across the world get a seamless user experience when accessing the application. Which of the following service can help achieve this
+    -
+
+Question 50:
+Which of the following storage devices would you attach to an EC2 Instance to store data?
+    -
+
+Question 51:
+A company wants to start using a data storage facility on AWS. The data is NoSQL based. They want to have the least amount of administrative burden when working with the data store. Which one of the following would be the ideal data store solution
+    -
+
+Question 52:
+You need to provision development environments on AWS in the quickest way possible. Which of the following service can be used for quickly building development environments on the AWS Cloud
+    -
+
+Question 53:
+Your company has multiple AWS Accounts. They want to manage all of these accounts in the most secure way. Which of the following can be used to manage multiple AWS Accounts
+    -
+
+Question 54:
+Your company currently has a Microsoft SQL Server database on their on-premise environment. There is a need to migrate this to AWS. Which of the following service can be used to host the migrated SQL Server database.
+    -
+
+Question 55:
+Your company currently has a MySQL database hosted in the AWS RDS service. They want to add fault tolerance to the database. How could they achieve this in the easiest way possible
+    -
+
+Question 56:
+You are planning on creating an application that will be hosted on the AWS Cloud. You need to have durable storage in place which can be used to store video files. Which of the following data stores would you use for this purpose
+    -
+
+Question 57:
+Which of the following aspects when creating an EC2 Instance defines the underlying CPU and Memory allocated to the instance.
+    -
+
+Question 58:
+Which of the following is required to securely log into a Linux based EC2 Instance?
+    -
+
+Question 59:
+Your system administrator wants to create scripts which can be used to carry out housekeeping jobs for AWS based resources. Which of the following utilities would the system administrator use
+    -
+
+Question 60:
+Your company needs to create one single dedicated connection from their on-premise network to AWS. The connection should have high bandwidth and low latency. Which of the following would you use for this purpose
+    -
+
+Question 61:
+Which of the following is a configuration management service on the AWS Platform? 
+    -
+
+Question 62:
+Which of the following can help in the disaster recovery for the RDS service?
+    -
+
+Question 63:
+Your IT Manager is creating a business case for moving resources from on-premise to the AWS Cloud. Which of the following should be considered in the TCO Analysis? Choose 2 answers from the options give below
+    -
+
+Question 64:
+Which of the following allows for defining templates , parameters for automatic creation o resources on the AWS Cloud
+    -
+
+Question 65:
+You need to check for whether you are following the most secure practises for your AWS Infrastructure before you move it to the cloud. Which of the following tools can help in this regard
+    -
+
