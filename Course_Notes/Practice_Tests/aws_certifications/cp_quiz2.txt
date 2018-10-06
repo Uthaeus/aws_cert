@@ -285,5 +285,6 @@ Which of the following allows for defining templates , parameters for automatic 
 
 Question 65:
 You need to check for whether you are following the most secure practises for your AWS Infrastructure before you move it to the cloud. Which of the following tools can help in this regard
-    -AWS Trusted 
+    -AWS Trusted Advisor
+        -The AWS Trusted Advisor gives you security recommendations and can help you improve the overall way you utilize resources in your AWS account 
 
