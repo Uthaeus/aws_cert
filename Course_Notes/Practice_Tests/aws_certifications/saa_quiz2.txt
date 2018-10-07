@@ -1,0 +1,350 @@
+Question 1:
+A company is planning on hosting their data store in AWS for their 3-tier application. The following are the key requirements for the database
+1) Ability for multiple schema changes   
+2) The database should be durable   
+3) Changes to the database should not result in downtime 
+Which of the following would be the best data store option for the company
+    -
+
+Question 2:
+A company currently uses a Redshift cluster that contains around 40TB of data. There is now a requirement from senior management to make the cluster highly available. The high availability procedure should also include the event that in case of a disaster, the Redshift cluster data needs to be available in a secondary region.
+How can you achieve this in the easiest possible way?
+    -
+
+Question 3:
+Your company is currently planning to create a Redshift Cluster. As per the compliance objectives of the company, it needs to be ensured that all data is encrypted at rest. 
+How can this be achieved? Choose 2 answers from the options given below 
+    -
+
+Question 4:
+There is a requirement for storing 300GB of data using block level storage. The additional requirement is that the data stored on this data store is completely encrypted. 
+Which of the following data store would you use for this requirement
+    -
+
+Question 5:
+You’ve recently started using the AWS Relational database service. A new feature request for an application is in place. There is an anticipation that the new feature request might warrant the need to scale up the server of the underlying database instance because of the increased Input/Output operations. You need to ensure the least amount of downtime during this scaling operation.
+Which of the following initial steps would you confirm on your current RDS instance to fulfil this requirement?
+    -
+
+Question 6:
+A company is planning to migrate their existing on-premise application to the AWS Cloud. The application currently runs on .Net and uses Microsoft SQL Server as the backend database. They have the following limitations
+1) They don’t have the development staff currently to make major changes to the code   
+2) They don’t have the IT admin staff currently to manage the infrastructure on AWS.   
+Which of the following data service would you choose on AWS? 
+    -
+
+Question 7:
+You have a legacy-based application that works mainly on a propriety file system powered by the Network File System protocol. You need to move the application and the file system to AWS. 
+Which of the following data store would you use for the legacy-based application?
+    -
+
+Question 8:
+You’re currently developing an application. The application is going to be hosted on an EC2 Instance. The application will be carrying out batch processing activities. The general amount of throughput data will be in the range of 400-500 MiB/s. Which of the following should be used as the storage type for the underlying EC2 Instance?
+    -
+
+Question 9:
+Your application currently has the following architecture
+It’s a set of EC2 Instances that is accessing a DynamoDB table. The number of reads and writes runs into millions. You want to decrease the latency for the read and write operations and achieve faster access to data. 
+Which of the following can be added to the architecture to achieve this? Choose 2 answers from the options given below
+    -
+
+Question 10:
+An application currently has the following architecture
+1) A Set of EC2 Instances in a public subnet which act as the web layer   
+2) A Set of EC2 Instances in a private subnet which act as the database layer   
+3) A NAT Instance in the public subnet for allowing the database servers to download patch updates.   
+After reviewing the Cloudwatch metrics, you notice a severe bottleneck with the NAT instance. Which of the following step can be taken to alleviate this issue.
+    -
+
+Question 11:
+An application is hosted on an EC2 Instance. The application needs access to a DynamoDB table. 
+Which of the following is a secure way for the EC2 Instance to access the DynamoDB table? Choose 2 answers from the options given below
+    -
+
+Question 12:
+A company had developed an API solution which has been operational since the last 3 years. They are planning to shift the entire solution to AWS. Which of the following is an ideal platform for hosting this solution in the MOST cost efficient and Reliable manner?
+    -
+
+Question 13:
+An application is currently installed on a set of EC2 Instances. There is a need for a data store that can be easily shared between the instances for storage of files.
+Which of the following would be the ideal data store?
+    -
+
+Question 14:
+Your company is developing an image processing application. The images will be stored in the Simple storage service. There is an anticipation of a high number of reads and writes on the images in S3. 
+Which of the following can be done to optimize performance for the objects stored in S3?
+    -
+
+Question 15:
+A company is storing their archival data in Amazon Glacier. They need some data from the vault in a time period of 10 minutes. 
+Which of the following needs to be done to fulfill this requirement
+    -
+
+Question 16:
+Your application consists of EC2 Instances distributed across the Ireland Region. The applications needs a minimum of 4 instances running at all times. Which of the following is the ideal distribution of Instances across the available zones? 
+The solution should ensure that the minimum number of instances are available even if one availability zone goes down. Choose 2 answers from the options given below
+    -
+
+Question 17:
+Your team is developing an AWS Lambda function. This function is used to insert data into a DynamoDB table. 
+Which of the following must be attached to the Lambda function in order for it to access the DynamoDB table?
+    -
+
+Question 18:
+Your company currently has the following architecture for their ecommerce application
+1) EC2 Instances hosting the application   
+2) An Autoscaling group for the EC2 Instances   
+A promotional campaign is going to begin in a week’s time. It needs to be ensured that the infrastructure is already scaled to ensure a seamless user experience. Which of the following must be done to ensure this?
+    -
+
+Question 19:
+You are planning on migrating an existing SQL Server Instance on to AWS. You are planning on creating a self-hosted database instance on an EC2 Instance. The database itself is not used that frequently. 
+Which of the following would be BEST suited for the underlying storage volume ensuring that cost is managed effectively?
+    -
+
+Question 20:
+As an architect working for an application, you are placed with the following requirement
+1) Storage of files on a highly durable storage layer   
+2) Ensuring that files can be retrieved immediately   
+3) Deletion of the files after a duration of 2 months.   
+Which of the following would you look to implement? The implementation should look into a minimum amount of effort.
+    -
+
+Question 21:
+You have a Redshift Cluster in your AWS Account. You need to ensure that you can load data from the Simple Storage service into the Redshift Cluster. But the data can only flow via a VPC for security reasons. 
+Which of the following implementation steps would help achieve this? Choose 2 answers from the options given below.
+    -
+
+Question 22:
+You work for a consultant company. You normally work on assignments for prospective clients who have their own AWS accounts. Your main responsibility is to provide templates which the company can use to spin up resources. 
+Which of the following service would you make use of for this?
+    -
+
+Question 23:
+An application consists of the following architecture.
+1) EC2 Instances in multiple Availability Zones behind an Elastic Load Balancer.   
+2) A NAT Instance in the public subnet which is used to download updates from the Internet   
+3) A database hosted in the AWS RDS service with Multi-AZ enabled.   
+Which of the following is a bottleneck in the above architecture?
+    -
+
+Question 24:
+You have a set of EC2 Instances in a public subnet. These Instances are hosting a web application which is available for users to access. You want to get the list of IP addresses which are accessing the EC2 Instance. 
+Which of the following can help achieve this?
+    -
+
+Question 25:
+Your company is currently hosting a set of EC2 Instances in AWS. Since the data on the underlying EBS volumes stores crucial data, it has to be ensured that the EBS volumes can be made available in a secondary region. 
+How can you achieve this?
+    -
+
+Question 26:
+Your company has the following requirement
+1) A data store that can store millions of rows   
+2) Ensure that data can be summarized column wise   
+3) Ensure that business intelligence tools can work with the data store   
+Which of the following is the right data store to use for these requirements?
+    -
+
+Question 27:
+Your team currently manages an application that consists of 2 key components
+1) Docker containers   
+2) Worker processes   
+Currently these are hosted in your on-premise development environment. You have to get this ported to AWS in a development environment in the easiest way possible.
+Which of the following service can be used to host your development environment in AWS?
+    -
+
+Question 28:
+You currently have a 2-tier web application. The web tier is hosted on an EC2 Instance. The application tier is hosted on another EC2 Instance. Data is sent from the Web tier to the Application Tier. 
+Which of the following can be added to the architecture to make it more Reliable?
+    -
+
+Question 29:
+Your current VPC design includes instances which are located in a private subnet. You need to ensure that these instances can access an S3 bucket without traversing the Internet.
+Which of the following would you implement?
+    -
+
+Question 30:
+There is a requirement for an application to have the ability to take files from users and store the data in a secure and durable location. The metadata from these files needs to be collected and stored in another data store. 
+Which of the following architectures would you consider?
+    -
+
+Question 31:
+Your development team needs to host an application using the NGINX web server. The application should have the ability to scale at any point in time. 
+Which of the following service can be used to easily launch the application and enable scaling abilities for the application.
+    -
+
+Question 32:
+An application hosted in one VPC in one region needs to access another application in another VPC in another region. 
+Which of the following can be used to connect the VPC’s in the easiest way possible? It needs to be ensured that the traffic does not pass via the Internet.
+    -
+
+Question 33:
+There is a requirement to host a database application which will have a lot of resource intensive reads and writes.
+Which of the following is the best storage option to ensure optimal data performance for the database?
+    -
+
+Question 34:
+There is a requirement to upload a million images to a Simple Storage Service bucket. 
+Which of the following can be used to ensure optimal performance for the underlying objects in the S3 bucket?
+    -
+
+Question 35:
+Your company is planning on setting up an application in AWS. The application will takes images uploaded by users and store them in an S3 bucket. The application then needs to take the metadata about the images and store the metadata in a separate data store. The metadata needs to be indexed. The data store should be scalable. 
+Which of the following can be used for the underlying data store?
+    -
+
+Question 36:
+A call center depends upon an incident management software that is installed on a set of EC2 instances that are spun up via an Autoscaling group. Performance problems with the software are reported by the call center every day at normally 9:00 in the morning. By 9:30 , the performance issues goes away. The Autoscaling Group is set to scale instances based on the CPU utilization metric. 
+Which of the following can be done to resolve the issues that occur at 9:00 in the morning?
+    -
+
+Question 37:
+You have a set of EC2 Instances that are carrying out video processing activities. These EC2 Instances should be able to have a high throughput capacity to take in the videos for processing. 
+Which of the following can be used for the volume type of the Instances?
+    -
+
+Question 38:
+A company has an application that consists of EC2 Instances that sits behind an Elastic Load Balancer. Following are the requirements when it comes to the monitoring aspect for this architecture
+1. Ensure notifications are sent when the read requests goes beyond a certain threshold   
+2. Ensure notifications are sent when the latency goes beyond a certain threshold   
+3. Any API activity which calls sensitive data should be monitored   
+Which of the following would you use to architect the monitoring requirements? Choose 2 answers from the options given below.
+    -
+
+Question 39:
+One needs to monitor API activity for audit purposes for an AWS account. This audit would be conducted in the future as well.
+How would you design your solution to meet the present and future needs?
+    -
+
+Question 40:
+A company wants to extend their storage options using the AWS Cloud. There is a requirement for a legacy-based application that can mount an iSCI device for local storage. The most recently accessed data should be available for low latency access. 
+Which of the following can be used as the storage option?
+    -
+
+Question 41:
+An application has a requirement for 500 messages to be sent and processed in order.
+Which service can be used in this regard?
+    -
+
+Question 42:
+An application is hosted on a web instance and accesses a MySQL database. The Web instances needs to be accessed by all users in the internet via SSL.
+Which of the following needs to be in place when it comes to the Security Groups. Choose 2 answers from the options given below.
+    -
+
+Question 43:
+There is a requirement for EC2 Instances in a private subnet to access a DynamoDB table. The traffic should not traverse to the internet. 
+Which of the following can be used to fulfil this requirement?
+    -
+
+Question 44:
+There is an application which consists of EC2 Instances behind a classic Elastic Load Balancer. An EC2 proxy is used for content management to backend instances. As an architect you know that the application might not be able to scale properly.
+Which of the following can be used to scale the proxy and backend instances appropriately. Choose 2 answers from the options given below.
+    -
+
+Question 45:
+A marketing application is hosted on a set of EC2 Instances in AWS. During a new promotional campaign, there is a risk that the application might not be able to scale based on the amount of traffic. 
+Which of the following can be used to reduce the potential disruption to users in case any issue occurs?
+    -
+
+Question 46:
+As an architect you have a requirement for hosting a static web site for a domain called cloudportalhub.com. You need to ensure that the infrastructure is scaled accordingly when the traffic increases. You need to ensure that the solution is COST effective. 
+Which of the following would you implement? Choose 2 answers from the options given below.
+    -
+
+Question 47:
+A company currently is making use of the AWS RDS service for an application. They want to ensure high availability for the database. 
+Which of the following would you suggest being the architect for the application?
+    -
+
+Question 48:
+Which of the following can be used to restrict traffic into subnets in a VPC? You need to ensure that you can also specify which protocol can be used to restrict the traffic.
+    -
+
+Question 49:
+You are creating a Lambda function. This function will be used to read metadata from objects stored in an S3 bucket. The metadata will then be stored in a DynamoDB table. 
+What should be done to ensure that the lambda function works as expected. Choose 2 answers from the options given.
+    -
+
+Question 50:
+You have currently contacted an AWS partner to carry out an audit for your AWS account. Initially you want to give access to an S3 bucket in your account to the auditor. 
+Which of the following will be one of the steps that needs to be considered for this to work? This needs to be done as per Security BEST practices.
+    -
+
+Question 51:
+A sales company is currently storing its records in a MySQL RDS database in AWS. Off late there are severe performance issues on the database. On close inspection it has been noticed that the same set of queries are causing the performance issue. 
+Which of the following can be added to the architecture to alleviate the performance issue?
+    -
+
+Question 52:
+Your company has currently deployed a Microservices based application using the AWS Elastic Container Service. Performance issues are being reported for the service during peak hours. 
+As an architect which of the following would you consider using to solve the performance issues in a COST-effective manner.
+    -
+
+Question 53:
+You are currently reviewing an application for a company. The application consists of EC2 Instances launched as part of an Autoscaling. The application has a particular issue wherein the scaling up and down process is occurring multiple times in the same hour.
+Which of the following steps can be performed to rectify the error. Choose 2 answers from the options given below.
+    -
+
+Question 54:
+A company has an application hosted on AWS. The application allows users to upload images. The images are then stored in an S3 bucket. Now the requirement is that the users should not download the images from the EC2 Instance, so as not to overload the Instance. The Instance should only be used for uploading images. 
+Which one of the below steps is the ideal way to allow the users to access the images?
+    -
+
+Question 55:
+You are an architect for a company. You have been told to design the network layer for a 2-tier application which will consist of a web and database layer.  Internet Users will access the web-based application. 
+Which of the following is a proper design for the web and database layer?
+    -
+
+Question 56:
+A company has a large set of machines that keep on sending log information every 5 minutes. The number of machines can run into thousands. There should be a requirement to ensure that the data can be ingested into AWS and analyzed at a later stage. 
+Which of the following set of services would you use for this?
+    -
+
+Question 57:
+A company is currently going through an audit process. The CIO has asked department heads to upload documents to an S3 bucket in a week’s time. After this they should not have access to the S3 bucket, since the auditor will then analyze the documents in the S3 bucket.
+Which one of the following is the ideal way to implement the way users can upload the objects in the bucket?
+    -
+
+Question 58:
+As an architect you have asked to devise a Microservices based application which would be used for processing critical and non-critical data. You are planning on implementing EC2 Instances with Docker containers. 
+Which of the following would you plan on implementing for the type of Instances to host the underlying Docker containers?
+    -
+
+Question 59:
+There is a requirement for storage of archive data of 6 TB, with an 8hr agreed retrieval time from business. 
+Which of the following can be used as the underlying data, ensuring COST is kept at a minimum?
+    -
+
+Question 60:
+Your company currently has an application that makes use of On-premise servers and resources in AWS. They have a requirement wherein, if there are any issues with the health of their underling on-premise web servers, that they should be taken out of rotation.
+As an architect how would you consider implementing this?
+    -
+
+Question 61:
+You have 5 servers hosted in AWS for one domain name. You want the users machine to have the ability to connect to any one of the servers when they browse for the domain name. 
+Which route53 record type would you use for this purpose.
+    -
+
+Question 62:
+A company has the requirement to have a data store in AWS. This will be for their ecommerce application. The key requirement is for the database to be highly available is required. Joins would also be required on the underlying tables for the application. 
+Which of the following would you choose as the underlying data store?
+    -
+
+Question 63:
+A company is planning to migrate an on-premise 15 TB MySQL database cluster onto AWS. The replication lag needs to be under 100 ms for the cluster and the size is expected to double in the next couple of months. 
+Which of the following would be the ideal data store that should be chosen in AWS.
+    -
+
+Question 64:
+An application has a set of EC2 Instances in a private subnet. These Instances needs to constantly contact an external web server for feed updates. 
+Which one of the following can be used to allow the instances the communicate with the web service in a secure manner? Additionally there should be as less constraints as possible on the bandwidth for the solution.
+    -
+
+Question 65:
+Your team is building an application which will be used for storage of JSON based documents. The data store needs to be highly available and durable. Latency of data access should also be as less as possible.
+Which of the following would be the ideal data store to choose for this purpose?
+    -
+
+
+
