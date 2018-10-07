@@ -348,22 +348,23 @@ Which route53 record type would you use for this purpose.
 Question 62:
 A company has the requirement to have a data store in AWS. This will be for their ecommerce application. The key requirement is for the database to be highly available is required. Joins would also be required on the underlying tables for the application. 
 Which of the following would you choose as the underlying data store?
-    -
+    -AWS Aurora 
 
 Question 63:
 A company is planning to migrate an on-premise 15 TB MySQL database cluster onto AWS. The replication lag needs to be under 100 ms for the cluster and the size is expected to double in the next couple of months. 
 Which of the following would be the ideal data store that should be chosen in AWS.
-    -
+    -AWS Aurora
+        -Amazon Aurora is a compatible MySQL database that can take on tremendous growth in terms of the data size. Also the replication lag is kept under 100ms for the entire database cluster 
 
 Question 64:
 An application has a set of EC2 Instances in a private subnet. These Instances needs to constantly contact an external web server for feed updates. 
 Which one of the following can be used to allow the instances the communicate with the web service in a secure manner? Additionally there should be as less constraints as possible on the bandwidth for the solution.
-    -
+    -Launch an NAT gateway and add a route for 0.0.0.0/0 for the private subnet 
 
 Question 65:
 Your team is building an application which will be used for storage of JSON based documents. The data store needs to be highly available and durable. Latency of data access should also be as less as possible.
 Which of the following would be the ideal data store to choose for this purpose?
-    -
+    -AWS DynamoDB
 
 
 
