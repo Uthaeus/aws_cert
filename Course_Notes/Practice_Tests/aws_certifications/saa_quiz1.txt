@@ -1,0 +1,271 @@
+Question 1:
+Currently you have a need to create a Lambda function which will write data to an Amazon RDS instance. This function should be used within a VPC and not have access the Internet. As an architect which of the following needs to be considered to ensure that the Lambda function works as desired. Choose 2 answers from the options given below.
+    -
+
+Question 2:
+A company has been using  a MySQL solution in their on-premise location. The users currently agree to a 100 ms latency when accessing data. Initially the response time was fine and the users had no issues. 
+Now the database is becoming overloaded and the budget for the additional hardware is becoming too much. The company is now planning to migrate the solution to AWS. The company has agreed to change the database engine if required. Which of the following service can be used to host the data. Keeping the latency in check as per the user requirements. Also, there should be no limitations on the future scale and growth of the underling infrastructure.
+    -
+
+Question 3:
+Your application currently uses a MySQL Relation database service. After continuous usage , the database metrics from Cloudwatch indicate that the performance is becoming a bottleneck for the entire application. After further investigation , the cause of the problem has boiled down to the same set complex queries which are being fired. This seems to be slowing down the other transactions fired against the database. Which of the following can be used to increase performance and help potentially resolve the issue
+    -
+
+Question 4:
+Your application currently uses a MySQL Relation database service. The application behaves fine when there are 20 lookups against the database. But when the usage increases , the performance degrades. Which of the following can be used to increase the performance of the underlying database
+    -
+
+Question 5:
+You are an architect for a consulting company. This company is going to develop a waiting list application for a hospital. The application would take the name of the patients. The application needs to ensure that the names of the patients are transferred to the doctors in an ethical way to ensure that they are treated in the order in which they arrive. Which of the following service would you use to maintain the names of the patien
+    -
+
+Question 6:
+An application is going to be deployed on a set of EC2 Instances in a private subnet. The application needs to access the Amazon Kinesis streams service. As a security requirement , it also needs to be ensured that the traffic to the Kinesis stream from the EC2 Instance does not pass via the Internet. Which of the following can help you achieve this requirement
+    -
+
+Question 7:
+A start company needs to access a service in a parent company. Both companies use AWS to host their resources. Both companies have separate accounts. They have their services hosted on EC2 Instances that are in separate regions. So you need to ensure that an EC2 instance in the start-up company’s account can access the EC2 Instance in the parent’s company’s account. The traffic should not cross the Internet. How can you accomplish this? Choose 2 answers from the options given below
+    -
+
+Question 8:
+Your company currently stores sensitive documents in an S3 bucket. It needs to ensure that data is encrypted at rest. The company need to use its own keys for the encryption process. Which of the following methods would you incorporate? Choose 2 answers from the options given below
+    -
+
+Question 9:
+Your development team is currently creating an application which will be hosted in AWS. It needs to have a login module with MFA enabled. Which of the following is the easiest way to achieve this
+    -
+
+Question 10:
+Your EC2 Instance currently hosts a database that has EBS Volumes(gp2). There are lots of waits occurring on the database as the load on the database is increasing. Which of the following would you do to improve the performance of the database
+    -
+
+Question 11:
+You currently have NAT instances in your public subnet. This is being used by a lot of EC2 Instances in your private subnet. The NAT instances are now becoming a bottleneck because of the bandwidth issues. You plan to replace the NAT instances with NAT gateways. You also want to ensure high availability of the overall NAT solution. Which of the following would help fulfil this requirement
+    -
+
+Question 12:
+Your company is planning on hosting a Web application that will consist of EC2 Instances. These EC2 Instances will sit behind a load balancer. The application architecture also consists of a relational database and a NAT gateway. Which of the following can be added to the architecture to ensure high availability across all components
+    -
+
+Question 13:
+Which of the following service gives you the ability to see and track all the resource configuration changes in your AWS Account
+    -
+
+Question 14:
+An application needs a messaging service which needs to ensure that messages are delivered in the order in which they are received. There are around 300 messages that will be received per second. Which of the following service would you use for this purpose
+    -
+
+Question 15:
+An application consists of the following architecture
+1) A lambda function which reads metadata of objects from an S3 bucket   
+2) The Lambda function then stores the metadata in respective tables in DynamoDB and AWS RDS - PostgreSQL   
+Which of the following needs to be in place to high availability of all components in the system?
+    -
+
+Question 16:
+A company currently has a marketing application. The application stores its data in a AWS RDS MySQL Database. They want to ensure high availability for the database. Which of the following would you suggest being the architect for the application
+    -
+
+Question 17:
+A company currently makes use of EC2 Instances which stores sensitive data on the underlying EBS volumes. There is a requirement that data stored on these EBS volumes are never deleted. How can you achieve this?
+    -
+
+Question 18:
+A company has created a connection from their on-premise location to AWS using a VPN connection. They need to track all the network data which includes the source client IP address that flows into the AWS VPC. Which of the following can be used for this purpose?
+    -
+
+Question 19:
+An application needs to be hosted on an EC2 Instance in AWS. The application will be storing data as 8KB chunks on the underlying data volume. This data is not accessed that frequently. But when the data is accessed , it needs to be ensured that the data is retrieved in the least amount of time. Which of the following would you choose as the underlying data store if COST is not an important factor
+    -
+
+Question 20:
+A company has the need to store aggregated historical sales data. The amount of data currently is 10 TB and will grow in TB’s over the years. Also it needs to be ensured that the data can be queried using the normal business intelligence tools. Which one of the following would you use as the underlying data store
+    -
+
+Question 21:
+A company is trying to understand if there is any way to restrict access to certain IP’s from the EC2 Instances in their subnets. These IP’s need to be blacklisted on an on-going basis. Which of the following can be used for this purpose
+    -
+
+Question 22:
+Your application currently consists of EC2 Instances that are placed in an Autoscaling Group. These EC2 Instances need to access data in an S3 bucket. How would you ensure that these instances which are launched via Autoscaling can securely access the objects in S3
+    -
+
+Question 23:
+You have a container-based application. The different parts of the application are accessed via the paths /customers and /orders. The requirement is that each of these components should have the ability to scale independently. You should be able to access the entire application via one Fully Qualified Domain name. Which of the following services would you use? Choose 2 answers from the options given below
+    -
+
+Question 24:
+Your company is planning on using the AWS RDS service to host their MySQL Database. Their security compliance department has mandated that all data be encrypted at rest. How can you achieve this for the AWS RDS – MySQL Instance
+    -
+
+Question 25:
+You have a microservice application that reads data from a Kinesis stream. You need to ensure that the service can read 10,000 requests per second. You also need to ensure orchestration is properly handled for the microservice based application. Which of the following would you use to host and scale your application
+    -
+
+Question 26:
+You have a DynamoDB table and have put a Read Capacity of 40 for the table. Currently the application is reading data at 50KB/s and is performing well. During a promotional season for the application , the reads jumped up to 400 KB/s and now you are getting throttling errors. As an architect you need to suggest a solution to this problem so that it does not occur in the future. Which one of the below would you suggest
+    -
+
+Question 27:
+An application currently tracks the coordinates of a 1000 BLD devices. These devices then transmit messages every second. You need someway to ingest the messages in real time. Which of the following services would you use for this purpose
+    -
+
+Question 28:
+A company currently has a set of scripts that run via Lambda functions. These functions are used for various environments and add data to databases, each environment having a different database with varying user names and passwords. Which of the following is the most SECURE way to implement the Lambda function to work with the various environments and databases
+    -
+
+Question 29:
+A company is planning on setting up an application in AWS. This application will make use of the Amazon Simple Storage Service to store its objects. It is anticipated that there might be around 300 GET requests per second on the S3 bucket. As an architect , which of the following is the right way to design the strategy for the naming of objects
+    -
+
+Question 30:
+A company is planning on setting up an application in AWS. This application will make use of  DynamoDB tables. There is a high expectancy on the number of writes that are going to occur on the underlying DynamoDB table. Which of the following strategy should be incorporated for ensuring optimal performance on the underlying tables   
+    -
+
+Question 31:
+Your data store contains audio recording which total in 4 TB. These recordings are accessed less frequently. But when accessed , you need to ensure that it can be retrieved within an hour. Which of the following would be used for effective retrieval and also ensuring COST is kept to a minimum
+    -
+
+Question 32:
+Your data store contains files which are accessed by users. You are planning on using AWS to store these files. These files are not accessed frequently. The users have agreed that the data can be retrieved over an 8-hour duration. Which of the following would be used for effective retrieval ensuring minimal cost
+    -
+
+Question 33:
+Your company currently has a set of web servers in a public subnet and database servers in the private subnet. You need to ensure administrators from your on-premise environment can access the database servers. Which of the following is a secure way to access the database servers? Choose 2 answers from the options given below
+    -
+
+Question 34:
+A company has a set of database servers currently hosted on a set of EC2 Instances. Currently the IT administrators check the storage of the database servers once a week to see if more storage needs to be added. Which of the following service should the administrators ideally use to automate the way in which the storage check is carried out
+    -
+
+Question 35:
+Your architecture consists of application servers that are part of an Autoscaling Group. These application servers make requests to a database server. It needs to be ensured that the traffic can flow from the application servers to the database servers. You also need to ensure that other resources don’t get impacted. Which of the following would be the right and recommended approach to implement.
+    -
+
+Question 36:
+You have an Orders based application that consists of EC2 Instances and a database instance. You need to ensure that orders don’t get lost as they transferred from the EC2 Instance to the database server. Which of the following could be added as part of the application architecture to fulfill this requirement? Choose 2 answers from the options given below
+    -
+
+Question 37:
+A company is planning on creating an application and hosting it on AWS. This will be a web application that consists of EC2 Instances. You need to recommend which services can be used to store session data since this will not be managed by the application. Which services are suitable for storing session state data? Choose 2 answers from the options given below
+    -
+
+Question 38:
+Your company is currently storing data using the Simple storage solution in AWS. These files are critical and hence it needs to be ensured that files are not deleted accidentally. Which of the following can be used to protect the files against accidental deletion
+    -
+
+Question 39:
+As a solutions architect you are responsible for designing the storage solution for a 2-tier application that will be hosted on AWS. The front tier is the web tier and the backend is the database tier. The web tier will receive normal traffic patterns during its usage. Which of the following is the MOST cost optimized storage that should be used for the underlying EC2 Instance hosting the web application
+    -
+
+Question 40:
+A company currently stores its files in the Amazon Simple Storage service. These files are required for a duration of 2 months and then can be deleted. Which of the following mechanism can be chosen to manage this effectively
+    -
+
+Question 41:
+Your company needs to deploy a legacy third party application on AWS. They need to decide on a compute option. They need to have control over the cores because of licensing constraints . Which of the following would they use for the underlying compute component
+    -
+
+Question 42:
+Your application needs to be hosted on AWS. The application processes data 5 days a week from 8-4 . You also have a batch processing task that runs on the weekend that runs for a consistent 4 hours. Which of the following would you use for the underlying compute layer for the batch processing task to ensure COST is minimized
+    -
+
+Question 43:
+A company is currently hosting an application in AWS in one region. Now the application is going to be extended in another region for users in that region. You need traffic to be distributed between both regions. Which of the following would you use for this purpose
+    -
+
+Question 44:
+A company is planning on hosting an application on an EC2 instance. This Instance will be launched in a private subnet due to compliance reasons. The Instance needs to access an S3 bucket. How can you achieve this in the most SECURE manner, ensuring that traffic does not pass through the Internet on route to the simple storage service
+    -
+
+Question 45:
+Your company currently has a custom built microservices based application which makes use of Docker containers. You need to advise the easiest way to port the application onto AWS for developers to continue with the development of the application. Which of the following would be the ideal service to use for this
+    -
+
+Question 46:
+Your application is currently hosted on EC2 Instances in AWS. 3 Instances are needed after 6 in the evening for a duration of 3 hours whilst 1 instance is required every day through 8-6. Which of the following would you use to ensure COSTS are minimized for the underlying EC2 Instances
+    -
+
+Question 47:
+Your application consists of an Elastic Load Balancer , EC2 Instances for the web server and the database server. The database server should not be accessible from the internet. Which of the following is the right way to deploy the infrastructure ensuring high availability
+    -
+
+Question 48:
+Your application consists of EC2 Instances  which are part of an Autoscaling. They have bootstrapped the software installation via the User data for the EC2 Instance. The Instances are located in a private subnet. The code is downloaded from a public Git repository onto the EC2 Instance. How would you ensure the instances can fetch the required data from a public repository on the Internet
+    -
+
+Question 49:
+You have set a VPC peering connection between 2 VPC’s. One VPC contains a web server and another VPC contains a database server. You need to ensure the web server can connect to the database server. What 2 measures would you take to ensure this communication is possible.
+    -
+
+Question 50:
+As a CIO of the company , you have documents that are stored using the Simple Storage Service. Currently all the documents can be accessed via public URL’s. You need to ensure that the files can only be accessed by the right people. What measure can you take to secure the documents in S3
+    -
+
+Question 51:
+A Company has a web application. They want to deploy it to AWS. They don’t want to manage the underlying infrastructure. Which of the following should they use for hosting the application
+    -
+
+Question 52:
+A company currently needs to design an application with the following requirements
+1) The application would take files from users and then upload the files to an S3 bucket
+3) The application would take the metadata from files stored in S3 and store it in a DynamoDB table
+ Which of the following can be used to automate the process of storing the metadata in a DynamoDB table. 
+    -
+
+Question 53:
+A company has a processing based application that needs to be ported to AWS. The code behind the application does not need any sophisticated hardware. It only needs 512 MB of memory to run. Which of the following can be used to ensure cost effectiveness of hosting the application in AWS
+    -
+
+Question 54:
+A company need a data store in AWS. The data store needs to support continuous reads and writes. It needs to be ensured that whenever a read occurs , always the latest version of data is returned. Which of the following would you use
+    -
+
+Question 55:
+A company is using S3 to store their files. The users work with the files via an application. There are a lot of reads and writes occurring for the objects via the application. The users are complaining that they are not getting the recent data when they are requesting for objects which have been updated. Which of the following could be a reason for this 
+    -
+
+Question 56:
+You have been employed as a consultant architect for a company. The company wishes to follow the Devops model and deploy Infrastructure with the help of code templates. Which of the following would you use to achieve this requirement
+    -
+
+Question 57:
+Your company is currently using an S3 bucket to store critical documents. The documents should be available even in case of a disaster. Which of the following would you employ to fulfil this requirement? Choose 2 answers from the options given below
+    -
+
+Question 58:
+A company has just started transferring data via S3 to a Redshift Cluster. Management has now indicated that the cluster should be available in case of a disaster. How can you achieve this
+    -
+
+Question 59:
+Your company needs to have a hybrid IT architecture in place. They need to ensure low latency of traffic from On-premise to AWS. It also needs to be ensured that data is encrypted in transit. How can you achieve this
+    -
+
+Question 60:
+You currently have a wordpress site hosted on an AWS EC2 Instance. You want people around the world to access the content on this site with the least latency. How can you achieve this in the most COST-effective way
+    -
+
+Question 61:
+A company has a set of EC2 Instances that hosts a critical application. You need to ensure that as an architect you devise a backup strategy to quickly recover from a complete failure of the underlying EC2 Instances. Which of the following could be considered in the backup procedure for such a requirement
+    -
+
+Question 62:
+Your web application hosted on AWS currently has the following tiers
+1) An Application Load Balancer   
+2) A Web tier for serving web requests that sits behind the Application Load Balancer   
+3) A Database tier that sits behind the Web tier   
+Which of the following is the recommended rules for the entire application set?
+    -
+
+Question 63:
+A company needs to have a data store which can be used to store unstructured data. The underlying data store needs to scale based on demand. Also, the data store should offer the least amount of latency for data access. Which of the following would be the ideal storage option for this requirement
+    -
+
+Question 64:
+Your company is planning to develop an application that will make use of AWS services. There is a requirement to use AWS service for managing user identities and profiles. Also, the application should accept identities already  created with external identity providers such as Facebook and Google. As an architect ,which of the following service would you suggest for this requirement? 
+    -
+
+Question 65:
+Your company is planning on using AWS for hosting applications. Due to the security compliance regulations followed by the company, it needs to be ensured that all API activity is monitored across all regions. How would you enable this in an effective manner
+    -
+
