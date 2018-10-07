@@ -241,66 +241,71 @@ Which service can be used in this regard?
 Question 42:
 An application is hosted on a web instance and accesses a MySQL database. The Web instances needs to be accessed by all users in the internet via SSL.
 Which of the following needs to be in place when it comes to the Security Groups. Choose 2 answers from the options given below.
-    -
+    -Web Security Group allows incoming for HTTPS from 0.0.0.0/0
+    -Database Security Group allows incoming for port 3306 from the Web Security Group 
 
 Question 43:
 There is a requirement for EC2 Instances in a private subnet to access a DynamoDB table. The traffic should not traverse to the internet. 
 Which of the following can be used to fulfil this requirement?
-    -
+    -Create a VPC Endpoint for DynamoDB. Make the instance in the private instance to use the VPC Endpoint 
 
 Question 44:
 There is an application which consists of EC2 Instances behind a classic Elastic Load Balancer. An EC2 proxy is used for content management to backend instances. As an architect you know that the application might not be able to scale properly.
 Which of the following can be used to scale the proxy and backend instances appropriately. Choose 2 answers from the options given below.
-    -
+    -Use Autoscaling for the proxy servers 
+    -Use Autoscaling for the backend instances 
 
 Question 45:
 A marketing application is hosted on a set of EC2 Instances in AWS. During a new promotional campaign, there is a risk that the application might not be able to scale based on the amount of traffic. 
 Which of the following can be used to reduce the potential disruption to users in case any issue occurs?
-    -
+    -Use Route53 to route traffic to a static web site in case of any failure 
 
 Question 46:
 As an architect you have a requirement for hosting a static web site for a domain called cloudportalhub.com. You need to ensure that the infrastructure is scaled accordingly when the traffic increases. You need to ensure that the solution is COST effective. 
 Which of the following would you implement? Choose 2 answers from the options given below.
-    -
+    -Create a static website off an S3 bucket 
+    -Use Route53 to route the traffic to the S3 bucket 
 
 Question 47:
 A company currently is making use of the AWS RDS service for an application. They want to ensure high availability for the database. 
 Which of the following would you suggest being the architect for the application?
-    -
+    -Enable Multi-AZ for the RDS database 
 
 Question 48:
 Which of the following can be used to restrict traffic into subnets in a VPC? You need to ensure that you can also specify which protocol can be used to restrict the traffic.
-    -
+    -Network ACL's 
 
 Question 49:
 You are creating a Lambda function. This function will be used to read metadata from objects stored in an S3 bucket. The metadata will then be stored in a DynamoDB table. 
 What should be done to ensure that the lambda function works as expected. Choose 2 answers from the options given.
-    -
+    -Create an IAM service role that has access to the S3 bucket and then assign it to the Lambda function 
+    -Create an IAM service role that has access to the DynamoDB table and then assign it to the Lambda function
 
 Question 50:
 You have currently contacted an AWS partner to carry out an audit for your AWS account. Initially you want to give access to an S3 bucket in your account to the auditor. 
 Which of the following will be one of the steps that needs to be considered for this to work? This needs to be done as per Security BEST practices.
-    -
+    -Modify the bucket policy to give the external account the required access 
 
 Question 51:
 A sales company is currently storing its records in a MySQL RDS database in AWS. Off late there are severe performance issues on the database. On close inspection it has been noticed that the same set of queries are causing the performance issue. 
 Which of the following can be added to the architecture to alleviate the performance issue?
-    -
+    -Use the Elastice Cache Service 
 
 Question 52:
 Your company has currently deployed a Microservices based application using the AWS Elastic Container Service. Performance issues are being reported for the service during peak hours. 
 As an architect which of the following would you consider using to solve the performance issues in a COST-effective manner.
-    -
+    -Use the Autoscaling service in the Elastic Container Service 
 
 Question 53:
 You are currently reviewing an application for a company. The application consists of EC2 Instances launched as part of an Autoscaling. The application has a particular issue wherein the scaling up and down process is occurring multiple times in the same hour.
 Which of the following steps can be performed to rectify the error. Choose 2 answers from the options given below.
-    -
+    -Modify the Autoscaling Group cooldown timers
+    -Modify the CloudWatch alarms that trigger the scale in for the Autoscaling Group 
 
 Question 54:
 A company has an application hosted on AWS. The application allows users to upload images. The images are then stored in an S3 bucket. Now the requirement is that the users should not download the images from the EC2 Instance, so as not to overload the Instance. The Instance should only be used for uploading images. 
 Which one of the below steps is the ideal way to allow the users to access the images?
-    -
+    -Use CloudFront to distribute the images. You can place the EC2 instance as the origin for the CloudFront Distribution 
 
 Question 55:
 You are an architect for a company. You have been told to design the network layer for a 2-tier application which will consist of a web and database layer.  Internet Users will access the web-based application. 
