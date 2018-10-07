@@ -1,43 +1,56 @@
 Question 1:
 Currently you have a need to create a Lambda function which will write data to an Amazon RDS instance. This function should be used within a VPC and not have access the Internet. As an architect which of the following needs to be considered to ensure that the Lambda function works as desired. Choose 2 answers from the options given below.
-    -
+    -Ensure that the Lambda function is created in the VPC 
+    -Ensure that a NAT gateway is attached to the VPC 
+        -In order for the Lambda function to be accessed via a VPC, it needs to be created in the VPC. Also if it needs access to external resources, NAT should be available to ensure that the Lambda function can make calls to external resources 
 
 Question 2:
 A company has been using  a MySQL solution in their on-premise location. The users currently agree to a 100 ms latency when accessing data. Initially the response time was fine and the users had no issues. 
 Now the database is becoming overloaded and the budget for the additional hardware is becoming too much. The company is now planning to migrate the solution to AWS. The company has agreed to change the database engine if required. Which of the following service can be used to host the data. Keeping the latency in check as per the user requirements. Also, there should be no limitations on the future scale and growth of the underling infrastructure.
-    -
+    -AWS DynamoDB
+        -The first option which you might choose is the AWS RDS service which has a compatible MySQL database service. But there are some key important points in the question, namely the requirement for continuous and unlimited infrastructure growth. Also the latency should be kept at a minimum. The company does not mind changing the database engine if required. Hence in this case, AWS DynamoDB should be the preferred option 
 
 Question 3:
 Your application currently uses a MySQL Relation database service. After continuous usage , the database metrics from Cloudwatch indicate that the performance is becoming a bottleneck for the entire application. After further investigation , the cause of the problem has boiled down to the same set complex queries which are being fired. This seems to be slowing down the other transactions fired against the database. Which of the following can be used to increase performance and help potentially resolve the issue
-    -
+    -Place an Elastic Cache service in front of the database service 
+        -The Elastic Cache service can be used to cache all the common queries. Hence if the same queries are causing the problem, the data sets will be fetched from Elastic Cache instead of the database. This will reduce the load on the database server 
 
 Question 4:
 Your application currently uses a MySQL Relation database service. The application behaves fine when there are 20 lookups against the database. But when the usage increases , the performance degrades. Which of the following can be used to increase the performance of the underlying database
-    -
+    -Create a Read Replica for the database 
+        -Here you should create a Read Replica so that the queries can be evenly distributed. The load can then be minimized on the primary database 
 
 Question 5:
 You are an architect for a consulting company. This company is going to develop a waiting list application for a hospital. The application would take the name of the patients. The application needs to ensure that the names of the patients are transferred to the doctors in an ethical way to ensure that they are treated in the order in which they arrive. Which of the following service would you use to maintain the names of the patien
-    -
+    -FIFO queues in Simple Queue Service 
+        -You can use the queue service to ensure that the patient names are entered as messages in the queue. Use FIFO queue to ensure that the names of the patients are treated in a First In First Out fashion
 
 Question 6:
 An application is going to be deployed on a set of EC2 Instances in a private subnet. The application needs to access the Amazon Kinesis streams service. As a security requirement , it also needs to be ensured that the traffic to the Kinesis stream from the EC2 Instance does not pass via the Internet. Which of the following can help you achieve this requirement
-    -
+    -Create a VPC Endpoint Interface that would allow access to Kinesis Streams 
+        -To securely access data in an Amazon Kinesis stream from instances in a private subnet, you can define a VPC Interface Endpoint. The EC2 instances could then access the service via the Endpoint. The VPC Endpoints gateways are only applicable for the DynamoDB and S3 service.
 
 Question 7:
 A start company needs to access a service in a parent company. Both companies use AWS to host their resources. Both companies have separate accounts. They have their services hosted on EC2 Instances that are in separate regions. So you need to ensure that an EC2 instance in the start-up company’s account can access the EC2 Instance in the parent’s company’s account. The traffic should not cross the Internet. How can you accomplish this? Choose 2 answers from the options given below
-    -
+    -Create a VPC peering between the VPC's in the start-up company's and parent company's account 
+    -Create an AWS Direct Connect connection in the parent company's account. Create a private Virtual Interface to the VPC in the start-up company's account 
+        -VPC peering can be used to connect VPC's across accounts and across regions. Here the traffic between the VPC's does not flow across the internet, it flows via the backbone network of AWS. AWS Direct Connect can be used as an isolated connection wherein again the traffic does not flow across the internet 
 
 Question 8:
 Your company currently stores sensitive documents in an S3 bucket. It needs to ensure that data is encrypted at rest. The company need to use its own keys for the encryption process. Which of the following methods would you incorporate? Choose 2 answers from the options given below
-    -
+    -Use S3 server side encryption with Customer keys 
+    -Use S3 client side encryption 
+        -In S3 server side encryption with Customer keys, AWS will manage the encryption and you manage the keys. In S3 client side encryption, again you manage the keys. The last option is incorrect since you can upload key material, but the keys will still be managed by AWS 
 
 Question 9:
 Your development team is currently creating an application which will be hosted in AWS. It needs to have a login module with MFA enabled. Which of the following is the easiest way to achieve this
-    -
+    -Use AWS Cognito with MFA 
+        -This can be achieved with AWS Cognito itself
 
 Question 10:
 Your EC2 Instance currently hosts a database that has EBS Volumes(gp2). There are lots of waits occurring on the database as the load on the database is increasing. Which of the following would you do to improve the performance of the database
-    -
+    -Change the EBS volume to Provisioned IOPS SSD 
+        -Since there are waits that are occuring on the database, that means this is purely an I/O wait issue and the volume is not able to handle the load.
 
 Question 11:
 You currently have NAT instances in your public subnet. This is being used by a lot of EC2 Instances in your private subnet. The NAT instances are now becoming a bottleneck because of the bandwidth issues. You plan to replace the NAT instances with NAT gateways. You also want to ensure high availability of the overall NAT solution. Which of the following would help fulfil this requirement
