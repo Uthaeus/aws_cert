@@ -289,7 +289,8 @@ You currently have a wordpress site hosted on an AWS EC2 Instance. You want peop
 
 Question 61:
 A company has a set of EC2 Instances that hosts a critical application. You need to ensure that as an architect you devise a backup strategy to quickly recover from a complete failure of the underlying EC2 Instances. Which of the following could be considered in the backup procedure for such a requirement
-    -
+    -Create and AMI for the EC2 instance 
+        -By creating an AMI out of the EC2 instance, you can quickly spin up the instance again if in case the entire primary instance gets corrupted for any reason. You cannot copy EBS volumes, you can create snapshots out of them. This is an important point to remember 
 
 Question 62:
 Your web application hosted on AWS currently has the following tiers
@@ -301,13 +302,14 @@ Which of the following is the recommended rules for the entire application set?
 
 Question 63:
 A company needs to have a data store which can be used to store unstructured data. The underlying data store needs to scale based on demand. Also, the data store should offer the least amount of latency for data access. Which of the following would be the ideal storage option for this requirement
-    -
+    -DynamoDB
 
 Question 64:
 Your company is planning to develop an application that will make use of AWS services. There is a requirement to use AWS service for managing user identities and profiles. Also, the application should accept identities already  created with external identity providers such as Facebook and Google. As an architect ,which of the following service would you suggest for this requirement? 
-    -
+    -AWS Cognito
+        -AWS Cognito can be used to manage user identities and profiles. Also, external identity providers such as Facebook and Google can be used 
 
 Question 65:
 Your company is planning on using AWS for hosting applications. Due to the security compliance regulations followed by the company, it needs to be ensured that all API activity is monitored across all regions. How would you enable this in an effective manner
-    -
+    -Enable a trail in CloudTrail which applies to all regions 
 
