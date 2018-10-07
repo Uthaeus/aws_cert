@@ -4,49 +4,54 @@ A company is planning on hosting their data store in AWS for their 3-tier applic
 2) The database should be durable   
 3) Changes to the database should not result in downtime 
 Which of the following would be the best data store option for the company
-    -
+    -AWS DynamoDB
 
 Question 2:
 A company currently uses a Redshift cluster that contains around 40TB of data. There is now a requirement from senior management to make the cluster highly available. The high availability procedure should also include the event that in case of a disaster, the Redshift cluster data needs to be available in a secondary region.
 How can you achieve this in the easiest possible way?
-    -
+    -Use Redshift snapshots. Ensure to enable the cross region replication of the snapshots 
+        -The easiest way is to create snapshots for the Redshift cluster. There is an ability to enable cross region copies for the snapshots created. If there is a disaster in the primary region, you can then create a new Redshift cluster from te copied snapshot. Currently there is no feature for enabling cross region replication for Redshift clusters. If you use CloudFormation to spin up the cluster, you still cannot copy the data if the primary cluster is down 
 
 Question 3:
 Your company is currently planning to create a Redshift Cluster. As per the compliance objectives of the company, it needs to be ensured that all data is encrypted at rest. 
 How can this be achieved? Choose 2 answers from the options given below 
-    -
+    -Use the keys generated from your HSM device 
+    -Use AWS KMS Customer Default master key 
+        -The data in Redshift can be encrypted either by using AWS KMS or the Hardware Security Modules. One very important concept is that the cluster encryption setting should be enabled when the cluster is created 
 
 Question 4:
 There is a requirement for storing 300GB of data using block level storage. The additional requirement is that the data stored on this data store is completely encrypted. 
 Which of the following data store would you use for this requirement
-    -
+    -Amazon Elastic Block Storage Volumes 
 
 Question 5:
 You’ve recently started using the AWS Relational database service. A new feature request for an application is in place. There is an anticipation that the new feature request might warrant the need to scale up the server of the underlying database instance because of the increased Input/Output operations. You need to ensure the least amount of downtime during this scaling operation.
 Which of the following initial steps would you confirm on your current RDS instance to fulfil this requirement?
-    -
+    -Ensure that Multi-AZ feature has been enabled for the underlying RDS instance 
+        -In order to ensure that there is least amount of downtime, enable the Multi-AZ feature for the database. The secondary database will be updated first and then the failover will occur to the newly resized database. This will decrease the amount of downtime 
 
 Question 6:
 A company is planning to migrate their existing on-premise application to the AWS Cloud. The application currently runs on .Net and uses Microsoft SQL Server as the backend database. They have the following limitations
 1) They don’t have the development staff currently to make major changes to the code   
 2) They don’t have the IT admin staff currently to manage the infrastructure on AWS.   
 Which of the following data service would you choose on AWS? 
-    -
+    -AWS RDS 
 
 Question 7:
 You have a legacy-based application that works mainly on a propriety file system powered by the Network File System protocol. You need to move the application and the file system to AWS. 
 Which of the following data store would you use for the legacy-based application?
-    -
+    -AWS Elastic File System 
 
 Question 8:
 You’re currently developing an application. The application is going to be hosted on an EC2 Instance. The application will be carrying out batch processing activities. The general amount of throughput data will be in the range of 400-500 MiB/s. Which of the following should be used as the storage type for the underlying EC2 Instance?
-    -
+    -EBS Throughput Optimized HDD 
 
 Question 9:
 Your application currently has the following architecture
 It’s a set of EC2 Instances that is accessing a DynamoDB table. The number of reads and writes runs into millions. You want to decrease the latency for the read and write operations and achieve faster access to data. 
 Which of the following can be added to the architecture to achieve this? Choose 2 answers from the options given below
-    -
+    -Place an Elastic Cache instance between the EC2 instances and the DynamoDB table 
+    -Consider using the DAX feature to DynamoDB
 
 Question 10:
 An application currently has the following architecture
@@ -54,7 +59,8 @@ An application currently has the following architecture
 2) A Set of EC2 Instances in a private subnet which act as the database layer   
 3) A NAT Instance in the public subnet for allowing the database servers to download patch updates.   
 After reviewing the Cloudwatch metrics, you notice a severe bottleneck with the NAT instance. Which of the following step can be taken to alleviate this issue.
-    -
+    -Use the NAT gateway service instead of the NAT Instance 
+        -Since here the bandwidth is an issue, consider using the NAT gateway service. The NAT gateway service should be used in the public subnet. You should not change aspects such as placing the database servers in the public subnet. This would add a security risk to the entire architecture. The NAT instance also cannot be placed in the private subnet. It needs to be placed in the public subnet. So this is also not a viable option 
 
 Question 11:
 An application is hosted on an EC2 Instance. The application needs access to a DynamoDB table. 
