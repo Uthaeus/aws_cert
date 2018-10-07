@@ -103,55 +103,61 @@ A company has the need to store aggregated historical sales data. The amount of 
 
 Question 21:
 A company is trying to understand if there is any way to restrict access to certain IP’s from the EC2 Instances in their subnets. These IP’s need to be blacklisted on an on-going basis. Which of the following can be used for this purpose
-    -
+    -Network ACL's 
+        -In Network ACL's you can define rules which can deny traffic from certain IP addresses. This is good to use when you have malicious traffic coming from a set of IP addresses 
 
 Question 22:
 Your application currently consists of EC2 Instances that are placed in an Autoscaling Group. These EC2 Instances need to access data in an S3 bucket. How would you ensure that these instances which are launched via Autoscaling can securely access the objects in S3
-    -
+    -Ensure that the Autoscaling Group attaches an IAM Role attached to the underlying EC2 instances 
 
 Question 23:
 You have a container-based application. The different parts of the application are accessed via the paths /customers and /orders. The requirement is that each of these components should have the ability to scale independently. You should be able to access the entire application via one Fully Qualified Domain name. Which of the following services would you use? Choose 2 answers from the options given below
-    -
+    -Application Load Balancer
+    -EC2 Container Service 
 
 Question 24:
 Your company is planning on using the AWS RDS service to host their MySQL Database. Their security compliance department has mandated that all data be encrypted at rest. How can you achieve this for the AWS RDS – MySQL Instance
-    -
+    -Enable encryption during the database creation time. The database logs and backups are automatically encrypted 
 
 Question 25:
 You have a microservice application that reads data from a Kinesis stream. You need to ensure that the service can read 10,000 requests per second. You also need to ensure orchestration is properly handled for the microservice based application. Which of the following would you use to host and scale your application
-    -
+    -AWS ECS with service autoscaling 
+        -The Elastic Container Service is the perfect service for orchestrating your microservices based application. There is also the feature of autoscaling which will allow your infrastructure to scale on demand 
 
 Question 26:
 You have a DynamoDB table and have put a Read Capacity of 40 for the table. Currently the application is reading data at 50KB/s and is performing well. During a promotional season for the application , the reads jumped up to 400 KB/s and now you are getting throttling errors. As an architect you need to suggest a solution to this problem so that it does not occur in the future. Which one of the below would you suggest
-    -
+    -Enable Autoscaling for the underlying DynamoDB table 
 
 Question 27:
 An application currently tracks the coordinates of a 1000 BLD devices. These devices then transmit messages every second. You need someway to ingest the messages in real time. Which of the following services would you use for this purpose
-    -
+    -AWS Kinesis Firehose
+        -Amazon Kinesis Data Firehose is a fully managed service for delivering real-time streaming data to destinations such as S3, Redshift, Elasticsearch Service, and Splunk. You can use this service to get the messages from the devices and then send them to the data store of your choice
 
 Question 28:
 A company currently has a set of scripts that run via Lambda functions. These functions are used for various environments and add data to databases, each environment having a different database with varying user names and passwords. Which of the following is the most SECURE way to implement the Lambda function to work with the various environments and databases
-    -
+    -Use Lambda environment variables. Enable encryption using AWS KMS
 
 Question 29:
 A company is planning on setting up an application in AWS. This application will make use of the Amazon Simple Storage Service to store its objects. It is anticipated that there might be around 300 GET requests per second on the S3 bucket. As an architect , which of the following is the right way to design the strategy for the naming of objects
-    -
+    -A hash value for the prefix 
 
 Question 30:
 A company is planning on setting up an application in AWS. This application will make use of  DynamoDB tables. There is a high expectancy on the number of writes that are going to occur on the underlying DynamoDB table. Which of the following strategy should be incorporated for ensuring optimal performance on the underlying tables   
-    -
+    -Use partition keys with a large number of distinct values
 
 Question 31:
 Your data store contains audio recording which total in 4 TB. These recordings are accessed less frequently. But when accessed , you need to ensure that it can be retrieved within an hour. Which of the following would be used for effective retrieval and also ensuring COST is kept to a minimum
-    -
+    -S3 IA 
 
 Question 32:
 Your data store contains files which are accessed by users. You are planning on using AWS to store these files. These files are not accessed frequently. The users have agreed that the data can be retrieved over an 8-hour duration. Which of the following would be used for effective retrieval ensuring minimal cost
-    -
+    -Glacier - Standard Retrieval 
 
 Question 33:
 Your company currently has a set of web servers in a public subnet and database servers in the private subnet. You need to ensure administrators from your on-premise environment can access the database servers. Which of the following is a secure way to access the database servers? Choose 2 answers from the options given below
-    -
+    -Create a bastion host in the public subnet. The administrators can use the bastion host to connect to the database server 
+    -Create a VPN IPSec connection from on-premise to the VPC. Ask the administrators to use this connection 
+        -A bastion host in the public subnet is a secure way to access EC2 instances in the private subnet. The bastion host would be placed in the public subnet with Security Groups only allowing access to the workstations on which the administrators work. You can also create a secure IPSec VPN connection between your on-premise environment and an AWS VPC. The administrators can then access the resources in the private subnet. Never use the web servers to log into the database servers. This is a clear security risk. Always use a separate bastion host or jump servers to manage your servers in AWS 
 
 Question 34:
 A company has a set of database servers currently hosted on a set of EC2 Instances. Currently the IT administrators check the storage of the database servers once a week to see if more storage needs to be added. Which of the following service should the administrators ideally use to automate the way in which the storage check is carried out
