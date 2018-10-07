@@ -65,26 +65,27 @@ After reviewing the Cloudwatch metrics, you notice a severe bottleneck with the 
 Question 11:
 An application is hosted on an EC2 Instance. The application needs access to a DynamoDB table. 
 Which of the following is a secure way for the EC2 Instance to access the DynamoDB table? Choose 2 answers from the options given below
-    -
+    -Create an IAM Role which has access to the DynamoDB table 
+    -Attach the IAM Role to the EC2 instance 
 
 Question 12:
 A company had developed an API solution which has been operational since the last 3 years. They are planning to shift the entire solution to AWS. Which of the following is an ideal platform for hosting this solution in the MOST cost efficient and Reliable manner?
-    -
+    -Use the API Gateway service. Use AWS Lambda functions to host the code for the API's 
 
 Question 13:
 An application is currently installed on a set of EC2 Instances. There is a need for a data store that can be easily shared between the instances for storage of files.
 Which of the following would be the ideal data store?
-    -
+    -AWS Elastic File System
 
 Question 14:
 Your company is developing an image processing application. The images will be stored in the Simple storage service. There is an anticipation of a high number of reads and writes on the images in S3. 
 Which of the following can be done to optimize performance for the objects stored in S3?
-    -
+    -Ensure that a prefix is attached for each object with a random string 
 
 Question 15:
 A company is storing their archival data in Amazon Glacier. They need some data from the vault in a time period of 10 minutes. 
 Which of the following needs to be done to fulfill this requirement
-    -
+    -Expedited Retrieval 
 
 Question 16:
 Your application consists of EC2 Instances distributed across the Ireland Region. The applications needs a minimum of 4 instances running at all times. Which of the following is the ideal distribution of Instances across the available zones? 
@@ -94,19 +95,19 @@ The solution should ensure that the minimum number of instances are available ev
 Question 17:
 Your team is developing an AWS Lambda function. This function is used to insert data into a DynamoDB table. 
 Which of the following must be attached to the Lambda function in order for it to access the DynamoDB table?
-    -
+    -An IAM Role must be attached to the Lambda function 
 
 Question 18:
 Your company currently has the following architecture for their ecommerce application
 1) EC2 Instances hosting the application   
 2) An Autoscaling group for the EC2 Instances   
 A promotional campaign is going to begin in a week’s time. It needs to be ensured that the infrastructure is already scaled to ensure a seamless user experience. Which of the following must be done to ensure this?
-    -
+    -Ensure that a scheduled scaling policy is added to the Autoscaling Group 
 
 Question 19:
 You are planning on migrating an existing SQL Server Instance on to AWS. You are planning on creating a self-hosted database instance on an EC2 Instance. The database itself is not used that frequently. 
 Which of the following would be BEST suited for the underlying storage volume ensuring that cost is managed effectively?
-    -
+    -EBS General Purpose SSD 
 
 Question 20:
 As an architect working for an application, you are placed with the following requirement
@@ -114,17 +115,19 @@ As an architect working for an application, you are placed with the following re
 2) Ensuring that files can be retrieved immediately   
 3) Deletion of the files after a duration of 2 months.   
 Which of the following would you look to implement? The implementation should look into a minimum amount of effort.
-    -
+    -Store the files in S3-Standard. Use Lifecycle Policies to delete the files after 2 months 
 
 Question 21:
 You have a Redshift Cluster in your AWS Account. You need to ensure that you can load data from the Simple Storage service into the Redshift Cluster. But the data can only flow via a VPC for security reasons. 
 Which of the following implementation steps would help achieve this? Choose 2 answers from the options given below.
-    -
+    -Enable Redshift Enhanced VPC Routing
+    -Create a VPC Endpoint gateway 
+        -The Redshift Enhanced VPC Routing ensures that data flows via the VPC into the Redshift Cluster. In order to ensure that data can be securely transferred in a private subnet to S3, you have to create a VPC Endpoint gateway. The gateway will allow access to S3 without the need for the traffic to go through the internet gateway 
 
 Question 22:
 You work for a consultant company. You normally work on assignments for prospective clients who have their own AWS accounts. Your main responsibility is to provide templates which the company can use to spin up resources. 
 Which of the following service would you make use of for this?
-    -
+    -CloudFormation
 
 Question 23:
 An application consists of the following architecture.
@@ -132,17 +135,17 @@ An application consists of the following architecture.
 2) A NAT Instance in the public subnet which is used to download updates from the Internet   
 3) A database hosted in the AWS RDS service with Multi-AZ enabled.   
 Which of the following is a bottleneck in the above architecture?
-    -
+    -NAT Instance 
 
 Question 24:
 You have a set of EC2 Instances in a public subnet. These Instances are hosting a web application which is available for users to access. You want to get the list of IP addresses which are accessing the EC2 Instance. 
 Which of the following can help achieve this?
-    -
+    -AWS VPC Flow Logs
 
 Question 25:
 Your company is currently hosting a set of EC2 Instances in AWS. Since the data on the underlying EBS volumes stores crucial data, it has to be ensured that the EBS volumes can be made available in a secondary region. 
 How can you achieve this?
-    -
+    -Create a snapshot. Copy the snapshot to the destination region 
 
 Question 26:
 Your company has the following requirement
@@ -150,7 +153,7 @@ Your company has the following requirement
 2) Ensure that data can be summarized column wise   
 3) Ensure that business intelligence tools can work with the data store   
 Which of the following is the right data store to use for these requirements?
-    -
+    -AWS Redshift 
 
 Question 27:
 Your team currently manages an application that consists of 2 key components
@@ -158,57 +161,58 @@ Your team currently manages an application that consists of 2 key components
 2) Worker processes   
 Currently these are hosted in your on-premise development environment. You have to get this ported to AWS in a development environment in the easiest way possible.
 Which of the following service can be used to host your development environment in AWS?
-    -
+    -AWS Elastic Beanstalk
 
 Question 28:
 You currently have a 2-tier web application. The web tier is hosted on an EC2 Instance. The application tier is hosted on another EC2 Instance. Data is sent from the Web tier to the Application Tier. 
 Which of the following can be added to the architecture to make it more Reliable?
-    -
+    -Adding an SQS queue in between the Web and Application Tier 
+        -To add more reliability to your application, you can place an SQS queue. The EC2 instance in the web tier can send messages to the SQS which in turn can be picked up by the application tier 
 
 Question 29:
 Your current VPC design includes instances which are located in a private subnet. You need to ensure that these instances can access an S3 bucket without traversing the Internet.
 Which of the following would you implement?
-    -
+    -A VPC Endpoint 
 
 Question 30:
 There is a requirement for an application to have the ability to take files from users and store the data in a secure and durable location. The metadata from these files needs to be collected and stored in another data store. 
 Which of the following architectures would you consider?
-    -
+    -Storage of files in Amazon S3. An AWS Lambda function which gets triggered from S3 Events and storage of the metadata in DynamoDB
 
 Question 31:
 Your development team needs to host an application using the NGINX web server. The application should have the ability to scale at any point in time. 
 Which of the following service can be used to easily launch the application and enable scaling abilities for the application.
-    -
+    -AWS Elastic Beanstalk
 
 Question 32:
 An application hosted in one VPC in one region needs to access another application in another VPC in another region. 
 Which of the following can be used to connect the VPC’s in the easiest way possible? It needs to be ensured that the traffic does not pass via the Internet.
-    -
+    -Establish a VPC peering connection between the VPC's in both regions 
 
 Question 33:
 There is a requirement to host a database application which will have a lot of resource intensive reads and writes.
 Which of the following is the best storage option to ensure optimal data performance for the database?
-    -
+    -EBS Provisioned IOPS SSD 
 
 Question 34:
 There is a requirement to upload a million images to a Simple Storage Service bucket. 
 Which of the following can be used to ensure optimal performance for the underlying objects in the S3 bucket?
-    -
+    -Use a hexadecimal hash for the prefix 
 
 Question 35:
 Your company is planning on setting up an application in AWS. The application will takes images uploaded by users and store them in an S3 bucket. The application then needs to take the metadata about the images and store the metadata in a separate data store. The metadata needs to be indexed. The data store should be scalable. 
 Which of the following can be used for the underlying data store?
-    -
+    -AWS DynamoDB
 
 Question 36:
 A call center depends upon an incident management software that is installed on a set of EC2 instances that are spun up via an Autoscaling group. Performance problems with the software are reported by the call center every day at normally 9:00 in the morning. By 9:30 , the performance issues goes away. The Autoscaling Group is set to scale instances based on the CPU utilization metric. 
 Which of the following can be done to resolve the issues that occur at 9:00 in the morning?
-    -
+    -Ensure that the scaling action is triggered at 8:30 in the morning by using scheduled policies 
 
 Question 37:
 You have a set of EC2 Instances that are carrying out video processing activities. These EC2 Instances should be able to have a high throughput capacity to take in the videos for processing. 
 Which of the following can be used for the volume type of the Instances?
-    -
+    -EBS Throughput Optimized HDD 
 
 Question 38:
 A company has an application that consists of EC2 Instances that sits behind an Elastic Load Balancer. Following are the requirements when it comes to the monitoring aspect for this architecture
@@ -216,12 +220,13 @@ A company has an application that consists of EC2 Instances that sits behind an 
 2. Ensure notifications are sent when the latency goes beyond a certain threshold   
 3. Any API activity which calls sensitive data should be monitored   
 Which of the following would you use to architect the monitoring requirements? Choose 2 answers from the options given below.
-    -
+    -Use CloudTrail to log all the monitoring activity 
+    -Use CloudWatch metrics for whatever metrics need to be monitored. Use SNS for the notifications 
 
 Question 39:
 One needs to monitor API activity for audit purposes for an AWS account. This audit would be conducted in the future as well.
 How would you design your solution to meet the present and future needs?
-    -
+    -Ensure one CloudTrail log is enabled for all Regions 
 
 Question 40:
 A company wants to extend their storage options using the AWS Cloud. There is a requirement for a legacy-based application that can mount an iSCI device for local storage. The most recently accessed data should be available for low latency access. 
