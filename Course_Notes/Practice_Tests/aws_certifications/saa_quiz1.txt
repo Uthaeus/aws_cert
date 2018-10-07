@@ -161,39 +161,43 @@ Your company currently has a set of web servers in a public subnet and database 
 
 Question 34:
 A company has a set of database servers currently hosted on a set of EC2 Instances. Currently the IT administrators check the storage of the database servers once a week to see if more storage needs to be added. Which of the following service should the administrators ideally use to automate the way in which the storage check is carried out
-    -
+    -Cloudwatch
 
 Question 35:
 Your architecture consists of application servers that are part of an Autoscaling Group. These application servers make requests to a database server. It needs to be ensured that the traffic can flow from the application servers to the database servers. You also need to ensure that other resources don’t get impacted. Which of the following would be the right and recommended approach to implement.
-    -
+    -Ensure the security group of the database servers allows incoming traffic to the security group of the application servers 
 
 Question 36:
 You have an Orders based application that consists of EC2 Instances and a database instance. You need to ensure that orders don’t get lost as they transferred from the EC2 Instance to the database server. Which of the following could be added as part of the application architecture to fulfill this requirement? Choose 2 answers from the options given below
-    -
+    -Add an SQS queue in between the web server and the database server 
+    -Add an autoscaling group that scales the instances based on the number of orders 
 
 Question 37:
 A company is planning on creating an application and hosting it on AWS. This will be a web application that consists of EC2 Instances. You need to recommend which services can be used to store session data since this will not be managed by the application. Which services are suitable for storing session state data? Choose 2 answers from the options given below
-    -
+    -DynamoDB
+    -ElastiCache 
+        -DynamoDB and ElastiCache are the perfect solutions when it comes to storing session data. You can manage cookies from the Elastic Load Balancer, but not the actual session data 
 
 Question 38:
 Your company is currently storing data using the Simple storage solution in AWS. These files are critical and hence it needs to be ensured that files are not deleted accidentally. Which of the following can be used to protect the files against accidental deletion
-    -
+    -Enable versioning on the S3 bucket 
 
 Question 39:
 As a solutions architect you are responsible for designing the storage solution for a 2-tier application that will be hosted on AWS. The front tier is the web tier and the backend is the database tier. The web tier will receive normal traffic patterns during its usage. Which of the following is the MOST cost optimized storage that should be used for the underlying EC2 Instance hosting the web application
-    -
+    -EBS Throughput Optimized HDD 
 
 Question 40:
 A company currently stores its files in the Amazon Simple Storage service. These files are required for a duration of 2 months and then can be deleted. Which of the following mechanism can be chosen to manage this effectively
-    -
+    -Create lifecycle policies
 
 Question 41:
 Your company needs to deploy a legacy third party application on AWS. They need to decide on a compute option. They need to have control over the cores because of licensing constraints . Which of the following would they use for the underlying compute component
-    -
+    -EC2 Dedicated Hosts 
 
 Question 42:
 Your application needs to be hosted on AWS. The application processes data 5 days a week from 8-4 . You also have a batch processing task that runs on the weekend that runs for a consistent 4 hours. Which of the following would you use for the underlying compute layer for the batch processing task to ensure COST is minimized
-    -
+    -Spot Instances 
+        -Since this is a processing application that is not used throughout the day and only on the weekend, you can use Spot Instances for the least cost 
 
 Question 43:
 A company is currently hosting an application in AWS in one region. Now the application is going to be extended in another region for users in that region. You need traffic to be distributed between both regions. Which of the following would you use for this purpose
