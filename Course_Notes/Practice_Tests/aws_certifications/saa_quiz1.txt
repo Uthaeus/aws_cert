@@ -201,35 +201,40 @@ Your application needs to be hosted on AWS. The application processes data 5 day
 
 Question 43:
 A company is currently hosting an application in AWS in one region. Now the application is going to be extended in another region for users in that region. You need traffic to be distributed between both regions. Which of the following would you use for this purpose
-    -
+    -AWS Route53
 
 Question 44:
 A company is planning on hosting an application on an EC2 instance. This Instance will be launched in a private subnet due to compliance reasons. The Instance needs to access an S3 bucket. How can you achieve this in the most SECURE manner, ensuring that traffic does not pass through the Internet on route to the simple storage service
-    -
+    -Create a VPC Endpoint for S3. Make the instance in the private instance to use the VPC Endpoint 
+        -You can use the VPC gateway endpoint for instances in a private subnet to access public resources such as S3 and DynamoDB in a secure manner 
 
 Question 45:
 Your company currently has a custom built microservices based application which makes use of Docker containers. You need to advise the easiest way to port the application onto AWS for developers to continue with the development of the application. Which of the following would be the ideal service to use for this
-    -
+    -AWS Elastic Beanstalk
+        -Elastic Beanstalk supports the deployment of web applications from Docker containers. With Docker containers, you can define your own runtime environment. You can choose your own platform, programminglanguage, and any application dependencies (such as package managers or tools), that aren't supported by other platforms. Docker containers are self-contained and include all the configuration information and software you web application requires to run 
 
 Question 46:
 Your application is currently hosted on EC2 Instances in AWS. 3 Instances are needed after 6 in the evening for a duration of 3 hours whilst 1 instance is required every day through 8-6. Which of the following would you use to ensure COSTS are minimized for the underlying EC2 Instances
-    -
+    -One Reserved Instand and the rest are all On-Demand Instances 
 
 Question 47:
 Your application consists of an Elastic Load Balancer , EC2 Instances for the web server and the database server. The database server should not be accessible from the internet. Which of the following is the right way to deploy the infrastructure ensuring high availability
-    -
+    -2 public subnets for the load balancer, 2 private subnets for the web servers, 2 private subnets for the database server 
 
 Question 48:
 Your application consists of EC2 Instances  which are part of an Autoscaling. They have bootstrapped the software installation via the User data for the EC2 Instance. The Instances are located in a private subnet. The code is downloaded from a public Git repository onto the EC2 Instance. How would you ensure the instances can fetch the required data from a public repository on the Internet
-    -
+    -Attach a NAT gateway in the public subnet and route requests from the instances in the private subnet throught the NAT gateway 
+        -The NAT gateway is the most secure way to ensure EC2 instances in a private subnet can communicate with internet based resources. If you use a NAT instance, then it needs to be placed in the public subnet 
 
 Question 49:
 You have set a VPC peering connection between 2 VPC’s. One VPC contains a web server and another VPC contains a database server. You need to ensure the web server can connect to the database server. What 2 measures would you take to ensure this communication is possible.
-    -
+    -Ensure that the route tables for the VPC are modified
+    -Ensure the Security Group for the database servers allows incoming traffic from the web server 
 
 Question 50:
 As a CIO of the company , you have documents that are stored using the Simple Storage Service. Currently all the documents can be accessed via public URL’s. You need to ensure that the files can only be accessed by the right people. What measure can you take to secure the documents in S3
-    -
+    -Create pre-signed URL's 
+        -To provide better secure access, you can start marking the entire bucket as private and then creating pre-signed URL's to users who should be having access to the documents. Please note that if the answer options also included having bucket policies, that could also be used. You can restrict access via bucket policies to users 
 
 Question 51:
 A Company has a web application. They want to deploy it to AWS. They don’t want to manage the underlying infrastructure. Which of the following should they use for hosting the application
