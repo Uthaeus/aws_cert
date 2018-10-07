@@ -54,46 +54,52 @@ Your EC2 Instance currently hosts a database that has EBS Volumes(gp2). There ar
 
 Question 11:
 You currently have NAT instances in your public subnet. This is being used by a lot of EC2 Instances in your private subnet. The NAT instances are now becoming a bottleneck because of the bandwidth issues. You plan to replace the NAT instances with NAT gateways. You also want to ensure high availability of the overall NAT solution. Which of the following would help fulfil this requirement
-    -
+    -Deploy the NAT gateways in multiple Availability Zones 
+        -You can simply just replace the NAT Instances with NAT Gateways. To ensure high availability just ensures that the NAT gateways are created in multiple AZ's 
 
 Question 12:
 Your company is planning on hosting a Web application that will consist of EC2 Instances. These EC2 Instances will sit behind a load balancer. The application architecture also consists of a relational database and a NAT gateway. Which of the following can be added to the architecture to ensure high availability across all components
-    -
+    -A Load Balancer with 2 public subnets. The EC2 instances placed across 2 AZ's. RDS with Multi-AZ enabled. The NAT Gateway provisioned across 2 availability zones
+        -The best solution for high availability is to ensure that the instances are created across multiple AZ's. Ensure that the Load Balancer makes use of multiple availability zones to distribute the traffic. With Multi-AZ enabled, the database for AWS RDS will ensure high availability. And finally, if you want high availability for the NAT gateway, create multiple NAT gateways in different AZ's 
 
 Question 13:
 Which of the following service gives you the ability to see and track all the resource configuration changes in your AWS Account
-    -
+    -AWS Config 
 
 Question 14:
 An application needs a messaging service which needs to ensure that messages are delivered in the order in which they are received. There are around 300 messages that will be received per second. Which of the following service would you use for this purpose
-    -
+    -AWS SQS 
 
 Question 15:
 An application consists of the following architecture
 1) A lambda function which reads metadata of objects from an S3 bucket   
 2) The Lambda function then stores the metadata in respective tables in DynamoDB and AWS RDS - PostgreSQL   
 Which of the following needs to be in place to high availability of all components in the system?
-    -
+    -Enabling Multi-AZ for the PostgreSQL database 
+        -In the above architecture, if you enable Multi-AZ for the PostgreSQL database, then you can achieve high availability for the entire architecture. The objects in S3 are already replicated to multiple availability zones for durability and high availability. DynamoDB is built on a highly available and durable architecture. So there is no need of putting any additional components for high availability for the S3 and DynamoDB service components 
 
 Question 16:
 A company currently has a marketing application. The application stores its data in a AWS RDS MySQL Database. They want to ensure high availability for the database. Which of the following would you suggest being the architect for the application
-    -
+    -Enable Multi-AZ to ensure a secondary copy is placed in another availability zone 
 
 Question 17:
 A company currently makes use of EC2 Instances which stores sensitive data on the underlying EBS volumes. There is a requirement that data stored on these EBS volumes are never deleted. How can you achieve this?
-    -
+    -Make the attribute of DeleteOnTermination for the EBS volume to false 
 
 Question 18:
 A company has created a connection from their on-premise location to AWS using a VPN connection. They need to track all the network data which includes the source client IP address that flows into the AWS VPC. Which of the following can be used for this purpose?
-    -
+    -AWS VPC Flow Logs
+        -With VPC Flow Logs enabled for either your VPC, subnet, or Elastic Network Interface, you can get a trace of all network traffic that gets addressed to the instance via a VPC. Here you can get details such as source IP accresses and ports which get addressed to the EC2 instances 
 
 Question 19:
 An application needs to be hosted on an EC2 Instance in AWS. The application will be storing data as 8KB chunks on the underlying data volume. This data is not accessed that frequently. But when the data is accessed , it needs to be ensured that the data is retrieved in the least amount of time. Which of the following would you choose as the underlying data store if COST is not an important factor
-    -
+    -EBS Throughput Optimized HDD 
+        -Since here data needs to be stored in chunks, the best form of storage is Elastic Block Storage volumes. And since there is no limit on the cost, we can opt for best which gives best throughput for fetching data fast 
 
 Question 20:
 A company has the need to store aggregated historical sales data. The amount of data currently is 10 TB and will grow in TB’s over the years. Also it needs to be ensured that the data can be queried using the normal business intelligence tools. Which one of the following would you use as the underlying data store
-    -
+    -AWS Redshift 
+        -Here the keywords are 'Aggregated' and 'historical'. This would inply that 1 We need to have a columnar database that can offer better performance for queries. And 2 a data warehouse would be ideal for storage of historical data
 
 Question 21:
 A company is trying to understand if there is any way to restrict access to certain IP’s from the EC2 Instances in their subnets. These IP’s need to be blacklisted on an on-going basis. Which of the following can be used for this purpose
