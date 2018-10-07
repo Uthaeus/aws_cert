@@ -231,7 +231,7 @@ How would you design your solution to meet the present and future needs?
 Question 40:
 A company wants to extend their storage options using the AWS Cloud. There is a requirement for a legacy-based application that can mount an iSCI device for local storage. The most recently accessed data should be available for low latency access. 
 Which of the following can be used as the storage option?
-    -
+    -Storage gateway cached volumes 
 
 Question 41:
 An application has a requirement for 500 messages to be sent and processed in order.
