@@ -310,37 +310,40 @@ Which one of the below steps is the ideal way to allow the users to access the i
 Question 55:
 You are an architect for a company. You have been told to design the network layer for a 2-tier application which will consist of a web and database layer.  Internet Users will access the web-based application. 
 Which of the following is a proper design for the web and database layer?
-    -
+    -Use a private subnet for the database and use a public subnet for web layer 
 
 Question 56:
 A company has a large set of machines that keep on sending log information every 5 minutes. The number of machines can run into thousands. There should be a requirement to ensure that the data can be ingested into AWS and analyzed at a later stage. 
 Which of the following set of services would you use for this?
-    -
+    -AWS Kinesis Firehose and S3 
+        -Amazon Kinesis Data Firehose is the easiest way to reliably load streaming data into data stores and analytics tools. It can capture, transform, and load streaming data into Amazon S3, Amazon Redshift, Amazon Elasticsearch, and Splunk, enabling near real-time analytics with existing business intelligence tools and dashboards you're already using today
 
 Question 57:
 A company is currently going through an audit process. The CIO has asked department heads to upload documents to an S3 bucket in a week’s time. After this they should not have access to the S3 bucket, since the auditor will then analyze the documents in the S3 bucket.
 Which one of the following is the ideal way to implement the way users can upload the objects in the bucket?
-    -
+    -Generate pre-signed URL's and then destribute the URL's to the department heads 
+        -The most effective way to do this is to create pre-signed URL's for the department heads. You can create a URL which would expire after a week's time. The URL would grant access to the department heads to upload the files 
 
 Question 58:
 As an architect you have asked to devise a Microservices based application which would be used for processing critical and non-critical data. You are planning on implementing EC2 Instances with Docker containers. 
 Which of the following would you plan on implementing for the type of Instances to host the underlying Docker containers?
-    -
+    -Use EC2 orchestration and On-Demand instances for processing critical data and Spot instances for the non-critical data 
 
 Question 59:
 There is a requirement for storage of archive data of 6 TB, with an 8hr agreed retrieval time from business. 
 Which of the following can be used as the underlying data, ensuring COST is kept at a minimum?
-    -
+    -Glacier - Standard Retrieval 
 
 Question 60:
 Your company currently has an application that makes use of On-premise servers and resources in AWS. They have a requirement wherein, if there are any issues with the health of their underling on-premise web servers, that they should be taken out of rotation.
 As an architect how would you consider implementing this?
-    -
+    -Use Route53 health checks 
 
 Question 61:
 You have 5 servers hosted in AWS for one domain name. You want the users machine to have the ability to connect to any one of the servers when they browse for the domain name. 
 Which route53 record type would you use for this purpose.
-    -
+    -Multi-answer 
+        -Multivalue answer routing lets you configure Route53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can specify multiple values for almost any record, but multivalue answer routing also lets you check the health of each resource, so Route53 returns only values for healthy resources 
 
 Question 62:
 A company has the requirement to have a data store in AWS. This will be for their ecommerce application. The key requirement is for the database to be highly available is required. Joins would also be required on the underlying tables for the application. 
