@@ -238,46 +238,54 @@ As a CIO of the company , you have documents that are stored using the Simple St
 
 Question 51:
 A Company has a web application. They want to deploy it to AWS. They don’t want to manage the underlying infrastructure. Which of the following should they use for hosting the application
-    -
+    -AWS Lambda and API Gateway 
+        -If you want a completely serverless architecture, then consider using AWS Lambda to host your code. You can then invoke these functions via the API Gateway. In both of these services, the entire infrastructure is managed by AWS 
 
 Question 52:
 A company currently needs to design an application with the following requirements
 1) The application would take files from users and then upload the files to an S3 bucket
 3) The application would take the metadata from files stored in S3 and store it in a DynamoDB table
  Which of the following can be used to automate the process of storing the metadata in a DynamoDB table. 
-    -
+    -AWS Lambda 
+        -You can create a Lambda function which will hold the required code. The code can be triggered via Events in S3. The code can then take the metadata and then store it in a DynamoDB table 
 
 Question 53:
 A company has a processing based application that needs to be ported to AWS. The code behind the application does not need any sophisticated hardware. It only needs 512 MB of memory to run. Which of the following can be used to ensure cost effectiveness of hosting the application in AWS
-    -
+    -AWS Lambda 
+        -AWS Lambda is a serverless component available in AWS. This is more cost effective than creating an EC2 instance and hosting the process on an EC2 instance. In AWS Lambda, you only get charged for the amount of time the process runs 
 
 Question 54:
 A company need a data store in AWS. The data store needs to support continuous reads and writes. It needs to be ensured that whenever a read occurs , always the latest version of data is returned. Which of the following would you use
-    -
+    -AWS Relational Database Service 
+        -One key point to note is that Amazon S3 offers read after write consistency only for new objects and not for existing objects. Hence if you always want to have the latest version delivered even if an overwrite is done, then we can choose another data store such as AWS RDS 
 
 Question 55:
 A company is using S3 to store their files. The users work with the files via an application. There are a lot of reads and writes occurring for the objects via the application. The users are complaining that they are not getting the recent data when they are requesting for objects which have been updated. Which of the following could be a reason for this 
-    -
+    -The application is writing records with new object data with the same keys 
+        -AWS follows the concept of eventual consistency when it comes to srites for existing objects. It states that if a process that replaces an existing object and immediately attempts to read it, until the change is fully propagated, Amazon S3 might return the prior data 
 
 Question 56:
 You have been employed as a consultant architect for a company. The company wishes to follow the Devops model and deploy Infrastructure with the help of code templates. Which of the following would you use to achieve this requirement
-    -
+    -CloudFormation 
 
 Question 57:
 Your company is currently using an S3 bucket to store critical documents. The documents should be available even in case of a disaster. Which of the following would you employ to fulfil this requirement? Choose 2 answers from the options given below
-    -
+    -Enable versioning for the underlying S3 bucket 
+    -Enable Cross Region Replication for the S3 bucket 
 
 Question 58:
 A company has just started transferring data via S3 to a Redshift Cluster. Management has now indicated that the cluster should be available in case of a disaster. How can you achieve this
-    -
+    -Enable copying of snapshots to another region 
+        -You can configure Amazon Redshift to automatically copy snapshots (automated or manual) for a cluster to another region. When a snapshot is created in the cluster's primary region, it will be copied to a secondary region 
 
 Question 59:
 Your company needs to have a hybrid IT architecture in place. They need to ensure low latency of traffic from On-premise to AWS. It also needs to be ensured that data is encrypted in transit. How can you achieve this
-    -
+    -Using an AWS VPN Managed connection on top of an AWS Direct Connect connection 
 
 Question 60:
 You currently have a wordpress site hosted on an AWS EC2 Instance. You want people around the world to access the content on this site with the least latency. How can you achieve this in the most COST-effective way
-    -
+    -Use CloudFront and specify the DNS name of the EC2 instance as the origin 
+        -In CloudFront you can specify an EC2 instance as the origin. The load balancer would just incur costs and is not the ideal option for just a single EC2 instance 
 
 Question 61:
 A company has a set of EC2 Instances that hosts a critical application. You need to ensure that as an architect you devise a backup strategy to quickly recover from a complete failure of the underlying EC2 Instances. Which of the following could be considered in the backup procedure for such a requirement
