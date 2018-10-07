@@ -236,7 +236,7 @@ Which of the following can be used as the storage option?
 Question 41:
 An application has a requirement for 500 messages to be sent and processed in order.
 Which service can be used in this regard?
-    -
+    -AWS Simple Queue Service 
 
 Question 42:
 An application is hosted on a web instance and accesses a MySQL database. The Web instances needs to be accessed by all users in the internet via SSL.
