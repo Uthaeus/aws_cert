@@ -229,11 +229,12 @@ True of False. A local secondary index has the same partition key as the primary
 
 Question 51:
 True or False. Can a global secondary index created at the same time as the table creation.
-    -
+    -True 
 
 Question 52:
 What are some of the benefits of using AWS SWF? Choose 2 correct answer from the options below.
-    -
+    -Integrating a range of programs and components 
+    -Automate workflows that include human tasks
 
 Question 53:
 What are the different S3 Encryption techniques?
@@ -245,7 +246,7 @@ What are the different ways to access SWF?
 
 Question 55:
 What can be used in DynamoDB as part of the Query API call to filter results based on the values of primary keys? Choose an answer from the options below
-    -
+    -Expressions 
 
 Question 56:
 What can be used to deploy workers and deciders in Amazon SWF? Choose the correct answer from the options below.
@@ -253,15 +254,15 @@ What can be used to deploy workers and deciders in Amazon SWF? Choose the correc
 
 Question 57:
 What in AWS can be used to restrict access to SWF?
-    -
+    -IAM 
 
 Question 58:
 What is one difference between an Amazon EBS-backed and an instance-store backed instance? Choose the correct answer from the options below
-    -
+    -The instance type and kernel for an EBS backed AMI can easily be changed as compared to an Instance store-backed AMI 
 
 Question 59:
 What is one of the common pattern scenario’s when it comes to the combination of SNS and SQS? Choose the correct answer from the options below
-    -
+    -fanout
 
 Question 60:
 What are the different programming language SDK’s available for SWF. Choose 3 correct answer from the options below.
