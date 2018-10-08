@@ -514,43 +514,44 @@ What are the consistency models available for Local Secondary Indexes in DynamoD
 
 Question 121:
 How is the coordination between worker processes done in SWF? Choose the correct answer from the options below.
-    -
+    -By writing a program called the decider 
 
 Question 122:
 In DynamoDB, how many tables can an AWS account have per region? Choose the correct answer from the options below.
-    -
+    -256
 
 Question 123:
 Which of the following is not true about SWF? Choose the correct answer from the options below
-    -
+    -Humans can perform a decision task 
 
 Question 124:
 You are creating several DynamoDB tables for a new project. While doing so, you receive the error message, “LimitExceededException.” You are well below the maximum number of tables per account and there is no read or write activity on the tables yet. Why have you received this error? Choose a correct answer from the options below
-    -
+    -You attempted to create more than one table with a secondary index at a time 
 
 Question 125:
 EC2 instances are launched from Amazon Machine Images (AMIs). Which of the below options are true for a given public AMI.
-    -
+    -Can only be used to launch EC2 instances in the same AWS region as the AMI is stored 
+        -AMI's can only be shared within a region. To make them available across regions, you need to copy them across regions
 
 Question 126:
 What is the hourly rate to run a VPC? Choose the correct answer from the options below
-    -
+    -Free 
 
 Question 127:
 In regards to their data consistency model, AWS states that "Amazon S3 buckets in all Regions provide read-after-write consistency for PUTS of new objects and eventual consistency for overwrite PUTS and DELETES." What does AWS actually mean when they say Read-after-write consistency for PUTS of new objects? Choose the correct answer from the options below
-    -
+    -If you write a new key to S3, you will be able to retrieve any object immediately afterwards. Also, any newly created object or file will be visible immediately, without any delay 
 
 Question 128:
 Which one of the following S3 error code does not have a corresponding HTTP 404 Status code? Choose a correct answer from the options below
-    -
+    -MissingSecurityHeader
 
 Question 129:
 What result would you expect from the Fn::Join function in the following line in a CloudFormation template? Choose an answer from the options below"Fn::Join" : [ "/", [ "list-a","list-b","list-c"] ]
-    -
+    -'list-a/list-b/list-c'
 
 Question 130:
 Amazon Simple Notification Service (Amazon SNS) provides support for delivery of message attributes to Amazon SQS endpoints and each message attribute consists of the following items: Name, Type and Value. Which of the following is TRUE, regarding message attributes? Choose the correct answer from the options below
-    -
+    -Name, type, and value must not be empty or null and the message body shouldn't be empty or null either
 
 Question 131:
 fn:GetAtt is used on a CloudFormation template to: Choose an answer from the options below
