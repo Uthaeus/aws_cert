@@ -181,31 +181,32 @@ How many secondary indexes are allowed per table? Choose the correct answer from
 
 Question 42:
 You have created a mobile application that relies on reading data from DynamoDB. How could you give each mobile device permissions to read from DynamoDB? Choose an answer from the options below
-    -
+    -Create an IAM role that can be assumed by an app that allows federated users 
 
 Question 43:
 How many global secondary indexes are allowed per table? Choose the correct answer from the options below.
-    -
+    -5
 
 Question 44:
 Company B has many users updating the same table. At times it is not uncommon for multiple users to update the same item and attribute of an item at the same time. If user A calls an item in a table to update an attribute at the same time as user B and user B updates the table first, what can we deploy in DynamoDB to ensure User A is not updating an item that was updated since User A's table read? Choose the correct answer from the options below.
-    -
+    -Conditional Writes 
+        -To help clients coordinate writes to data items, DynamoDB supports conditional writes for PutItem, DeleteItem, and UpdateItem operations. With a conditional write, an operation succeeds only if the item attributes meet one or more expected conditions; otherwise it returns an error 
 
 Question 45:
 You are having trouble maintaining session states on some of your applications that are using an Elastic Load Balancer(ELB). As well as that there does not seem to be an even distribution of sessions across your ELB. To overcome this problem which of the following is the recommended method by AWS to try and rectify the issues that you are having?Choose the correct answer from the options below
-    -
+    -Use ElastiCache, which is a web service that makes it easy to set up, manage, and scale a distributed in-memory cache environment in the cloud 
 
 Question 46:
 After having created a new Linux instance on Amazon EC2, and downloaded the .pem file (called LAfile.pem) you try and SSH into your IP address (52.2.222.22) using the following command.ssh -i LAfile.pem ec2-user@52.2.222.22However you receive the following error.WARNING: UNPROTECTED PRIVATE KEY FILE!What is the most probable reason for this and how can you fix it?
-    -
+    -Your key file must not be publicly viewable for SSH to work. You need to modify your pem file as follows: 'chmod 400 LAfile.pem'
 
 Question 47:
 You attempt to create a new S3 bucket "Demo-Bucket-1234-US-East-2-Production-Envrionment-12.25.14” in the US-EAST-2 region and the bucket creation fails. Why?Choose the correct answer from the options below.
-    -
+    -The bucket name uses capital letters
 
 Question 48:
 You have items in your table that are 12KB in size and you want to have 10 strongly consistent reads per second. How many read capacity units would you need to provision? Choose a correct answer from the options below
-    -
+    -30
 
 Question 49:
 Your supervisor calls you wanting to know why she has not been receiving email notifications for AWS billing alerts. What do you suspect the problem might be and how can you find out? Choose 3 correct answer from the options below
@@ -213,7 +214,8 @@ Your supervisor calls you wanting to know why she has not been receiving email n
 
 Question 50:
 Elastic Load Balancing uses what technologies for request routing? Choose the 2 correct answer from the options below
-    -
+    -Route53
+    -DNS 
 
 Question 51:
 You have an EBS root device on /dev/sda1 on one of your EC2 instances. You are having trouble with this particular instance and you want to either Stop/Start, Reboot or Terminate the instance but you do NOT want to lose any data that you have stored on /dev/sda1. Hence you are unsure as to what would be best and if you will lose this data using any of these methods to change your instance state. Which of the below statements best describes the effect each change of instance state would have on the data you have stored on /dev/sda1? Choose the correct answer from the options below
