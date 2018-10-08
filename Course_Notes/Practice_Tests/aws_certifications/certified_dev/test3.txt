@@ -157,47 +157,48 @@ Company A has an S3 bucket containing premier content that they intend to make a
 
 Question 32:
 Company A has recently launched an online commerce site for bicycles on AWS. They have a “Product” DynamoDB table that stores details for each bicycle, such as, manufacturer, color, price, quantity and size to display in the online store. Due to customer demand, they want to include an image for each bicycle along with the existing details. Which approach below provides the least impact to provisioned throughput on the “Product” table? Choose an answer from the options below
-    -
+    -Store the images in Amazon S3 and add an S3 URL pointer to the 'Product' table item for each image 
 
 Question 33:
 Company C is currently hosting their corporate site in an Amazon S3 bucket with Static Website Hosting enabled. Currently, when visitors go to http://www.companyc.com the index.html page is returned. Company C now would like a new page welcome.html to be returned when a visitor enters http://www.companyc.com in the browser. Which of the following steps will allow Company C to meet this requirement? Choose 2 answers from the options below
-    -
+    -Upload an html page named welcome.html to their S3 bucket 
+    -Set the Index Document property to welcome.html 
 
 Question 34:
 Company D is running their corporate website on Amazon S3 accessed from http//www.companyd.com. Their marketing team has published new web fonts to a separate S3 bucket accessed by the S3 endpoint https://s3-us-west1. amazonaws.com/cdfonts. While testing the new web fonts, Company D recognized the web fonts are being blocked by the browser. What should Company D do to prevent the web fonts from being blocked by the browser?
-    -
+    -Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration 
 
 Question 35:
 Games-R-Us is launching a new game app for mobile devices. Users will log into the game using their existing Facebook account and the game will record player data and scoring information directly to a DynamoDB table. What is the most secure approach for signing requests to the DynamoDB API? Choose an answer from the options below
-    -
+    -Request temporary security credentials using web identity federation to sign the requests 
 
 Question 36:
 How can you secure data at rest on an EBS volume? Choose an answer from the options below
-    -
+    -Use an encrypted file system on top of the EBS volume 
 
 Question 37:
 How long can messages live in an SQS queue. Choose the correct answer from the options below
-    -
+    -14 days 
 
 Question 38:
 If a message is retrieved from a queue in Amazon SQS, how long is the message inaccessible to other users by default? Choose an answer from the options below
-    -
+    -30 seconds 
 
 Question 39:
 If an application is storing hourly log files from thousands of instances from a high traffic web site, which naming scheme would give optimal performance on S3? Choose an answer from the options below
-    -
+    -HH-DD-MM-YYYY-log_instanceID
 
 Question 40:
 In DynamoDB, what type of HTTP response codes indicate that a problem was found with the client request sent to the service? Choose an answer from the options below
-    -
+    -4xx HTTP response code 
 
 Question 41:
 In SNS, are push notifications allowed for multiple platforms.
-    -
+    -True 
 
 Question 42:
 In SQS does long polling cost more than short polling? Choose an answer from the options below
-    -
+    -False 
 
 Question 43:
 Is DynamoDB suited only for high scale based applications? Choose an answer from the options below
