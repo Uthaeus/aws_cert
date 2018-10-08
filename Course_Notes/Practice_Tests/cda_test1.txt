@@ -88,15 +88,15 @@ Your application is trying to upload a 6 GB file to Simple Storage Service and r
 
 Question 21:
 You have created a VPC that has just one subnet with an internet gateway attached and required route table entry set. Which of the following is true with regards to the connection of an EC2 instance located in the VPC?Choose the correct answer from the options below
-    -
+    -It needs an EIP or public IP assigned to it in order to connect to the internet and send data in or out 
 
 Question 22:
 While working with the S3 API you receive the error: 403 forbidden. What is the most likely cause of this? Choose a correct answer from the options below
-    -
+    -AccessDenied
 
 Question 23:
 Which of the following is true if long polling is enabled? Choose the correct answer from the options below
-    -
+    -The reader will listen to the queue until a message is available or until timeout
 
 Question 24:
 Since S3 object are stored lexicographically, by introducing "randomness" to your S3 names it helps S3 storage distribute the I/O load across more than one partition. Given the following examples, how could you add a hashed prefix to the naming convention to increase I/O performance? Choose the correct answer from the options below
@@ -104,27 +104,31 @@ Since S3 object are stored lexicographically, by introducing "randomness" to you
 
 Question 25:
 Which of the descriptions below best describes what the following bucket policy does?{   "Version":"2012-10-17",   "Id":"Statement1”,   "Statement":[    {       "Sid":" Statement2",       "Effect":"Allow",       "Principal":"*",       "Action":"s3:GetObject",       "Resource":"arn:AWS:s3:::mybucket/*",       "Condition":{             "StringLike":{"AWS:Referer":["http://www.example.com/*","http://www.demo.com/*"]}        }   }  ]}Choose the correct answer from the options below
-    -
+    -It allows read access to bucket 'mybucket' but only if it is accessed from www.example.com or www.demo.com
 
 Question 26:
 You have created an Elastic Load Balancer with Duration-Based sticky sessions enabled in front of your six EC2 web application instances in US-West-2. For High Availability, there are three web application instances in Availability Zone 1 and three web application instances in Availability Zone 2. To load test, you set up a software-based load tester in Availability Zone 2 to send traffic to the Elastic Load Balancer, as well as letting several hundred users browse to the ELB’s hostname. After a while, you notice that the users’ sessions are spread evenly across the EC2 instances in both AZ’s, but the software-based load tester’s traffic is hitting only the instances in Availability Zone 2. What steps can you take to resolve this problem? Choose the 2 correct answer from the options below
-    -
+    -Force the software-based tester to re-resolve DNS before every request 
+    -Use a third party load-testing service to send requests from globally distributed clients 
 
 Question 27:
 One unit of read capacity is ____ in size? Choose the correct answer from the options below
-    -
+    -4kb 
 
 Question 28:
 You have multiple instances behind private and public subnets. None of the instances have an EIP assigned to them. How can you connect them to the internet to download system updates? Choose the correct answer from the options below
-    -
+    -Create a NAT Instance 
+        -You can use a network address translation instance in a public subnet in your VPC to enable instances in the private subnet to initiate outbound IPv4 traffic to the internet or other AWS services, but prevent the instances from receiving inbound traffic initiated by someone on the internet 
 
 Question 29:
 Which of the following is not a benefit of a query over a scan? Choose the correct answer from the options below.
-    -
+    -It does not do consistent reads 
+        -Query and Scan both support eventual consistent reads
 
 Question 30:
 Which of the following will not make a CloudFormation stack deployment to 'rollback'? Choose a correct answer from the options below.
-    -
+    -The template contains invalid JSON syntax
+        -You will be returned a template validation error prior to the creation and deployment of resources itself 
 
 Question 31:
 What is the default timeout for visibility queue in SQS in seconds? Choose the correct answer from the options below
