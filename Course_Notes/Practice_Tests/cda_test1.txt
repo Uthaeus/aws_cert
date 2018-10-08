@@ -219,43 +219,44 @@ Elastic Load Balancing uses what technologies for request routing? Choose the 2 
 
 Question 51:
 You have an EBS root device on /dev/sda1 on one of your EC2 instances. You are having trouble with this particular instance and you want to either Stop/Start, Reboot or Terminate the instance but you do NOT want to lose any data that you have stored on /dev/sda1. Hence you are unsure as to what would be best and if you will lose this data using any of these methods to change your instance state. Which of the below statements best describes the effect each change of instance state would have on the data you have stored on /dev/sda1? Choose the correct answer from the options below
-    -
+    -The data in an instance store is not permanent, it persists only during the lifetime of the instance. The data will be lost if you terminate the instance, however, the data will remain if you reboot or stop/start the instance because data on an EBS volume is not ephemeral
 
 Question 52:
 Which of the following statements is true about SQS standard queues? Choose the correct answer from the options below.
-    -
+    -Messages will be delivered one or more times and message delivery order is indeterminate
 
 Question 53:
 You have reached your account limit for the number of CloudFormation stacks in a region. How do you increase your limit? Choose an answer from the options below
-    -
+    -Contact AWS 
 
 Question 54:
 Describe the process of registering a mobile device with SNS push notification service using GCM. Choose the correct answer from the options below
-    -
+    -Submit GCM notification credentials to Amazon SNS, then receive the Registration ID for each mobile device. After that, pass the device token to SNS and SNS then creates a mobile subscription endpoint for each device and communicates with the GCM service on your behalf
+        -For Amazon SNS to send notification messages to mobile endpoints, whether it is direct or with subscriptions to a topic, you first need to register the app with AWS
 
 Question 55:
 You're using CloudFormation templates to build out staging environments. What section of the CloudFormation would you edit in order to allow the user to specify the PEM key-name at start time? Choose a correct answer from the options below
-    -
+    -Parameters section 
 
 Question 56:
 Which of the following is a default limit in S3? Choose the correct answer from the options below
-    -
+    -Accounts can have a maximum of 100 buckets 
 
 Question 57:
 What is the maximum size of an item in DynamoDB? Choose an answer from the options below
-    -
+    -400kb
 
 Question 58:
 You are deploying your first EC2 instance in AWS and are using the AWS console to do this. You have chosen your AMI and your instance type and have now come to the screen where you configure your instance details. One of the things that you need to decide is whether you want to auto-assign a public IP address or not. You assume that if you do not choose this option you will be able to assign an Elastic IP address later, which happens to be a correct assumption. Which of the below options best describes why an Elastic IP address would be preferable to a public IP address? Choose the correct answer from the options below
-    -
+    -With an Elastic IP address, you can mask the failure of an instance or software by rapidly remapping the address to another instance in your account 
 
 Question 59:
 You decide to configure a bucket for static website hosting. As per the AWS documentation, you create a bucket named 'mybucket.com' and then you enable website hosting with an index document of 'index.html' and you leave the error document as blank. You then upload a file named 'index.html' to the bucket. After clicking on the endpoint of mybucket.com.s3-website-us-east-1.amazonAWS.com you receive 403 Forbidden error. You then change the CORS configuration on the bucket so that everyone has access, however you still receive the 403 Forbidden error. What additional step do you need to do so that the endpoint is accessible to everyone? Choose the correct answer from the options below
-    -
+    -Change the permissions on the index.html file also, so that everyone has access 
 
 Question 60:
 Which API call occurs in the final process of creating an AMI? Choose the correct answer from the options below
-    -
+    -RegisterImage
 
 Question 61:
 What are some of the benefits of using AWS SWF? Choose the correct answer from the options below.
