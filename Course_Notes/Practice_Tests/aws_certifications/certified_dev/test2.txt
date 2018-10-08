@@ -201,31 +201,31 @@ Is a best practice to allow code to run on an EC2 instance via a role rather tha
 
 Question 44:
 Is a public IP address required for an instance to be accessed from the internet in a VPC? Choose the correct answer from the options below
-    -
+    -True 
 
 Question 45:
 Is Example.com a valid S3 bucket name?
-    -
+    -False 
 
 Question 46:
 Is it possible for duplicate messages to be received within SQS? Choose the correct answer from the options below.
-    -
+    -True 
 
 Question 47:
 Is the default visibility timeout for an SQS queue 1 minute?
-    -
+    -False 
 
 Question 48:
 One DynamoDB strongly consistent read capacity unit is equal to two eventual consistent read per second. Choose the correct answer from the options below
-    -
+    -True 
 
 Question 49:
 True of False. A global secondary index can have the same partition key as the primary key?
-    -
+    -True 
 
 Question 50:
 True of False. A local secondary index has the same partition key as the primary key?
-    -
+    -True 
 
 Question 51:
 True or False. Can a global secondary index created at the same time as the table creation.
