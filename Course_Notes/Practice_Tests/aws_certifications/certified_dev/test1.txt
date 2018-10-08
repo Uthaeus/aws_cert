@@ -1,0 +1,272 @@
+Question 1:
+A benefit of multi-part upload is that you can have quick recovery from any network issues. Choose the correct answer from the options below
+    -True
+
+Question 2:
+What is the default setting of connection draining in ELB. Choose an answer from the options below.
+    -300 seconds 
+        -To ensure that a Classic Load Balancer stops sending requests to instances that are de-registering or unhealthy, while keeping the existing connections open, use connection draining. This enables the load balancer to complete in-flight requests made to instances that are de-registering or unhealthy. When you enable connection draining, you can specify a maximum time for the load balancer to keep connections alive before reporting the instance as de-registered. (1 - 3600 seconds)
+
+Question 3:
+What is the emailing service available in AWS? Choose one answer from the options below
+    -SES 
+
+Question 4:
+What is the largest size of an object which can be uploaded by a PUT request in S3? Choose the correct answer from the options below
+    -5GB
+
+Question 5:
+What is the load balancing service available in AWS? Choose one answer from the options below
+    -ELB 
+
+Question 6:
+What is the notification service available in AWS? Choose one answer from the options below
+    -SNS 
+
+Question 7:
+What is the storage service available in AWS? Choose one answer from the options below
+    -S3 
+
+Question 8:
+What is the VPC that is created for your AWS account for the first time. Choose an answer from the options below.
+    -Defailt VPC 
+
+Question 9:
+What type of data can be stored in S3? Choose the correct answer from the options below
+    -Virtually any type of data format 
+
+Question 10:
+When using REST API with S3 what needs to set in the header request for encryption to occur for the object? Choose the correct answer from the options below
+    -x-amz-server-side-encryption 
+
+Question 11:
+When using the Ref function in CloudFormation, what do we get back if we pass in the logical ID of an AWS::EC2::EIP object? Choose the correct answer from the options below
+    -The instance public IP 
+
+Question 12:
+When you set up a static website in S3 what are the most important steps to carry out? Choose 3 correct answer from the options below
+    -Upload an index document to your S3 bucket 
+    -Select the 'Make Public' permission for your bucket's objects 
+    -Enable static website hosting in your S3 bucket properties
+
+Question 13:
+Which API call would you create a new item in dynamoDB? Choose the correct answer from the options below
+    -PutItem
+
+Question 14:
+Which feature of DynamoDB provides a time-ordered sequence of item-level changes made to data? Choose an correct answer from the options below
+    -DynamoDB Streams
+
+Question 15:
+Which of the following are invalid sections in AWS Cloudformation template. Choose 2 answers from the options below
+    -Services 
+    -Declarations 
+
+Question 16:
+Which of the following are the responsibility of the customer. Choose 2 answers from the options below
+    -Managing security groups
+    -Patching the OS on the running EC2 instance 
+
+Question 17:
+Which of the following are valid arguments for an SNS Publish request? Choose 3 answers from the options below
+    -Subject
+    -Message
+    -Timestamp
+
+Question 18:
+Which of the following AWS services is used to launch virtual servers? Choose an answer from the options below
+    -Amazon EC2
+
+Question 19:
+Which of the following AWS services provides a managed NoSQL database? Choose an answer from the options below
+    -AWS DynamoDB
+
+Question 20:
+Which of the following bucket names is invalid? Choose 2 correct answer from the options below
+    -
+
+Question 21:
+Which of the following is an example of a good DynamoDB hash key schema for provisioned throughput efficiency? Choose an answer from the options below
+    -Employee ID, where the application has many different employees 
+        -Always have the primary key or hash key for those attributes which will have many values
+
+Question 22:
+Which of the following is NOT a S3 REST API operation?
+    -Write Object 
+
+Question 23:
+Which of the following notification endpoints or clients are supported by Amazon Simple Notification Service? Choose 4 answers from the options below.
+    -Email 
+    -HTTPS 
+    -SQS
+    -Short Message Service 
+
+Question 24:
+Which RDS are supported as AWS services? Choose 2 answers from the options below
+    -Oracle 
+    -MySQL
+
+Question 25:
+While working with the S3 API you receive the error: 403 forbidden. What is the most likely cause of this? Choose a correct answer from the options below
+    -InvalidAccessKeyID
+
+Question 26:
+You have been requested to ensure that for your application all data in EBS is secured at rest. How can you achieve this? Choose an answer from the options below
+    -Use an encrypted file system on top of the EBS volume
+
+Question 27:
+You want 10 strongly consistent 1KB writes per second. How many units of throughput capacity do you need to provision? Choose the correct answer from the options below
+    -10
+
+Question 28:
+Your IT Project Manager wants you to perform a penetration testing on your AWS environment? What needs to be considered when performing penetration testing in AWS? Choose an answer from the options below
+    -
+
+Question 29:
+Your items are 12KB in size and you want to have 100 strongly consistent reads per second. How many read capacity units do you need to provision? Choose the correct answer from the options below
+    -
+
+Question 30:
+What is the limit on the number of attributes an item can have in DynamoDB? Choose an answer from the options below
+    -
+
+Question 31:
+What is the limit to the number of characters for a topic name in sns? Choose one answer from the options below
+    -
+
+Question 32:
+What is the maximum number of SWF domains allowed in an AWS account? Choose the correct answer from the options below.
+    -
+
+Question 33:
+What is the primary difference between a global secondary index and a local secondary index? Choose the correct answer from the options below.
+    -
+
+Question 34:
+What is the smallest amount of reserved capacity that can be purchased for DynamoDB? Choose an answer from the options below
+    -
+
+Question 35:
+What result would you expect from the Fn::Join function in the following line in a CloudFormation template? Choose an answer from the options below "Fn::Join" : [ "/", [ "list-a","list-b","list-c"] ]
+    -
+
+Question 36:
+When a subscriber subscribes to a topic in SNS, what is the time period available for confirmation? Choose one answer from the options below
+    -
+
+Question 37:
+A security system monitors 3000 cameras saving image metadata every 30 seconds to an Amazon DynamoDB. Each sample involves writing 256 bytes of data and the writes are evenly distributed over time. How much write throughput is required for the target table. Choose an answer from the options below
+    -
+
+Question 38:
+Can S3 bucket names be formatted as an IP Address?
+    -
+
+Question 39:
+Can SWF workers run behind a firewall?
+    -
+
+Question 40:
+Can SWF workflows be managed across availability zones?
+    -
+
+Question 41:
+Can you have 10 local secondary indexes on a table? Choose a correct answer from the options below
+    -
+
+Question 42:
+Can you have the same bucket names in 2 regions in AWS?
+    -
+
+Question 43:
+Can you use all the IP Addresses assigned to a subnet.
+    -
+
+Question 44:
+CloudFormation natively supports creation of which AWS resources? Choose 3 answers from options below.
+    -
+
+Question 45:
+Does Cloudformation support Amazon EC2 tagging?
+    -
+
+Question 46:
+Does S3 Infrequent Access storage provide the same performance as standard storage?
+    -
+
+Question 47:
+DynamoDB supports complex relational queries. Choose an correct answer from the options below
+    -
+
+Question 48:
+For which of these languages/platforms does AWS provide an SDK? Choose 3 correct answer from the options below
+    -
+
+Question 49:
+How can you ensure maximum protection of preserved versions in S3? Choose one answer from the options below.
+    -
+
+Question 50:
+In AWS, which security aspects are is AWS responsibility? Choose 2 answers from the options below
+    -
+
+Question 51:
+In Cloudformation what is the limit to the number of parameters in the template? Choose an answer from the options below
+    -
+
+Question 52:
+In IAM what is the representation of a person or service. Choose an answer from the options below
+    -
+
+Question 53:
+In SWF what helps in developing Amazon SWF based applications. Choose an answer from the options below.
+    -
+
+Question 54:
+In SWF what is the maximum number of open activity tasks ? Choose an answer from the options below
+    -
+
+Question 55:
+Is data in S3 stored as simple key based objects?
+    -
+
+Question 56:
+Is S3 ideal for hosting web sites with server side interactions?
+    -
+
+Question 57:
+Is there a limit on the number of subnets that can be created per VPC? Choose an answer from the options below.
+    -
+
+Question 58:
+Is there a limit to the size of a table in DynamoDB?. Choose the correct answer from the options below
+    -
+
+Question 59:
+What are some of the advantages of using AWS SNS?
+    -
+
+Question 60:
+What are the 2 ways in which you can get data into S3-Standard IA? Choose 2 answers from the options below.
+    -
+
+Question 61:
+What are the different services provided by AWS. Choose all that apply
+    -
+
+Question 62:
+What are the different types of storage classes in S3? Choose 2 answers from the options below
+    -
+
+Question 63:
+What are the supported protocols for AWS ELB. Choose 2 answers from the options below.
+    -
+
+Question 64:
+What HTTP response code indicates that an AWS REST API call resulted in a redirection? Choose an answer from the options below
+    -
+
+Question 65:
+What is the content delivery network service available in AWS? Choose one answer from the options below
+    -
+
