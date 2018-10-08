@@ -270,11 +270,11 @@ What are the different programming language SDK’s available for SWF. Choose 3 
 
 Question 61:
 What is maximum limit for the size of an item collection in DynamoDB? Choose an answer from the options below
-    -
+    -10GB 
 
 Question 62:
 What is one of the major use cases for using SWF? Choose the correct answer from the options below.
-    -
+    -Video encoding 
 
 Question 63:
 What is the Amazon SNS endpoint for The US East (Northern Virginia)? Choose one answer from the options below
@@ -282,9 +282,9 @@ What is the Amazon SNS endpoint for The US East (Northern Virginia)? Choose one 
 
 Question 64:
 What is the default behavior of a CloudFormation stack if creation fails? Choose the correct answers from the options below
-    -
+    -Rollback 
 
 Question 65:
 What is the key feature of SWF? Choose the correct answer from the options below.
-    -
+    -Guarantees delivery order of messages/tasks 
 
