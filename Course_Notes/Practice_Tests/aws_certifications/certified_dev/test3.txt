@@ -241,43 +241,45 @@ What happens, by default, when one of the resources in a CloudFormation stack ca
 
 Question 51:
 What is the format of structured notification messages sent by Amazon SNS? Choose an answer from the options below
-    -
+    -A JSON object containing MessageId, unsubscribeURL, Subject, Message, and other values 
 
 Question 52:
 What is the maximum length of a topic name in SNS? Choose the correct answer from the options below
-    -
+    -256 characters 
 
 Question 53:
 What is the maximum number of topics allowed per account in SNS? Choose the correct answer from the options below
-    -
+    -100,000
 
 Question 54:
 What item operation allows the retrieval of multiple items from a DynamoDB table in a single API call? Choose an answer from the options below
-    -
+    -BatchGetItem
 
 Question 55:
 What type of block cipher does Amazon S3 offer for server side encryption? Choose an answer from the options below
-    -
+    -Advanced Encryption Standard 
 
 Question 56:
 When a Simple Queue Service message triggers a task that takes 5 minutes to complete, which process below will result in successful processing of the message and remove it from the queue while minimizing the chances of duplicate processing? Choose an answer from the options below
-    -
+    -Retrieve the message with an increased visibility timeout, process the message, delete the message from the queue 
 
 Question 57:
 When using a large Scan operation in DynamoDB, what technique can be used to minimize the impact of a scan on a table’s provisioned throughput? Choose an answer from the options below
-    -
+    -Set a smaller page size for the scan 
 
 Question 58:
 Which DynamoDB limits can be raised by contacting AWS support? Choose 2 answers from the options below
-    -
+    -The number of tables per account 
+    -The number of provisioned throuput units per account 
 
 Question 59:
 Which EC2 API call would you use to retrieve a list of Amazon Machine Images (AMIs)? Choose an answer from the options below
-    -
+    -DescribeImages 
 
 Question 60:
 Which features can be used to restrict access to data in S3? Choose 2 answers from the options below
-    -
+    -Set an S3 bucket policy 
+    -Set an S3 ACL on the bucket or the object 
 
 Question 61:
 Which of the below APIS are available for tables in DynamoDB? Choose 3 answers from the options below
