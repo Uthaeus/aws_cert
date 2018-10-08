@@ -300,43 +300,49 @@ What is one key difference between an Amazon EBS-backed and an instance-store ba
 
 Question 71:
 In AWS CloudFormation, the intrinsic function Fn::Join appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter.Keeping the above in mind what value will the following example return?"Fn::Join" : [ "-", [ "the", "demo", "app" ] ]
-    -
+    -'the-demo-app'
 
 Question 72:
 In S3 what can be used to delete a large number of objects
-    -
+    -Multi-Object Delete 
 
 Question 73:
 While working with the S3 API you receive the error message: 404 Not Found. What is the most likely cause for this error? Choose a correct answer from the options below
-    -
+    -NoSuchBucket
 
 Question 74:
 You have developed an application that sends an Amazon SNS message to a topic whenever an order is placed for one of your products on an online store you have just created. Any Amazon SQS queues that are subscribed to that topic would receive identical notifications when a new order is placed. This method of message deliver is called the "fanout" scenario. Which of the below descriptions is the closest in describing the common attributes of this scenario? Choose the correct answer from the options below
-    -
+    -The Amazon SNS message is sent to a topic and then replicated and pushed to multiple Amazon SQS queues, HTTP endpoints, or email addresses, which allows for parallel asynchronous processing
 
 Question 75:
 What are the different programming language SDK’s available for SWF. Choose 3 correct answer from the options below.
-    -
+    -Java 
+    -.Net 
+    -PHP 
 
 Question 76:
 When can you add a secondary index to a table? Choose the correct answer from the options below.
-    -
+    -Anytime if it is a global index 
 
 Question 77:
 What is the key feature of SWF? Choose the correct answer from the options below.
-    -
+    -Guarantees delivery order of messages/tasks
 
 Question 78:
 Which statement about DynamoDB is true? Choose the correct answer from the options below
-    -
+    -DynamoDB uses conditional writes for consistency 
+        -To help clients coordinate writes to data items, DynamoDB supports conditional writes for PutItem, DeleteItem, and UpdateItem operations
 
 Question 79:
 What are the API’s available for DynamoDB? Choose 3 answers from the options below
-    -
+    -UpdateItem 
+    -CreateTable
+    -UpdateTable
+        -For listing tables, the correct API call is ListTables
 
 Question 80:
 What is the maximum size of an S3 object? Choose an answer from the options below
-    -
+    -5TB
 
 Question 81:
 Which DynamoDB API call does not consume capacity units? Choose the correct answer from the options below
