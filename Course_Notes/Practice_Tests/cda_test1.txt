@@ -428,47 +428,49 @@ Which statement about DynamoDB is true? Choose a correct answer from the options
 
 Question 101:
 The following code snippet is the resources section of a CloudFormation template that you have written."Resources" : {    "EC2Instance" : {        "Type" : "AWS::EC2::Instance",         "Properties" : {             "InstanceType" : { "Ref" : "InstanceType" },              "SecurityGroups" : [ { "Ref" : "InstanceSecurityGroup" } ],               "KeyName" : { "Ref" : "KeyName" },               "ImageId" : { "Fn::FindInMap" : [ "AWSRegionArch2AMI", { "Ref" : "AWS::Region" },                { "Fn::FindInMap" : [ "AWSInstanceType2Arch", { "Ref" : "InstanceType" }, "Arch" ] }               ]        }   }},You have used the reference function to define your instance type as follows."InstanceType" : { "Ref" : "InstanceType" },The referencing function is referencing the instance type. Where is this value most likely coming from?
-    -
+    -From the parameters section of your CloudFormation template 
 
 Question 102:
 How many messages queues can be created in SQS? Choose the correct answer from the options below
-    -
+    -Any number 
 
 Question 103:
 You successfully upload a new item to the US-STANDARD region. You then immediately make another API call and attempt to read the object. What will happen? Choose the correct answer from the options below
-    -
+    -US-Standard has read after write consistency, so you will be able to retrieve the obhect immediately 
 
 Question 104:
 For best performance when retrieving data from a table, what "type" of API call should you perform? Choose the correct answer from the options below.
-    -
+    -Query 
 
 Question 105:
 For how long can a SWF workflow task or task execution can live up to? Choose the correct answer from the options below.
-    -
+    -1 year 
 
 Question 106:
 Company B provides an online image recognition service and utilizes SQS to decouple system components for scalability. The SQS consumers poll the imaging queue as often as possible to keep end-to-end throughput as high as possible. However, Company B is realizing that polling in tight loops is burning CPU cycles and increasing costs with empty responses. How can Company B reduce the number empty responses? Choose the correct answer from the options below
-    -
+    -Set the imaging queue ReceiveMessageWaitTimeSeconds attribute to 20 seconds 
 
 Question 107:
 In SWF what are the containers called for segregating application resources. Choose the correct answer from the options below
-    -
+    -Domains 
 
 Question 108:
 Regarding the evaluation logic when managing Access to Your Amazon SNS Topics, the following things can be stated.The goal at evaluation time is to decide whether a given request should be allowed or denied. The evaluation logic follows several basic rules:- By default, all requests to use your resource coming from anyone but you are denied- An allow overrides any default denies- An explicit deny overrides any allows- The order in which the policies are evaluated is not important- A policy results in a default deny if it doesn't directly apply to the request.Keeping the above in mind, what will be the policy result, if a user requests to use Amazon SNS, but the policy on the topic doesn't refer to the user's AWS account at all?
-    -
+    -A default deny 
 
 Question 109:
 Which API call would you use to query an item by it's primary hash key? Choose the correct answer from the options below
-    -
+    -GetItem
+        -The GetItem operation returns a set of attributes for the item with the given primary key. If there is no matching item, GetItem does not return any data and there will be no Item element in the response 
 
 Question 110:
 Which API call can be used to retrieve up to 100 items at a time or 1MB of data from a DynamoDB table? Choose the correct answer from the options below.
-    -
+    -BatchGetItem
 
 Question 111:
 Which of the following types of servers would this CloudFormation template be most appropriate for? Choose a correct answer from the options below{  "AWSTemplateFormatVersion" : "2010-09-09",   "Description" : "My CloudFormation Template",   "Resources" : {        "MyInstance" : {               "Type" : "AWS::EC2::Instance",               "Properties" : {                     "InstanceType" : "t2.micro",                     "ImageId" : "ami-030f4133",                     "NetworkInterfaces" : [{                     "AssociatePublicIpAddress" : "true",                     "DeviceIndex" : "0",                     "DeleteOnTermination" : "true",                     "SubnetId" : "subnet-0c2c0855",                     "GroupSet" : ["sg-53a4e434"]                }            ]        }                 }  }}
-    -
+    -Bastion Host 
+        -The Bastion host needs a minimum configuration and a public IP address
 
 Question 112:
 When computing the read capacity for a scan operations, to what KB is the number of bytes rounded off to?
