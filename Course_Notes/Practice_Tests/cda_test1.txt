@@ -46,15 +46,17 @@ If you're executing .Net code against AWS on an EC2 instance that is assigned an
 
 Question 11:
 One of your requirements is to setup an S3 bucket to store your files like documents and images. However, those objects should not be directly accessible via the S3 URL, they should ONLY be accessible from pages on your website so that only your paying customers can see them. How could you implement this? Choose the correct answer from the options below
-    -
+    -You can use a bucket policy and check for the AWS:Referer key in a condition where that key matches your domain 
 
 Question 12:
 Which of the following datatypes can be indexed in DynamoDB. Choose 3 answers from the options given below
-    -
+    -String 
+    -Boolean 
+    -Number 
 
 Question 13:
 Which API call is used to list all resources that belong to a CloudFormation Stack? Choose an answer from the options below
-    -
+    -ListStackResources
 
 Question 14:
 What is the Amazon SNS endpoint for The US East (Northern Virginia)? Choose one answer from the options below
@@ -62,27 +64,27 @@ What is the Amazon SNS endpoint for The US East (Northern Virginia)? Choose one 
 
 Question 15:
 You are writing an AWS CloudFormation Template to create a static S3 website configuration. The resources section of this template will be used for access control of the bucket and is defined in the 5th line of the below code snippet. What should the value of "AccessControl" be so that the owner of the bucket gets full control and all users get READ access only."Resources" : {     "S3Bucket" : {            "Type" : "AWS::S3::Bucket",             "Properties" : {                     "AccessControl" : "ANSWER TO THE QUESTION",                      "BucketName": { "Ref" : "BucketName" },                      "WebsiteConfiguration" : {                                "IndexDocument" : "index.html",                                "ErrorDocument" : "error.html"                        }             }  }
-    -
+    -PublicRead
 
 Question 16:
 What is maximum limit for the size of an item collection in DynamoDB? Choose an answer from the options below
-    -
+    -10GB
 
 Question 17:
 You can define up to 5 local secondary indexes and 5 global secondary indexes per table. How can you increase your DynamoDB secondary indexes limit in a region?
-    -
+    -DynamoDB does not allow secondary index limit increase 
 
 Question 18:
 In SQS what is the maximum visibility timeout. Choose the correct answer from the options below
-    -
+    -12 hours
 
 Question 19:
 What is one of the major use cases for using SWF? Choose the correct answer from the options below.
-    -
+    -Video encoding
 
 Question 20:
 Your application is trying to upload a 6 GB file to Simple Storage Service and receive a "Your proposed upload exceeds the maximum allowed object size." error message. What is a possible solution for this? Choose the correct answer from the options below
-    -
+    -Use the multipart upload API for this object 
 
 Question 21:
 You have created a VPC that has just one subnet with an internet gateway attached and required route table entry set. Which of the following is true with regards to the connection of an EC2 instance located in the VPC?Choose the correct answer from the options below
