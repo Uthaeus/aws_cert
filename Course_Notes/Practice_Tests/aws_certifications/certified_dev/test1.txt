@@ -124,7 +124,7 @@ Your IT Project Manager wants you to perform a penetration testing on your AWS e
 
 Question 29:
 Your items are 12KB in size and you want to have 100 strongly consistent reads per second. How many read capacity units do you need to provision? Choose the correct answer from the options below
-    -
+    -300
 
 Question 30:
 What is the limit on the number of attributes an item can have in DynamoDB? Choose an answer from the options below
