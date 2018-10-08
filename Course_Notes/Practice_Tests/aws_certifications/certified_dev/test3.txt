@@ -46,48 +46,46 @@ You are writing to a DynamoDB table and receive the following exception:” Prov
 
 Question 11:
 You have an environment that consists of a public subnet using Amazon VPC and 3 instances that are running in this subnet. These three instances can successfully communicate with other hosts on the Internet. You launch a fourth instance in the same subnet, using the same AMI and security group configuration you used for the others, but find that this instance cannot be accessed from the Internet. What should you do to enable internet access? Choose an answer from the options below
-    -
+    -Assign an Elastic IP address to the fourth instance 
 
 Question 12:
 You have written an application that uses the Elastic Load Balancing service to spread traffic to several web servers Your users complain that they are sometimes forced to login again in the middle of using your application, after they have already logged in. This is not behavior you have designed. What is a possible solution to prevent this happening? Choose an answer from the options below
-    -
+    -Use ElastiCache to save session state 
 
 Question 13:
 You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site. At some point you find out that other sites have been linking to the photos on your site, causing loss to your business. What is an effective method to mitigate this? Choose an answer from the options below
-    -
+    -Remove public read access and use signed URL's with expiry dates 
 
 Question 14:
 Your Manager wants to have a facility to have templates from EC2 instances launched in any region without much effort. When it comes to Amazon Machine images (AMIS) which of the below statements are true when it comes to a given public AMI. Choose an answer from the options below
-    -
+    -Only be used to launch EC2 instances in the same AWS region as the AMI is stored 
 
 Question 15:
 Your support teams calls you and tells you that the application you developed is giving the error “Your proposed upload exceeds the maximum allowed object size.” error message when uploading an object to S3. What is a possible solution for this? Choose an answer from the options below
-    -
+    -Use the multi-part upload API for this object 
 
 Question 16:
 In SWF what are the containers called for segregating application resources. Choose the correct answer from the options below.
-    -
+    -Domains 
 
 Question 17:
 Is it possible to use IAM to manage access to SWF? Choose the correct answer from the options below.
-    -
+    -True 
 
 Question 18:
 Of the 6 available sections on a CloudFormation template (Template Description Declaration, Template Format Version Declaration, Parameters, Resources, Mappings, Outputs), which is the only one required for a CloudFormation template to be accepted? Choose an answer from the options below
-    -
+    -Resources 
 
 Question 19:
 Once a message has been published to SNS, can it be recalled? Choose one answer from the options below
-    -
+    -False 
 
 Question 20:
 SQS guarantees delivery but there can be duplicates. Choose the correct answer from the options below.
-    -
+    -True 
 
 Question 21:
 The following code snippet is the parameters section of a CloudFormation template that you have written.
- 
-
 "Parameters" : {
      "KeyName": {
              "Description" : "answer to the question",
