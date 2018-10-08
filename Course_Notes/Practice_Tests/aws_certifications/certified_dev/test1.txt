@@ -172,43 +172,48 @@ Can SWF workflows be managed across availability zones?
 
 Question 41:
 Can you have 10 local secondary indexes on a table? Choose a correct answer from the options below
-    -
+    -False 
 
 Question 42:
 Can you have the same bucket names in 2 regions in AWS?
-    -
+    -False 
 
 Question 43:
 Can you use all the IP Addresses assigned to a subnet.
-    -
+    -False 
 
 Question 44:
 CloudFormation natively supports creation of which AWS resources? Choose 3 answers from options below.
-    -
+    -Network ACL's 
+    -Route Tables 
+    -EC2 
 
 Question 45:
 Does Cloudformation support Amazon EC2 tagging?
-    -
+    -True 
 
 Question 46:
 Does S3 Infrequent Access storage provide the same performance as standard storage?
-    -
+    -True 
 
 Question 47:
 DynamoDB supports complex relational queries. Choose an correct answer from the options below
-    -
+    -False 
 
 Question 48:
 For which of these languages/platforms does AWS provide an SDK? Choose 3 correct answer from the options below
-    -
+    -Mobile SDK 
+    -Go 
+    -Python 
 
 Question 49:
 How can you ensure maximum protection of preserved versions in S3? Choose one answer from the options below.
-    -
+    -MFA 
 
 Question 50:
 In AWS, which security aspects are is AWS responsibility? Choose 2 answers from the options below
-    -
+    -Decommissioning storage devices 
+    -Controlling physical access to compute resources 
 
 Question 51:
 In Cloudformation what is the limit to the number of parameters in the template? Choose an answer from the options below
