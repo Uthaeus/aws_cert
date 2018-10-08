@@ -28,19 +28,21 @@ Which of the following statements about SWF are true? Choose 3 answers from the 
 
 Question 7:
 Which statements about DynamoDB are true? Choose 2 answers from the options below
-    -
+    -DynamoDB uses optimistic concurrency control 
+    -DynamoDB uses conditional writes for consistency
 
 Question 8:
 You are inserting 1000 new items every second in a DynamoDB table. Once an hour these items are analyzed and then are no longer needed. You need to minimize provisioned throughput, storage, and API calls. Given these requirements, what is the most efficient way to manage these Items after the analysis? Choose an answer from the options below
-    -
+    -Delete the table and create a new table per hour 
 
 Question 9:
 You are providing AWS consulting services for a company developing a new mobile application that will be leveraging Amazon SNS Mobile Push for push notifications. In order to send direct notification messages to individual devices each device registration identifier or token needs to be registered with SNS; however the developers are not sure of the best way to do this. You advise them to
-    -
+    -Call the CreatePlatformEndpoint API function to register multiple device tokens 
+        -The CreatePlatformEndpoint API creates an endpoint for a device and mobile app on one of the supported push notification services
 
 Question 10:
 You are writing to a DynamoDB table and receive the following exception:” ProvisionedThroughputExceededException”, though according to your Cloudwatch metrics for the table, you are not exceeding your provisioned throughput. What could be an explanation for this?
-    -
+    -You're exceeding your capacity on a particular Hash key 
 
 Question 11:
 You have an environment that consists of a public subnet using Amazon VPC and 3 instances that are running in this subnet. These three instances can successfully communicate with other hosts on the Internet. You launch a fourth instance in the same subnet, using the same AMI and security group configuration you used for the others, but find that this instance cannot be accessed from the Internet. What should you do to enable internet access? Choose an answer from the options below
