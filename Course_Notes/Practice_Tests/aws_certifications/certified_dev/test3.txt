@@ -1,0 +1,290 @@
+Question 1:
+Which of the following items are required to allow an application deployed on an EC2 instance to write data to a DynamoDB table? Assume that no security Keys are allowed to be stored on the EC2 instance. Choose an answer from options below:
+    -Create an IAM Role that allows write access to the DynamoDB table and attach it to the instance 
+
+Question 2:
+Which of the following programming languages have an officially supported AWS SDK? Choose 2 answers from the options below
+    -PHP 
+    -Java 
+
+Question 3:
+Which of the following services are included at no additional cost with the use of the AWS platform? Choose 2 answers from the options below
+    -CloudFormation
+    -AutoScaling
+
+Question 4:
+Which of the following services are key/value stores? Choose 3 answers from the options below
+    -Amazon ElastiCache
+    -DynamoDB
+    -S3 
+
+Question 5:
+Which of the following SNS information item has the following information - ” A Universally Unique Identifier, unique for each notification published”. Choose the correct answer from the options below
+    -MessageId
+
+Question 6:
+Which of the following statements about SWF are true? Choose 3 answers from the options below
+    -
+
+Question 7:
+Which statements about DynamoDB are true? Choose 2 answers from the options below
+    -
+
+Question 8:
+You are inserting 1000 new items every second in a DynamoDB table. Once an hour these items are analyzed and then are no longer needed. You need to minimize provisioned throughput, storage, and API calls. Given these requirements, what is the most efficient way to manage these Items after the analysis? Choose an answer from the options below
+    -
+
+Question 9:
+You are providing AWS consulting services for a company developing a new mobile application that will be leveraging Amazon SNS Mobile Push for push notifications. In order to send direct notification messages to individual devices each device registration identifier or token needs to be registered with SNS; however the developers are not sure of the best way to do this. You advise them to
+    -
+
+Question 10:
+You are writing to a DynamoDB table and receive the following exception:” ProvisionedThroughputExceededException”, though according to your Cloudwatch metrics for the table, you are not exceeding your provisioned throughput. What could be an explanation for this?
+    -
+
+Question 11:
+You have an environment that consists of a public subnet using Amazon VPC and 3 instances that are running in this subnet. These three instances can successfully communicate with other hosts on the Internet. You launch a fourth instance in the same subnet, using the same AMI and security group configuration you used for the others, but find that this instance cannot be accessed from the Internet. What should you do to enable internet access? Choose an answer from the options below
+    -
+
+Question 12:
+You have written an application that uses the Elastic Load Balancing service to spread traffic to several web servers Your users complain that they are sometimes forced to login again in the middle of using your application, after they have already logged in. This is not behavior you have designed. What is a possible solution to prevent this happening? Choose an answer from the options below
+    -
+
+Question 13:
+You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site. At some point you find out that other sites have been linking to the photos on your site, causing loss to your business. What is an effective method to mitigate this? Choose an answer from the options below
+    -
+
+Question 14:
+Your Manager wants to have a facility to have templates from EC2 instances launched in any region without much effort. When it comes to Amazon Machine images (AMIS) which of the below statements are true when it comes to a given public AMI. Choose an answer from the options below
+    -
+
+Question 15:
+Your support teams calls you and tells you that the application you developed is giving the error “Your proposed upload exceeds the maximum allowed object size.” error message when uploading an object to S3. What is a possible solution for this? Choose an answer from the options below
+    -
+
+Question 16:
+In SWF what are the containers called for segregating application resources. Choose the correct answer from the options below.
+    -
+
+Question 17:
+Is it possible to use IAM to manage access to SWF? Choose the correct answer from the options below.
+    -
+
+Question 18:
+Of the 6 available sections on a CloudFormation template (Template Description Declaration, Template Format Version Declaration, Parameters, Resources, Mappings, Outputs), which is the only one required for a CloudFormation template to be accepted? Choose an answer from the options below
+    -
+
+Question 19:
+Once a message has been published to SNS, can it be recalled? Choose one answer from the options below
+    -
+
+Question 20:
+SQS guarantees delivery but there can be duplicates. Choose the correct answer from the options below.
+    -
+
+Question 21:
+The following code snippet is the parameters section of a CloudFormation template that you have written.
+ 
+
+"Parameters" : {
+     "KeyName": {
+             "Description" : "answer to the question",
+              "Type": "AWS::EC2::KeyPair::KeyName",
+                ...
+       }
+}
+Which of the the following is the best description of what this section will do once you run your CloudFormation template?
+    -
+
+Question 22:
+The following code snippet is the resources section of a CloudFormation template that you have written.
+"Resources" : {
+    "EC2Instance" : {
+        "Type" : "AWS::EC2::Instance",
+         "Properties" : {
+             "InstanceType" : { "Ref" : "InstanceType" },
+              "SecurityGroups" : [ { "Ref" : "InstanceSecurityGroup" } ], 
+              "KeyName" : { "Ref" : "KeyName" },
+               "ImageId" : { "Fn::FindInMap" : [ "AWSRegionArch2AMI", { "Ref" : "AWS::Region" },
+                { "Fn::FindInMap" : [ "AWSInstanceType2Arch", { "Ref" : "InstanceType" }, "Arch" ] }
+               ]
+        }
+   }
+},
+You have used the reference function to define your instance type as follows.
+"InstanceType" : { "Ref" : "InstanceType" },
+The referencing function is referencing the instance type. Where is this value most likely coming from?
+    -
+
+Question 23:
+What are the API’s available for DynamoDB? Choose 3 answers from the options below
+    -
+
+Question 24:
+A corporate web application is deployed within an Amazon VPC, and is connected to the corporate data center via IPSec VPN. The application must authenticate against the on-premise LDAP server. Once authenticated, logged-in users can only access an S3 keyspace specific to the user. Which two approaches can satisfy the objectives? Choose 2 answers from the options below
+    -
+
+Question 25:
+A meteorological system monitors 600 temperature gauges, obtaining temperature samples every minute and saving each sample to a DynamoDB table. Each sample involves writing 1K of data and the writes are evenly distributed over time. How much write throughput is required for the target table? Choose an answer from the options below
+    -
+
+Question 26:
+A startups photo-sharing site is deployed in a VPC. An ELB distributes web traffic across two subnets. ELB session stickiness is configured to use the AWS-generated session cookie, with a session TTL of 5 minutes. The webserver Auto Scaling Group is configured as: min-size=4, max-size=4. The startups preparing for a public launch, by running load-testing software installed on a single EC2 instance running in us-west-2a. After 60 minutes of load-testing, the webserver logs show: Which recommendations can help ensure load-testing HTTP requests are evenly distributed across the four webservers? 
+    -
+
+Question 27:
+After launching an instance that you intend to serve as a NAT (Network Address Translation) device in a public subnet you modify your route tables to have the NAT device be the target of internet bound traffic of your private subnet. When you try and make an outbound connection to the Internet from an instance in the private subnet, you are not successful. Which of the following steps could resolve the issue? Choose an answer from the options below
+    -
+
+Question 28:
+An Amazon S3 bucket, “myawsbucket” is configured with website hosting in Tokyo region,what is the region-specific website endpoint? Choose an answer from the options below
+    -
+
+Question 29:
+An application stores payroll information nightly in DynamoDB for a large number of employees across hundreds of offices. Item attributes consist of individual name, office identifier, and cumulative daily hours. Managers run reports for ranges of names working in their office. One query is. “Return all Items in this office for names starting with A through E”. Which table configuration will result in the lowest impact on provisioned throughput for this query? Choose an answer from the options below
+    -
+
+Question 30:
+Can conditional operations be used in a DynamoDB query? Choose an answer from the options below
+    -
+
+Question 31:
+Company A has an S3 bucket containing premier content that they intend to make available to only paid subscribers of their website. The S3 bucket currently has default permissions of all objects being private to prevent inadvertent exposure of the premier content to non-paying website visitors. How can Company A provide only paid subscribers the ability to download a premier content file in the S3 bucket?
+    -
+
+Question 32:
+Company A has recently launched an online commerce site for bicycles on AWS. They have a “Product” DynamoDB table that stores details for each bicycle, such as, manufacturer, color, price, quantity and size to display in the online store. Due to customer demand, they want to include an image for each bicycle along with the existing details. Which approach below provides the least impact to provisioned throughput on the “Product” table? Choose an answer from the options below
+    -
+
+Question 33:
+Company C is currently hosting their corporate site in an Amazon S3 bucket with Static Website Hosting enabled. Currently, when visitors go to http://www.companyc.com the index.html page is returned. Company C now would like a new page welcome.html to be returned when a visitor enters http://www.companyc.com in the browser. Which of the following steps will allow Company C to meet this requirement? Choose 2 answers from the options below
+    -
+
+Question 34:
+Company D is running their corporate website on Amazon S3 accessed from http//www.companyd.com. Their marketing team has published new web fonts to a separate S3 bucket accessed by the S3 endpoint https://s3-us-west1. amazonaws.com/cdfonts. While testing the new web fonts, Company D recognized the web fonts are being blocked by the browser. What should Company D do to prevent the web fonts from being blocked by the browser?
+    -
+
+Question 35:
+Games-R-Us is launching a new game app for mobile devices. Users will log into the game using their existing Facebook account and the game will record player data and scoring information directly to a DynamoDB table. What is the most secure approach for signing requests to the DynamoDB API? Choose an answer from the options below
+    -
+
+Question 36:
+How can you secure data at rest on an EBS volume? Choose an answer from the options below
+    -
+
+Question 37:
+How long can messages live in an SQS queue. Choose the correct answer from the options below
+    -
+
+Question 38:
+If a message is retrieved from a queue in Amazon SQS, how long is the message inaccessible to other users by default? Choose an answer from the options below
+    -
+
+Question 39:
+If an application is storing hourly log files from thousands of instances from a high traffic web site, which naming scheme would give optimal performance on S3? Choose an answer from the options below
+    -
+
+Question 40:
+In DynamoDB, what type of HTTP response codes indicate that a problem was found with the client request sent to the service? Choose an answer from the options below
+    -
+
+Question 41:
+In SNS, are push notifications allowed for multiple platforms.
+    -
+
+Question 42:
+In SQS does long polling cost more than short polling? Choose an answer from the options below
+    -
+
+Question 43:
+Is DynamoDB suited only for high scale based applications? Choose an answer from the options below
+    -
+
+Question 44:
+What are some of the owner operations possible in SNS? Choose 3 correct answers from the options below
+    -
+
+Question 45:
+What are the 2 actions required to fanout identical messages to multiple SQS queues. Choose 2 answers from the options below
+    -
+
+Question 46:
+What are the new type of SQS queues available in some regions? Choose an answer from the options below
+    -
+
+Question 47:
+What are the protocol versions supported by SQS. Choose 3 answers from the options below
+    -
+
+Question 48:
+What AWS products and features can be deployed by Elastic Beanstalk? Choose 3 answers from the options below
+    -
+
+Question 49:
+What configuration does AWS provide to handle unsuccessfully-processed messages in SQS? Choose an answer from the options below
+    -
+
+Question 50:
+What happens, by default, when one of the resources in a CloudFormation stack cannot be created? Choose an answer from the options below
+    -
+
+Question 51:
+What is the format of structured notification messages sent by Amazon SNS? Choose an answer from the options below
+    -
+
+Question 52:
+What is the maximum length of a topic name in SNS? Choose the correct answer from the options below
+    -
+
+Question 53:
+What is the maximum number of topics allowed per account in SNS? Choose the correct answer from the options below
+    -
+
+Question 54:
+What item operation allows the retrieval of multiple items from a DynamoDB table in a single API call? Choose an answer from the options below
+    -
+
+Question 55:
+What type of block cipher does Amazon S3 offer for server side encryption? Choose an answer from the options below
+    -
+
+Question 56:
+When a Simple Queue Service message triggers a task that takes 5 minutes to complete, which process below will result in successful processing of the message and remove it from the queue while minimizing the chances of duplicate processing? Choose an answer from the options below
+    -
+
+Question 57:
+When using a large Scan operation in DynamoDB, what technique can be used to minimize the impact of a scan on a table’s provisioned throughput? Choose an answer from the options below
+    -
+
+Question 58:
+Which DynamoDB limits can be raised by contacting AWS support? Choose 2 answers from the options below
+    -
+
+Question 59:
+Which EC2 API call would you use to retrieve a list of Amazon Machine Images (AMIs)? Choose an answer from the options below
+    -
+
+Question 60:
+Which features can be used to restrict access to data in S3? Choose 2 answers from the options below
+    -
+
+Question 61:
+Which of the below APIS are available for tables in DynamoDB? Choose 3 answers from the options below
+    -
+
+Question 62:
+Which of the below logical operators are allowed in a DynamoDB query? Choose 3 answers from the options below
+    -
+
+Question 63:
+Which of the following are correct statements with policy evaluation logic in AWS Identity and Access Management? Choose 2 answers from the options below
+    -
+
+Question 64:
+Which of the following are valid SNS delivery transports? Choose 2 answers from the options below
+    -
+
+Question 65:
+Which of the following is chosen as the default region when making an API call with an AWS SDK? Choose an answer from the options below
+    -
+
