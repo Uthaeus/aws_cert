@@ -202,35 +202,42 @@ In SQS does long polling cost more than short polling? Choose an answer from the
 
 Question 43:
 Is DynamoDB suited only for high scale based applications? Choose an answer from the options below
-    -
+    -False 
 
 Question 44:
 What are some of the owner operations possible in SNS? Choose 3 correct answers from the options below
-    -
+    -CreateTopic
+    -DeleteTopic
+    -AddPermission
 
 Question 45:
 What are the 2 actions required to fanout identical messages to multiple SQS queues. Choose 2 answers from the options below
-    -
+    -Use Amazon SNS to create a topic 
+    -Create and subscribe multiple Amazon SQS standard queues to the topic 
 
 Question 46:
 What are the new type of SQS queues available in some regions? Choose an answer from the options below
-    -
+    -FIFO
 
 Question 47:
 What are the protocol versions supported by SQS. Choose 3 answers from the options below
-    -
+    -TLS 1.0
+    -TLS 1.1
+    -TLS 1.2
 
 Question 48:
 What AWS products and features can be deployed by Elastic Beanstalk? Choose 3 answers from the options below
-    -
+    -Auto scaling groups 
+    -Elastic Load Balancers 
+    -RDS Instances 
 
 Question 49:
 What configuration does AWS provide to handle unsuccessfully-processed messages in SQS? Choose an answer from the options below
-    -
+    -Dead letter queues 
 
 Question 50:
 What happens, by default, when one of the resources in a CloudFormation stack cannot be created? Choose an answer from the options below
-    -
+    -Previously created resources are deleted and the stack creation terminates 
 
 Question 51:
 What is the format of structured notification messages sent by Amazon SNS? Choose an answer from the options below
