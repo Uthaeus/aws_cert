@@ -79,6 +79,7 @@ While the UpdateTable operation is executing, the table status changes from ACTI
 
 403 Forbidden:
     -AccessDenied
+    -InvalidAccessKeyID
 
 400 Bad Request:
     -IncompleteBody

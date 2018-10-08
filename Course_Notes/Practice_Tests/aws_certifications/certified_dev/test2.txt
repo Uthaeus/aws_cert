@@ -1,0 +1,285 @@
+Question 1:
+What is required for a subnet to control the flow of traffic in a subnet? Choose one answer from the options below?
+    -Route Table 
+
+Question 2:
+What is the hourly rate to run an Autoscaling service? Choose the correct answer from the options below
+    -Free 
+
+Question 3:
+What is the maximum limit of data that can be retrieved by a scan operation in DynamoDB? Choose the correct answer from the options below.
+    -1MB
+
+Question 4:
+What is the maximum number of items that the BatchGetItem API retrieve from DynamoDB? Choose the correct answer from the options below.
+    -100
+
+Question 5:
+What is the maximum number of SWF workflows/activity types allowed in each SWF domain? Choose the correct answer from the options below.
+    -10,000
+
+Question 6:
+What is the maximum size of an item in DynamoDB? Choose the correct answer from the options below.
+    -
+
+Question 7:
+What is the minimum value that can be configured for Amazon SQS MaximumMessageSize attribute?
+    -
+
+Question 8:
+What is the one write capacity unit size (When you create a table or index in Amazon DynamoDB, you must specify your capacity requirements for read and write activity)?. Choose an answer from the options below.
+    -
+
+Question 9:
+What is the size limit for volumes in instances that are based on Amazon Instance Store backed AMI’s. Choose an answer from the options below?
+    -
+
+Question 10:
+What is used in DynamoDB to help a write operation only succeed if the item attributes meet one or more expected conditions? Choose answer from the options below.
+    -
+
+Question 11:
+What is used in S3 to enable client web applications that are loaded in one domain to interact with resources in a different domain? Choose the correct answer from the options below
+    -
+
+Question 12:
+What result would you expect from the Fn::Join function in the following line in a CloudFormation template? Choose an answer from the options below "Fn::Join" : [ ".", [ "1","2","3"] ]
+    -
+
+Question 13:
+What result would you expect from the Fn::Select function in the following line in a CloudFormation template? Choose an answer from the options below { "Fn::Select" : [ "1", [ "1", "2", "3", "4" ] ] }
+    -
+
+Question 14:
+What result would you expect from the Fn::split function in the following line in a CloudFormation template? Choose an answer from the options below { "Fn::Split" : [ "|" , "a|b|c" ] }
+    -
+
+Question 15:
+When a failure occurs in a stack creation in Cloudformation, does a rollback occur?
+    -
+
+Question 16:
+When designing Cloudformation templates, is the Resources section optional?
+    -
+
+Question 17:
+Which API call is used to Bundle an Amazon instance store-backed Windows instance? Choose the correct answer from the options below
+    -
+
+Question 18:
+Which of the below API calls can be used to get information about stacks based on a specific filter. Choose an answer from the options below
+    -
+
+Question 19:
+Which of the below configuration softwares can Cloudformation be used with? Choose 2 answers from the options below
+    -
+
+Question 20:
+Which of the below features in DynamoDB can be used to increment or decrement the value of an existing attribute without interfering with other write requests? Choose the correct answer from the options below.
+    -
+
+Question 21:
+Which of the below functions is used in Cloudformation to append a set of values into a single value? Choose an answer from the options below
+    -
+
+Question 22:
+Which of the below functions is used in Cloudformation to retrieve an object from a set of objects? Choose an answer from the options below
+    -
+
+Question 23:
+Which of the below functions is used in Cloudformation to return the value corresponding to keys in a two-level map that is declared in the Mappings section? Choose an answer from the options below
+    -
+
+Question 24:
+Which of the descriptions below best describes what the following bucket policy does?
+{  
+   "Version":"2012-10-17",
+   "Id":"Statement1”, 
+   "Statement":[  
+      {  
+         "Sid":" Statement2",
+         "Effect":"Allow",
+         "Principal":"*",
+         "Action":[  
+            "s3:GetObject",
+            "s3:PutObject"
+         ],
+         "Resource":"arn:aws:s3:::mybucket/*",
+         "Condition":{  
+            "StringLike":{  
+               "aws:Referer":[  
+                  "http://www.example.com/*",
+                  "http://www.demo.com/*"
+               ]
+            }
+         }
+      }
+   ]
+}
+Choose the correct answer from the options below
+    -
+
+Question 25:
+Which of the following is a valid S3 bucket name? Choose the correct answer from the options below
+    -
+
+Question 26:
+Which of the following is the best option for creating a primary key in DynamoDB? Select the BEST possible answer.
+    -
+
+Question 27:
+Which of the following would you not expect to see in an SNS message body? Choose the correct answer from the options below
+    -
+
+Question 28:
+Which service provided by AWS allows one to have a dedicated private connection from a remote network to your VPC? Choose the correct answer from the options below
+    -
+
+Question 29:
+While working with the AWS API you receive the following error message: 409 Conflict. What might be the cause of this error?
+    -
+
+Question 30:
+You are explaining SQS message attributes to an IT admin. What specifically do you need to tell the IT admin about the message attributes of SQS? Choose the correct answer from the options below
+    -
+
+Question 31:
+You decide to create a bucket on AWS S3 called ‘newbucket’ and then perform the following actions in the order that they are listed here. - You upload a file to the bucket called 'file1' - You upload a file called 'file2' - You enable versioning on the bucket Which of the following is true for your bucket 'newbucket'? Choose the correct answer from the options below
+    -
+
+Question 32:
+What are the consistency models available for Local Secondary Indexes in DynamoDB? Choose 2 answers from the options given below
+    -
+
+Question 33:
+A user named john has an AWS account. He has created an AMI in the us-east1 region. Is it possible for him to share the AMI with another user account in AWS? Choose the correct answer from the options below
+    -
+
+Question 34:
+An administrator is getting an error while trying to create a new bucket in S3? You feel that bucket limit has been crossed. What is the bucket limit per account in AWS?Choose the correct answer from the options below
+    -
+
+Question 35:
+An IT admin has enabled long polling in their SQS queue. What must be done for long polling to be enabled in SQS? Choose the correct answer from the options below
+    -
+
+Question 36:
+An IT admin is worried about the number of message queues being created in the SQS in their AWS account? Is there a limit, if yes, what is the correct limit? Choose the correct answer from the options below
+    -
+
+Question 37:
+As per the IAM decision logic what is the first step of access permissions for any resource in AWS. Choose the correct answer from the options below
+    -
+
+Question 38:
+Company A is writing 5 items to the products table every second. Each item is 20Kb in size. What would be the required provisioned write throughput for best performance? Choose the correct answer from the options below.
+    -
+
+Question 39:
+Company B has a DynamoDB table where the average item size is 20KB. Company B anticipates the application will read 10 items from the table per second using eventually consistent reads. How much read capacity throughput should they provision? Choose the correct answer from the options below.
+    -
+
+Question 40:
+For S3 server side encryption what needs to be included in the API header call? Choose the correct answer from the options below
+    -
+
+Question 41:
+In DynamoDB you get the following error “ItemCollectionSizeLimitExceededException”. What could be the possible cause for this error. Choose an answer from the options below
+    -
+
+Question 42:
+In SQS when the ReceiveMessageWaitTimeSeconds is set to a value of 20 seconds, what is the functionality being served in SQS? Choose the correct answer from the options below
+    -
+
+Question 43:
+Is a best practice to allow code to run on an EC2 instance via a role rather than access keys? Choose the correct answer from the options below
+    -
+
+Question 44:
+Is a public IP address required for an instance to be accessed from the internet in a VPC? Choose the correct answer from the options below
+    -
+
+Question 45:
+Is Example.com a valid S3 bucket name?
+    -
+
+Question 46:
+Is it possible for duplicate messages to be received within SQS? Choose the correct answer from the options below.
+    -
+
+Question 47:
+Is the default visibility timeout for an SQS queue 1 minute?
+    -
+
+Question 48:
+One DynamoDB strongly consistent read capacity unit is equal to two eventual consistent read per second. Choose the correct answer from the options below
+    -
+
+Question 49:
+True of False. A global secondary index can have the same partition key as the primary key?
+    -
+
+Question 50:
+True of False. A local secondary index has the same partition key as the primary key?
+    -
+
+Question 51:
+True or False. Can a global secondary index created at the same time as the table creation.
+    -
+
+Question 52:
+What are some of the benefits of using AWS SWF? Choose 2 correct answer from the options below.
+    -
+
+Question 53:
+What are the different S3 Encryption techniques?
+    -
+
+Question 54:
+What are the different ways to access SWF?
+    -
+
+Question 55:
+What can be used in DynamoDB as part of the Query API call to filter results based on the values of primary keys? Choose an answer from the options below
+    -
+
+Question 56:
+What can be used to deploy workers and deciders in Amazon SWF? Choose the correct answer from the options below.
+    -
+
+Question 57:
+What in AWS can be used to restrict access to SWF?
+    -
+
+Question 58:
+What is one difference between an Amazon EBS-backed and an instance-store backed instance? Choose the correct answer from the options below
+    -
+
+Question 59:
+What is one of the common pattern scenario’s when it comes to the combination of SNS and SQS? Choose the correct answer from the options below
+    -
+
+Question 60:
+What are the different programming language SDK’s available for SWF. Choose 3 correct answer from the options below.
+    -
+
+Question 61:
+What is maximum limit for the size of an item collection in DynamoDB? Choose an answer from the options below
+    -
+
+Question 62:
+What is one of the major use cases for using SWF? Choose the correct answer from the options below.
+    -
+
+Question 63:
+What is the Amazon SNS endpoint for The US East (Northern Virginia)? Choose one answer from the options below
+    -
+
+Question 64:
+What is the default behavior of a CloudFormation stack if creation fails? Choose the correct answers from the options below
+    -
+
+Question 65:
+What is the key feature of SWF? Choose the correct answer from the options below.
+    -
+
