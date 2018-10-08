@@ -128,7 +128,7 @@ Your items are 12KB in size and you want to have 100 strongly consistent reads p
 
 Question 30:
 What is the limit on the number of attributes an item can have in DynamoDB? Choose an answer from the options below
-    -
+    -No limit 
 
 Question 31:
 What is the limit to the number of characters for a topic name in sns? Choose one answer from the options below
