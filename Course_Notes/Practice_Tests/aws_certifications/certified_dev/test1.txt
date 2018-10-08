@@ -217,43 +217,47 @@ In AWS, which security aspects are is AWS responsibility? Choose 2 answers from 
 
 Question 51:
 In Cloudformation what is the limit to the number of parameters in the template? Choose an answer from the options below
-    -
+    -60
 
 Question 52:
 In IAM what is the representation of a person or service. Choose an answer from the options below
-    -
+    -User 
 
 Question 53:
 In SWF what helps in developing Amazon SWF based applications. Choose an answer from the options below.
-    -
+    -Flow Framework
+        -AWS Flow Framework is a programming framework that enables you to develop Amazon SWF-based applications quickly and easily. It abstracts the details of task-level coordination and asynchronous interaction with simple programming constructs
 
 Question 54:
 In SWF what is the maximum number of open activity tasks ? Choose an answer from the options below
-    -
+    -1000
 
 Question 55:
 Is data in S3 stored as simple key based objects?
-    -
+    -True 
 
 Question 56:
 Is S3 ideal for hosting web sites with server side interactions?
-    -
+    -False 
 
 Question 57:
 Is there a limit on the number of subnets that can be created per VPC? Choose an answer from the options below.
-    -
+    -200 
 
 Question 58:
 Is there a limit to the size of a table in DynamoDB?. Choose the correct answer from the options below
-    -
+    -False 
 
 Question 59:
 What are some of the advantages of using AWS SNS?
-    -
+    -Instantaneous, push-based delivery 
+    -Simple API's and easy integration with applications 
+    -Flexible message delivery over multiple transport protocols 
 
 Question 60:
 What are the 2 ways in which you can get data into S3-Standard IA? Choose 2 answers from the options below.
-    -
+    -Put request by changing the x-amz-storage-class header 
+    -Use lifecycle policies 
 
 Question 61:
 What are the different services provided by AWS. Choose all that apply
