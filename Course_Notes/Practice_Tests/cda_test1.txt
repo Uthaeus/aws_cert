@@ -474,39 +474,43 @@ Which of the following types of servers would this CloudFormation template be mo
 
 Question 112:
 When computing the read capacity for a scan operations, to what KB is the number of bytes rounded off to?
-    -
+    -4kb 
+        -The read units required is the number of bytes fetched by the scan operation, rounded to the nearest 4kb, divided by 4kb
 
 Question 113:
 What is the limit on the number of attributes an item can have in DynamoDB? Choose an answer from the options below
-    -
+    -No limit 
 
 Question 114:
 What is the main advantage of using Amazon SQS? Choose the correct answer from the options below
-    -
+    -SQS is used by distributed applications and can be used to decouple sending and receiving components without requiring each application component to be concurrently available 
 
 Question 115:
 Company B is using strongly consistent reads to request 50 items per second from their customer table. Each item is 20KB in size.What throughout would be required to efficiently handle the read throughput of the table ?
-    -
+    -250
 
 Question 116:
 Your "forums" table has a primary key of "id". Using DynamoDB, you're able to query the data based on the id primary key. You need to be able to query the forums table by userId. What would you add to the table during table creation time? Choose a correct answer from the options below
-    -
+    -Create a secondary index 
+        -Some applications might need to perform many kinds of queries, using a variety of different attributes as query criteria. To suppost these requirements, you can create one or more global secondary indexes and issue Query requests against these indexes 
 
 Question 117:
 What is the default limit for CloudFormation templates per region? Choose the correct answer from the options below
-    -
+    -There are no limits to the number of templates 
 
 Question 118:
 You receive a call from a potential client who explains that one of the many services they offer is a website running on a t2.micro EC2 instance where users can submit requests for customized e-cards to be sent to their friends and family. The e-card website administrator was on a cruise and was shocked when he returned to the office in mid-January to find hundreds of angry emails complaining that customers’ loved ones had not received their Christmas cards. He also had several emails from CloudWatch alerting him that the SQS queue for the e-card application had grown to over 500 messages on December 25th. You investigate and find that the problem was caused by a crashed EC2 instance which serves as an application server. What do you advise your client to do first? Choose the correct answer from the options below
-    -
+    -Send an apology to the customers notifying them that their cards will not be delivered 
+        -The maximum retention period for SQS messages is 14 days, hence all the messages would have been lost 
 
 Question 119:
 Server-side encryption is about data encryption at rest. That is, Amazon S3 encrypts your data at the object level as it writes it to disk in its data centers and decrypts it for you when you go to access it. There are a few different options depending on how you choose to manage the encryption keys. One of the options is called 'Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)'. Which of the following best describes how this encryption method works? Choose the correct answer from the options below
-    -
+    -Each object is encrypted with a unique key employing strong encryption. As an additional safeguard, it encrypts the key itself with a master key that it regularly rotates 
 
 Question 120:
 What are the consistency models available for Local Secondary Indexes in DynamoDB? Choose 2 answers from the options given below
-    -
+    -Eventual consistent reads 
+    -Strong consistent reads 
 
 Question 121:
 How is the coordination between worker processes done in SWF? Choose the correct answer from the options below.
