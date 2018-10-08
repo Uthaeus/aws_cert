@@ -1,6 +1,7 @@
 Question 1:
 By default, what event occurs if your CloudFormation receives an error during creation? Choose a correct answer from the options below
-    -
+    -ROLLBACK_IN_PROGRESS
+        -By default, the 'automatic rollback on error' feature is enabled. This will cause all AWS resources that AWS CloudFormation created successfully for a stack up to the point where an error occurred to be deleted
 
 Question 2:
 Which of the following bucket names is invalid? Choose 2 correct answer from the options below
@@ -8,11 +9,11 @@ Which of the following bucket names is invalid? Choose 2 correct answer from the
 
 Question 3:
 Company B is using Amazon SQS to decouple their systems for scaleability. However, they need to send messages up to 456Kb in size. What might Company B do in order to send more than 256KB of data? Choose the correct answer from the options below
-    -
+    -Use the Amazon SQS Extended Client Library for Java 
 
 Question 4:
 You want to find out what AMIs are available for you to use in a given region. Which API call is most appropriate? Choose an answer from the options below
-    -
+    -DescribeImages
 
 Question 5:
 Which of the following is a valid S3 bucket name? Choose the correct answer from the options below
@@ -20,23 +21,28 @@ Which of the following is a valid S3 bucket name? Choose the correct answer from
 
 Question 6:
 A corporate web application is deployed within an Amazon VPC, and is connected to the corporate data center via IPSec VPN. The application must authenticate against the on-premise LDAP server. Once authenticated, logged-in users can only access an S3 keyspace specific to the user. Choose 2 answer from the options below
-    -
+    -Develop an identity broker which authenticates against LDAP and then calls IAM Security Token Service to get IAM federated user credentials. The application calls the identity broker to get IAM federated user credentials 
+    -The application authenticates against LDAP and retrieves the name of an IAM role associated with the user. The application then calls the IAM Security Token Service to assume that IAM Role. The application can use the temporary credentials to access the app 
+        -If you already manage user identities outside of AWS, you can use IAM identity providers instead of creating IAM users in your AWS account. With an identity provider, you can manage your user identities outside of AWS and give these external user identities permissions to use AWS resources in your account. This is useful if ou organization already has its own identity system, such as a corporate user directory. It is also useful if ou are creating a mobile app or web application that requires access to AWS resources 
 
 Question 7:
 Someone on your team configured a Virtual Private Cloud with two public subnets in two separate AZs and two private subnets in two separate AZs. Each public subnet AZ has a matching private subnet AZ. The VPC and its subnets are properly configured. You also notice that there are multiple webserver instances in the private subnet, and you've been charged with setting up a public-facing Elastic Load Balancer which will accept requests from clients and distribute those requests to the webserver instances. How can you set this up? Choose the correct answer from the options below
-    -
+    -Select both of the public subnets when configuring the ELB 
+        -When you create a load balancer in a VPC, you can make it an internal load balancer or an Internet-facing load balancer. You create an Internet-facing load balancer in a public subnet. Load balancers in EC2-Classic are always Internet-facing load balancers.
 
 Question 8:
 Which API call would best be used to describe an Amazon Machine Image? Choose the correct answer from the options below
-    -
+    -DescribeImages 
 
 Question 9:
 Which of the following can be increased by contacting AWS? Choose 2 correct answer from the options below
-    -
+    -S3 buckets per account 
+    -DynamoDB tables per account 
 
 Question 10:
 If you're executing .Net code against AWS on an EC2 instance that is assigned an IAM role, which of the following is a true statement? Choose the correct answer from the options below
-    -
+    -The code will assume the same permissions as the IAM Role 
+        -The best practice for IAM is to create roles which has specific access to an AWS service and then give the user permission to the AWS service via the role. 
 
 Question 11:
 One of your requirements is to setup an S3 bucket to store your files like documents and images. However, those objects should not be directly accessible via the S3 URL, they should ONLY be accessible from pages on your website so that only your paying customers can see them. How could you implement this? Choose the correct answer from the options below
