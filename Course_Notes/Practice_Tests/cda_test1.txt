@@ -346,35 +346,35 @@ What is the maximum size of an S3 object? Choose an answer from the options belo
 
 Question 81:
 Which DynamoDB API call does not consume capacity units? Choose the correct answer from the options below
-    -
+    -UpdateTable 
 
 Question 82:
 Amazon S3 can use what type of server side encryption? Choose the correct answer from the options below
-    -
+    -AES256
 
 Question 83:
 Which of the following are subject to eventual consistency? Choose the correct answer from the options below
-    -
+    -Reads of a DynamoDB table, unless you specify otherwise 
 
 Question 84:
 What is the maximum number of S3 buckets by default allowed per AWS account? Choose the correct answer from the options below.
-    -
+    -100
 
 Question 85:
 While hosting a static website with Amazon S3, your static JavaScript code attempts to include resources from another S3 bucket but permission is denied. How might you solve the problem? Choose the correct answer from the options below
-    -
+    -Enable CORS configuration 
 
 Question 86:
 Company B has a DynamoDB table where the average item size is 10KB. Company B anticipates the application will read 100 items from the table per second using eventually consistent reads. How much read capacity throughput should they provision? Choose the correct answer from the options below.
-    -
+    -150
 
 Question 87:
 You created three S3 buckets – “mydomain.com”, “downloads.mydomain.com”, and “www.mydomain.com”. You uploaded your files, enabled static website hosting, specified both of the default documents under the “enable static website hosting” header, and set the “Make Public” permission for the objects in each of the three buckets. All that’s left for you to do is to create the Route 53 Aliases for the three buckets.You are going to have your end users test your websites by browsing to http://mydomain.com/error.html, http://downloads.mydomain.com/index.html, and http://www.mydomain.com.What problems will your testers encounter? Choose an answer from the options below
-    -
+    -There will be no problem, all three sites should work 
 
 Question 88:
 What is the smallest amount of reserved capacity that can be purchased for DynamoDB? Choose an answer from the options below
-    -
+    -100
 
 Question 89:
 You've enabled website hosting on a bucket named "demo.com" in the US-East-1 (US standard region). Select the URL you'll receive from AWS as the URL for the bucket. Choose a correct answer from the options below
@@ -382,7 +382,7 @@ You've enabled website hosting on a bucket named "demo.com" in the US-East-1 (US
 
 Question 90:
 As you retrieve information from DynamoDB, you receive this error: "ProvisionedThroughputExceededException", but upon investigation you notice that you're not exceeding your table read capacity throughput. What is causing this error? Choose the correct answer from the options below
-    -
+    -You exceeded your maximum allowed provisioined throughput for a table or for one or more global secondary indexes 
 
 Question 91:
 Which command line commands list all current stacks in your CloudFormation service? Choose the 2 correct answers from the options below
