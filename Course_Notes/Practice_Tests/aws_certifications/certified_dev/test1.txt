@@ -136,7 +136,7 @@ What is the limit to the number of characters for a topic name in sns? Choose on
 
 Question 32:
 What is the maximum number of SWF domains allowed in an AWS account? Choose the correct answer from the options below.
-    -
+    -100
 
 Question 33:
 What is the primary difference between a global secondary index and a local secondary index? Choose the correct answer from the options below.
@@ -144,7 +144,7 @@ What is the primary difference between a global secondary index and a local seco
 
 Question 34:
 What is the smallest amount of reserved capacity that can be purchased for DynamoDB? Choose an answer from the options below
-    -
+    -100
 
 Question 35:
 What result would you expect from the Fn::Join function in the following line in a CloudFormation template? Choose an answer from the options below "Fn::Join" : [ "/", [ "list-a","list-b","list-c"] ]
@@ -152,23 +152,23 @@ What result would you expect from the Fn::Join function in the following line in
 
 Question 36:
 When a subscriber subscribes to a topic in SNS, what is the time period available for confirmation? Choose one answer from the options below
-    -
+    -3 days 
 
 Question 37:
 A security system monitors 3000 cameras saving image metadata every 30 seconds to an Amazon DynamoDB. Each sample involves writing 256 bytes of data and the writes are evenly distributed over time. How much write throughput is required for the target table. Choose an answer from the options below
-    -
+    -100
 
 Question 38:
 Can S3 bucket names be formatted as an IP Address?
-    -
+    -False 
 
 Question 39:
 Can SWF workers run behind a firewall?
-    -
+    -True 
 
 Question 40:
 Can SWF workflows be managed across availability zones?
-    -
+    -True 
 
 Question 41:
 Can you have 10 local secondary indexes on a table? Choose a correct answer from the options below
