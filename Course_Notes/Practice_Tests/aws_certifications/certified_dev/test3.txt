@@ -283,21 +283,27 @@ Which features can be used to restrict access to data in S3? Choose 2 answers fr
 
 Question 61:
 Which of the below APIS are available for tables in DynamoDB? Choose 3 answers from the options below
-    -
+    -CreateTable 
+    -UpdateTable 
+    -ListTables 
 
 Question 62:
 Which of the below logical operators are allowed in a DynamoDB query? Choose 3 answers from the options below
-    -
+    -NOT 
+    -OR 
+    -AND 
 
 Question 63:
 Which of the following are correct statements with policy evaluation logic in AWS Identity and Access Management? Choose 2 answers from the options below
-    -
+    -An explicit allow overrides default deny 
+    -By default, all requests are denied 
 
 Question 64:
 Which of the following are valid SNS delivery transports? Choose 2 answers from the options below
-    -
+    -SMS 
+    -HTTP 
 
 Question 65:
 Which of the following is chosen as the default region when making an API call with an AWS SDK? Choose an answer from the options below
-    -
+    -us-east-1 
 
