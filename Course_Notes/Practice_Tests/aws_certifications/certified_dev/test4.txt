@@ -1,0 +1,287 @@
+Question 1:
+A benefit of multi-part upload is that you can upload a file as it is being created. Choose the correct answer from the options below
+    -
+
+Question 2:
+A company is deploying a two-tier, highly available web application to AWS. Which service provides durable storage for static content while utilizing lower Overall CPU resources for the web tier?
+    -
+
+Question 3:
+A customer has enabled website hosting on a bucket named "devtoolslogging" in the Singapore region. What website URL is assigned to your bucket?
+    -
+
+Question 4:
+A local secondary index is an index that has the same hash key as the table, but a different range key. Choose the correct answer from the options below
+    -
+
+Question 5:
+A recent increase in the amount of users of an application hosted on an EC2 instance that you manage has caused the instance’s OS to run out of CPU resources and crash. The crash caused several users’ unsaved data to be lost and your supervisor wants to know how this problem can be avoided in the future. Which of the following would you not recommend?
+    -
+
+Question 6:
+A SWF workflow task or task execution can live up to ______ long? Choose the correct answer from the options below
+    -
+
+Question 7:
+An item stored in a DynamoDB can contain any number of ___ associated to it. Choose the correct answer from the options below
+    -
+
+Question 8:
+At what size does does AWS recommend customers to use the multi-part upload tool when uploading object to S3?
+    -
+
+Question 9:
+Bucket names must be unique across all S3.
+    -
+
+Question 10:
+By default, AWS allows you to have ____ DynamoDB tables per account, per region. Choose the correct answer from the options below
+    -
+
+Question 11:
+DynamoDB supports cross table joins.
+    -
+
+Question 12:
+DynamoDB supports two types of primary keys, "Hash" and "Hash and Range" primary keys. Choose the correct answer from the options below
+    -
+
+Question 13:
+If you have an item that is 4KB in size and you want to provision read capacity units for 100 requests per second, using strongly consistent reads how many read capacity units do you need to provision? Choose the correct answer from the options below
+    -
+
+Question 14:
+If your table item's size is 3KB and you want to have 90 strongly consistent reads per second, how many read capacity units will you need to provision on the table? Choose the correct answer from the options below
+    -
+
+Question 15:
+In SQS What does the setting, VisibilityTimeout = 0 have an effect on your message? Choose the correct answer from the options below
+    -
+
+Question 16:
+Parts of a multi-part upload will not be completed until the "complete" request has been called which puts all the parts of the file together. Choose the correct answer from the options below
+    -
+
+Question 17:
+Resources that are created in AWS are identified by a unique identifier which is known as what option given below
+    -
+
+Question 18:
+S3 bucket names may only contain only lowercase letters, periods, numbers, and dashes but do not have to contain them all. Choose the correct answer from the options below
+    -
+
+Question 19:
+S3 object key names are stored lexicographically (alphabetical order). Choose the correct answer from the options below
+    -
+
+Question 20:
+SQS provides a timeout which is a period of time during which Amazon SQS prevents other consuming components from receiving and processing. What is this time period called?
+    -
+
+Question 21:
+What HTTP response code indicates that an AWS REST API call was successful. Choose an answer from the options below
+    -
+
+Question 22:
+What is the AWS service provided which provides a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
+    -
+
+Question 23:
+What is the function of a conditional write? Choose the correct answer from the options below
+    -
+
+Question 24:
+What kind of message does SNS send to endpoints? Choose the correct answer from the options below
+    -
+
+Question 25:
+What options are available to a customer who wants to perform penetration testing of his EC2 web servers? Choose an answer from the options below
+    -
+
+Question 26:
+Which is the following services can be used to deploy systems into AWS. Choose 3 answers from the options below
+    -
+
+Question 27:
+Which object encryption options are available with Amazon S3. Choose an answer from the options below
+    -
+
+Question 28:
+Which of the following are actors in an Amazon SWF workflow. Choose 3 answers from the options below
+    -
+
+Question 29:
+Which of the following are AWS IAM entities. Choose 3 answers from the options below
+    -
+
+Question 30:
+Which of the following are supported platforms in Elastic Beanstalk? Choose 2 correct answer from the options below
+    -
+
+Question 31:
+Which of the following are the responsibility of AWS. Choose 2 answers from the options below
+    -
+
+Question 32:
+Which of the following are valid sections in AWS Cloudformation template. Choose 3 answers from the options below
+    -
+
+Question 33:
+Which of the following AWS Services are offered at no cost? Choose 2 correct answer from the options below
+    -
+
+Question 34:
+Which of the following AWS services can be used to record logs of all AWS API calls. Choose an answer from the options below
+    -
+
+Question 35:
+Which of the following is a highly available, scalable deployment model for a web service. Choose an answer from the options below
+    -
+
+Question 36:
+Which of the following is an example of a good Amazon DynamoDB hash key schema for provisioned throughput efficiency. Choose an answer from the options below
+    -
+
+Question 37:
+Which of the following is true about S3 Server-Side Encryption? Choose the correct answer from the options below
+    -
+
+Question 38:
+Which of the following services could be used alone to host a static web site. Choose an answer from the options below
+    -
+
+Question 39:
+Which of the following statements about SQS is true? Choose the correct answer from the options below
+    -
+
+Question 40:
+Which statements about Amazon RDS are true? Choose 2 answers from the options below
+    -
+
+Question 41:
+Why will the following CloudFormation template fail to deploy a stack? Choose the correct answer from the options below
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Parameters" : {
+      "VPCId" : {
+          "Type": "String",
+           "Description" : "Enter current VPC Id"
+      },
+     "SubnetId : {
+          "Type": "String",
+           "Description" : "Enter a subnet Id"
+       }
+    },
+    "Outputs" : {
+         "InstanceId" : {
+                "Value" : { "Ref" : "MyInstance" },
+                "Description" : "Instance Id"
+          }
+     }
+}
+    -
+
+Question 42:
+You are debugging a problem with a web application that writes to an Amazon DynamoDB. You would like to see the actual data in the DynamoDB table to confirm that the data written was correct. How can you do this? Choose 2 answers from the options below
+    -
+
+Question 43:
+You are maintaining an application that is spread across multiple web servers and has incoming traffic balanced by ELB. The application allows users to upload pictures. Currently each web server stores the image and a background task synchronizes the data between servers. However the synchronization task can no longer keep up with the number of images uploaded What change could you make so that all web servers have a place to store and read images at the same time? Choose an answer from the options below
+    -
+
+Question 44:
+You are working with the S3 API and receive an error message: 409 Conflict. What is the possible cause of this error? Choose the correct answer from the options below
+    -
+
+Question 45:
+You attempt to store a new object in the US-STANDARD region in Amazon S3 and receive a confirmation that it has been successfully stored. You then immediately make another API call and attempt to read this object. Will you be able to read this object immediately after? Choose the correct answer from the options below
+    -
+
+Question 46:
+You have an Amazon S3 bucket that you use to store objects. You'd like to encrypt some of the new objects you upload to this bucket. What header do you need to use in order to request server-side encryption when using the REST API? Choose the correct answer from the options below
+    -
+
+Question 47:
+You have launched a windows server EC2 instance which is up and running. You however cannot connect from your corporate laptop using Remote Desktop Connection over the internet. Which of the following can be a cause. Choose 3 answers from the options below
+    -
+
+Question 48:
+You have software on an EC2 instance that needs to access both the private and public IP address of that instance. What's the best way for the software to get that information? Choose the correct answer from the options below
+    -
+
+Question 49:
+You want 5 strongly consistent 1KB writes per second. How many units of throughput capacity do you need to provision? Choose the correct answer from the options below
+    -
+
+Question 50:
+You would like to set up a static website on S3 with the least possible effort. The URL of the website is unimportant to you. Which of the following steps are necessary? Choose 3 correct answer from the options below
+    -
+
+Question 51:
+Your application instance takes 60 seconds to process instructions received in an SQS message. Assuming the SQS queue is configured with the default Visibility Timeout, what is the best way to configure your application to ensure that no other instances retrieve a message that has already been processed or is currently being processed? Choose the correct answer from the options below
+    -
+
+Question 52:
+Your EC2 component receives a message from a message queue. The message will then become invisible for 30 seconds. What is the ideal API request must be called in order to ensure that the message does not become visible again.
+    -
+
+Question 53:
+Your supervisor asks you to find a solution for scheduling a sequence of tasks. The sequence may take several months to complete and it’s very important that no tasks are processed more than once. What AWS service should you recommend? Choose the correct answer from the options below
+    -
+
+Question 54:
+Does AWS CloudFormation assume default template version if one is not explicitly mentioned in a CloudFormation template?
+    -
+
+Question 55:
+Does SNS guarantee message delivery to SQS? Choose one answer from the options below
+    -
+
+Question 56:
+Explain what the following resource in a CloudFormation template does. Choose the best possible answer.
+"SNSTopic" : {
+     "Type" : "AWS::SNS::Topic",
+     "Properties" : {
+           "Subscription" : [{
+                  "Protocol" : "sqs",
+                  "Endpoint" : { "Fn::GetAtt" : [ "SQSQueue", "Arn" ] }
+             } ]
+}
+    -
+
+Question 57:
+fn:GetAtt is used on a CloudFormation template to: Choose an answer from the options below
+    -
+
+Question 58:
+For best performance when retrieving data from a table, what "type" of API call should you perform? Choose the correct answer from the options below.
+    -
+
+Question 59:
+For how long can a SWF workflow task or task execution can live up to? Choose the correct answer from the options below.
+    -
+
+Question 60:
+How is the coordination between worker processes done in SWF? Choose the correct answer from the options below.
+    -
+
+Question 61:
+How many global secondary indexes are allowed per table? Choose the correct answer from the options below.
+    -
+
+Question 62:
+How much Cloudformation does cost per hour? Choose the correct answer from the options below
+    -
+
+Question 63:
+In AWS CloudFormation, the intrinsic function Fn::Join appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter. Keeping the above in mind what value will the following example return? "Fn::Join" : [ "-", [ "the", "demo", "app" ] ]
+    -
+
+Question 64:
+In DynamoDB, an atomic counter allows all write requests to be applied in the order they are received by incrementing or decrementing the attribute value.
+    -
+
+Question 65:
+In DynamoDB, how many tables can an AWS account have per region? Choose the correct answer from the options below.
+    -
+
