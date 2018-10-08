@@ -94,7 +94,7 @@ The following code snippet is the parameters section of a CloudFormation templat
        }
 }
 Which of the the following is the best description of what this section will do once you run your CloudFormation template?
-    -
+    -It will ask you to provide the name of an existing EC2 KeyPair to use 
 
 Question 22:
 The following code snippet is the resources section of a CloudFormation template that you have written.
@@ -114,11 +114,13 @@ The following code snippet is the resources section of a CloudFormation template
 You have used the reference function to define your instance type as follows.
 "InstanceType" : { "Ref" : "InstanceType" },
 The referencing function is referencing the instance type. Where is this value most likely coming from?
-    -
+    -From the parameters section of your CloudFormation template 
 
 Question 23:
 What are the API’s available for DynamoDB? Choose 3 answers from the options below
-    -
+    -CreateTable 
+    -UpdateTable 
+    -UpdateItem 
 
 Question 24:
 A corporate web application is deployed within an Amazon VPC, and is connected to the corporate data center via IPSec VPN. The application must authenticate against the on-premise LDAP server. Once authenticated, logged-in users can only access an S3 keyspace specific to the user. Which two approaches can satisfy the objectives? Choose 2 answers from the options below
@@ -126,15 +128,16 @@ A corporate web application is deployed within an Amazon VPC, and is connected t
 
 Question 25:
 A meteorological system monitors 600 temperature gauges, obtaining temperature samples every minute and saving each sample to a DynamoDB table. Each sample involves writing 1K of data and the writes are evenly distributed over time. How much write throughput is required for the target table? Choose an answer from the options below
-    -
+    -10
 
 Question 26:
 A startups photo-sharing site is deployed in a VPC. An ELB distributes web traffic across two subnets. ELB session stickiness is configured to use the AWS-generated session cookie, with a session TTL of 5 minutes. The webserver Auto Scaling Group is configured as: min-size=4, max-size=4. The startups preparing for a public launch, by running load-testing software installed on a single EC2 instance running in us-west-2a. After 60 minutes of load-testing, the webserver logs show: Which recommendations can help ensure load-testing HTTP requests are evenly distributed across the four webservers? 
-    -
+    -Re-configure the load-testing software to re-resolve DNS for each web request 
+    -Use a 3rd-party load-testing service which offers globally-distributed test clients 
 
 Question 27:
 After launching an instance that you intend to serve as a NAT (Network Address Translation) device in a public subnet you modify your route tables to have the NAT device be the target of internet bound traffic of your private subnet. When you try and make an outbound connection to the Internet from an instance in the private subnet, you are not successful. Which of the following steps could resolve the issue? Choose an answer from the options below
-    -
+    -Disabling the Source/Destination Check attribute on the NAT instance 
 
 Question 28:
 An Amazon S3 bucket, “myawsbucket” is configured with website hosting in Tokyo region,what is the region-specific website endpoint? Choose an answer from the options below
@@ -142,15 +145,15 @@ An Amazon S3 bucket, “myawsbucket” is configured with website hosting in Tok
 
 Question 29:
 An application stores payroll information nightly in DynamoDB for a large number of employees across hundreds of offices. Item attributes consist of individual name, office identifier, and cumulative daily hours. Managers run reports for ranges of names working in their office. One query is. “Return all Items in this office for names starting with A through E”. Which table configuration will result in the lowest impact on provisioned throughput for this query? Choose an answer from the options below
-    -
+    -Configure the table to have a range index on the nae attribute, and a hash index on the office identifier 
 
 Question 30:
 Can conditional operations be used in a DynamoDB query? Choose an answer from the options below
-    -
+    -True 
 
 Question 31:
 Company A has an S3 bucket containing premier content that they intend to make available to only paid subscribers of their website. The S3 bucket currently has default permissions of all objects being private to prevent inadvertent exposure of the premier content to non-paying website visitors. How can Company A provide only paid subscribers the ability to download a premier content file in the S3 bucket?
-    -
+    -Generate a pre-signed object URL for the premier content file when a paid subscriber requests a download 
 
 Question 32:
 Company A has recently launched an online commerce site for bicycles on AWS. They have a “Product” DynamoDB table that stores details for each bicycle, such as, manufacturer, color, price, quantity and size to display in the online store. Due to customer demand, they want to include an image for each bicycle along with the existing details. Which approach below provides the least impact to provisioned throughput on the “Product” table? Choose an answer from the options below
