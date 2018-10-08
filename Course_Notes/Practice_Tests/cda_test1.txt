@@ -132,47 +132,52 @@ Which of the following will not make a CloudFormation stack deployment to 'rollb
 
 Question 31:
 What is the default timeout for visibility queue in SQS in seconds? Choose the correct answer from the options below
-    -
+    -30 seconds 
 
 Question 32:
 Your items are 6KB in size and you want to have 100 strongly consistent reads per second. How many read capacity units do you need to provision? Choose the correct answer from the options below
-    -
+    -200
 
 Question 33:
 You decide to create a bucket on AWS S3 called 'bucketever' and then perform the following actions in the order that they are listed here. - You upload a file to the bucket called 'file1' - You enable versioning on the bucket - You upload a file called 'file2' - You upload a file called 'file3' - You upload another file called 'file2' Which of the following is true for your bucket 'bucketever'?
-    -
+    -The version ID for file1 will be null, there will be 2 version ID's for file2, and 1 version ID for file3
+        -Any objects uploaded prior to versioning will have the version ID as NULL 
 
 Question 34:
 How much Cloudformation does cost per hour? Choose the correct answer from the options below
-    -
+    -There is no cost 
 
 Question 35:
 You have an EC2 instance deployed with an IAM role with write access permissions to an SQS queue. The instance is attempting to write a 512 KB message to an SQS queue. What will the result of this attempt be? Choose the correct answer from the options below
-    -
+    -It will fail because it is greater than the 256kb limit for SQS messages 
 
 Question 36:
 What is the default behavior of a CloudFormation stack if creation fails? Choose the correct answers from the options below
-    -
+    -Rollback 
 
 Question 37:
 Your application utilizes Amazon S3 reduced redundancy storage and you have configured the s3:ReducedRedundancyLostObject notification on your Amazon S3 Bucket. What services might you use to create a "distributed" platform that replaces lost RRS objects on Amazon S3 automatically? Choose the correct answer from the options below
-    -
+    -SNS with SQS subscription endpoint with a worker instance 
+        -Amazon SQS is a fast, reliable, scalable, fully managed message queuing service. Amazon SQS makes it simple and cost-effective to decouple the componenets of a cloud application. You can use SQS to transmit any volume of data without losing messages or requiring other services to be always available
 
 Question 38:
 What is the limit to the number of characters for a topic name in sns? Choose one answer from the options below
-    -
+    -256
+        -Topic names are limited to 256 characters 
 
 Question 39:
 Company B has created an e-commerce site using DynamoDB and is designing a products table that includes items purchased and the users who purchased the item. When creating a primary key on a table which of the following would be the best attribute for the primary key? Select the BEST possible answer.
-    -
+    -User_Id where there are many users to few products 
+        -When defining primary keys, you should always use a many to few principle 
 
 Question 40:
 You are writing an AWS CloudFormation template and you want to assign values to properties that will not be available until runtime. You know that you can use intrinsic functions to do this but are unsure as to which part of the template they can be used in. Which of the following is correct in describing how you can currently use intrinsic functions in an AWS CloudFormation template? Choose an answer from the options below
-    -
+    -You can use intrinsic functions only in specific parts of a template. Currently, you can use intrinsic functions in resource properties, outputs, metadata attributes, and update policy attributes. You can also use intrinsic functions to conditionally create stack resources 
 
 Question 41:
 How many secondary indexes are allowed per table? Choose the correct answer from the options below.
-    -
+    -10
+        -5 local and 5 global, which gives a maximum of 10 per table 
 
 Question 42:
 You have created a mobile application that relies on reading data from DynamoDB. How could you give each mobile device permissions to read from DynamoDB? Choose an answer from the options below
