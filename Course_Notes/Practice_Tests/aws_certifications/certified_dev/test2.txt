@@ -193,7 +193,7 @@ In DynamoDB you get the following error “ItemCollectionSizeLimitExceededExcept
 
 Question 42:
 In SQS when the ReceiveMessageWaitTimeSeconds is set to a value of 20 seconds, what is the functionality being served in SQS? Choose the correct answer from the options below
-    -
+    -Long polling 
 
 Question 43:
 Is a best practice to allow code to run on an EC2 instance via a role rather than access keys? Choose the correct answer from the options below
