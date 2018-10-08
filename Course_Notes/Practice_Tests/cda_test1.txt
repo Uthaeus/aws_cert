@@ -555,41 +555,42 @@ Amazon Simple Notification Service (Amazon SNS) provides support for delivery of
 
 Question 131:
 fn:GetAtt is used on a CloudFormation template to: Choose an answer from the options below
-    -
+    -Return the value of an attribute from a resource on the template 
 
 Question 132:
 Which of the following would you not expect to see in an SNS message body?
-    -
+    -SubjectId
 
 Question 133:
 While working with the AWS API you receive the following error message: 409 Conflict. What might be the cause of this error?
-    -
+    -BucketAlreadyExists
 
 Question 134:
 What is the primary difference between a global secondary index and a local secondary index? Choose the correct answer from the options below.
-    -
+    -A local secondary index has the same partition key as the primary key and the global secondary index has a different partition and sort key 
 
 Question 135:
 What is Amazon SQS max message size? Choose the correct answer from the options below
-    -
+    -256kb 
 
 Question 136:
 The following code snippet is the parameters section of a CloudFormation template that you have written."Parameters" : {     "KeyName": {             "Description" : "answer to the question",              "Type": "AWS::EC2::KeyPair::KeyName",                ...       }}Which of the the following is the best description of what this section will do once you run your CloudFormation template?
-    -
+    -It will ask you to provide the name of an existing EC2 KeyPair to use 
 
 Question 137:
 What is the maximum number of SWF domains allowed in an AWS account? Choose the correct answer from the options below.
-    -
+    -100 
 
 Question 138:
 A DynamoDB table can contain ____ local secondary indexes on a table. Choose a correct answer from the options below
-    -
+    -5
 
 Question 139:
 When a subscriber subscribes to a topic in SNS, what is the time period available for confirmation? Choose one answer from the options below
-    -
+    -3 days 
 
 Question 140:
 Explain what the following resource in a CloudFormation template does. Choose the best possible answer."SNSTopic" : {     "Type" : "AWS::SNS::Topic",     "Properties" : {           "Subscription" : [{                  "Protocol" : "sqs",                  "Endpoint" : { "Fn::GetAtt" : [ "SQSQueue", "Arn" ] }             } ]}
-    -
+    -Creates an SNS topic and adds a subscription ARN endpoint for the SQS resource created under the logical name SQSQueue 
+        -The intrinsic function Fn::GetAtt returns the value of an attribute from a resource in the template
 
