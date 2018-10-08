@@ -20,47 +20,48 @@ What is the maximum number of SWF workflows/activity types allowed in each SWF d
 
 Question 6:
 What is the maximum size of an item in DynamoDB? Choose the correct answer from the options below.
-    -
+    -400kb
 
 Question 7:
 What is the minimum value that can be configured for Amazon SQS MaximumMessageSize attribute?
-    -
+    -1kb
 
 Question 8:
 What is the one write capacity unit size (When you create a table or index in Amazon DynamoDB, you must specify your capacity requirements for read and write activity)?. Choose an answer from the options below.
-    -
+    -1kb 
 
 Question 9:
 What is the size limit for volumes in instances that are based on Amazon Instance Store backed AMI’s. Choose an answer from the options below?
-    -
+    -10GiB
 
 Question 10:
 What is used in DynamoDB to help a write operation only succeed if the item attributes meet one or more expected conditions? Choose answer from the options below.
-    -
+    -Conditional Writes 
 
 Question 11:
 What is used in S3 to enable client web applications that are loaded in one domain to interact with resources in a different domain? Choose the correct answer from the options below
-    -
+    -CORS Configuration 
 
 Question 12:
 What result would you expect from the Fn::Join function in the following line in a CloudFormation template? Choose an answer from the options below "Fn::Join" : [ ".", [ "1","2","3"] ]
-    -
+    -1.2.3
 
 Question 13:
 What result would you expect from the Fn::Select function in the following line in a CloudFormation template? Choose an answer from the options below { "Fn::Select" : [ "1", [ "1", "2", "3", "4" ] ] }
-    -
+    -2
+        -The intrinsic function Fn::Select returns a single object from a list of objects by index 
 
 Question 14:
 What result would you expect from the Fn::split function in the following line in a CloudFormation template? Choose an answer from the options below { "Fn::Split" : [ "|" , "a|b|c" ] }
-    -
+    -['a', 'b', 'c']
 
 Question 15:
 When a failure occurs in a stack creation in Cloudformation, does a rollback occur?
-    -
+    -True 
 
 Question 16:
 When designing Cloudformation templates, is the Resources section optional?
-    -
+    -False 
 
 Question 17:
 Which API call is used to Bundle an Amazon instance store-backed Windows instance? Choose the correct answer from the options below
