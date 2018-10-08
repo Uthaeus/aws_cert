@@ -132,7 +132,7 @@ What is the limit on the number of attributes an item can have in DynamoDB? Choo
 
 Question 31:
 What is the limit to the number of characters for a topic name in sns? Choose one answer from the options below
-    -
+    -256
 
 Question 32:
 What is the maximum number of SWF domains allowed in an AWS account? Choose the correct answer from the options below.
