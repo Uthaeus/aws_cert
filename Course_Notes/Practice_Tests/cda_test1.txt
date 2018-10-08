@@ -386,11 +386,12 @@ As you retrieve information from DynamoDB, you receive this error: "ProvisionedT
 
 Question 91:
 Which command line commands list all current stacks in your CloudFormation service? Choose the 2 correct answers from the options below
-    -
+    -AWS cloudformation describe-stacks 
+    -AWS cloudformation list-stacks 
 
 Question 92:
 You define the following S3 bucket policy to grant users access to your bucket, but the S3 bucket policy editor will not allow you to submit it. Why is this policy not working? Choose the correct answer from the options below{   "Id": "Policy1441839160967",   "Version": "2012-10-17",   "Statement": [    {         "Sid": "Stmt1441839157568",         "Action": [             "s3:ListBucket"          ],        "Effect": "Allow",        "Resource": "arn:AWS:s3:::demo.testbucket.2 "     }  ]}
-    -
+    -S3 bucket policies require a Principal be defined 
 
 Question 93:
 You are creating a CloudFormation template in the Singapore region which will create an S3 website bucket. You have created a parameter “demo” which is used to store the name of your S3 bucket, and you are hoping to create output from your template which will list the URL of the S3 website. Which of the following Join statements will provide the URL of your S3 website? Choose a correct answer from the options below
@@ -398,31 +399,32 @@ You are creating a CloudFormation template in the Singapore region which will cr
 
 Question 94:
 How many requests in SQS are available in the free tier? Choose the correct answer from the options below
-    -
+    -1 million
 
 Question 95:
 Which of the following would you expect to see in the body of an SNS notification? Choose the correct answer from the options below
-    -
+    -Unsubscribe URL 
 
 Question 96:
 You have just set up a push notification service to send a message to an app installed on a device with the Apple Push Notification Service. It seems to work fine. You now want to send a message to an app installed on devices for multiple platforms, those being the Apple Push Notification Service(APNS) and Google Cloud Messaging for Android (GCM). What do you need to do first for this to be successful? Choose the correct answer from the options below
-    -
+    -Get a set of credentials in order to be able to connect to the push notification service you are trying to setup 
 
 Question 97:
 What is the best method for maintaining application session state when using an Elastic Load Balancer? Choose the correct answer from the options below
-    -
+    -Use ElastiCache
 
 Question 98:
 How much data can be stored in S3? Choose the correct answer from the options below
-    -
+    -No limits to the amount of data 
 
 Question 99:
 You run an ad-supported photo sharing website using S3 to serve photos to visitors of your site. At some point you find out that other sites have been linking to the photos on your site, causing loss to your business. What is an effective method to mitigate this? Choose the correct answer from the options below
-    -
+    -Remove public read access and use signed URL's with expiry dates 
 
 Question 100:
 Which statement about DynamoDB is true? Choose a correct answer from the options below
-    -   
+    -DynamoDB uses optimistic concurrency control 
+        -Optimistic locking is a strategy to ensure that the client-side item that you are updating (or deleting) is the same as the item in DynamoDB. If you use this strategy, then your database writes are protected from being overwritten by the writes of others and vice-versa
 
 Question 101:
 The following code snippet is the resources section of a CloudFormation template that you have written."Resources" : {    "EC2Instance" : {        "Type" : "AWS::EC2::Instance",         "Properties" : {             "InstanceType" : { "Ref" : "InstanceType" },              "SecurityGroups" : [ { "Ref" : "InstanceSecurityGroup" } ],               "KeyName" : { "Ref" : "KeyName" },               "ImageId" : { "Fn::FindInMap" : [ "AWSRegionArch2AMI", { "Ref" : "AWS::Region" },                { "Fn::FindInMap" : [ "AWSInstanceType2Arch", { "Ref" : "InstanceType" }, "Arch" ] }               ]        }   }},You have used the reference function to define your instance type as follows."InstanceType" : { "Ref" : "InstanceType" },The referencing function is referencing the instance type. Where is this value most likely coming from?
