@@ -197,7 +197,7 @@ In SQS when the ReceiveMessageWaitTimeSeconds is set to a value of 20 seconds, w
 
 Question 43:
 Is a best practice to allow code to run on an EC2 instance via a role rather than access keys? Choose the correct answer from the options below
-    -
+    -True 
 
 Question 44:
 Is a public IP address required for an instance to be accessed from the internet in a VPC? Choose the correct answer from the options below
