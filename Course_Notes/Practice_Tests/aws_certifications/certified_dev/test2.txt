@@ -65,31 +65,33 @@ When designing Cloudformation templates, is the Resources section optional?
 
 Question 17:
 Which API call is used to Bundle an Amazon instance store-backed Windows instance? Choose the correct answer from the options below
-    -
+    -BundleInstance 
 
 Question 18:
 Which of the below API calls can be used to get information about stacks based on a specific filter. Choose an answer from the options below
-    -
+    -ListStacks 
 
 Question 19:
 Which of the below configuration softwares can Cloudformation be used with? Choose 2 answers from the options below
-    -
+    -Chef
+    -Puppet 
 
 Question 20:
 Which of the below features in DynamoDB can be used to increment or decrement the value of an existing attribute without interfering with other write requests? Choose the correct answer from the options below.
-    -
+    -Atomic Counters 
+        -DynamoDB supports atomic counters, where you use the UpdateItem operation to increment or decrement the value of an existing attribute without interfering with other write requests 
 
 Question 21:
 Which of the below functions is used in Cloudformation to append a set of values into a single value? Choose an answer from the options below
-    -
+    -Fn::Join 
 
 Question 22:
 Which of the below functions is used in Cloudformation to retrieve an object from a set of objects? Choose an answer from the options below
-    -
+    -Fn::Select 
 
 Question 23:
 Which of the below functions is used in Cloudformation to return the value corresponding to keys in a two-level map that is declared in the Mappings section? Choose an answer from the options below
-    -
+    -Fn::FindInMap
 
 Question 24:
 Which of the descriptions below best describes what the following bucket policy does?
@@ -118,7 +120,7 @@ Which of the descriptions below best describes what the following bucket policy 
    ]
 }
 Choose the correct answer from the options below
-    -
+    -It allows read or write access to the bucket 'mybucket' but only if it is accessed from example.com or demo.com 
 
 Question 25:
 Which of the following is a valid S3 bucket name? Choose the correct answer from the options below
@@ -126,67 +128,68 @@ Which of the following is a valid S3 bucket name? Choose the correct answer from
 
 Question 26:
 Which of the following is the best option for creating a primary key in DynamoDB? Select the BEST possible answer.
-    -
+    -student_id where there are many students 
 
 Question 27:
 Which of the following would you not expect to see in an SNS message body? Choose the correct answer from the options below
-    -
+    -SNSID 
 
 Question 28:
 Which service provided by AWS allows one to have a dedicated private connection from a remote network to your VPC? Choose the correct answer from the options below
-    -
+    -AWS Direct Connect 
 
 Question 29:
 While working with the AWS API you receive the following error message: 409 Conflict. What might be the cause of this error?
-    -
+    -Bucket is not empty 
 
 Question 30:
 You are explaining SQS message attributes to an IT admin. What specifically do you need to tell the IT admin about the message attributes of SQS? Choose the correct answer from the options below
-    -
+    -Name, type, and value must not be empty or null and the message body shouldn't be empty or null either
 
 Question 31:
 You decide to create a bucket on AWS S3 called ‘newbucket’ and then perform the following actions in the order that they are listed here. - You upload a file to the bucket called 'file1' - You upload a file called 'file2' - You enable versioning on the bucket Which of the following is true for your bucket 'newbucket'? Choose the correct answer from the options below
-    -
+    -The version ID will be null for both file1 and file2 
 
 Question 32:
 What are the consistency models available for Local Secondary Indexes in DynamoDB? Choose 2 answers from the options given below
-    -
+    -Strong consistent reads 
+    -Eventual consistent reads 
 
 Question 33:
 A user named john has an AWS account. He has created an AMI in the us-east1 region. Is it possible for him to share the AMI with another user account in AWS? Choose the correct answer from the options below
-    -
+    -True 
 
 Question 34:
 An administrator is getting an error while trying to create a new bucket in S3? You feel that bucket limit has been crossed. What is the bucket limit per account in AWS?Choose the correct answer from the options below
-    -
+    -100
 
 Question 35:
 An IT admin has enabled long polling in their SQS queue. What must be done for long polling to be enabled in SQS? Choose the correct answer from the options below
-    -
+    -Set the ReceiveMessageWaitTimeSeconds property of the queue to 20 seconds 
 
 Question 36:
 An IT admin is worried about the number of message queues being created in the SQS in their AWS account? Is there a limit, if yes, what is the correct limit? Choose the correct answer from the options below
-    -
+    -There is no limit 
 
 Question 37:
 As per the IAM decision logic what is the first step of access permissions for any resource in AWS. Choose the correct answer from the options below
-    -
+    -A default deny 
 
 Question 38:
 Company A is writing 5 items to the products table every second. Each item is 20Kb in size. What would be the required provisioned write throughput for best performance? Choose the correct answer from the options below.
-    -
+    -100 
 
 Question 39:
 Company B has a DynamoDB table where the average item size is 20KB. Company B anticipates the application will read 10 items from the table per second using eventually consistent reads. How much read capacity throughput should they provision? Choose the correct answer from the options below.
-    -
+    -25
 
 Question 40:
 For S3 server side encryption what needs to be included in the API header call? Choose the correct answer from the options below
-    -
+    -x-amz-server-side-encryption 
 
 Question 41:
 In DynamoDB you get the following error “ItemCollectionSizeLimitExceededException”. What could be the possible cause for this error. Choose an answer from the options below
-    -
+    -Size of a group of items with the same partition key value has exceeded 10GB 
 
 Question 42:
 In SQS when the ReceiveMessageWaitTimeSeconds is set to a value of 20 seconds, what is the functionality being served in SQS? Choose the correct answer from the options below
