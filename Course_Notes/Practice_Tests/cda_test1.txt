@@ -264,39 +264,39 @@ What are some of the benefits of using AWS SWF? Choose the correct answer from t
 
 Question 62:
 Company B is writing 10 items to the products table every second. Each item is 15.5Kb in size. What would be the required provisioned write throughput for best performance? Choose the correct answer from the options below
-    -
+    -160
 
 Question 63:
 To connect your remote office to your VPC for internal network access, what would you need to use? Choose the correct answer from the options below
-    -
+    -A VPN 
 
 Question 64:
 Which of the following statements is true about DynamoDB? Choose the correct answer from the options below
-    -
+    -Read requests are eventually consistent unless otherwise specified 
 
 Question 65:
 Which API call would you use to attach an EBS volume to an EC2 instance? Choose a correct answer from the options below
-    -
+    -AttachVolume
 
 Question 66:
 When using the Ref function in CloudFormation, what do we get back if we pass in the logical ID of an AWS::EC2::Instance object? Choose the correct answer from the options below
-    -
+    -The object's InstanceId
 
 Question 67:
 A taxi company uses a mobile GPS application to track the location of each of their 60 cabs. The application records the taxi’s location to a DynamoDB table every 6 seconds. Each transmission is just under 1 KB, and throughput is spread evenly within that minute. How many units of write capacity should you specify for this table? Choose a correct answer from the options below
-    -
+    -10
 
 Question 68:
 Of the 6 available sections on a CloudFormation template (Template Description Declaration, Template Format Version Declaration, Parameters, Resources, Mappings, Outputs), which is the only one required for a CloudFormation template to be accepted? Choose an answer from the options below
-    -
+    -Resources 
 
 Question 69:
 Which of the following request headers, when specified in an API call, will cause an object to be SSE? Choose the correct answer from the options below
-    -
+    -x-amz-server-side-encryption 
 
 Question 70:
 What is one key difference between an Amazon EBS-backed and an instance-store backed instance? Choose the correct answer from the options below
-    -
+    -Amazon EBS-backed instances can be stopped and restarted
 
 Question 71:
 In AWS CloudFormation, the intrinsic function Fn::Join appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter.Keeping the above in mind what value will the following example return?"Fn::Join" : [ "-", [ "the", "demo", "app" ] ]
