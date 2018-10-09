@@ -192,7 +192,9 @@ A company want to have a document store in AWS. The documents would be accessed 
 
 Question 41:
 A company is trying to determine the different types of workloads that can be hosted using the Elastic Beanstalk Service. Which of the following would you recommend for workload to be hosted using the Elastic Beanstalk Service? Choose 2 answers from the options given below
-    -
+    -A web server hosting a dynamic web application connecting to an RDS instance 
+    -A long running worker process 
+        -When you launch an Elastic Beanstalk environment, you first choose an environment tier. The environment tier that you choose determines whether Elastic Beanstalk provisions resources to support an application that handles HTTP requests or an application that pulls tasks from a queue. An application that serves HTTP requests runs in a web server environment. An environment that pulls tasks from SQS runs in a worker environment 
 
 Question 42:
 A company is planning on using the Simple Storage Service to store their data objects. The number of object requests can run into thousands since the objects are going to be accessed by users across the world. Due to security reason, the AWS KMS service is going to be used to encrypt the objects at rest. You need to ensure optimal performance of the retrieval of objects. Which of the following must you consider? Choose 2 answers from the options given below.
@@ -208,7 +210,9 @@ Your company currently is building a fleet of EC2 Instances. One set of Instance
 
 Question 45:
 Your company is planning on setting up a set of Web servers on EC2 Instances. You need to distribute incoming traffic to these web servers. Which of the following are ways you can accomplish this? Choose 2 answers from the options given below
-    -
+    -Use a Classic Load Balancer to distribute traffic to the underlying instances 
+    -Use Route53 with Multivalue answer routing 
+        -You can use a Load Balancer to destribute the traffic. In Route53, Multivalue answer routing lets you configure Route53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can specify multiple values for almost any record, but multivalue answer routing also lets you check the health of each resource, so Route53 returns only values for healthy resources. It's not a substitute for a load balancer, but the ability to return multiple health-checkable IP addresses is a way to use DNS to improve availability and load balancing 
 
 Question 46:
 You are planning on building an application that is going to be hosted on a set of EC2 Instances. You also want to expose API’s so that users can access certain functionalities of the application. You want to ensure scalability of the architecture during high load times. Which of the following can assist in fulfilling such requirements? Choose 2 answers from the options given below  
