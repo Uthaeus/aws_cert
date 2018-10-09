@@ -90,11 +90,14 @@ Which of the following disaster recovery deployment mechanisms that has the high
 
 Question 22:
 Which of the following statements are FALSE when it comes to elasticity. Choose 2 answers from the options given below
-    -
+    -Diverting traffic to instances with higher capacity 
+    -Diverting traffic across multiple regions
+        -The concept of elasticity is the means of an application having hte ability to scale up and scale down based on demand 
 
 Question 23:
 Which of the below cannot be used to get data onto Amazon Glacier.
-    -
+    -AWS Console 
+        -The AWS Console cannot be used to upload data onto Glacier. The console can only be used to create a Glacier vault which can be used to upload the data 
 
 Question 24:
 Which of the following features of Amazon RDS allows for better availability of databases. Choose 2 answers from the options given below
@@ -110,7 +113,8 @@ Which of the following can be used to view one bill when you have multiple AWS A
 
 Question 27:
 Your company is planning to host a large ecommerce application on the AWS Cloud. One of their major concerns is Internet attacks such as DDos attacks. Which of the following services can help mitigate this concern. Choose 2 answers from the options given below
-    -
+    -CloudFront 
+    -AWS Shield
 
 Question 28:
 A company is deploying a two-tier, highly available web application to AWS. The application needs a storage layer to store artefacts such as photos and videos. Which of the following services can be used as the underlying storage mechanism.
