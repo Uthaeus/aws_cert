@@ -93,23 +93,32 @@ You are designing a system that will be hosted on an EC2 Instance. You need to e
 
 Question 21:
 Your company currently has an OLTP (Online Transaction Processing) in their on-premise environment. Due to the compute and storage constraints they have decided to move to AWS. They need to ensure optimal performance of the workload in AWS. Which of the following data store would be ideal for this workload.
-    -
+    -AWS RDS 
+        -In an OLTP system, you normally have the requirement for performing complex queries and joins. In such a case you should consider using the AWS Relational Database Service 
 
 Question 22:
 Your company has decided to host an application on a set of EC2 Instances in AWS. A database would also be hosted in a private subnet in the VPC. There is an additional requirement for the database server to download patch updates from the internet. You also need to ensure that IT Administrators can connect to the database servers securely. Which of the following can be used as part of the architecture to support these requirements? Choose 2 answers which when merged together will provide a complete solution.
-    -
+    -Have a set of NAT instances placed in the public subnet 
+    -Use the NAT Instance as a bastion hosst which can be used by the IT Administrators 
+        -You can use an NAT device to enable instances in a private subnet to connect to the internet or other AWS services, but prevent the internet from initiating connections with the instances. Now even though the NAT gateway can be used as a device for allowing database servers to connect securely to the internet to download updates, since the question also has the need for a bastion host, the NAT instance can double down as both. You cannot connect to an NAT gateway 
 
 Question 23:
 You are an architect for a company that needs to design the database for an application. The database itself will consist of a lot of writes when compared to the number of reads. You need to consider what should be the implementation of the database to ensure optimal performance when it comes to the read operations. Which of the following can be considered for this? Choose 2 answers from the options given below
-    -
+    -Consider sharding on the database 
+    -Consider using a NoSQL data store such as DynamoDB 
+        -By partitioning or sharing your data, you can accomplish better throughput for your writes on the database. NoSQL solutions in AWS such as DynamoDB already avail this concept. Here you can assign a higher write capacity for DynamoDB tabels to offset the high amount of writes on the table. When it comes to creating Read Replicas, this is efficient when you have a high number of reads on the database when compared to the writes 
 
 Question 24:
 A company is planning on migrating a series of functions to AWS Lambda. These functions will be called directly by customers who require to invoke the functions. From time to time, the function code would need to be changed based on customer requirements. As an architect you have to propose a convenient solution which would allow functions to be tested first and the promoted to production. Which of the following would you consider? Choose 2 answers from the options given below.
-    -
+    -Create different Lambda function versions, one for testing and the other for production 
+    -Ask the customers during the testing phase to call the appropriate lambda function versions via ALIAS'
+        -Invoking your Lambda functions by their version numbers can be useful during testing and operational activities. A function alias allows you to invoke and point event sources to specific Lambda function version. It would be less of a maintenance activity to just have different versions for each Lambda function rather than have separate functions for each version change 
 
 Question 25:
 Your company is planning on hosting an application in AWS. The application would connect to a MYSQL – RDS Instance. There is a requirement to ensure that users who perform the same set of queries get the data faster. You also have to ensure that users get the latest data as much as possible? Which of the following would you consider as an architect? Choose 2 answers from the options given below.
-    -
+    -Consider using the ElastiCache - Redis service 
+    -Ensure the a TTL is set for all cached datasets
+        -Using AWS ElastiCache - Redis is the best approach to implement caching for your solution. You can control the freshness of your cached data by applying a time to live to your cached keys. After the set time has passed, the key is deleted from the cache, and access to the origin data store is required along with reaching the updated data 
 
 Question 26:
 A company wants to host an Oracle database on an EC2 Instance. The database will not be used frequently initially with only small peaks expected every now and then on the database. Which of the following would be a cost-effective storage type for the underlying EBS volume?
@@ -117,7 +126,8 @@ A company wants to host an Oracle database on an EC2 Instance. The database will
 
 Question 27:
 A company has a fleet of EC2 Instances in a region that need to store and share files. The data storage layer needs to scale as per demand without the need of supervision. Which of the following would you consider for this requirement?
-    -
+    -Amazon EFS 
+        -EFS provides simple, scalable, elastic file storage for use with AWS Cloud services and on-premise resources. It is easy to use and offers a simple interface that allows you to create and configure file systems quickly and easily. EFS is built to scale on demand without disrupting applications, growing and shrinking automatically as you add and remove files, so your applications have the storage they need 
 
 Question 28:
 A company has an application hosted on an EC2 Instance. The application is used to upload images from users. The images need to be stored in an S3 bucket. The images then need to be processed to make thumbnails and then the generated thumbnails need to be stored in another bucket. What would be an effective component to add to this architecture to carry out the processing?
