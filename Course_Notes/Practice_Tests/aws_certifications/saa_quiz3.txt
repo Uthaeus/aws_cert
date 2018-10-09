@@ -47,11 +47,13 @@ Your development team needs to host a Docker based application in AWS. The team 
 
 Question 11:
 A company is currently hosting a set of documents in an S3 bucket. Currently the number of GETS requests are getting too high and hence the costs are also increasing proportionally. You need to devise solution which can be used to reduce the costs for accessing documents in the S3 bucket. Which of the following would you recommend?
-    -
+    -Create a CloudFront distribution in front of the S3 bucket 
+        -By integrating CloudFront with S3, you can distribute content to your users with low latency and a high data transfer rate 
 
 Question 12:
 Your company is hosting sensitive documents in an S3 bucket. You need to ensure that documents are encrypted at rest. How can you fulfil this requirement?
-    -
+    -Ensure that the default encryption is enabled for the S3 bucket 
+        -When you enable default encryption, you are in a sense enabling AWS Server side encryption. Server-side encryption is about data encryption at rest; that is, Amazon S3 encrypts your data at the object level as it writes it to disks in its data centers and decrypts it for you when you access it 
 
 Question 13:
 A company currently hosts a web-based application in AWS.  There is a requirement to ensure that users from Europe are directed to the web instances in the Europe region and users from Japan are directed to the site www.example.com. Which of the following service would you use to achieve this requirement?
@@ -63,15 +65,19 @@ A company currently has a Hadoop cluster running on their on-premise environment
 
 Question 15:
 A company currently has a stateful architecture defined in AWS. This architecture consists of a fleet of EC2 Instances hosting an application. These Instances are being spun up as part of an Autoscaling Group. The EC2 Instances are then placed behind an Elastic Load Balancer. After the architecture was deployed, users are complaining that sometimes their sessions are getting lost and they have to go through the entire application process again. As an architect, which of the following would you need to consider helping isolate the problem?
-    -
+    -Ensure that session stickiness is not enabled on the Load Balancer 
+        -If session stickiness is enabled on the load balancer, then the user sessions will be attached to specific instances. If the instances are removed by the autoscaling group during a scale in progress, then all the sessions would be lost 
 
 Question 16:
 A company is currently hosting a revenue generating application in AWS. The application connects to an AWS RDS MySQL Instance. Due to the critical nature of the application, it needs to be ensured that the database is online all the time. In the event of a database failure you have a brief time window for getting the database up and running again. During this time window, the business can afford having a limited functionality of the database available. Which of the following as an architect can you implement to adhere to these requirements? Choose 2 answers from the options given below
-    -
+    -Ensure that Multi-AZ is anabled for the database 
+    -Ensure that Read Replicas are created for the database 
+        -Multi-AZ can be used for high availability of the database solution. Now if a failure does occur, it would take a brief amount of time for AWS to carry out the switchover in the background. In the meantime, by enabling Read Replicas for the database, you have the additional option of providing a limited functionality by pointing the application to the Read Replica. Once the Multi-AZ switchover is complete, the application can then point to the standby database 
 
 Question 17:
 Your company is planning on hosting a dynamic web site on a set of EC2 Instances. They want to also include a web application firewall to protect the site against application level attacks. As an architect you propose to use the AWS managed WAF service. In order to ensure integration with this environment, which either one of the following needs to be in place. Choose 2 answers from the options given below.
-    -
+    -A CloudFront web distribution in front of the EC2 instances 
+    -An Application Load Balancer placed in front of the EC2 instances 
 
 Question 18:
 Your company is hosting a set of EC2 Instances in AWS. Based on the recent cost usage report, the IT Sponsor has requested to reduce costs wherever possible. Which of the following are possible implementation steps in the cost reduction exercise? Choose 2 answers from the options given below
