@@ -12,7 +12,8 @@ Which of the following security requirements are managed by AWS? Select 3 answer
 
 Question 4:
 You have a set of developers that need to use .Net to call AWS Services. Which of the following tools can be used to achieve this purpose.
-    -
+    -AWS SDK
+        -The AWS SDK can be plugged in for various programming languages. Using the SDK you can then call the required AWS services.
 
 Question 5:
 Which of the following services relates the concept of Scaling up resources based on demand
@@ -24,7 +25,8 @@ Which of the following needs a user name and password to access AWS resources.
 
 Question 7:
 Which of the following initiatives from AWS helps organizations reduce the overall expenditure for IT companies when they host resources on the AWS Cloud?
-    -
+    -They continually reduce the cost of cloud computing 
+        -The AWS documentation mentions AWS continues to lower the cost of cloud computing for its customers. 
 
 Question 8:
 Which of the following services relates the concept of Distributing traffic to multiple EC2 Instances
