@@ -178,11 +178,13 @@ Which of the following features of AWS RDS allows for offloading reads of the da
 
 Question 43:
 You have a set of EC2 Instances hosted on the AWS Cloud. The EC2 Instances are hosting a web application. If you get a DDos attack from the internet which of the following can help in reducing the overall threat to your EC2 Instances. Choose 2 answers from the options given below
-    -
+    -Usage of Security Groups 
+    -Usage of Network Access Control Lists
 
 Question 44:
 A company wants to have a database hosted on AWS. As much as possible they want to have control over the database itself. Which of the following would be an ideal option for this
-    -
+    -Hosting the database on an EC2 instance 
+        -If you want a self-managed database, that means you want complete control over the database engine and the underlying infrastructure.
 
 Question 45:
 Which of the following can be attached to EC2 Instances to store data.
@@ -198,7 +200,8 @@ Which of the following are services where you dont need to manage the underlyi
 
 Question 48:
 Which of the following are features of an edge location. Choose 3 answers from the options given below
-    -
+    -No upfront costs 
+    -Having the pay as you go model, so you don't need to worry if you are burning costs for non-running resources 
 
 Question 49:
 When working with the AWS Cloud which of the following are headaches you dont need to worry about. Choose 2 answers from the options given below.
@@ -206,7 +209,8 @@ When working with the AWS Cloud which of the following are headaches you dont 
 
 Question 50:
 Which of the following does AWS perform on its behalf for EBS volumes to make it less probe to failure?
-    -
+    -Replication of the volume in the same AZ 
+        -When you create an EBS volume in an Availability Zone, it is automatically replicated within that zone to prevent data loss due to failure of any single hardware component 
 
 Question 51:
 Which of the following storage options is best when you want to store archive data?
