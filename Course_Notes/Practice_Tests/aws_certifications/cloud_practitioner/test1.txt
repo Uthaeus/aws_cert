@@ -134,7 +134,7 @@ Which of the following is the responsibility of AWS according to the Shared Secu
 
 Question 32:
 Your company handles a crucial ecommerce application. This applications needs to have an uptime of at least 99.5%. There is a decision to move the application to the AWS Cloud. Which of the following deployment strategies can help build a robust architecture for such an application.
-    -
+    -Deploying the application across multiple Regions 
 
 Question 33:
 Which of the following storage options provides the option of Lifecycle policies that can be used to move objects to archive storage.
@@ -158,7 +158,7 @@ Your design team is planning to design an application that will be hosted on the
 
 Question 38:
 Your company is planning to pay for an AWS Support plan. They have the following requirements as far as the support plan goes·         24x7 access to Cloud Support Engineers via email, chat & phone·         A response time of less than 1 hour for any critical faultsWhich of the following plans will suffice keeping in mind the cost factor.
-    -
+    -Enterprise
 
 Question 39:
 Currently your organization has an operational team that takes care of ID management in their on-premise data center. They now also need to manage users and groups created in AWS. Which of the following AWS tools would they need to use for performing this management function.
