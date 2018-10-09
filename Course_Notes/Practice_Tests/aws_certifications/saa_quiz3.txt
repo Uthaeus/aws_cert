@@ -37,11 +37,13 @@ A company has an application that currently processes a lot of data streams that
 
 Question 9:
 A company currently has an application that processes data from an application. The processed data is stored in a DynamoDB table. The data is used frequently within a week, after which it is less frequently used. After a month’s time, it is not used at all. But the older data needs to be in place in order to perform a summary analysis at a later point in time. How would you architect the application? Choose 2 answers from the options given below
-    -
+    -Create tables on a weekly basis. Ensure that the most recent tables have the highest throughput defined 
+    -Use AWS DataPipeline to transfer the older data to S3 where it can be used for further processing at a later point in time 
 
 Question 10:
 Your development team needs to host a Docker based application in AWS. The team has the requirement to ensure that traffic gets directed to the various docker based containers based on the port number. Which of the following services would you use for this application. Choose 2 answers from the options below.
-    -
+    -Application Load Balancer 
+    -Elastic Container Service 
 
 Question 11:
 A company is currently hosting a set of documents in an S3 bucket. Currently the number of GETS requests are getting too high and hence the costs are also increasing proportionally. You need to devise solution which can be used to reduce the costs for accessing documents in the S3 bucket. Which of the following would you recommend?
