@@ -163,7 +163,8 @@ Which of the following can be used as an additional layer of security to using a
 
 Question 40:
 Which of the following AWS services provides infrastructure security optimization recommendations?
-    -
+    -AWS Trusted Advisor 
+        -AWS Trusted Advisor is an online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment. Trusted Advisor provides real time guidance to help you provision your resources following AWS best practices 
 
 Question 41:
 You are planning to host a large ecommerce application on the AWS Cloud. One of your major concerns is Internet attacks such as DDos attacks. Which of the following services can help mitigate this concern? Choose 2 answers
