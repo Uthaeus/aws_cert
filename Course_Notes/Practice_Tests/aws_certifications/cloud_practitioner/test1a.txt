@@ -172,7 +172,7 @@ You are planning to host a large ecommerce application on the AWS Cloud. One of 
 
 Question 42:
 Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
-    -
+    -Queue names are limited to 80 characters and queue names must be unique within an AWS account 
 
 Question 43:
 You have developed a web application that has “.Net layer” which connects to a MySQL database. Which of the following AWS databases would provide high availability and automated backups to your application?
@@ -180,11 +180,15 @@ You have developed a web application that has “.Net layer” which connects to
 
 Question 44:
 AWS allows us to “Stop guessing about our capacity needs” and “Automate to make architectural experimentation easier”. Which of the following related to the previous principles?
-    -
+    -AWS General Design Principles 
 
 Question 45:
 In order to implement best practices when dealing with "Single Point of failure” you should aim to build as much automation as possible in both detecting and reacting to failure. Which of the following AWS services would help you? (select all that apply)
-    -
+    -ELB 
+    -Amazon Route53
+    -AutoScaling
+    -Amazon EC2 auto-recovery
+        -You can replace unhealthy nodes using the Amazon EC2 auto-recovery feature or sevices such as AWS OpsWorks and AWS Elastic Beanstalk. 
 
 Question 46:
 You are working on a project that involves creating thumbnails of millions of images; however, time is not really an issue and continuous processing is not required. Which type of EC2 buying option would be the most cost-effective?
@@ -200,11 +204,13 @@ You are trying to organize and import (to AWS) gigabytes of data that are curren
 
 Question 49:
 A company is currently using the Enterprise Support plan. They want a quick and efficient guidance with their billing and account inquiries. Which of the following included services could assist them?
-    -
+    -AWS Support Concierge
+        -The Support Concierge Team are AWS billing and account experts that wpcialize in working with enterprise accounts. This Concierge team will quickly and efficiently assist you with your billing and account inquiries, and work with you to help implement billing and account best practices
 
 Question 50:
 As part of the Enterprise support plan, Who is the primary point of contact for the ongoing support needs?
-    -
+    -TAM 
+        -Technical Account Manager provices technical expertise for the full range of AWS services and obtains a detaled understanding of your use case and technology architecture. TAMs work with AWS Solution Architects to help you launch new projects and give best practices recommendations throughout the implementation lifecycle. Your TAM is the primary point of contact for ongoing support needs and you have a direct phone line to your TAM 
 
 Question 51:
 You have developed a web application targeting a global audience. Which of the following will help you achieve highest redundancy and fault tolerance?
