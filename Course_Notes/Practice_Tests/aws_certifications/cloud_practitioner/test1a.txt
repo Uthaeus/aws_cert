@@ -12,15 +12,20 @@ Derek is running a web application and is noticing that he is paying for way mor
 
 Question 4:
 You work as on-premises DBA, The work of database configuration, backups, patching, and DR can be time consuming and repetitive. Your company decided to migrate to the AWS cloud. Which of the following can help you save time on regular tasks and focus on your applications, so you can give them the fast performance, high availability, security, and compatibility that they need?
-    -
+    -Amazon RDS 
+        -Amazon Relational Database Service makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups. 
 
 Question 5:
 A company is planning to introduce a new product to their customers. They are expecting a high traffic to their web application. As part of Enterprise support plan, Which of the following could provide them with an architectural and scaling guidance?
-    -
+    -Infrastructure Event Management 
+        -AWS Infrastructure Event Management is a short-term engagement with AWS Support, availabale as part of the Enterprise-level Support product offering, and available for additional purchase for Business-level Support subscribers. AWS Infrastructure Event Management pertners with your technical and project resources to gain a deep understanding of your use case and provide architectural and scaling guidance for an event. 
 
 Question 6:
 What are the benefits of the AWS Personal Health Dashboard? Select all that apply)
-    -
+    -Personalized view of service health 
+    -Detailed Troubleshooting guidance 
+    -Proactive Notifications 
+        -
 
 Question 7:
 You have 2 accounts in AWS. One for the Dev and the other for QA. All are part of consolidated billing. The master account has purchase 4 reserved instances. The Dev department is currently using 2 reserved instances. The QA team is planning on using 3 instances which of the same instance type. What is the pricing tier of the instances that can be used by the QA Team?
@@ -28,7 +33,8 @@ You have 2 accounts in AWS. One for the Dev and the other for QA. All are part o
 
 Question 8:
 What should you do in order to grant a different AWS account permission to your Amazon Simple Queue Service (Amazon SQS) queue?
-    -
+    -Create an Amazon SQS policy that grants the other account access 
+        -The main difference between Amazon SQS policies and IAM policies is that an Amazon SQS policy enables you to grant a different AWS account permission to your Amazon SQS queues, but an IAM policy does not 
 
 Question 9:
 What is the AWS feature that enables you to manage services through a web-based user interface?
