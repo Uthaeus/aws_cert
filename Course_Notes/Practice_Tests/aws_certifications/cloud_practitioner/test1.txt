@@ -42,11 +42,14 @@ Which of the following terms relate to Creating systems that scale to the requ
 
 Question 11:
 Your company is planning on moving to the AWS Cloud. Once the movement to the Cloud is complete, they want to ensure that the right security settings are put in place. Which of the below tools can assist from a Security compliance. Choose 2 answers from the options given below.
-    -
+    -AWS Trusted Advisor 
+    -AWS Inspector
+        -The AWS Inpector can inspect EC2 instances against common threats
 
 Question 12:
 Which of the following services allows you to analyze EC2 Instances against pre-defined security templates to check for vulnerabilities
-    -
+    -AWS Inspector
+        -Amazon Inspector enables you to analyze the behavior of your AWS resources and helps you to identify potential security issues. Using Amazon Inspector, you can define a collection of AWS resources that you want to include in an assessment target. You can then create an assessment template and launch a security assessment run of this target 
 
 Question 13:
 Which of the following is a fully managed NoSQL database service available in AWS.
@@ -54,7 +57,8 @@ Which of the following is a fully managed NoSQL database service available in AW
 
 Question 14:
 Which of the following service is most useful when a Disaster Recovery method is triggered in AWS.
-    -
+    -Amazon Route53
+        -When a disaster does occur, it can be easy to switch to secondary sites using the Route53 service.
 
 Question 15:
 Which AWS Cloud service helps in quick deployment of resources which can make use of different programming languages such as .Net and Java?
@@ -62,7 +66,7 @@ Which AWS Cloud service helps in quick deployment of resources which can make us
 
 Question 16:
 There is a requirement hosting a set of servers in the Cloud for a short period of 6 months. Which of the following types of instances should be chosen to be cost effective.
-    -
+    -On-Demand 
 
 Question 17:
 Which of the following can be used to increase the fault tolerance of an application.
@@ -78,11 +82,11 @@ Which of the following components of the Cloudfront service can be used to distr
 
 Question 20:
 Your company wants to move an existing Oracle database to the AWS Cloud. Which of the following services can help facilitate this move.
-    -
+    -AWS Database Migration Service 
 
 Question 21:
 Which of the following disaster recovery deployment mechanisms that has the highest downtime
-    -
+    -Backup and Restore 
 
 Question 22:
 Which of the following statements are FALSE when it comes to elasticity. Choose 2 answers from the options given below
