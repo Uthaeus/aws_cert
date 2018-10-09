@@ -1,0 +1,295 @@
+Question 1:
+As you retrieve information from DynamoDB, you receive this error: "ProvisionedThroughputExceededException", but upon investigation you notice that you're not exceeding your table read capacity throughput. What is causing this error? Choose the correct answer from the options below
+    -
+
+Question 2:
+A global secondary index is an index with a hash and range key that can be different from those on the table. Choose a correct answer from the options below
+    -
+
+Question 3:
+By default, what event occurs if your CloudFormation receives an error during creation? Choose a correct answer from the options below
+    -
+
+Question 4:
+What is the maximum size of an S3 object? Choose an answer from the options below
+    -
+
+Question 5:
+You've enabled website hosting on a bucket named "demo.com" in the US-East-1 (US standard region). Select the URL you'll receive from AWS as the URL for the bucket. Choose a correct answer from the options below
+    -
+
+Question 6:
+Your supervisor is upset about the fact that SNS topics that he subscribed to are now cluttering up his email inbox. How can he stop receiving email from SNS without disrupting other users’ ability to receive email from SNS? Choose 2 answers from the options below
+    -
+
+Question 7:
+Which of the following types of servers would this CloudFormation template be most appropriate for? Choose a correct answer from the options below
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+   "Description" : "My CloudFormation Template",
+   "Resources" : {
+        "MyInstance" : {
+               "Type" : "AWS::EC2::Instance",
+               "Properties" : {
+                     "InstanceType" : "t2.micro",
+                     "ImageId" : "ami-030f4133",
+                     "NetworkInterfaces" : [{
+                     "AssociatePublicIpAddress" : "true",
+                     "DeviceIndex" : "0",
+                     "DeleteOnTermination" : "true",
+                     "SubnetId" : "subnet-0c2c0855",
+                     "GroupSet" : ["sg-53a4e434"]
+                }
+            ]
+        }             
+    }
+  }
+}
+    -
+
+Question 8:
+A DynamoDB item is a collection of name and value attributes. Choose a correct answer from the options below
+    -
+
+Question 9:
+One unit of read capacity is ____ in size? Choose the correct answer from the options below
+    -
+
+Question 10:
+Which API call would you use to query an item by it's primary hash key? Choose the correct answer from the options below
+    -
+
+Question 11:
+Your supervisor calls you wanting to know why she has not been receiving email notifications for AWS billing alerts. What do you suspect the problem might be and how can you find out? Choose 3 correct answer from the options below
+    -
+
+Question 12:
+Which of the following can be increased by contacting AWS? Choose 2 correct answer from the options below
+    -
+
+Question 13:
+You have created a mobile application that relies on reading data from DynamoDB. How could you give each mobile device permissions to read from DynamoDB? Choose an answer from the options below
+    -
+
+Question 14:
+While working with the S3 API you receive the error message: 404 Not Found. What is the most likely cause for this error? Choose a correct answer from the options below
+    -
+
+Question 15:
+Company B is using strongly consistent reads to request 50 items per second from their customer table. Each item is 20KB in size. What throughout would be required to efficiently handle the read throughput of the table ?
+    -
+
+Question 16:
+AWSTemplateFormatVersion declaration is required for the template to work inside CloudFormation. Choose an answer from the options below
+    -
+
+Question 17:
+A taxi company uses a mobile GPS application to track the location of each of their 60 cabs. The application records the taxi’s location to a DynamoDB table every 6 seconds. Each transmission is just under 1 KB, and throughput is spread evenly within that minute. How many units of write capacity should you specify for this table? Choose a correct answer from the options below
+    -
+
+Question 18:
+You want to find out what AMIs are available for you to use in a given region. Which API call is most appropriate? Choose an answer from the options below
+    -
+
+Question 19:
+Company B has created an e-commerce site using DynamoDB and is designing a products table that includes items purchased and the users who purchased the item. When creating a primary key on a table which of the following would be the best attribute for the primary key? Select the BEST possible answer.
+    -
+
+Question 20:
+Which of the following is not true about SWF? Choose the correct answer from the options below
+    -
+
+Question 21:
+Your "forums" table has a primary key of "id". Using DynamoDB, you're able to query the data based on the id primary key. You need to be able to query the forums table by userId. What would you add to the table during table creation time? Choose a correct answer from the options below
+    -
+
+Question 22:
+Which of the following is a default limit in S3? Choose the correct answer from the options below
+    -
+
+Question 23:
+Company B is writing 10 items to the products table every second. Each item is 15.5Kb in size. What would be the required provisioned write throughput for best performance? Choose the correct answer from the options below.
+    -
+
+Question 24:
+Can data be saved when a stack is deleted in Cloudformation? Choose the correct answer from the options below
+    -
+
+Question 25:
+When using the Ref function in CloudFormation, what do we get back if we pass in the logical ID of an AWS::EC2::Instance object? Choose the correct answer from the options below
+    -
+
+Question 26:
+Which DynamoDB API call does not consume capacity units? Choose the correct answer from the options below
+    -
+
+Question 27:
+Which of the following statements is true about DynamoDB? Choose the correct answer from the options below
+    -
+
+Question 28:
+The only SNS notification event supported by S3 is S3:ReducedRedundancyLostObject. Choose the correct answer from the options below
+    -
+
+Question 29:
+Can Cloudformation be used with Chef and Puppet? Choose the correct answer from the options below
+    -
+
+Question 30:
+You created three S3 buckets – “mydomain.com”, “downloads.mydomain.com”, and “www.mydomain.com”. You uploaded your files, enabled static website hosting, specified both of the default documents under the “enable static website hosting” header, and set the “Make Public” permission for the objects in each of the three buckets. All that’s left for you to do is to create the Route 53 Aliases for the three buckets. You are going to have your end users test your websites by browsing to http://mydomain.com/error.html, http://downloads.mydomain.com/index.html, and http://www.mydomain.com. What problems will your testers encounter? Choose an answer from the options below
+    -
+
+Question 31:
+Can software’s be installed at stack creation process in Cloudformation? Choose the correct answers from the options below
+    -
+
+Question 32:
+Multi-part upload API allows you to stop and resume uploads. Choose a correct answer from the options below
+    -
+
+Question 33:
+10.2.181.56 is a valid S3 bucket name. Choose a correct answer from the options below
+    -
+
+Question 34:
+S3 Bucket ownership is transferable. Choose a correct answer from the options below
+    -
+
+Question 35:
+Company B has many users updating the same table. At times it is not uncommon for multiple users to update the same item and attribute of an item at the same time. If user A calls an item in a table to update an attribute at the same time as user B and user B updates the table first, what can we deploy in DynamoDB to ensure User A is not updating an item that was updated since User A's table read? Choose the correct answer from the options below.
+    -
+
+Question 36:
+AWS CloudFormation provides a set of Python helper scripts that you can use to install software and start services on an Amazon EC2 instance in your stack. You can call the helper scripts directly from your template. Choose an answer from the options below.
+    -
+
+Question 37:
+Since S3 object are stored lexicographically, by introducing "randomness" to your S3 names it helps S3 storage distribute the I/O load across more than one partition. Given the following examples, how could you add a hashed prefix to the naming convention to increase I/O performance? Choose the correct answer from the options below
+    -
+
+Question 38:
+You have items in your table that are 12KB in size and you want to have 10 strongly consistent reads per second. How many read capacity units would you need to provision? Choose a correct answer from the options below
+    -
+
+Question 39:
+Which API call would you use to attach an EBS volume to an EC2 instance? Choose a correct answer from the options below
+    -
+
+Question 40:
+Which statement about DynamoDB is true? Choose a correct answer from the options below
+    -
+
+Question 41:
+You receive a call from a potential client who explains that one of the many services they offer is a website running on a t2.micro EC2 instance where users can submit requests for customized e-cards to be sent to their friends and family. The e-card website administrator was on a cruise and was shocked when he returned to the office in mid-January to find hundreds of angry emails complaining that customers’ loved ones had not received their Christmas cards. He also had several emails from CloudWatch alerting him that the SQS queue for the e-card application had grown to over 500 messages on December 25th. You investigate and find that the problem was caused by a crashed EC2 instance which serves as an application server. What do you advise your client to do first? Choose the correct answer from the options below
+    -
+
+Question 42:
+Which of the following is an incorrect S3 bucket name? Choose 2 correct answer from the options below
+    -
+
+Question 43:
+Can expressions be used as part of the Query API call in DynamoDB? Choose an answer from the options below
+    -
+
+Question 44:
+Your app is using SQS to create distributed applications. Your messages need to contain more information than the 256KB SQS limit size allowed. How could you solve this problem? Choose a correct answer from the options below
+    -
+
+Question 45:
+You have created an Elastic Load Balancer with Duration-Based sticky sessions enabled in front of your six EC2 web application instances in US-West-2. For High Availability, there are three web application instances in Availability Zone 1 and three web application instances in Availability Zone 2. To load test, you set up a software-based load tester in Availability Zone 2 to send traffic to the Elastic Load Balancer, as well as letting several hundred users browse to the ELB’s hostname. After a while, you notice that the users’ sessions are spread evenly across the EC2 instances in both AZ’s, but the software-based load tester’s traffic is hitting only the instances in Availability Zone 2. What steps can you take to resolve this problem? Choose the 2 correct answer from the options below
+    -
+
+Question 46:
+Which of the following cannot be used inside a CloudFormation template? Choose a correct answer from the options below
+    -
+
+Question 47:
+Which of the following are subject to eventual consistency? Choose the correct answer from the options below
+    -
+
+Question 48:
+Which one of the following S3 error code does not have a corresponding HTTP 404 Status code? Choose a correct answer from the options below
+    -
+
+Question 49:
+What is the default timeout for visibility queue in SQS in seconds? Choose the correct answer from the options below
+    -
+
+Question 50:
+You define the following S3 bucket policy to grant users access to your bucket, but the S3 bucket policy editor will not allow you to submit it. Why is this policy not working? Choose the correct answer from the options below
+{
+   "Id": "Policy1441839160967",
+   "Version": "2012-10-17",
+   "Statement": [
+    {
+         "Sid": "Stmt1441839157568",
+         "Action": [
+             "s3:ListBucket"
+          ],
+        "Effect": "Allow",
+        "Resource": "arn:AWS:s3:::demo.testbucket.2 "
+     }
+  ]
+}
+    -
+
+Question 51:
+Any local secondary index in a DynamoDB table can be updated once it is created.
+    -
+
+Question 52:
+Which of these CloudFormation snippets of code will return an address that can be used to access our application from our browser if we're using a resource type of AWS::ElasticLoadBalancing::LoadBalancer with Logical ID "ElasticLoadBalancer"? Choose an answer from the options below
+    -
+
+Question 53:
+You need to announce an emergency downtime for a production AWS web application. This downtime notification will require different sets of instructions for different devices. All of the application users signed up to receive SNS notifications from the “mywebapp” topic when they began using the application and they are currently subscribed to this topic. What are appropriate ways for you to provide timely, device-specific instructions to end users when announcing this downtime? Choose an answer from the options below
+    -
+
+Question 54:
+S3 does not generally handle error codes with HTTP responses. Choose the correct answer from the options below
+    -
+
+Question 55:
+You are creating a CloudFormation template in the Singapore region which will create an S3 website bucket. You have created a parameter “demo” which is used to store the name of your S3 bucket, and you are hoping to create output from your template which will list the URL of the S3 website. Which of the following Join statements will provide the URL of your S3 website? Choose a correct answer from the options below
+    -
+
+Question 56:
+What is the default limit for CloudFormation templates per region? Choose the correct answer from the options below
+    -
+
+Question 57:
+Which of the following will not make a CloudFormation stack deployment to 'rollback'? Choose a correct answer from the options below.
+    -
+
+Question 58:
+What would you set in your CloudFormation template to fire up different instance sizes based off of environment type? i.e. (If this is for prod, use m1.large instead of t1.micro) Choose a correct answer from the options below
+    -
+
+Question 59:
+You're using CloudFormation templates to build out staging environments. What section of the CloudFormation would you edit in order to allow the user to specify the PEM key-name at start time? Choose a correct answer from the options below
+    -
+
+Question 60:
+One DynamoDB read capacity unit represents one strongly consistent read per second, for an item up to 4 KB in size. Choose the correct answer from the options below.
+    -
+
+Question 61:
+You attempt to create a new S3 bucket "Demo-Bucket-1234-US-East-2-Production-Environment-12.25.14” in the US-EAST-2 region and the bucket creation fails. Why? Choose the correct answer from the options below.
+    -
+
+Question 62:
+You are creating several DynamoDB tables for a new project. While doing so, you receive the error message, “LimitExceededException.” You are well below the maximum number of tables per account and there is no read or write activity on the tables yet. Why have you received this error? Choose a correct answer from the options below
+    -
+
+Question 63:
+A DynamoDB table can contain ____ local secondary indexes on a table. Choose a correct answer from the options below
+    -
+
+Question 64:
+You have an EC2 instance deployed with an IAM role with write access permissions to an SQS queue. The instance is attempting to write a 512 KB message to an SQS queue. What will the result of this attempt be? Choose the correct answer from the options below
+    -
+
+Question 65:
+You're creating a forum DynamoDB database for hosting web forums. Your "thread" table contains the forum name and each "forum name" can have one or more "subjects". What primary key type would you give the thread table in order to allow more than one subject to be tied to the forum primary key name? Choose an answer from the options below
+    -
+
