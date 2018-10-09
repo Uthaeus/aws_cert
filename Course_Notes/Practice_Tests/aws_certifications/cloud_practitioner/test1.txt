@@ -270,5 +270,6 @@ Which of the following can be used as an additional layer of security to using a
 
 Question 65:
 Your company is planning to offload some of the batch processing workloads on to AWS. These jobs can be interrupted and resumed at any time. Which of the following instance types would be the most cost effective to use for this purpose.
-    -
+    -Spot 
+    
 
