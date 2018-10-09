@@ -45,7 +45,8 @@ Which of the following types of servers would this CloudFormation template be mo
     }
   }
 }
-    -
+    -Bastion host 
+        -The bastion host needs a minimum configuration and a public IP 
 
 Question 8:
 A DynamoDB item is a collection of name and value attributes. Choose a correct answer from the options below
@@ -113,7 +114,8 @@ Company B is writing 10 items to the products table every second. Each item is 1
 
 Question 24:
 Can data be saved when a stack is deleted in Cloudformation? Choose the correct answer from the options below
-    -
+    -True 
+        -AWS CloudFormation allows you to define deletion policies for resources in the template. You can specify that snapshots be created for Amazon EBS volumes or Amazon RDS database instances before they are deleted. You can also specify that a resource chould be preserved and not deleted when the stack is deleted.
 
 Question 25:
 When using the Ref function in CloudFormation, what do we get back if we pass in the logical ID of an AWS::EC2::Instance object? Choose the correct answer from the options below
@@ -133,7 +135,7 @@ The only SNS notification event supported by S3 is S3:ReducedRedundancyLostObjec
 
 Question 29:
 Can Cloudformation be used with Chef and Puppet? Choose the correct answer from the options below
-    -
+    -True 
 
 Question 30:
 You created three S3 buckets – “mydomain.com”, “downloads.mydomain.com”, and “www.mydomain.com”. You uploaded your files, enabled static website hosting, specified both of the default documents under the “enable static website hosting” header, and set the “Make Public” permission for the objects in each of the three buckets. All that’s left for you to do is to create the Route 53 Aliases for the three buckets. You are going to have your end users test your websites by browsing to http://mydomain.com/error.html, http://downloads.mydomain.com/index.html, and http://www.mydomain.com. What problems will your testers encounter? Choose an answer from the options below
