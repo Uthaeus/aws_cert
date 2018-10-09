@@ -234,7 +234,7 @@ There is a requirement to collect important metrics from AWS RDS and EC2 Instanc
 
 Question 56:
 Which of the following is not a category recommendation given by the AWS Trusted Advisor?
-    -
+    -High Availability 
 
 Question 57:
 Which of the following services is a fully managed, petabyte-scale data warehouse service in the AWS cloud
@@ -242,7 +242,7 @@ Which of the following services is a fully managed, petabyte-scale data warehous
 
 Question 58:
 A company is planning to migrate their existing AWS Services to the Cloud. Which of the following would help them do a cost benefit analysis of moving to the AWS Cloud.
-    -
+    -AWS TCO calculator 
 
 Question 59:
 Which of the following services helps provide a dedicate connection from on-premise infrastructure to resources hosted in the AWS Cloud.
@@ -250,7 +250,7 @@ Which of the following services helps provide a dedicate connection from on-prem
 
 Question 60:
 Which of the following can be used to work with AWS services in a programmatic manner
-    -
+    -AWS CLI 
 
 Question 61:
 When designing a system, you use the principle of design for failure and nothing will fail. Which of the following services/features of AWS can assist in supporting this design principle. Choose 3 answers from the options given below
