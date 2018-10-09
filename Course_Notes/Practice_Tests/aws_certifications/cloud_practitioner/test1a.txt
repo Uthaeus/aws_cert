@@ -95,7 +95,7 @@ You want to monitor the CPU utilization of an EC2 resource in AWS. Which of the 
 
 Question 23:
 Which of the following is not a part of the Cloud Computing models?
-    -
+    -Hardware as a Service (HaaS)
 
 Question 24:
 Which of the following strategies can be used to control access to your Amazon EC2 instances?
