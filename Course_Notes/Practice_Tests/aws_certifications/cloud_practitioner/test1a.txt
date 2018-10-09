@@ -256,7 +256,7 @@ Your web application is generating digital policy files for verifying users. Onc
 
 Question 61:
 A company moved to AWS recently. They have a lot of concerns about their security. Which of the following would help them ensuring that the right security settings are put in place? (Select all that apply)
-    -
+    -Not AWS Support 
 
 Question 62:
 Systems that follow the cloud architecture principle of elasticity will:
