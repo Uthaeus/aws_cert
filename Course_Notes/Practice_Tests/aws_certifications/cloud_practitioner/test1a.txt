@@ -222,7 +222,8 @@ Which of the following is your responsibility when creating Amazon VPC security 
 
 Question 53:
 Which of the following does AWS perform on your behalf for EBS volumes to reduce the possibility of failure?
-    -
+    -Replication of the volume in the same AZ 
+        -When you create an EBS volume in an AZ, it is automatically replicated within that zone to prevent data loss due to failure of any single hardware component 
 
 Question 54:
 What does the AWS Snowball provide?
@@ -230,7 +231,8 @@ What does the AWS Snowball provide?
 
 Question 55:
 Your logs show that one or more AWS-owned IP addresses are sending packets to multiple ports on your server, and you believe this is an attempt to discover unsecured ports. what should you do?
-    -
+    -Contact the AWS Abuse Team 
+        -The AWS Abuse team can assist you when AWS resources are being used to engage in abusive behavior
 
 Question 56:
 What are characteristics of Amazon S3? Choose 2 answers
@@ -250,7 +252,7 @@ Which of the following services has been described as a global content delivery 
 
 Question 60:
 Your web application is generating digital policy files for verifying users. Once the files are verified they may not be required in the future unless there are some compliance issues. If you want to save them in a cost effective way, what is the best possible solution?
-    -
+    -AWS Glacier 
 
 Question 61:
 A company moved to AWS recently. They have a lot of concerns about their security. Which of the following would help them ensuring that the right security settings are put in place? (Select all that apply)
