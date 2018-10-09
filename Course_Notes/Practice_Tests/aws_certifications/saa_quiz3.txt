@@ -282,7 +282,7 @@ A company has a series of On-premise servers that are being migrated to AWS. The
 
 Question 61:
 You have a web application hosted in AWS. It is a newspaper-based application. It is suddenly performing very slowly because of the number of reads occurring on the web site. Which of the following can be used to improve the performance of the web site?
-    -
+    -Use CloudFront to distribute the reads 
 
 Question 62:
 You have a bastion host located in AWS. You should be able to connect to the bastion host only via an on-premise workstation with an IP of 72.163.1.9 on port 22. Which of the following rules would you implement?
@@ -298,5 +298,8 @@ You are currently hosting multiple applications in a VPC and have logged numerou
 
 Question 65:
 You have a web application leveraging an Elastic Load Balancer (ELB) in front of the web servers deployed using an Auto Scaling Group. Your database is running on Relational Database Service (RDS). The application serves out technical articles and responses to them. In general, there are more views of an article than there are responses to the article. On occasions, an article on the site becomes extremely popular resulting in significant traffic Increases that causes the site to go down. What could you do to help alleviate the pressure on the infrastructure while maintaining availability during these events? Choose 3 answers from the options given below
-    -
+    -Leverage CloudFront for the delivery of the articles 
+    -Add RDS read-replicas for the read traffic going to your relational database 
+    -Leverage ElastiCache for caching the most frequently used data 
+        -CloudFront can be used to cache the most frequently viewed pages which can reduce the burden on the web servers. 
 
