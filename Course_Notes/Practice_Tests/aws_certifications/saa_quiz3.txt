@@ -165,15 +165,18 @@ You’ve setup an Auto Scaling group for an application. You have setup a Dynami
 
 Question 35:
 A company is planning on setting up multiple AWS Accounts. As an architect you have been requested to give recommendations on how to limit the permissions of users across all accounts. This is specially for the root or privileged IAM users in the separate accounts. Which of the following strategy would you consider for this requirement?
-    -
+    -Create an AWS Organization and make use of Service Control policies 
+        -Service Control Policies(SCP's) are one type of policy that you can use to manage your organization. SCP's enable you to restrict, at the account level of granularity, what services and actions the users, groups, and roles in those accounts can do 
 
 Question 36:
 Your company has a series of EC2 Instances in a particular region. They need to ensure that the attached volumes are available even if the availability zone containing the volume goes down. How can you achieve this resiliency in the easiest way possible?
-    -
+    -Create regular snapshots of the underlying volume 
+        -You can back up the data on your Amazon EBS volumes to S3 by taking point in time snapshots. Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved
 
 Question 37:
 Your company is planning on provisioning several environments in AWS. As much as possible they would want to automate the provisioning of these environments. As an architect, you have seen the design of these environment and can see some common components used across the architectures. What would you recommend as the steps to provisioning the environments?
-    -
+    -Create CloudFormation templates for common components. Reference them in the templates which would be used to create the respective environments 
+        -This pratice of using common templates in CloudFormation is also mentioned by AWS - As your infrastructure grows, common patterns can emerge in which you declare the same components in multiple templates. You can separate out these common components and create dedicated templates for them. Then use the resource in your template to reference other templates, creating nested stacks 
 
 Question 38:
 A company wants to have a hybrid architecture to connect their On-premise data center to AWS. They need all communication to be encrypted in transit. Which of the following should they implement?
