@@ -1,0 +1,260 @@
+Question 1:
+Which of the following allows you to carve out a portion of the AWS Cloud?
+    -
+
+Question 2:
+You have just set up a brand new AWS account. You want to keep monthly billing under $100, but you are worried about going over that limit. What can you use in order to be notified when the monthly bill approaches $100?
+    -
+
+Question 3:
+Derek is running a web application and is noticing that he is paying for way more server capacity than is required. What AWS feature should Derek set up and configure to ensure that his application is automatically adding/removing server capacity to keep in line with the required demand?
+    -
+
+Question 4:
+You work as on-premises DBA, The work of database configuration, backups, patching, and DR can be time consuming and repetitive. Your company decided to migrate to the AWS cloud. Which of the following can help you save time on regular tasks and focus on your applications, so you can give them the fast performance, high availability, security, and compatibility that they need?
+    -
+
+Question 5:
+A company is planning to introduce a new product to their customers. They are expecting a high traffic to their web application. As part of Enterprise support plan, Which of the following could provide them with an architectural and scaling guidance?
+    -
+
+Question 6:
+What are the benefits of the AWS Personal Health Dashboard? Select all that apply)
+    -
+
+Question 7:
+You have 2 accounts in AWS. One for the Dev and the other for QA. All are part of consolidated billing. The master account has purchase 4 reserved instances. The Dev department is currently using 2 reserved instances. The QA team is planning on using 3 instances which of the same instance type. What is the pricing tier of the instances that can be used by the QA Team?
+    -
+
+Question 8:
+What should you do in order to grant a different AWS account permission to your Amazon Simple Queue Service (Amazon SQS) queue?
+    -
+
+Question 9:
+What is the AWS feature that enables you to manage services through a web-based user interface?
+    -
+
+Question 10:
+According to the AWS Acceptable Use Policy, penetration testing of lambda instances:
+    -
+
+Question 11:
+What best describes the "Principal of Least Privilege"?
+    -
+
+Question 12:
+You are facing a performance issues with your under development application built using microservices architecture, Which of the following services would help you analyze these issues?
+    -
+
+Question 13:
+An organization has setup consolidated billing with 3 different AWS accounts. Which of the below mentioned advantages will organization receive in terms of the AWS pricing?
+    -
+
+Question 14:
+Which of the below mentioned jobs can be a good use case for storing content in AWS RRS?
+    -
+
+Question 15:
+You noticed that several critical Amazon Elastic Compute Cloud (Amazon EC2) Instances have been terminated. Which of the following AWS services would help you determining Who took this action?
+    -
+
+Question 16:
+A company decided to migrate to the AWS cloud. AWS offers a wide range of services and instance types. They want to reduce costs as much as they can. Which of the following is a main factor to consider when choosing the instance type of services like Amazon RDS, Amazon Redshift, and Amazon Elasticsearch?
+    -
+
+Question 17:
+Which of the following factors would impact the process of data replication to a remote location?
+    -
+
+Question 18:
+What should you do in order to keep the data on EBS volumes safe?
+    -
+
+Question 19:
+A company is deploying a new two-tier web application in AWS. The company wants to store their most frequently used data so that the response time for the application is improved. Which AWS service provides the solution for the company’s requirements?
+    -
+
+Question 20:
+A user has created photo editing software and hosted it on EC2. The software accepts requests from the user about the photo format and resolution and sends a message to S3 to enhance the picture accordingly. Which of the below mentioned AWS services will help make a scalable software with the AWS infrastructure in this scenario?
+    -
+
+Question 21:
+What are the benefits of having infrastructure hosted in the AWS Cloud? (choose three)
+    -
+
+Question 22:
+You want to monitor the CPU utilization of an EC2 resource in AWS. Which of the below services can help in this regard?
+    -
+
+Question 23:
+Which of the following is not a part of the Cloud Computing models?
+    -
+
+Question 24:
+Which of the following strategies can be used to control access to your Amazon EC2 instances?
+    -
+
+Question 25:
+You want to run a questionnaire application for only one day (without interruptions). Which AWS EC2 purchase option would you choose?
+    -
+
+Question 26:
+A company decided to migrate it’s Oracle database to AWS. Which AWS service can help achieve this without affecting the functionality of the source database?
+    -
+
+Question 27:
+A company has developed an ecommerce web application. The application needs an uptime of at least 99.5%. Which of the following deployment strategies should they use?
+    -
+
+Question 28:
+Which of the following services allows for object level storage in AWS?
+    -
+
+Question 29:
+One of the benefits of the AWS cloud is that there are many services Where you don’t need to manage their underlying Infrastructure. Which of the following is an example of these services? (choose two)
+    -
+
+Question 30:
+What AWS service allows you to have your own private network in the AWS cloud?
+    -
+
+Question 31:
+A company has a DevOps team in its organizational structure. They are looking forward to move to the AWS cloud. They are wondering if there is an AWS service that can help them manage infrastructure as code. Which of the following would you suggest for them?
+    -
+
+Question 32:
+When using On-Demand instances in AWS, which of the following is a false statement about its cost?
+    -
+
+Question 33:
+A company is planning to develop microservices application consisting of hundreds of services. They decided to host the application on the AWS cloud. Since there are a large number of services produced by the application then it needs a powerful tool for analyzing and debugging. Which of the following services can meet this requirement?
+    -
+
+Question 34:
+Upgrading a server with a larger hard drive is an example of __________ . While adding more hard drives to a storage array is an example of __________ .
+    -
+
+Question 35:
+A user is planning to host a scalable dynamic web application on AWS. Which of the services may not be required by the user to achieve automated scalability?
+    -
+
+Question 36:
+An organization has 500 employees. The organization wants to set up AWS access for each department. Which of the below mentioned options is a possible solution?
+    -
+
+Question 37:
+Which of the following is a tool that can be used to display the distribution of AWS spending?
+    -
+
+Question 38:
+Stephen is having issues tracking how much compute capacity his application is using. Ideally, he wants to track and have alarms for when CPU utilization goes over 70%. What should Stephen do to accomplish this?
+    -
+
+Question 39:
+Which of the following can be used as an additional layer of security to using a user name and password when logging into the AWS Console?
+    -
+
+Question 40:
+Which of the following AWS services provides infrastructure security optimization recommendations?
+    -
+
+Question 41:
+You are planning to host a large ecommerce application on the AWS Cloud. One of your major concerns is Internet attacks such as DDos attacks. Which of the following services can help mitigate this concern? Choose 2 answers
+    -
+
+Question 42:
+Regarding Amazon SQS, are there restrictions on the names of Amazon SQS queues?
+    -
+
+Question 43:
+You have developed a web application that has “.Net layer” which connects to a MySQL database. Which of the following AWS databases would provide high availability and automated backups to your application?
+    -
+
+Question 44:
+AWS allows us to “Stop guessing about our capacity needs” and “Automate to make architectural experimentation easier”. Which of the following related to the previous principles?
+    -
+
+Question 45:
+In order to implement best practices when dealing with "Single Point of failure” you should aim to build as much automation as possible in both detecting and reacting to failure. Which of the following AWS services would help you? (select all that apply)
+    -
+
+Question 46:
+You are working on a project that involves creating thumbnails of millions of images; however, time is not really an issue and continuous processing is not required. Which type of EC2 buying option would be the most cost-effective?
+    -
+
+Question 47:
+You want to implement a HPC ( High performance computing ) system with low-latency network performance. In order to establish this, which AWS feature can be used?
+    -
+
+Question 48:
+You are trying to organize and import (to AWS) gigabytes of data that are currently structured in JSON-like, name-value documents. What AWS service would best fit your needs?
+    -
+
+Question 49:
+A company is currently using the Enterprise Support plan. They want a quick and efficient guidance with their billing and account inquiries. Which of the following included services could assist them?
+    -
+
+Question 50:
+As part of the Enterprise support plan, Who is the primary point of contact for the ongoing support needs?
+    -
+
+Question 51:
+You have developed a web application targeting a global audience. Which of the following will help you achieve highest redundancy and fault tolerance?
+    -
+
+Question 52:
+Which of the following is your responsibility when creating Amazon VPC security groups? (Select all that apply)
+    -
+
+Question 53:
+Which of the following does AWS perform on your behalf for EBS volumes to reduce the possibility of failure?
+    -
+
+Question 54:
+What does the AWS Snowball provide?
+    -
+
+Question 55:
+Your logs show that one or more AWS-owned IP addresses are sending packets to multiple ports on your server, and you believe this is an attempt to discover unsecured ports. what should you do?
+    -
+
+Question 56:
+What are characteristics of Amazon S3? Choose 2 answers
+    -
+
+Question 57:
+The principle “design for failure and nothing will fail” is very important when designing your AWS cloud architecture. Which of the following would help in doing so?
+    -
+
+Question 58:
+You are going to create snapshots from the EBS volumes in another geographical location using the console. Where would you create the snapshots?
+    -
+
+Question 59:
+Which of the following services has been described as a global content delivery network (CDN) service?
+    -
+
+Question 60:
+Your web application is generating digital policy files for verifying users. Once the files are verified they may not be required in the future unless there are some compliance issues. If you want to save them in a cost effective way, what is the best possible solution?
+    -
+
+Question 61:
+A company moved to AWS recently. They have a lot of concerns about their security. Which of the following would help them ensuring that the right security settings are put in place? (Select all that apply)
+    -
+
+Question 62:
+Systems that follow the cloud architecture principle of elasticity will:
+    -
+
+Question 63:
+Your company has an application that requires access to a NoSQL database. Your IT department has no desire to manage the NoSQL servers. Which Amazon service provides a fully-managed and highly available NoSQL service?
+    -
+
+Question 64:
+Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?
+    -
+
+Question 65:
+The main benefit of decoupling an application is to:
+    -
+
