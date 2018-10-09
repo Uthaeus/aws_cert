@@ -16,7 +16,7 @@ A local secondary index is an index that has the same hash key as the table, but
 
 Question 5:
 A recent increase in the amount of users of an application hosted on an EC2 instance that you manage has caused the instance’s OS to run out of CPU resources and crash. The crash caused several users’ unsaved data to be lost and your supervisor wants to know how this problem can be avoided in the future. Which of the following would you not recommend?
-    -
+    -Take frequent snapshots fo the EBS volume during business hours to ensure user's data is backed up 
 
 Question 6:
 A SWF workflow task or task execution can live up to ______ long? Choose the correct answer from the options below
@@ -183,7 +183,8 @@ Why will the following CloudFormation template fail to deploy a stack? Choose th
 
 Question 42:
 You are debugging a problem with a web application that writes to an Amazon DynamoDB. You would like to see the actual data in the DynamoDB table to confirm that the data written was correct. How can you do this? Choose 2 answers from the options below
-    -
+    -Use the AWS CLI to query the DynamoDB table and data 
+    -Use the AWS console to view the DynamoDB table and data 
 
 Question 43:
 You are maintaining an application that is spread across multiple web servers and has incoming traffic balanced by ELB. The application allows users to upload pictures. Currently each web server stores the image and a background task synchronizes the data between servers. However the synchronization task can no longer keep up with the number of images uploaded What change could you make so that all web servers have a place to store and read images at the same time? Choose an answer from the options below
@@ -203,7 +204,9 @@ You have an Amazon S3 bucket that you use to store objects. You'd like to encryp
 
 Question 47:
 You have launched a windows server EC2 instance which is up and running. You however cannot connect from your corporate laptop using Remote Desktop Connection over the internet. Which of the following can be a cause. Choose 3 answers from the options below
-    -
+    -The instance security group does not support ingress to port 3389
+    -The instance does not have a route to the internet gateway
+    -The IP address of the laptop is being masked by the corporate network proxy server 
 
 Question 48:
 You have software on an EC2 instance that needs to access both the private and public IP address of that instance. What's the best way for the software to get that information? Choose the correct answer from the options below
@@ -219,7 +222,7 @@ You would like to set up a static website on S3 with the least possible effort. 
 
 Question 51:
 Your application instance takes 60 seconds to process instructions received in an SQS message. Assuming the SQS queue is configured with the default Visibility Timeout, what is the best way to configure your application to ensure that no other instances retrieve a message that has already been processed or is currently being processed? Choose the correct answer from the options below
-    -
+    -Use the ReceiveMessage API call to retrieve the message, the ChangeMessageVisibility API call to increase the visibility timeout, and the DeleteMessage API call to delete the message when processing completes
 
 Question 52:
 Your EC2 component receives a message from a message queue. The message will then become invisible for 30 seconds. What is the ideal API request must be called in order to ensure that the message does not become visible again.
@@ -231,7 +234,8 @@ Your supervisor asks you to find a solution for scheduling a sequence of tasks. 
 
 Question 54:
 Does AWS CloudFormation assume default template version if one is not explicitly mentioned in a CloudFormation template?
-    -
+    -True 
+        -The AWS TemplateFormatVersion section identifies the capabilities of the template. The latest template format version is 2010-09-09 and is currently the only valid value. The value for the template format version declaration must be a literal string. You cannot use a parameter or function to specify the template format version. If you don't specify a value, AWS CloudFormation assumes the latest template format version 
 
 Question 55:
 Does SNS guarantee message delivery to SQS? Choose one answer from the options below
