@@ -248,11 +248,8 @@ A company is looking at hosting an application onto AWS. They want to provide an
 
 Question 54:
 Your company has a variety of home-grown applications that would be defined on EC2 Instances. They want to automate the deployments of new software versions on the EC2 Instances. The service should be scalable based on demand. Which of the following would you use for this purpose?
-    -
-
-Question 54:
-Your company has a variety of home-grown applications that would be defined on EC2 Instances. They want to automate the deployments of new software versions on the EC2 Instances. The service should be scalable based on demand. Which of the following would you use for this purpose?
-    -
+    -CodeDeploy
+        -AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services such as EC2, Lambda, and your on-premises servers. CodeDeploy makes it easier for you to rapidly release new features, helps you avoid downtime during application deployment, and handles the complexity of updating your applications. You can use CodeDeploy to automate software deployments, eliminating the need for error-prone manual operations. Ther service scales to match your deployment needs, from a single Lambda function to thousands of EC2 instances 
 
 Question 55:
 An application has been designed in the following way
