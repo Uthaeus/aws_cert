@@ -54,7 +54,7 @@ You are facing a performance issues with your under development application buil
 
 Question 13:
 An organization has setup consolidated billing with 3 different AWS accounts. Which of the below mentioned advantages will organization receive in terms of the AWS pricing?
-    -
+    -All AWS accounts will be charged for S3 storage by combining the total storage of each account 
 
 Question 14:
 Which of the below mentioned jobs can be a good use case for storing content in AWS RRS?
@@ -66,7 +66,8 @@ You noticed that several critical Amazon Elastic Compute Cloud (Amazon EC2) Inst
 
 Question 16:
 A company decided to migrate to the AWS cloud. AWS offers a wide range of services and instance types. They want to reduce costs as much as they can. Which of the following is a main factor to consider when choosing the instance type of services like Amazon RDS, Amazon Redshift, and Amazon Elasticsearch?
-    -
+    -Workload utilization of CPU and RAM 
+        -You should benchmark and select the right instance type depending on how your workload utilizes CPU, RAM, network, storage size, and I/O 
 
 Question 17:
 Which of the following factors would impact the process of data replication to a remote location?
