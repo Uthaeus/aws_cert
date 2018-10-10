@@ -64,3 +64,7 @@ Question 109: Correct
 Games-R-Us is launching a new game app for mobile devices. Users will log into the game using their existing Facebook account and the game will record player data and scoring information directly to a DynamoDB table. What is the most secure approach for signing requests to the DynamoDB API? Choose an answer from the options below
     -Request temporary security credentials using web identity federation to sign the requests 
 
+Question 112: Correct
+Which of the below functions is used in Cloudformation to return the value corresponding to keys in a two-level map that is declared in the Mappings section? Choose an answer from the options below
+    -Fn::FindInMap 
+
