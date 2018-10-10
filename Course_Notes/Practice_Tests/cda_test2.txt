@@ -16,3 +16,7 @@ Question 30: Correct
 Which API call is used to Bundle an Amazon instance store-backed Windows instance? Choose the correct answer from the options below
     -BundleInstance
 
+Question 39: Correct
+Which of the below functions is used in Cloudformation to retrieve an object from a set of objects? Choose an answer from the options below
+    -Fn::Select
+
