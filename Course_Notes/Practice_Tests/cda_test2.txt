@@ -42,3 +42,12 @@ What are some of the owner operations possible in SNS?Choose 3 correct answers f
     -DeleteTopic
     -CreateTopic
 
+Question 89: Correct
+You are providing AWS consulting services for a company developing a new mobile application that will be leveraging Amazon SNS Mobile Push for push notifications. In order to send direct notification messages to individual devices each device registration identifier or token needs to be registered with SNS; however the developers are not sure of the best way to do this. You advise them to
+    -Call the CreatePlatformEndPoint API function to register multiple device tokens 
+        -The CreatePlatformEndPoint API creates an endpoint for a device and mobile app on one of the supported push notification services 
+
+Question 90: Correct
+What is the maximum length of a topic name in SNS? Choose the correct answer from the options below
+    -256 characters 
+
