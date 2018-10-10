@@ -60,3 +60,7 @@ Which features can be used to restrict access to data in S3? Choose 2 answers fr
     -Set an S3 bucket policy
     -Set an S3 ACL on the bucket or the object 
 
+Question 109: Correct
+Games-R-Us is launching a new game app for mobile devices. Users will log into the game using their existing Facebook account and the game will record player data and scoring information directly to a DynamoDB table. What is the most secure approach for signing requests to the DynamoDB API? Choose an answer from the options below
+    -Request temporary security credentials using web identity federation to sign the requests 
+
