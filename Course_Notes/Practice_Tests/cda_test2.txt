@@ -68,3 +68,7 @@ Question 112: Correct
 Which of the below functions is used in Cloudformation to return the value corresponding to keys in a two-level map that is declared in the Mappings section? Choose an answer from the options below
     -Fn::FindInMap 
 
+Question 124: Correct
+What is one of the major use cases for using SWF?
+    -Migrating components from the datacenter to the cloud 
+
