@@ -1,1 +1,12 @@
 test 2 Cloud Practitioner
+
+Question 2: Incorrect
+What acts as a firewall that controls the traffic allowed to reach one or more instances?
+    -Security Groups
+        -A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
+
+Question 12: Incorrect
+You are planning to serve a web application on the AWS Platform by using EC2 Instances. Which of the below principles would you adopt to ensure that even if some of the EC2 Instances crashes , you still have a working application
+    -Using a fault tolerant system 
+        -A fault tolerant system is one that ensures that the entire system works as expected even when there are issues 
+
