@@ -27,3 +27,7 @@ An application stores payroll information nightly in DynamoDB for a large number
 Question 45: Incorrect
 What is the size limit for volumes in instances that are based on Amazon Instance Store backed AMI’s. Choose an answer from the options below?
     -10GiB
+
+Question 60: Correct
+What is required for a subnet to control the flow of traffic in a subnet? Choose one answer from the options below?
+    -Route Table 
