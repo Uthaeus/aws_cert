@@ -51,3 +51,12 @@ Question 90: Correct
 What is the maximum length of a topic name in SNS? Choose the correct answer from the options below
     -256 characters 
 
+Question 93: Incorrect
+A company is deploying a two-tier, highly available web application to AWS. Which service provides durable storage for static content while utilizing lower Overall CPU resources for the web tier?
+    -Amazon S3 
+
+Question 99: Incorrect
+Which features can be used to restrict access to data in S3? Choose 2 answers from the options below
+    -Set an S3 bucket policy
+    -Set an S3 ACL on the bucket or the object 
+
