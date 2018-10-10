@@ -31,3 +31,7 @@ What is the size limit for volumes in instances that are based on Amazon Instanc
 Question 60: Correct
 What is required for a subnet to control the flow of traffic in a subnet? Choose one answer from the options below?
     -Route Table 
+
+Question 69: Incorrect
+Which of these CloudFormation snippets of code will return an address that can be used to access our application from our browser if we're using a resource type of AWS::ElasticLoadBalancing::LoadBalancer with Logical ID "ElasticLoadBalancer"? Choose an answer from the options below
+    -"Fn::Join":["",["http://", {"Fn::GetAtt":["ElasticLoadBalancer", "DNSName"]}]]
