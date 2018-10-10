@@ -7,3 +7,8 @@ What are the different ways to access SWF?
     -AWS SDK for Java
     -AWS SWF API's 
     -AWS Management Console 
+
+Question 19: Correct
+What is the maximum number of topics allowed per account in SNS? Choose the correct answer from the options below
+    -100,000
+
