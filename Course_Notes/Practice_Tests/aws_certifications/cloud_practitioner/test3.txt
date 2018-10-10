@@ -1,2 +1,44 @@
 Cloud Practitioner  Test 3
 
+Question 1: Incorrect
+A company wants to host a self-managed database in AWS. How would you ideally implement this solution?
+    -Hosting a database on an EC2 instance 
+        -If you want a self-managed database, that means you want complete control over the database engine and the underlying infrastructure. In such a case you need to host the database on an EC2 instance 
+
+Question 14: Incorrect
+Which of the following features of RDS allows for data redundancy across regions
+    -Creating Read Replicas 
+        -One can use the Read Replicas feature of the database to ensure the data is replicated to another region 
+
+Question 36: Incorrect
+Which of the following disaster recovery deployment mechanisms that has the lowest downtime
+    -Warm standby
+
+Question 39: Incorrect
+Which of the following statements are TRUE when it comes to elasticity. Choose 2 answers from the options given below
+    -Diverting traffic to instances based on the demand 
+    -Diverting traffic to instances with the least load
+
+Question 43: Incorrect
+When creating security groups, which of the following is a responsibility of the customer. Choose 2 answers from the options given below.
+    -Defining the rules as per the costomer requirements
+    -Giving a name and description for the security group 
+
+Question 44: Correct
+The Trusted Advisor service provides insight regarding which four categories of an AWS account?
+    -Performance 
+    -Cost optimization
+    -Security 
+    -Fault tolerance 
+
+Question 53: Incorrect
+You are developing and planning on deployment an application onto the AWS Cloud. This application needs to be PCI Compliance. Which of the below steps would you carry out to ensure the compliance is met for the application. Choose 2 answers from the
+    -Ensure the right steps are taken during application development for PCI compliance 
+    -Choose AWS services which are PCI compliant 
+
+Question 55: Incorrect
+Which of the below can be used to get data onto Amazon Glacier? Choose 3 answers from the options given below.
+    -AWS Glacier SDK
+    -AWS Glacier API 
+    -AWS S3 Lifecycle policies 
+
