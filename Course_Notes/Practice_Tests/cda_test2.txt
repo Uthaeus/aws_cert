@@ -1,0 +1,12 @@
+Question 1:
+For S3 server side encryption what needs to be included in the API header call? Choose the correct answer from the options below
+    -
+
+Question 2:
+Company A is writing 5 items to the products table every second. Each item is 20Kb in size. What would be the required provisioned write throughput for best performance? Choose the correct answer from the options below.
+    -
+
+Question 3:
+Which of the below functions is used in Cloudformation to append a set of values into a single value? Choose an answer from the options below
+    -
+
