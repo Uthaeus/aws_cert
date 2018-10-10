@@ -72,3 +72,6 @@ Question 124: Correct
 What is one of the major use cases for using SWF?
     -Migrating components from the datacenter to the cloud 
 
+Question 138: Correct
+You are maintaining an application that is spread across multiple web servers and has incoming traffic balanced by ELB. The application allows users to upload pictures. Currently each web server stores the image and a background task synchronizes the data between servers. However the synchronization task can no longer keep up with the number of images uploadedWhat change could you make so that all web servers have a place to store and read images at the same time? Choose an answer from the options below
+    -Store the images in Amazon S3 
