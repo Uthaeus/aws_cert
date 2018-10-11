@@ -1,3 +1,38 @@
 Certified Developer Associate
 
 
+Question 11: Incorrect
+Which of the following are valid arguments for an SNS Publish request? Choose 3 answers from the options below
+    -Message 
+    -Timestamp
+    -Subject 
+
+Question 29: Incorrect
+If you are connecting to AWS from a computer, not an EC2 instance, you need to create an AWS user, attach permissions, and use the API access key and secret access key in your code. Choose the correct answer from the options below
+    -True 
+
+Question 38: Incorrect
+What AWS products and features can be deployed by Elastic Beanstalk? Choose 3 answers from the options below
+    -RDS Instances 
+    -Autoscaling Groups
+    -Elastic Load Balancers
+
+Question 46: Incorrect
+Which of the following are valid arguments for an SNS Publish request? Choose 3 answers from the options below
+    -Message 
+    -Subject 
+    -TopicArn
+
+Question 67: Incorrect
+Can one configure anonymous access to a queue? Choose the correct answer from the options below
+    -True 
+        -Anonymous access is allowed via IAM policies
+
+Question 69: Incorrect
+While working with the S3 API you receive the error: 403 forbidden. What is the most likely cause of this? Choose a correct answer from the options below
+    -InvalidAccessKeyID 
+
+Question 138: Incorrect
+How can you ensure maximum protection of preserved versions in S3? Choose one answer from the options below.
+    -MFA
+
