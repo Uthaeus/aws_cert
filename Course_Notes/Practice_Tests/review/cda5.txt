@@ -1,2 +1,51 @@
 Certified Developer - Associate practice test 5
 
+Question 4: Incorrect
+You have been told to make use of Cloudformation templates for deploying applications on EC2 Instances. These Instances need to be preconfigured with the NGINX web server to host the application. How could you accomplish this with Cloudformation?
+    -Use the cfn-init helper script in CloudFormation 
+
+Question 5: Incorrect
+Your application currently makes use of AWS Kinesis streams. The data rate of the application is now increasing due to the increased number of producers. Which of the following can be done to keep up with the increased data rate?
+    -Increase the number of shards 
+        -A shard is a uniquely identified sequence of data records in the stream. A stream is composed of one or more shards, each of which provides a fixed unit of capacity. Each shard can support up to 5 transactions per second for reads, up to a maximum total data read rate of 2 MB per second and up to 1,000 records per second for writes.
+        -The data capacity of your stream is a function of the number of shards that you specify for the stream. The total capacity of the stream is the sum of the capacities of its shards 
+
+Question 8: Incorrect
+You’ve created a local Java based Lambda function. You then package and upload the function to AWS. You try to run the function with the default settings , but the function does not run as expected. Which of the following could be the reasons for the issue? Choose 2 answers from the options given below.
+    -The amount of memory assigned to the function is not enough 
+    -The timeout specified for the function is too small 
+
+Question 13: Incorrect
+Your company has a bucket which has versioning and Encryption enabled. The bucket receives thousands of PUT operations per day. After a period of 6 months, there are a significant number of HTTP 503 error codes which are being received. Which of the following can be used to diagnose the error?
+    -AWS S3 Inventory
+        -If you notice a significant increase in the number of HTTP 503-slow down responses received for S3 PUT or DELETE object requests to a bucket that has versioning enabled, you might have one or more objects in the bucket for which there are millions of versions. 
+        -The Inventory tool generates a report that provides a flat file list of the objects in a bucket
+
+Question 19: Incorrect
+A company currently has an application that works with DynamoDB. You have been requested to increase the performance of the underlying queries for the DynamoDB table by using Indexes. Which of the following are the best practises when it comes to working with Indexes efficiently? Choose 2 answers from the options given below.
+    -Try to keep the number of indexes to a minimum
+    -Avoid indexing tables with a lot of write activity 
+
+Question 21: Incorrect
+Your team lead has finished creating a build project in the console. You have access to run the build but not to access the project. You want to specify a different source location for the build. How can you achieve this?
+    -Specify the new location of the build in the buildspec.yml file and use the start-build command
+
+Question 25: Incorrect
+You’ve deployed an application using AWS Lambda and the API gateway service. You need to deploy a newer version of the application. Management has instructed that the newer version be tested by a few users first before being fully deployed. How can you accomplish this in the easiest way possible?
+    -Create a Canary realease in the API gateway service 
+
+Question 27: Incorrect
+Your developing an application that is going to make use of Docker containers. Traffic needs to be routed based on demand to the application. Dynamic host port mapping would be used for the docker containers. Which of the following would you use for distribution of traffic to the docker containers?
+    -AWS Application Load Balancer 
+        -Application Load Balancers allow containers to use dynamic host port mapping
+
+Question 28: Incorrect
+You have defined some custom policies in AWS. You need to test out the permissions assigned to those policies. Which of the following can be used for this purpose via the CLI? Choose 2 answers from the options given below
+    -Get the context keys first 
+    -Use the aws iam simulate-custom-policy command 
+
+Question 31: Incorrect
+You’re the team lead for an application. You have been instructed to make use of Jenkins for your CI/CD pipeline and other AWS Services for deployment purposes. Which of the following would you consider fulfilling this requirement?Select 2 Options.
+    -Configure an IAM Role for EC2 to access Code Pipeline 
+    -Configure an EC2 instance with Jenkins installed
+
