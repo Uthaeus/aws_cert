@@ -114,5 +114,51 @@ Question 82: Incorrect
 Your development team is working with Docker containers. These containers need to encrypt data. The data key needs to be generated using the KMS service. The data key should be in the encrypted format. Which of the following would you most ideally use?
     -The GenerateDataKeyWithoutPlaintext command 
 
+Question 85: Incorrect
+An application is currently in production that makes calls to an AWS RDS Instance. The reporting part of the application is taking a hit and is experiencing a lot of performance issues. Which of the following can be used to alleviate the issue faced by the reporting module of the application?
+    -Enable Read Replicas for the database and make the reporting module point to the Read Replica 
+        -You can reduce the load on your source DB instance by routing read queries from your applications to the read replica
 
+Question 86: Incorrect
+You’re developing an application that is going to be hosted in AWS Lambda. The function will make calls to a database. The security mandate is that all connection strings should be kept secure. Which of the following is the MOST secure way to implement this?
+    -Put the database connection string in AWS Systems Manager Parameter Store 
+        -AWS Systems Manager Parameter Store provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, and license codes as parameter values
+
+Question 90: Incorrect
+Your development team has setup the AWS API gateway service. The resources and methods have been setup. Now a staging environment has been setup to test the service. You need to monitor the end to end execution trace of the request to the API gateway. Which one of the following services can help you achieve this?
+    -AWS X-Ray 
+
+Question 93: Incorrect
+Your application is currently hosted in an Elastic beanstalk environment. Configuration changes need to be made to the environment. You have been told that the changes should not affect the current environment since downtime needs to be minimized. Which of the following Elastic Deployment mechanisms would you consider using?
+    -Immutable 
+        -Immutable updates are an alternative to rolling updates where a temporary Auto Scaling group is launched outside of your environment with a separate set of instances running on the new configuration which are placed behind your environment's load balancer. Old and new instances both serve traffic until the new instances pass health checks
+
+Question 97: Incorrect
+You have a set of developers that need to work with applications hosted on the Elastic Beanstalk environment. You need to ensure they can work with the beanstalk environments but not give them access to the AWS Console. How can you achieve this in the BEST way possible?
+    -Ask them to manage the environments via the EB CLI 
+        -The EB CLI is a command line interface that provides interactive commands that simplify creating, updating, and monitoring environments from a local repository. Use the EB CLI as part of your everyday development and testing cycle as an alternative to the AWS Management Console.
+
+Question 99: Incorrect
+You’ve just configured a Lambda function that sits behind the API gateway service. When you try to invoke the Lambda function via the API gateway service from Javascript in your HTML page, you receive the following error. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed accessWhat can be done to resolve this error?
+    -Enable CORS for the methods in the API gateway 
+
+Question 107: Incorrect
+Your team has developed an application that makes use of AWS resources. In order to provide frequent releases to the customer, you are required to automate the CI/CD process. Which of the following can be used for this purpose?
+    -Create a Pipeline in the AWS CodeStar service 
+        -AWS CodeStar accelerates software release with the help of AWS CodePipeline. Each project comes pre-configured with an automated pipeline that continuously builds, tests, and deploys your code with each commit 
+
+Question 108: Incorrect
+Your working as a team lead for your company. You have been told to manage the Blue Green Deployment methodology for one of the applications. Which of the following are some of the approaches for implementing this methodology? Choose 2 answers from the options given below
+    -Useing Route53 with Weighted Routing policies 
+    -Using Elastic Beanstalk with the swap URL feature 
+        -Because ASW Elastic Beanstalk performs an in-place update when you update your application versions, your application can become unavailable to users for a short period of time. You can avoid this downtime by performing a blue/green deployment, where you deploy the new version to a separate environment and then swap CNAMES of the two environments to redirect traffic to the new version instantly 
+
+Question 109: Incorrect
+You’ve been asked to move an existing development environment on the AWS Cloud. This environment consists mainly of Docker based containers. You need to ensure that minimum effort is taken during the migration process. Which of the following step would you consider for this requirement?
+    -Create an application and environment for the Docker containers in the Elastic Beanstalk service 
+        -The Elastic Beanstalk service id the ideal service to quickly provision development environments. You can also create environments which can be used to host Docker based containers 
+
+Question 113: Incorrect
+Your company is hosting a set of resources on the AWS Cloud. There is now a security requirement that states that all requests to the STS service be monitored. How can you accomplish this requirement?
+    -Create a CloudTrail 
 
