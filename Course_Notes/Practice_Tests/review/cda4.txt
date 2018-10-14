@@ -1,1 +1,52 @@
 June 2018 CDA practice test review 
+
+Question 2: Incorrect
+A company currently allows access to their API’s to customers via the API gateway. Currently all clients have a 6-month period to move from using the older API’s to newer versions of the API’s. The code for the API is hosted in AWS Lambda. Which of the following is the ideal strategy to employ in such a situation?
+    -Create another stage in the API Gateway 
+        -The best way is to create a separate stage in the API gateway and then customers could use both API versions. They can still slowly change their usage onto the new version in this duration
+
+Question 4: Incorrect
+Your current log analysis application takes more than four hours to generate a report of the top 10 users of your web application. You have been asked to implement a system that can report this information in real time, ensure that the report is always up to date, and handle increases in the number of requests to your web application. Choose the option that is cost-effective and can fulfill the requirements.
+    -Post your log data to an Amazon Kinesis data stream and subscribe your log-processing application so that it is configured to process your logging data 
+        -When you see Kinesis as an option, this becomes the ideal option to process data in real time. Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information 
+
+Question 7: Correct
+Your application is developed to pick up metrics from several servers and push them off to Cloudwatch. At times , the application gets client 429 errors. Which of the following can be done from the programming side to resolve such errors?
+    -Use exponential backoff in your requests 
+        -The idea behind exponential backoff is to use progressively longer waits between retries for consecutive error responses. You should implement a maximum delay interval, as well as a maximum number of retries.
+
+Question 8: Incorrect
+You have an application that is hosted on an EC2 Instance. This application is part of a custom domain www.demo.com. The application has been changed to make calls to the API gateway. But the browser is not rendering the responses and Javascript errors are being seen in the developer console. What must be done to ensure that this issue can be resolved.
+    -Enable CORS for the API gateway
+        -When your API's resources receive requests from a domain other than the API's own domain, you must enable cross-origin resource sharing for selected methods on the resource. 
+
+Question 11: Incorrect
+Your team has completed the development of an application and now this needs to be deployed to an application on an EC2 Instance. The Application data will be stored on a separate volume which needs to be encrypted at rest. How can you ensure this requirement is met? Choose 2 answers from the options given below
+    -Ensure that encryption is enabled during volume creation 
+    -Create a Customer master key in the KMS service
+        -EBS encryption uses AWS KMS customer master keys when creating encrypted volumes and any snapshots created from them 
+
+Question 13: Incorrect
+You have been instructed to manage the deployments of an application onto Elastic Beanstalk. Since this is just a development environment, you have been told to ensure that the least amount of time is taken for each deployment. Which of the following deployment mechanism would you consider based on this requirement.
+    -All at once 
+
+Question 19: Incorrect
+An application is currently in production that makes calls to an AWS RDS Instance. The application consists of a reporting module and a transactional system. Due high load times , the response time for the application used to get very high. This was being attributed to the number of queries being fired against the database system. Which of the following can be used to resolve the response time for the application?
+    -Enable Read Replicas for the database 
+        -You can reduce the load on your source DB instance by routing read queries from your applications to the read replica.
+
+Question 22: Incorrect
+You have been instructed to use the CodePipeline service for the CI/CD automation in your company. Due to security reasons , the resources that would be part of the deployment are placed in another account. Which of the following steps need to be carried out to accomplish this deployment? Choose 2 answers from the options given below
+    -Define a customer master key in KMS 
+    -Add a cross account role 
+        -You must create an AWS KMS key to use, add the key to the pipeline, and set up account policies and roles to enable cross-account access 
+
+Question 28: Incorrect
+A developer is writing an application that will run on –premises, but must access AWS services through an AWS SDK. How can the Developer allow the SDK to access the AWS services?
+    -Create an IAM user with correct permissions, generate an access key and store it in AWS credentials
+        -When working in development, you need to use the AWS access keys to work with the AWS resources. 
+
+Question 30: Incorrect
+Your team is developing a solution that will make use of DynamoDB tables. Currently the application is designed to perform scan’s on the entire table. Which of the following can be done to improve the performance of the application when it interacts with the DynamoDB table? Choose 2 answers from the options given below
+    -Consider using parallel scans 
+    -Consider using queries 
