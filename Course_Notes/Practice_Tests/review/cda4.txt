@@ -50,3 +50,40 @@ Question 30: Incorrect
 Your team is developing a solution that will make use of DynamoDB tables. Currently the application is designed to perform scan’s on the entire table. Which of the following can be done to improve the performance of the application when it interacts with the DynamoDB table? Choose 2 answers from the options given below
     -Consider using parallel scans 
     -Consider using queries 
+
+Question 33: Incorrect
+A developer is developing an application which will make use of AWS services. You need to develop your application in such a way to compensate for any network delays. Which of the following two mechanisms would you implement in the application?
+    -Exponential backoff algorithm
+    -Retries in your application code 
+
+Question 34: Incorrect
+Your company currently stores its objects in S3. The current request rate is around 2000 GET requests per second. There is now a mandate for objects to be encrypted at rest. So you enable encryption using KMS. There are now performance issues being encountered. What could be the main reason behind this?
+    -You are now exceeding the throttle limits for KMS API calls 
+        -KMS throttles requests if you exceed a combined total of 1200 uploads or downloads per second of S3 objects encrypted with SSE-KMS
+
+Question 43: Incorrect
+Your team has been instructed on deploying a Microservices based application onto AWS. There is a requirement to automate the orchestration of the application. Which of the following would the ideal way to implement this with the least amount of administrative effort?
+    -Use the Elastic Container Service 
+
+Question 44: Incorrect
+You have a lambda function that is processed asynchronously. You need a way to check and debug issues if the function fails? How could you accomplish this?
+    -Assign a dead letter queue
+        -Any Lambda function invoked asynchronously is retried twice before the event is discarded. If the retries fail and you're unsure why, use Dead Letter Queues to direct unprocessed events to an Amazon SQS queue or an SNS Topic to analyze the failure
+
+Question 45: Incorrect
+A Developer is building an application that needs access to an S3 bucket. An IAM role is created with the required permissions to access the S3 bucket. Which API call should the Developer use in the application so that the code can access to the S3 bucket?
+    -STS:AssumeRole
+
+Question 48: Incorrect
+A Developer has recently deployed an AWS Lambda function that computes a Fibonacci sequence using recursive calls. A pre-defined AWS IAM policy is being used for this function, and only the required dependencies were packaged. A few days after deployment, the Lambda function is being throttled.What should the Developer have done to prevent this, according to best practices?
+    -Avoid the use of recursion
+        -Since the question is asking us to choose the best option that the developer might have done to prevent this throttling issue is that he should have written a code that avoids the recursive call of the funciton within itself as it is not a recommended best practice 
+
+Question 50: Incorrect
+A Developer working on an AWS CodeBuild project wants to override a build command as part of a build run to test a change. The developer has access to run the builds but does not have access to edit the CodeBuild projectWhat process should the Developer use to override the build command?
+    -Run the start build AWS CLI command with buildspecOverride property set to the new buildspec.yml file 
+
+Question 51: Incorrect
+Your company has asked you to maintain an application using Elastic Beanstalk. They have mentioned that when updates are made to the application , that the infrastructure maintains its full capacity. Which of the following deployment methods should you use for this requirement?
+    -Rolling with additional batch 
+
