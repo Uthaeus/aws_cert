@@ -1,1 +1,42 @@
 Certified Developer - Associate practice test 6
+
+
+Question 14: Incorrect
+You have to create a DynamoDB table called Customers which will have 2 attributes. One is the ID which will be the partition key and the other is the Name which will be the sort key. Which of the following is the right definition for the CLI command that would be used to create the table?
+    -
+
+Question 19: Incorrect
+You have developed a Lambda function. This function needs to run on a scheduled basis. Which of the following can be done to accomplish this requirement in an ideal manner?
+    -Use CloudWatch events to schedule the Lambda function 
+
+Question 24: Incorrect
+Your team is using the AWS CodeBuild service for an application build. As part of Integration testing during the build phase, the application needs to access an RDS instance in a private subnet. How can you ensure this is possible?
+    -Provide additional VPC-specific configuration information as part of your AWS CodeBuild project
+        -Typically, resources in a VPC are not accessible by AWS CodeBuild. To enable access, you must provide additional VPC-specific configuration information as part of your AWS CodeBuild project configuration
+
+Question 28: Incorrect
+Your working on a system that will make use of AWS Kinesis. Here you will various log sources that will send data onto AWS Kinesis. You are looking at creating an initial number of shards for the Kinesis stream. Which of the following can be used in the calculation for the an initial number of shards for the Kinesis stream. Choose 2 answers from the options given below.
+    -Incoming write bandwidth
+    -Outgoing read bandwidth 
+
+Question 39: Incorrect
+Your team is looking towards deploying an application into Elastic beanstalk. They want to deploy different versions of the application onto the environment. How can they achieve this in the easiest possible way?
+    -Upload the application versions to the environment 
+
+Question 46: Incorrect
+You are using a custom tool known as POSTMAN to make API requests to resources in AWS. Part of the job of sending requests is to sign the request. Which of the following would you use to sign the API requests made to AWS?
+    -Access Keys 
+        -When you send HTTP requests to AWS, you sign the requests so that AWS can identify who sent them. You sign requests with your AWS access key, which consists of an access key ID and secret access key.
+
+Question 47: Incorrect
+Your company is currently managing the deployment of their applications using Code Deploy. They want to go to the next level of automation and want to automate the deployment of the Code Deployment environment itself. Which of the following service can help you achieve this?
+    -AWS CloudFormation 
+
+Question 49: Incorrect
+Your team is working on an application that will connect to a MySQL RDS Instance. The security mandate is that the connection to the application needs to be encrypted. How can you accomplish this?
+    -By using SSL 
+
+Question 50: Incorrect
+You are currently a Business Intelligence developer for a company. A lot of data sources that are defined for the Logistics team in your company is hosted in AWS. They are now looking for a quick solution to build visualization screens around the data hosted in AWS. Which of the following can be used to fulfil this requirement?
+    -AWS Quicksight 
+
