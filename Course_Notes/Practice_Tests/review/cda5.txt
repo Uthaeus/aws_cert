@@ -49,3 +49,70 @@ You’re the team lead for an application. You have been instructed to make use 
     -Configure an IAM Role for EC2 to access Code Pipeline 
     -Configure an EC2 instance with Jenkins installed
 
+Question 41: Incorrect
+You are in charge of developing Cloudformation templates which would be used to deploy databases in different AWS Accounts. In order to ensure that the passwords for the database are passed in a secure manner which of the following could you use with Cloudformation?
+    -Parameters
+
+Question 44: Incorrect
+Your team is planning on deploying an application on an ECS cluster. They need to also ensure that the X-Ray service can be used to trace the application deployed on the cluster. Which of the following are the right set of steps that are needed to accomplish this? Choose 2 answers from the options given below.
+    -Create a Docker image with the X-Ray daemon
+    -Deploy the docker container to the ECS cluster 
+
+Question 47: Incorrect
+Your application currently points to several Lambda functions in AWS. A change is being made to one of the Lambda functions. You need to ensure that application traffic is shifted slowly from one Lambda function to the other. Which of the following steps would you carry out?
+    -Create an ALIAS with the --routing-config parameter 
+    -Update the ALIAS with the -routing-config parameter 
+
+Question 48: Incorrect
+Your using the AWS CodeDeploy service to deploy an application onto AWS. The application uses secure parameters which are stored in the AWS Systems Manager Parameter store. Which of the following must be done , so that the deployment can be automated via CodeDeploy? Choose 2 answers from the options given below.
+    -Use the aws ssm get-parameters with the --with-decryption option 
+    -Give permissions to the AWS CodeDeploy service via an IAM Role 
+        -The --with-decryption option allows the CodeDeploy service to decrypt the password so that is can be used in the application 
+
+Question 51: Incorrect
+You are planning on deploying an application to the worker role in Elastic Beanstalk. Which of the following is a must have as part of the deployment?
+    -A cron.yaml file 
+
+Question 52: Incorrect
+You’ve developed an AWS Lambda function but are running into a lot of performance issues. You decide to use the AWS X-Ray service to diagnose the issues. Which of the following must be done to ensure that you can use the X-Ray service with your Lambda function?
+    -Ensure that the IAM Role assigned to the Lambda function has access to the X-Ray service 
+
+Question 60: Incorrect
+Your team needs to develop an application that needs to make use of SQS queues. There is a requirement that when a message is added to the queue, the message is not visible for 5 minutes to consumers. How can you achieve this? Choose 2 answers from the options given below
+    -Change the message timer value for each individual message 
+    -Implement delay queues in AWS 
+        -Delay queues let you postpone the delivery of new messages to a queue for a number of seconds
+
+Question 63: Incorrect
+You are developing an application which will make use of Kinesis Firehose for streaming the records onto the Simple Storage Service. You company policy mandates that all data needs to be encrypted at rest. How can you achieve this with Kinesis Firehose? Choose 2 answers for the options given below.
+    -Ensure that Kinesis Streams are used to transfer the data from the producers 
+    -Enable Encryption for a Kinesis Data Firehose
+        -If you have sensitive data, you can enable server-side encryption when you use Kinesis Data Firehose. However, this is only possible if you use a Kinesis stream as your data source 
+
+Question 67: Incorrect
+You’ve just started developing an application on your On-premise network. This application will interact with the Simple Storage Service and some DynamoDB tables. How would you as the developer ensure that your SDK can interact with the AWS services on the cloud?
+    -Create an IAM User, generate the access keys, use the access keys from within your program
+
+Question 68: Incorrect
+Your development team currently uses Jenkins for managing the CI/CD process. You need to move the process on to AWS. Which of the following service would be the ideal service for this requirement?
+    -AWS CodePipeline
+
+Question 70: Incorrect
+You are developing an application that is working with a DynamoDB table. During the development phase, you want to know how much of the Consumed capacity is being used for the queries being fired. How can this be achieved?
+    -Ensure to set the ReturnConsumedCapacity in the query result to TOTAL 
+
+Question 73: Incorrect
+Your company is planning on storing documents in an S3 bucket. The documents are sensitive, and employees should use Multi Factor authentication when trying to access documents. Which of the following must be done to fulfil this requirement?
+    -Ensure that the bucket policy is in place with a condition of "aws:MultiFactorAuthPresent":"false" with a deny policy 
+
+Question 79: Incorrect
+An application is currently accessing a DynamoDB table. Currently the tables queries are performing well. Changes have been made to the application and now the performance of the application is starting to degrade. After looking at the changes , you see that the queries are making use of an attribute which is not the partition key? Which of the following would be the adequate change to make to resolve the issue?
+    -Add an index for the DynamoDB table 
+        -DynamoDB provides fast access to items in a table by specifying primary key values. However, many applications might benefit from having one or more secondary keys available to allow efficient access to data with attributes other than the primary key. To address this, you can create one or more secondary indexes on a table and issue Query or Scan requests against these indexes 
+
+Question 82: Incorrect
+Your development team is working with Docker containers. These containers need to encrypt data. The data key needs to be generated using the KMS service. The data key should be in the encrypted format. Which of the following would you most ideally use?
+    -The GenerateDataKeyWithoutPlaintext command 
+
+
+
