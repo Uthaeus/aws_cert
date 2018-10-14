@@ -148,4 +148,53 @@ You are in charge of deploying an application that will be hosted on an EC2 Inst
     -Enable access logs on the load balancer 
         -ELB provides access logs that capture detailed information about requests sent to your load balancer 
 
+Question 86: Incorrect
+When calling an API operation on an EC2 Instance , the following error message was returnedA client error (UnauthorizedOperation) occurred when calling the RunInstances operation:You are not authorized to perform this operation. Encoded authorization failure message:oGsbAaIV7wlfj8zUqebHUANHzFbmkzILlxyj__y9xwhIHk99U_cUq1FIeZnskWDjQ1wSHStVfdCEyZILGoccGpCiCIhORceWF9rRwFTnEcRJ3N9iTrPAE1WHveC5Z54ALPaWlEjHlLg8wCaB8d8lCKmxQuylCm0r1Bf2fHJRUjAYopMVmga8olFmKAl9yn_Z5rI120Q9p5ZIMX28zYM4dTu1cJQUQjosgrEejfiIMYDda8l7Ooko9H6VmGJXS62KfkRa5l7yE6hhh2bIwA6tpyCJy2LWFRTe4bafqAyoqkarhPA4mGiZyWn4gSqbO8oSIvWYPweaKGkampa0arcFR4gBD7Ph097WYBkzX9hVjGppLMy4jpXRvjeA5o7TembBR-Jvowq6mNim0Which of the following can be used to get a human readable error message?
+    -Use the command aws sts decode-authorization-message 
 
+Question 87: Incorrect
+You are developing a function that will be hosted in AWS Lambda. The function will be developed in .Net. There are a number of external libraries that are needed for the code to run. Which of the following is the best practise when it comes to working with external dependencies for AWS Lambda?
+    -Selectively only include the libraries that are required 
+
+Question 93: Incorrect
+As a developer you have been told to create an API gateway stage that will directly interact with DynamoDB tables. Which of the following feature of the API Gateway must be used to fulfill this requirement?
+    -Ensure to create an Integration request 
+        -With DynamoDB as the backend, the API developer sets up the integration request to forward the incoming method request to the chosen backend 
+
+Question 94: Incorrect
+Your team is developing a solution that will make use of DynamoDB tables. Due to the nature of the application, the data is needed across a couple of regions across the world. Which of the following would help reduce the latency of requests to DynamoDB from different regions?
+    -Enable global tables for DynamoDB
+        -Global tables provide a fully managed solution for deploying a multi-region, multi-master database without having to build and maintain your own replication solution 
+
+Question 95: Incorrect
+You are an API developer that has been hired to work in a company. You have been asked to use the AWS services for development and deployment via the API gateway. You need to control the behavior of the API’s frontend interaction. Which of the following could be done to achieve this?Select 2 options.
+    -Modify the configuration of the Method request 
+    -Modify the configuration of the Method response 
+        -As an API developer, you control the behaviors of your API's frontend interactions by configuring the method request and response. You control your API's backend interactions by setting up the integration request and integration response 
+
+Question 100: Incorrect
+A company has a cloudformation template that is used to create a huge list of resources. It creates a VPC, subnets , EC2 Instances , Autoscaling Groups , Load Balancers etc. Which of the following should be considered when designing such Cloudformation templates?
+    -Look toward breaking the templates into smaller manageable templates 
+
+Question 103: Incorrect
+A company is planning on using AWS CodePipeline for their underlying CI/CD process. The code will be picked up from an S3 bucket. The company policy mandates that all data should be encrypted at rest. Which of the following measures would you take to ensure that the CI/CD process conforms to this policy? Choose 2 possible actions from the options given below.
+    -Configure AWS KMS with customer managed keys and use it for S3 bucket encryption 
+    -Ensure that server-side encryption is enabled on the S3 bucket 
+
+Question 106: Incorrect
+Your planning on deploying a built application onto an EC2 Instance. There will be a number of tests conducted on this Instance. You want to have the ability to capture the logs from the web server so that it can help diagnose any issues if they occur? How can you achieve this?
+    -Install the CloudWatch agent on the instance 
+        -You can install the CloudWatch agent on the machine and then configure it to send the logs for the web server to a central location
+
+Question 107: Incorrect
+You just developed code in AWS Lambda that makes use of recursive functions. After several invocations, you are beginning to see throttling errors in the metrics. Which of the following should be done to resolve this issue?
+    -Avoid using recursive code altogether
+
+Question 110: Incorrect
+An application needs to use an authentication in AWS. Users need to have MFA enabled when trying to log into the application. Which of the following can be used for this purpose?
+    -Use AWS Cognito with MFA 
+
+Question 112: Incorrect
+You need to setup a RESTful API service in AWS that would be serviced via the following urlhttps://democompany.com/customersWhich of the following combination of services can be used for development and hosting of the RESTful service? Choose 2 answers from the options below
+    -AWS Lambda and AWS API gateway 
+    -AWS EC2 and AWS Elastic Load Balancer 
