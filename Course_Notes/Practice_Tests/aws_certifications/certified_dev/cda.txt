@@ -29,3 +29,37 @@ Question 48: Incorrect
 An application has been making use of AWS DynamoDB for its back-end data store. The size of the table has now grown to 20 GB , and the scans on the table are causing throttling errors. Which of the following should now be implemented to avoid such errors?
     -Reduced page size 
 
+Question 53: Incorrect
+You have currently defined the following set of stages in CodePipeline?What happens if there is a failure which is detected at the Build Stage?
+    -The entire process will stop 
+        -If an action or a set of parallel actions is not completed successfully, the pipeline stops running
+
+Question 54: Incorrect
+A company is planning on using AWS CodePipeline for their underlying CI/CD process. The code will be picked up from an S3 bucket. The company policy mandates that all data should be encrypted at rest. Which of the following measures would you take to ensure that the CI/CD process conforms to this policy? Choose 2 possible actions from the options given below.
+    -Configure AWS KMS with customer managed keys and use it for S3 bucket encryption
+    -Ensure that server-side encryption is enabled on the S3 bucket 
+
+Question 55: Incorrect
+You need to migrate an existing on-premise application on AWS. It is a legacy-based application with little development support. Which of the following would be the best way to host this service in AWS?
+    -EC2 instances with EBS backed volumes 
+
+Question 64: Incorrect
+You’re a developer at a company that needs to deploy an application using Elastic Beanstalk. There is a requirement to place a healthcheck.config file for the environment. In which of the following location should this config file be placed to ensure it is part of the elastic beanstalk environment?
+    -In the .ebextensions folder
+
+Question 66: Incorrect
+A company is planning on developing an application that is going to make use of a DynamoDB table. The structure of the table is given belowAttribute NameTypeDescriptionProduct IDNumberID of productReview IDNumberAutomatically generated GUIDProduct NameStringName of the productProduct DescriptionStringDescription of the productWhich of the following should be chosen as the partition key to ensure the MOST effective distribution of keys?
+    -Review ID 
+
+Question 85: Incorrect
+You have the following YAML file given to you which is required to deploy a Lambda function using serverless deployment.AWSTemplateFormatVersion: '2010-09-09'Transform: AWS::Serverless-2016-10-31Resources: TestFunction: Type: AWS::Serverless::Function Properties: Handler: index.handler Runtime: nodejs6.10 Environment: Variables: S3_BUCKET: demobucketWhich of the following is required to ensure the deployment can take place?
+    -Place the function code in the root directory along with the YAML file 
+
+Question 104: Incorrect
+A developer is writing an application that will run on –premises, but must access AWS services through an AWS SDK. How can the Developer allow the SDK to access the AWS services?
+    -Create an IAM user with correct permissions, generate an access key and store it in aws credentials 
+        -When working on development, you need to use the AWS Access keys to work with the AWS Resources 
+
+Question 112: Incorrect
+Your application currently makes use of AWS Cognito for managing user identities. You want to analyze the information that is stored in AWS Cognito for your application. Which of the following features of AWS Cognito should you use for this purpose?
+    -Cognito Streams

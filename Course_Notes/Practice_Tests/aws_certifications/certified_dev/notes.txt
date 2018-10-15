@@ -8,6 +8,10 @@ CodeStar
 
 Amazon EBS encryption uses AWS KMS customer master keys when creating encrypted volumes and any snapshots created from them. A unique AWS-managed CMK is created for you automatically in each region where you store AWS assets. 
 
+Server-side encryption is a feature in Kinesis Streams that automatically encrypts data before it's at rest by using an AWS KMS customer master key you specify. Data is encrypted before it's written to the Kinesis Stream storage layer, and decrypted after it's retrieved from storage. As a result, your data is encrypted at rest within the Kinesis Data Streams service 
+
+You cannot guarantee the order of data across multiple shards. It is possible only within a shard 
+
 Kinesis Data Firehose can invoke yourLambda function to transform incoming source data and deliver the transformed data to destinations. You can enable Kinesis Data Firehose data transformation when you create your delivery stream
 Kinesis Data Firehose is a fully managed service for delivering real-time streaming data to destinations such as S3, Redshift, ElastiSearch, and Splunk 
 
