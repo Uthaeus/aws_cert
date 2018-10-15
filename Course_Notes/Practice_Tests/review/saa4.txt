@@ -70,3 +70,34 @@ A company has setup an application on an EC2 Instance. The following steps have 
 The server went through some software patching and was stopped and started again for the patches to take full effect. The web application was no longer accessible via the domain name. Which of the following should be added to the design to ensure this issue does not happen in the future?
     -Add an Elastic IP to the EC2 instance 
         -We release the public IPv4 address and assign a new one when you restart it, so for better reliability you should assign an Elastic IP. This does not change even if you stop and start the instance 
+
+Question 53: Incorrect
+Your company has a setup which consists of the following
+·       A web application hosted on a set of EC2 Instances
+·       A load balancer placed in front of the EC2 Instances
+There is a requirement to conduct a Blue Green deployment. The new application would need to be deployed side by side to the older one. Once the users have verified the new environment, all traffic can be directed to the new setup. Which of the following are probable steps which can be followed for this sort of requirement? Choose 2 answers from the options given below
+    -Create a new Elastic Load Balancer pointing to a different set of instances 
+    -Create Route53 Weighted resource records 
+        -In a Blue/Green deployment, you normally have a secondary setup which in this case should be a new ELB with new EC2 instances and the new application deployed
+
+Question 55: Incorrect
+An application currently has the following architecture
+·       A set of EC2 Instances in a public subnet which act as the web layer
+·       A set of EC2 Instances in a private subnet which act as the database layer
+·       A set of NAT gateways available across 2 availability zones
+Which of the following could be recommendations to build a resilient architecture? Choose 2 answers from the options given below.
+    -Spread the web layer across multiple public subnets mapped to different availability zones 
+    -Spread the database layer across multiple public subnets mapped to different availability zones 
+
+Question 56: Incorrect
+A company wants to store a set of files onto durable storage in AWS. They also need to query the data stored so that it could analyse data using standard SQL statements. Which of the following should be considered in designing this solution? Choose 2 answers from the options given below
+    -Store the data files in AWS S3
+    -Use the AWS Athena service to query the data 
+        -Athena is an interactive query service that makes it easy to analyze data in S3 using standard SQL
+
+Question 59: Incorrect
+Your company is planning on deploying a large set of applications onto a fleet of EC2 Instances in AWS. As an architect you have been asked to ensure that the servers are updated with the latest security patches as an on-going process. Which of the following would you consider to be a part of the on-going procedure?
+    -Use the AWS Systems Patch Manager to check and patch the servers on an on-going basis
+        -AWS Systems Patch Manager automates the process of patching managed instances with security-related updates
+
+
