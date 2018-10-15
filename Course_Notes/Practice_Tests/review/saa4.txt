@@ -1,1 +1,72 @@
 AWS Solutions Arichitect practice test 4
+
+
+Question 1: Incorrect
+You are designing a stateful application that would be hosted on AWS. The web layer will be hosted on EC2 Instances. You need to design the solution for caching for your application. There is a requirement to ensure that the caching solution is highly available since loss of user session data can have an impact on the brand image of the company. Also, the maintenance of the solution should be minimal. Which of the following would be the ideal solution to have in place?
+    -Use the ElastiCache - Redis solution 
+        -With ElastiCache you don't need to perform management tasks such as hardware provisioning, software patching, setup, configuration, monitoring, failure recovery, and backups. ElastiCache continuously monitors your clusters to keep your workloads up and running
+
+Question 3: Incorrect
+Your company currently maintains a data store using the AWS Relational database service. They now need to ensure that the data is available in another region in case of a disaster in the primary region. They want to test out the disaster recovery drill first. How can you achieve this? Choose 2 answers from the options given below.
+    -Create a manual snapshot of the database 
+    -Copy the database snapshot to the destination region 
+        -With RDS, you can copy automated or manual DB snapshots. You can copy a snapshot within the same AWS Region, you can copy a snapshot across AWS Regions, and you can copy a snapshot across AWS accounts 
+
+Question 7: Incorrect
+Your company has an application that is going to make use of the AWS Relational database service. The application will be using MySQL as the database engine. There is a requirement to ensure that the database is made highly available in another region in case if the primary region goes down. Which of the following can help fulfil this requirement? Choose 2 answers from the options given below
+    -Enable Read Replicas for the database in a secondary region 
+    -Ensure automated backups are in place 
+        -You can create Read Replicas in secondary regions. So, if the primary one fails, you can promote the Read Replica to a primary database
+
+Question 8: Incorrect
+Your company is setting up a custom VPC with subnets. An application will be hosted on an EC2 Instance. The application works on IPv6. You need to ensure that the application can communicate with the Internet. But at the same time, you need to ensure that no incoming connection can be made from the Internet to the application. Which of the following appliance will help achieve this?
+    -An egress-only Internet gateway
+
+Question 12: Incorrect
+Your company has a set of servers hosting a web application in their on-premise data centre. They want to failover to a set of servers in a secondary data centre in case if the primary data centre fails. How can you achieve this? Choose 2 answers from the options given below
+    -Create separate resources records which point to the servers respectively
+    -Use Route53 health checks along with the failover routing policy
+        -You can't use ALIAS records because these are used to point to certain types of AWS resources such as the Elastic Load Balancer, CloudFront, etc.
+
+Question 16: Incorrect
+Your team spun up a wordpress server hosted on an EC2 Instance which connects to the MySQL database. The database is hosted using the AWS Relational database service. The forecasted bill is coming more than the budget allocated for the setup. Which of the following are steps that can be carried out to reduce the costs for the setup?
+    -Consider changing the instance type for the database server 
+    -Consider reducing the storage allocated to the server 
+    -Disable Multi-AZ if this has been enabled 
+
+Question 22: Incorrect
+Your company is planning on setting up an application that will consist of the following architecture
+·       A web server hosted on an EC2 Instance located in the public subnet
+·       A database server hosted on an EC2 Instance located in the private subnet
+What would you add to the architecture to allow an IT Administrator to securely connect to the database server located in the private subnet?
+    -A Bastion host located in the public subnet 
+        -The main purpose of a Bastion host is to provide a way and means for IT administrators to connect to servers located in private subnets. You cannot initiate connections from the internet onto devices in the VPC via a NAT device, so NAT devices cannot be used in this case 
+
+Question 31: Incorrect
+Your team is creating several Lambda functions that need to be deployed onto AWS. Which of the following are ways of deploying the Lambda functions? Choose 2 answers from the options given below
+    -AWS CloudFormation 
+    -AWS SAM 
+        -The Serverless Application Model is a model to define serverless applications. AWS SAM is natively supported by AWS CloudFormation and defines simplified syntax for expressing serverless resources 
+
+Question 34: Incorrect
+Your team has been given requirements for designing an application. Below are some of the key requirements
+·       The application will be written in Java
+·       The application needs to be hosted in AWS
+·       The application should scale automatically
+·       The IT Security team has stated that they would need some control over the underlying compute layer
+Which of the following would be part of the design?
+    -AWS EC2 
+        -Since one of the requirements is that the IT Security team needs control over the environment, we need to choose EC2 over Lambda
+
+Question 36: Incorrect
+A company currently has an On-premise MySQL database hosted in a cluster configuration. They need to migrate this database onto AWS. They want to ensure that a lot of testing effort is not put into the overall migration activity. Which of the following data store would be the ideal destination for the on-premise database?
+    -AWS Aurora 
+
+Question 40: Incorrect
+A company has setup an application on an EC2 Instance. The following steps have been followed
+·       A new EC2 Instance was spun up in the default VPC
+·       A web application setup on the Instance
+·       A Route 53 hosted zone and record created to point the domain name to the IP address of the server
+The server went through some software patching and was stopped and started again for the patches to take full effect. The web application was no longer accessible via the domain name. Which of the following should be added to the design to ensure this issue does not happen in the future?
+    -Add an Elastic IP to the EC2 instance 
+        -We release the public IPv4 address and assign a new one when you restart it, so for better reliability you should assign an Elastic IP. This does not change even if you stop and start the instance 
