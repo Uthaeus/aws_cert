@@ -40,3 +40,49 @@ Question 50: Incorrect
 You are currently a Business Intelligence developer for a company. A lot of data sources that are defined for the Logistics team in your company is hosted in AWS. They are now looking for a quick solution to build visualization screens around the data hosted in AWS. Which of the following can be used to fulfil this requirement?
     -AWS Quicksight 
 
+Question 52: Incorrect
+An application is publishing a custom CloudWatch metric any time an HTTP 504 error appears in the application error logs. These errors are being received intermittently. There is a CloudWatch Alarm for this metric and the Developer would like the alarm to trigger ONLY if it breaches two evaluation periods or more.What should be done to meet these requirements?
+    -Aggregate the data before pushing to CloudWatch by using statistic sets 
+        -Since the data is being received intermittently, it is better to collect and aggregate the results at regular intervals and then send the data to CloudWatch
+
+Question 55: Incorrect
+As a developer, you need your operations team to monitor a set of metrics for an application. They also need to be notified in case any of the metrics crosses the threshold. How can you achieve this?
+    -Publish custom metrics for the application that can be monitored via CloudWatch. Create alarms for notifications
+
+Question 57: Incorrect
+You have an application that is currently being deployed using the AWS CodeDeploy tool. Now as per Security procedures , you don’t have access to the CodeDeploy project in the console, although you do have access to run the build. You want to specify a different source location for the build. How can you achieve this?
+    -Specify the new location of the build in the buildspec.yml file and use the start-build command 
+    
+Question 61: Incorrect
+You’ve been asked to move an existing development environment on the AWS Cloud. This environment consists mainly of Docker based containers. You need to ensure that minimum effort is taken during the migration process. Which of the following step would you consider for this requirement?
+    -Create an application and environment for the Docker containers in the Elastic Beanstalk service 
+        -The Elastic Beanstalk service is the ideal service to quickly provision development environments. You can also create environments which can be used to host Docker based containers 
+
+Question 65: Incorrect
+Your team is looking into the Serverless deployment of an AWS lambda function. The function will be deployed using the Serverless application model. To test this out , you first create a sample function created below.var AWS = require('aws-sdk'); exports.handler = function(event, context, callback) { var bucketName = "Demobucket"; callback(null, bucketName); }What should be the next steps in the serverless deployment? Choose 2 answers from the options given below
+    -Upload the complete package onto an S3 bucket 
+    -Create a YAML file with the deployment specifics and package that along with the function file 
+
+Question 74: Incorrect
+Your team is developing a series of Lambda functions. You need to ensure that you analyse the invocations of the functions during the testing phase. Which of the following tools can help you achieve this? Choose 2 answers from the options given below.
+    -Amazon CloudWatch 
+    -Amazon X-Ray 
+
+Question 79: Incorrect
+You are a developer for a company that has been given the responsibility to debug performance issues for an existing application. The application connects to a MySQL RDS Instance in AWS. There is a suspicion that there are performance issues in the underlying queries. Which of the following can help diagnose these issues?
+    -Get the slow query logs for the RDS service 
+    
+Question 84: Incorrect
+Your company has a development application that needs to interact with an S3 bucket. There is a requirement that all data in the bucket is encrypted at rest. You also need to ensure that the keys are managed by you. Which of the following can you use for this purpose? Choose 2 answers from the options given below
+    -Server-Side encryption with Customer-provided keys 
+    -Client-Side encryption 
+
+Question 88: Incorrect
+You have been hired by a company for their on-going development project. The project curtails streaming data onto Amazon Kinesis streams from various log sources. You need to analyse the data using standard SQL. Which of the following can be used for this purpose?
+    -Amazon Kinesis Data Analytics
+        -With Amazon Kinesis Data Analytics, you can process and analyze streaming data using standard SQL. The service enables you to quickly author and run powerful SQL code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics 
+
+Question 89: Incorrect
+Your team is developing a mobile based application. The users who are going to use this application will first be authenticated using an external provider such as Facebook. The application would then need to get temporary access credentials to work with AWS resources. Which of the following actions would you ideally use for this purpose?
+    -AssumeRoleWithWebIdentity 
+
