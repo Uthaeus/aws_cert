@@ -4,3 +4,14 @@ Step Functions -
 
 Code Pipeline
 CodeStar
+    -A cloud-based service for creating, managing, and working with software development projects on AWS. You can quickly develop, build, and deploy applications on AWS with an AWS CodeStar project. An AWS CodeStart project creates and integrates AWS services for your project development toolchain 
+
+Amazon EBS encryption uses AWS KMS customer master keys when creating encrypted volumes and any snapshots created from them. A unique AWS-managed CMK is created for you automatically in each region where you store AWS assets. 
+
+Kinesis Data Firehose can invoke yourLambda function to transform incoming source data and deliver the transformed data to destinations. You can enable Kinesis Data Firehose data transformation when you create your delivery stream
+Kinesis Data Firehose is a fully managed service for delivering real-time streaming data to destinations such as S3, Redshift, ElastiSearch, and Splunk 
+
+When your API's resources receive requests from a domain other than the API's own domain, you must enable cross-origin resource sharing CORS for selected methods on the resource 
+
+Elastic Load Balancer provides access logs that capture detailed information about requests sent to your load balancer 
+

@@ -1,1 +1,31 @@
 Certified Developer - Associate review
+
+
+Question 19: Incorrect
+Your company has developed a web application and is hosting it in an Amazon S3 bucket configured for static website hosting. The application is using the AWS SDK for JavaScript in the browser to access data stored in an Amazon DynamoDB table. How can you ensure that API keys for access to your data in DynamoDB are kept secure?
+    -Configure a web identity federation role within IAM to enable access to the correct DynamoDB resources and retrieve temporary credentials 
+
+Question 22: Incorrect
+You have a lambda function that is processed asynchronously. You need a way to check and debug issues if the function fails? How could you accomplish this?
+    -Assign a dead letter queue
+        -Any Lambda function invoked asynchronously is retried twice before the event is discarded. If the retries fail and you're unsure why, use Dead Letter Queues to direct unprocessed events to an SQS queue or an SNS topic to analyze the failure
+
+Question 27: Incorrect
+You’re developing an application onto AWS which is based on the Microservices. These Microservices will be created based on AWS Lambda functions. Because of the complexity of the flow of these different components, you need some way to manage the workflow of execution of these various Lambda functions. How could you manage this effectively now and for future addition of Lambda functions to the application?
+    -Consider using Step Functions to coordinate the execution of the other Lambda functions 
+        -AWS Step Functions is a web service that enables you to coordinate the components of distributed applications and microservices using visual workflows. You build applications from indiviual components that each perform a discrete function, or task, allowing you to scale and change applications quickly. 
+        -Step Functions provides a reliable way to coordinate components and step through the functions of your application 
+
+Question 29: Incorrect
+A company currently allows access to their API’s to customers via the API gateway. Currently all clients have a 6-month period to move from using the older API’s to newer versions of the API’s. The code for the API is hosted in AWS Lambda. Which of the following is the ideal strategy to employ in such a situation?
+    -Create another stage in the API gateway 
+
+Question 38: Incorrect
+You have been instructed to use the CodePipeline service for the CI/CD automation in your company. Due to security reasons , the resources that would be part of the deployment are placed in another account. Which of the following steps need to be carried out to accomplish this deployment? Choose 2 answers from the options given below
+    -Define a customer master key in KMS 
+    -Add a cross account role 
+
+Question 48: Incorrect
+An application has been making use of AWS DynamoDB for its back-end data store. The size of the table has now grown to 20 GB , and the scans on the table are causing throttling errors. Which of the following should now be implemented to avoid such errors?
+    -Reduced page size 
+
