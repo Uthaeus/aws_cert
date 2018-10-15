@@ -86,3 +86,15 @@ Question 89: Incorrect
 Your team is developing a mobile based application. The users who are going to use this application will first be authenticated using an external provider such as Facebook. The application would then need to get temporary access credentials to work with AWS resources. Which of the following actions would you ideally use for this purpose?
     -AssumeRoleWithWebIdentity 
 
+Question 95: Incorrect
+Your team is working on an API definition which will be deployed using the API gateway service. You then need to ensure that control is established on who can access the various resources within the API gateway. Which of the following can help ensure this security requirement is met?
+    -IAM Policies
+
+Question 97: Incorrect
+You are currently working on a function for AWS Lambda. When uploading the package for your AWS Lambda function, you are receiving the following errorCodeStorageExceededException What can you do to surpass this error?
+    -Reduce the size of your code 
+
+Question 113: Incorrect
+Your team is developing a set of Lambda functions. You need to ensure the team uses the best practises for working with AWS Lambda. Which of the following is an advantage on instantiating the AWS Client outside of the AWS Lambda function handler?
+    -Ability to reuse Execution Context 
+        -Take advantage of Execution Context reuse to improve the performance of your function. Make sure any externalized configuration or dependencies that your code retrieves are stored and referenced locally after initial execution 
