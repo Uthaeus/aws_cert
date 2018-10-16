@@ -1,2 +1,34 @@
 Certified Developer practice test 5
 
+Question 1: Incorrect
+Your team is planning on deploying an application on an ECS cluster. They need to also ensure that the X-Ray service can be used to trace the application deployed on the cluster. Which of the following are the right set of steps that are needed to accomplish this? Choose 2 answers from the options given below.
+    -Create a Docker image with the X-Ray daemon
+    -Deploy the container to the ECS cluster 
+
+Question 11: Incorrect
+You’ve just started developing an application on your On-premise network. This application will interact with the Simple Storage Service and some DynamoDB tables. How would you as the developer ensure that your SDK can interact with the AWS services on the cloud?
+    -Create an IAM User, generate the access keys, use the access keys from within your program
+
+Question 15: Incorrect
+Your company has a set of EC2 Instances and On-premise. They now want to automate the deployment of their applications using the AWS Code Deploy tool in AWS. Which of the following is not a TRUE complete requirement that needs to be fulfilled for preparation of the servers?
+    -Ensure both EC2 instances and on-premise servers have instance profile attached to them
+
+Question 21: Incorrect
+You’ve just configured a Lambda function that sits behind the API gateway service. When you try to invoke the Lambda function via the API gateway service from Javascript in your HTML page, you receive the following error. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed accessWhat can be done to resolve this error?
+    -Enable CORS for the methods in the API gateway 
+
+Question 24: Incorrect
+You are a developer for your company who is responsible for development and deployment of AWS Lambda functions. You have been told to start the automated deployment of Lambda based applications. Which of the following can be used for automated deployment? Choose 3 answers from the options given below
+    -AWS CodeBuild
+    -AWS CodeDeploy
+    -AWS CodePipeline
+
+Question 26: Incorrect
+Your development team is planning on working with Amazon Step Functions. Which of the following is a recommended practise when working with activity workers and tasks in Step Functions? Choose 2 answers from the options given below.
+    -If you are passing larger payloads between states, consider using S3
+    -Ensure to specify a timeout in state machine definitions 
+
+Question 30: Incorrect
+An application is currently accessing a DynamoDB table. Currently the tables queries are performing well. Changes have been made to the application and now the performance of the application is starting to degrade. After looking at the changes , you see that the queries are making use of an attribute which is not the partition key? Which of the following would be the adequate change to make to resolve the issue?
+    -Add an index for the DynamoDB table 
+
