@@ -32,3 +32,35 @@ Question 30: Incorrect
 An application is currently accessing a DynamoDB table. Currently the tables queries are performing well. Changes have been made to the application and now the performance of the application is starting to degrade. After looking at the changes , you see that the queries are making use of an attribute which is not the partition key? Which of the following would be the adequate change to make to resolve the issue?
     -Add an index for the DynamoDB table 
 
+Question 31: Incorrect
+You are in charge of developing Cloudformation templates which would be used to deploy databases in different AWS Accounts. In order to ensure that the passwords for the database are passed in a secure manner which of the following could you use with Cloudformation?
+    -Parameters 
+
+Question 37: Incorrect
+Your company has a bucket which has versioning and Encryption enabled. The bucket receives thousands of PUT operations per day. After a period of 6 months, there are a significant number of HTTP 503 error codes which are being received. Which of the following can be used to diagnose the error?
+    -AWS S3 inventory
+        -If you notice a significant increase in the number of HTTP 503-slow down responses received for S3 PUT or DELETE object requests to a bucket that has versioning enabled, you might have one or more objects in the bucket for which there are millions of versions 
+
+Question 45: Incorrect
+As a developer , you have created some Lambda functions and are now hosting them via the AWS API gateway service. You need to control access to the API gateway. Which of the following can be incorporated to control access to the API gateway? Choose 2 answers from the options given below.
+    -Lambda Authorizers
+    -AWS Cognito User pool 
+
+Question 50: Incorrect
+Your development team is developing several Lambda functions for testing. These functions will be called by a single .Net program. The program needs to call each Lambda function in a sequential manner for testing purposes. How can you accomplish this in the easiest way to ensure that least changes need to be made to the .Net program to call the various Lambda functions?
+    -Create an ALIAS and reference it in the program 
+
+Question 52: Incorrect
+You’ve created a Code Commit Repository in AWS. You need to share the repository with the developers in your team. Which of the following would be a secure and easier way to share the repository with the development team? Choose 2 answers from the options given below
+    -Create Git credentials for the IAM users 
+    -Allow the developers to connect via HTTPS using the Git credentials 
+
+Question 58: Incorrect
+You’ve developed an AWS Lambda function but are running into a lot of performance issues. You decide to use the AWS X-Ray service to diagnose the issues. Which of the following must be done to ensure that you can use the X-Ray service with your Lambda function?
+    -Ensure that the IAM Role assigned to the Lambda function has access to the X-Ray service 
+
+Question 60: Incorrect
+Your developing an application that is working with a DynamoDB table. You need to create a query which has a search criterion. Which of the following must be done in order to work with search queries? Choose 2 answers from the options given below
+    -Specify a key condition expression in the query 
+    -Specify a partition key name and value in the equality condition 
+
