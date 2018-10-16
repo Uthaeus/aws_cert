@@ -64,3 +64,37 @@ Your developing an application that is working with a DynamoDB table. You need t
     -Specify a key condition expression in the query 
     -Specify a partition key name and value in the equality condition 
 
+Question 70: Incorrect
+You are planning on deploying an application to the worker role in Elastic Beanstalk. Which of the following is a must have as part of the deployment?
+    -A cron.yaml file 
+
+Question 76: Incorrect
+Your using the AWS CodeDeploy service to deploy an application onto AWS. The application uses secure parameters which are stored in the AWS Systems Manager Parameter store. Which of the following must be done , so that the deployment can be automated via CodeDeploy? Choose 2 answers from the options given below.
+    -Give permissions to the AWS CodeDeploy service via an IAM Role 
+    -Use the aws ssm get-parameters with the --with-decryption option 
+
+Question 84: Incorrect
+You have defined some custom policies in AWS. You need to test out the permissions assigned to those policies. Which of the following can be used for this purpose via the CLI? Choose 2 answers from the options given below
+    -Get the context keys first 
+    -Use the aws iam simulate-custom-policy command 
+
+Question 92: Incorrect
+You’re the team lead for an application. You have been instructed to make use of Jenkins for your CI/CD pipeline and other AWS Services for deployment purposes. Which of the following would you consider fulfilling this requirement?Select 2 Options.
+    -Configure an EC2 instance with Jenkins installed 
+    -Configure an IAM Role for EC2 to access CodePipeline 
+
+Question 98: Incorrect
+Your developing an application that is going to make use of Docker containers. Traffic needs to be routed based on demand to the application. Dynamic host port mapping would be used for the docker containers. Which of the following would you use for distribution of traffic to the docker containers?
+    -AWS Application Load Balancer 
+        -Application Load Balancers allow containers to use dynamic host port mapping, support path-based routing and priority rules 
+
+Question 105: Incorrect
+Your application currently points to several Lambda functions in AWS. A change is being made to one of the Lambda functions. You need to ensure that application traffic is shifted slowly from one Lambda function to the other. Which of the following steps would you carry out?
+    -Create an ALIAS with the -routing-config parameter 
+    -Update the ALIAS with the -routing-config parameter 
+
+Question 113: Incorrect
+Your development team is working with Docker containers. These containers need to encrypt data. The data key needs to be generated using the KMS service. The data key should be in the encrypted format. Which of the following would you most ideally use?
+    -The GenerateDataKeyWithoutPlainText command 
+        -Returns a data encryption key encrypted under a customer master key. This operation is identical to GenerateDataKey, but returns only the encrypted copy of the data key 
+
