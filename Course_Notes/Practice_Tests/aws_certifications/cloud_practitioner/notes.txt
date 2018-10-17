@@ -75,3 +75,15 @@ AWS Storage Gateway
 AWS TCO Calculator 
     -Allows you to estimate the cost savings when using AWS and provides a detailed set of reports that can be used in executive presentations. 
     -The calculators also give you the option to modify assumptions that best meet your business needs 
+
+When to use Elastic Beanstalk vs CloudFormation 
+
+Elastic Map Reduce 
+    -provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable EC2 instances. You can also run other popular distributed frameworks in EMR and interact with data in other AWS data stores
+    -Securely and reliably handles a broad set of big data use cases
+
+Cost Explorer 
+    -Lets you dive deeper into your cost and usage data to identify trends, pinpoint cost drivers, and detect anomalies
+
+NACL vs ACL vs Security Groups
+
