@@ -72,3 +72,6 @@ AWS Storage Gateway
     -Gateway-virtual tape library
         -With gateway-VTL, you can have an almost limitless collection of virtual tapes. You can store each virtual tape in a virtual tape livrary backed by S3 or a virtual tape shelf backed by Glacier. The virtual tape library exposes an industry standard iSCSI interface that provides your backup application with on-line access to the virtual tapes. When you no longer require immediate or frequent access to data contained on a virtual tape, you can use your backup application to move it from its VTL to your VTS to further reduce your storage costs 
 
+AWS TCO Calculator 
+    -Allows you to estimate the cost savings when using AWS and provides a detailed set of reports that can be used in executive presentations. 
+    -The calculators also give you the option to modify assumptions that best meet your business needs 
