@@ -3,6 +3,40 @@ Cloud Practitioner review notes
 
 Disaster recovery deployment mechanisms - 
     https://aws.amazon.com/blogs/aws/new-whitepaper-use-aws-for-disaster-recovery/
+    Backup and Restore
+        -Takes the longest
+
+        -Select an appropriate tool or method to back up your data into AWS 
+        -Ensure that you have an appropriate retention policy for this data 
+        -Ensure that appropriate security measures are in place for this data, including encryption and access policies 
+        -Regularly test the recovery of this data and the restoration of your system
+
+    Pilot Light 
+        -A minimal version of an environment is always running in the cloud 
+        -The pilot light method gives you a quicker revovery time than the backup and restore method because the core pieces of the system are already running and are continually kept up to date 
+        -AWS enables you to automate the provisioning and configuration of the infrastructure resources, which can be a significant benefit to save time and help protect against human errors
+
+        Key steps for preparation:
+        -Set up Amazon EC2 instances to replicate or mirror data 
+        -Ensure that you have all supporting custom software pachages available in AWS 
+        -Create and maintain AMI's of key servers where fast recovery is required 
+        -Regularly run these servers, test them, and apply any software updates and configuration changes 
+        -Consider automating the provisioning of AWS resources 
+
+        Key steps for recovery:
+        -Start your application EC2 instances from your custom AMI's 
+        -Resize existing database/data store instances to process the increased traffic 
+        -Add additional database/datastore instances to give the DR site resilience in the data tier; if you are using RDS, turn on Multi-AZ to improve resilience 
+        -Change DNS to point at the EC2 servers 
+        -Install and configure any non-AMI based systems, ideally in an automated way 
+
+    Warm Standby 
+        -A scenario in which a scaled-down version of a fully functional envirenment is always running in the cloud 
+        -Extends the pilot light elements and preparation 
+        -It further decreases the recovery time because some services are always running 
+
+    Multi-Site 
+        -Runs in AWS as well as on your existing on-site infrastructure, in an active-active configuration 
 
 AWS Support Plans 
     https://aws.amazon.com/premiumsupport/compare-plans/
@@ -14,5 +48,11 @@ AWS Trusted Advisor
 
 AWS Inspector 
 
-
+AWS Storage Gateway
+    -Gateway-cached volumes
+        -You can store your primary data in S3 and retain your frequently accessed data locally. Gateway-cached volumes provide substantial cost savings on primary storage, minimeze the need to scale your storage on-premises, and retain low-latency access to your frequently accessed data 
+    -Gateway-stored volumes 
+        -In the event that you need low-latency acess to your entire data set, you can configure your gateway to store your primary data locally and asynchronously back up point-in-time snapshots of this data to S3. Gateway-stored volumes provide durable and inexpensive off-site backups that you can recover locally or from EC2 if, for example, you need replacement capacity for disaster recovery 
+    -Gateway-virtual tape library
+        -With gateway-VTL, you can have an almost limitless collection of virtual tapes. You can store each virtual tape in a virtual tape livrary backed by S3 or a virtual tape shelf backed by Glacier. The virtual tape library exposes an industry standard iSCSI interface that provides your backup application with on-line access to the virtual tapes. When you no longer require immediate or frequent access to data contained on a virtual tape, you can use your backup application to move it from its VTL to your VTS to further reduce your storage costs 
 
