@@ -40,11 +40,25 @@ Disaster recovery deployment mechanisms -
 
 AWS Support Plans 
     https://aws.amazon.com/premiumsupport/compare-plans/
+    -All customers receive Basic Support included with your AWS account. 
+    -All plans provide 24x7 access to customer service, AWS documentation, whitepapers, and support forums
 
 Elasticity - The means of an application having the ability to scale up and scale down based on demand
 
 AWS Trusted Advisor 
     https://aws.amazon.com/premiumsupport/trustedadvisor/
+    -An online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment, Trusted Advisor provides real time guidance to help you provision your resources following AWS best practices 
+        -Cost Optimization
+        -Performance 
+        -Security 
+        -Fault Tolerance 
+        -Service Limits 
+    -Core Checks and Recommendations 
+        -Available to all AWS customers 
+    -Full Trusted Advisor Benefits 
+        -Available with Business or Enterprise support plans 
+        -Notifications 
+        -Programmatic access 
 
 AWS Inspector 
     -Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for vulnerabilities or deviations from best practices. 
