@@ -1,3 +1,18 @@
 Cloud Practitioner review notes 
 
 
+Disaster recovery deployment mechanisms - 
+    https://aws.amazon.com/blogs/aws/new-whitepaper-use-aws-for-disaster-recovery/
+
+AWS Support Plans 
+    https://aws.amazon.com/premiumsupport/compare-plans/
+
+Elasticity - The means of an application having the ability to scale up and scale down based on demand
+
+AWS Trusted Advisor 
+    https://aws.amazon.com/premiumsupport/trustedadvisor/
+
+AWS Inspector 
+
+
+
