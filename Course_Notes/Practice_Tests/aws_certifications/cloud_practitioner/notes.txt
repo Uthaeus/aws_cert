@@ -94,3 +94,6 @@ Amazon SQS policy
     -The main difference between SQS policies and IAM policies is that an SQS policy enables you to grant a different account permission to your SQS queues, but an IAM policy does not 
 
 EC2 auto-recovery 
+    -You can create an Amazon CloudWatch alarm that monitors an EC2 instance and automatically recovers the instance if it becomes imparied due to an underlying hardware failure or a problem that requires AWS involvement to repair
+    -Terminated instances cannot be recovered 
+    -A recovered instance is identical to the original instance 
