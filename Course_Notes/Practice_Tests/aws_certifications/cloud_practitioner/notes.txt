@@ -87,3 +87,10 @@ Cost Explorer
 
 NACL vs ACL vs Security Groups
 
+Infrastructure Event Management
+    -AWS Infrastructure Event Management is a short-term engagement wih AWS Support, available as part of the Enterprise-level Support product offering, and available for additional purchase for Business-level Support subscribers. AWS Infrastructure Event Management partners with your technical and project resources to gain a deep understanding of your use case and provide architectural and scaling guidance for an event
+
+Amazon SQS policy
+    -The main difference between SQS policies and IAM policies is that an SQS policy enables you to grant a different account permission to your SQS queues, but an IAM policy does not 
+
+EC2 auto-recovery 
