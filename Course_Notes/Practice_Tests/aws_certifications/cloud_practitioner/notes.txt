@@ -97,3 +97,28 @@ EC2 auto-recovery
     -You can create an Amazon CloudWatch alarm that monitors an EC2 instance and automatically recovers the instance if it becomes imparied due to an underlying hardware failure or a problem that requires AWS involvement to repair
     -Terminated instances cannot be recovered 
     -A recovered instance is identical to the original instance 
+
+Neptune 
+
+Platform as a Service (PaaS) removes the need for your organization to manage the underlying infrastructure and allows you to focus on the deployment and management of your applications 
+
+Security scales with your AWS Cloud usage. No matter the size of your business, the AWS infrastructure is designed to keep your data safe 
+
+CloudFormation Designer 
+    -A visual tool that provides a drag-and-drop interface for adding resources to templates
+
+You can protect data in transit by using SSL or by using client-side encryption 
+
+For compute resources, you pay on an hourly basis from the time you launch until the time you terminate 
+
+EC2 instance pricing depends on many variables:
+    -The type of buying option 
+    -Selected AMI 
+    -Selected instance type 
+    -Region 
+    -Data in/out 
+    -Storage capacity 
+
+Reserved instance payment options:
+    -Partial Upfront
+    -No Upfront 
