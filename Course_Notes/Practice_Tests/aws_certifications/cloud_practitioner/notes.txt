@@ -128,3 +128,17 @@ Decommissioning process
 AWS bills the user on a pay as you go model. AWS will charge the user once the AWS resource is allocated. Even though the user is not using the resource, AWS will charge if it is in service or allocated 
 
 Only Internal DNS names can be resolved within Amazon EC2 
+
+CloudFormation does not follow any model, instead, customers can define templates and use them to provision and manage the AWS resources in an orderly way 
+
+AWS Config 
+    -You can discover existing and deleted AWS resources, determine your overall compliance against rules, and dive into configuration details of a resource at any point in time. These capabilities enable compliance auditing, security analysis, resource change tracking, and troubleshooting 
+
+ECR 
+    -Amazon EC2 Container Registry is a fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images
+
+To add a particular account to the master account, the master account has to request to that account to join consolidated billing
+
+When launching an instance with EC2, AWS recommends not to select the AZ. AWS specifies that the default AZ should be accepted. This is because it enables AWS to select the best AZ based on the system health and available capacity 
+
+
