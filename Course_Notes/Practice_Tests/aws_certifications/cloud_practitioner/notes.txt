@@ -167,5 +167,72 @@ AWS Serverless Application Repository
 AWS Certificate Manager 
     -Lets you easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources. SSL/TLS certificates are used to secure network communications and establish the identity of websites over the internet as well as resources on private networks 
 
+PCI DSS compliant services 
+
+You can use Kinesis to securely stream video from camera-equipped devices to AWS. You can then use these video streams for video playback, security monitoring, face detection, machine learning, and other analytics 
+
+Chat option is available in Business and Enterprise plans only 
+
+If you can predict your need for DynamoDB read-and-write throughput, Reserved Capacity offer significant savings over normal price. Any throughput you provision in excess of your Reserved Capacity is billed at standard rates 
+
+AWS Greengrass 
+    -Authenticates and encrypts device data at all points of connection using the AWS IoT security and access management capabilities. This way data is never exchanged between devices when they communicate with each other and the cloud without proven identity 
+
+When the user account has reached the maximum number of EC2 instances, it will not be allowed to launch an instance 
+
+CloudFormation 
+    -Allows you to model your entire infrastructure in a text file 
+    -Provisions your resources in a safe, repeatable manner allowing you to build and rebuild your infrastructure and applications without having to perform manual actions or write custome scripts 
+    -Codifying your infrastructure allows you to treat your infrastructure as just code 
+
+Amazon Pinpoint 
+    -Makes it easy to run targeted campaigns to drive user engagement in mobile apps 
+    -Helps you understand user behavior, define which users to target, determine which messages to send, schedule the best time to deliver the messages, and then track the results of your campaign 
+
+Benefits of AWS Security 
+    -Keep your data safe 
+    -Meet compliance requirements
+    -Save money 
+    -Scale quickly 
+
+Amazon EMR use cases:
+    -Real-time Analytics 
+    -Clickstream Analysis 
+    -Log Analysis 
+    -Extract Transform Load (ETL)
+    -Financial Analysis 
+
+AWS Batch 
+    -Enables develpers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS 
+
+Services like AWS Config, Inspector, and Trusted Advisor continually monitor for compliance or vulnerabilities, giving you a clear overview of which IT resources are in compliance and which are not
+
+AWS Glue 
+    -Automatic schema discovery 
+    -Integrated Data Catalog 
+
+Dedicated Instances 
+    -Amazon EC2 instances that run in a VPC on hardware that is dedicated to a single customer. Your Dedicated Instances are physically isolated at the host hardware level from instances that belong to other AWS accounts
+
+Reserved-Node 
+    If you intend to keep an Amazon Redshift cluster running continuously for a prolonged period, you should consider purchasing reserved-node offerings 
+
+You can list AWS Import/Export jobs with the ListJobs command using the command line client or REST API 
+
+AWS Data Transfer Out 
+
+EC2 Systems Manager contains the following tools:
+    -Run Command 
+    -State Manager 
+    -Inventory 
+    -Maintenance Window 
+    -Patch Manager 
+    -Automation 
+    -Parameter Store 
+
+AWS Server Migration Service 
+    -An agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS 
+    -Allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations 
+
 
 
