@@ -141,4 +141,31 @@ To add a particular account to the master account, the master account has to req
 
 When launching an instance with EC2, AWS recommends not to select the AZ. AWS specifies that the default AZ should be accepted. This is because it enables AWS to select the best AZ based on the system health and available capacity 
 
+Amazon Cloud Directory 
+    -Enables you to build flexible cloud-native directories for organizing kierarchies of data along multiple dimensions. With Cloud Directory you can create directories for a variety of use cases 
+    -Offers you the flexibility to create directories with hierarchies that span multiple dimensions 
+
+Flow Logs 
+    -Capture information about the IP traffic going to and from network interfaces in your VPC 
+
+When selling reserved instances on the AWS Marketplace 
+    -You can set only the upfront price for your reserved instances 
+    -Instances must have one month or more remaining
+    -Each instance sold will be charged a service fee of 12% on the total upfront price 
+
+If you suspect that your account has been compromised or if you have received a notification from AWS that the account has been compromised, perform the following tasks:
+    -Change your AWS root account password and the passwords of any IAM users 
+    -Delete or rotate all root and IAM access keys 
+    -Delete any resources on your account you didn't create 
+    -Respond to any notifications you received from AWS Support through the AWS Support Center 
+
+Simple Monthly Calculator 
+
+AWS Serverless Application Repository
+    -Used to share solutions with developers or to help your customers quickly understand the value of products and services you well and support 
+
+AWS Certificate Manager 
+    -Lets you easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources. SSL/TLS certificates are used to secure network communications and establish the identity of websites over the internet as well as resources on private networks 
+
+
 
