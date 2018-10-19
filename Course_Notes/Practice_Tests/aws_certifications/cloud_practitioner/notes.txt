@@ -66,7 +66,7 @@ AWS Inspector
 
 AWS Storage Gateway
     -Gateway-cached volumes
-        -You can store your primary data in S3 and retain your frequently accessed data locally. Gateway-cached volumes provide substantial cost savings on primary storage, minimeze the need to scale your storage on-premises, and retain low-latency access to your frequently accessed data 
+        -You can store your primary data in S3 and retain your frequently accessed data locally. Gateway-cached volumes provide substantial cost savings on primary storage, minimize the need to scale your storage on-premises, and retain low-latency access to your frequently accessed data 
     -Gateway-stored volumes 
         -In the event that you need low-latency acess to your entire data set, you can configure your gateway to store your primary data locally and asynchronously back up point-in-time snapshots of this data to S3. Gateway-stored volumes provide durable and inexpensive off-site backups that you can recover locally or from EC2 if, for example, you need replacement capacity for disaster recovery 
     -Gateway-virtual tape library
@@ -208,6 +208,7 @@ AWS Batch
 Services like AWS Config, Inspector, and Trusted Advisor continually monitor for compliance or vulnerabilities, giving you a clear overview of which IT resources are in compliance and which are not
 
 AWS Glue 
+    -A fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics 
     -Automatic schema discovery 
     -Integrated Data Catalog 
 
@@ -234,5 +235,28 @@ AWS Server Migration Service
     -An agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS 
     -Allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations 
 
+Amazon GameLift
+    -Makes it easy to manage server infrastructure, scale capacity to lower latency and cost, match players into available game sessions, and defend from DDoS attacks
 
+If a user wants to find out the reason for an EC2 instance termination they can get the information from the AWS console by checking the Instance description under the State Transition Reason label
+
+Amazon AppStream
+    -A fully managed secure application streaming service that allows you to stream desktop applications from AWS to any device running a web browser withouth rewriting them 
+
+AWS Acceptable Use Policy 
+    -Find information about prohibited actions on AWS infrastructure 
+
+AWS Service Health Dashboard 
+
+Amazon ElastiCache
+    -Reserved Nodes give you the option to make a low, one-time payment for each cache node you want to reserve and, in turn, receive a significant discount on the hourly charge for that node 
+
+AWS Organizations has four main benefits:
+    -Centrally manage access policies across multiple AWS accounts 
+    -Automate AWS account creation and management 
+    -Control access to AWS services 
+    -Enable consolidated billing across multiple AWS accounts 
+
+Tagging
+    -AWS allows customers to assign metdata to their AWS resources in the form of tags. Each tag is a simple label consisting of a customer-defined key and an optional value that can make it easier to manage, search for, and filter resources 
 
