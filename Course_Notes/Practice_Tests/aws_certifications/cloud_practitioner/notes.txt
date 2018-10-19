@@ -122,3 +122,9 @@ EC2 instance pricing depends on many variables:
 Reserved instance payment options:
     -Partial Upfront
     -No Upfront 
+
+Decommissioning process 
+
+AWS bills the user on a pay as you go model. AWS will charge the user once the AWS resource is allocated. Even though the user is not using the resource, AWS will charge if it is in service or allocated 
+
+Only Internal DNS names can be resolved within Amazon EC2 
